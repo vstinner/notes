@@ -1,5 +1,5 @@
-Haypo's Notes
-=============
+Victor Stinner's Notes
+======================
 
 .. raw:: html
 
