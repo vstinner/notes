@@ -15,12 +15,20 @@ Old Projects (2000-2009)
 Websites
 ========
 
-- `Wiki <http://www.haypocalc.com/wiki/>`_ (last new article in december 2013).
-  haypocalc.com domain created in december 2001.
-- `Blog Haypo <http://www.haypocalc.com/blog/>`_ (last article in 2011)
-- `Wordpress Blog <http://www.haypocalc.com/wordpress/>`_ (last article in 2011)
 - `La page de Haypo <http://haypo.developpez.com/>`_ (2005)
 - `Turbo Pascal <http://turbo-pascal.developpez.com/>`_ (2004)
+
+Old websites (dead)
+===================
+
+- Wiki (dead URL: ``http://www.haypocalc.com/wiki/``)
+  (last new article in december 2013).
+  haypocalc.com domain created in december 2001, died in december 2017 (16
+  years later).
+- Blog Haypo (dead URL: ``http://www.haypocalc.com/blog/``)
+  (last article in 2011)
+- Wordpress Blog (dead URL: ``http://www.haypocalc.com/wordpress/``)
+  (last article in 2011)
 
 Articles on linuxfr.org
 =======================

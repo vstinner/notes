@@ -19,8 +19,8 @@ Websites
    :align: right
    :target: http://www.flickr.com/photos/haypo/11914396795/
 
-- `Haypo Blog 2 <http://haypo.github.io/>`_ (new blog, created in 2015)
-- `Haypo's Notes <http://haypo-notes.readthedocs.org/>`_ (this site, created
+- `Haypo Blog 2 <http://vstinner.github.io/>`_ (new blog, created in 2015)
+- `Victor Stinner's Notes <http://vstinner-notes.readthedocs.org/>`_ (this site, created
   in 2014)
 
 Documentation
@@ -34,7 +34,7 @@ Documentation
   <https://github.com/vstinner/unicode_book>`_)
 * `CPython Internals <http://cpython-internals.readthedocs.org/>`_
   (source code: `cpython_internals at bitbucket
-  <https://bitbucket.org/haypo/cpython_internals>`_)
+  <https://bitbucket.org/vstinner/cpython_internals>`_)
 
 
 Python Projects
@@ -58,7 +58,7 @@ Python Projects
   trace memory blocks allocated by Python. The module is part of Python
   standard library since Python 3.4, I maintain a backport for Python 2.7 and
   3.3 (it should work on Python 2.6-3.3).
-* `pyfailmalloc <https://bitbucket.org/haypo/pyfailmalloc>`_: Debug tool for
+* `pyfailmalloc <https://bitbucket.org/vstinner/pyfailmalloc>`_: Debug tool for
   Python injecting memory allocation faults to simulate a low memory system to
   test how your application handles MemoryError exceptions.
 * `sixer <https://pypi.python.org/pypi/sixer>`_: add Python 3 support

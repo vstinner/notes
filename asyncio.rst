@@ -18,7 +18,8 @@ asyncio projects
   <http://docs.python.org/dev/library/asyncio.html>`_
 * Python 3.3: `Tulip project homepage
   <http://code.google.com/p/tulip/>`_
-* Python 2.x: `Trollius <https://bitbucket.org/haypo/trollius/>`_
+* Python 2.x: `Trollius <https://github.com/vstinner/trollius/>`_
+
 
 
 asyncio event loops
