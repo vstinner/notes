@@ -1,3 +1,5 @@
+.. _python-memory:
+
 +++++++++++++
 Python Memory
 +++++++++++++
@@ -11,8 +13,6 @@ TODO
 
 Benchmarks
 ==========
-
-https://bitbucket.org/haypo/misc/raw/tip/memory/python_memleak.py
 
 Issue #13483:
 http://bugs.python.org/file26069/tuples.py

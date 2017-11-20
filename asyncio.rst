@@ -45,7 +45,6 @@ asyncio event loops
   - https://us.pycon.org/2013/schedule/presentation/62/
   - http://www.youtube.com/watch?v=oJQdX_w1vXY
 
-* Twisted: `asyncio_twisted.py <https://bitbucket.org/haypo/asyncio_staging/src/tip/twisted/asyncio_twisted.py>`_
 * wxPython: http://twistedmatrix.com/documents/12.3.0/core/howto/choosing-reactor.html#auto13
   and http://wiki.wxpython.org/wxPythonAndTwisted
 * Tornado: experimental asyncio support built right into it.

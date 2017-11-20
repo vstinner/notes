@@ -84,5 +84,3 @@ asyncio timeout rounding:
 Other:
 
 * http://www.windowstimestamp.com/
-* http://www.haypocalc.com/wiki/Temps
-

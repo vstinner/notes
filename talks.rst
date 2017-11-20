@@ -7,7 +7,7 @@ Talks
 See also my :ref:`projects <projects>` and my :ref:`old projects
 <old-projects>`.
 
-All my talks at available at Github: `haypo/conf
+All my talks at available at Github: `vstinner/conf
 <https://github.com/vstinner/conf>`_.
 
 Conferences 2011-today

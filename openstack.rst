@@ -159,9 +159,9 @@ https://rbtcollins.wordpress.com/2015/12/02/diagnosing-flaky-tests/
 
 Load a subunit file downloaded from OpenStack gates::
 
-    (py27) haypo@smithers$ wget http://logs.openstack.org/45/275645/1/check/gate-glance-python27/e3fffca/testrepository.subunit.gz
-    (py27) haypo@smithers$ gunzip testrepository.subunit.gz
-    (py27) haypo@smithers$ testr load testrepository.subunit
+    (py27) $ wget http://logs.openstack.org/45/275645/1/check/gate-glance-python27/e3fffca/testrepository.subunit.gz
+    (py27) $ gunzip testrepository.subunit.gz
+    (py27) $ testr load testrepository.subunit
 
 
 testr

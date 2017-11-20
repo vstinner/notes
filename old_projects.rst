@@ -64,8 +64,8 @@ Paper Articles
   <http://www.unixgarden.com/index.php/gnu-linux-magazine-hs/netfilter-et-le-filtrage-du-protocole-ipv6>`_
   (french): GNU/Linux Magazine HS 41 (April 2009)
 
-* `Hors-série Linux Mag : Explorez les richesses du langage Python
-  <http://www.haypocalc.com/blog/index.php/2009/01/27/185-hors-serie-linux-mag-explorez-les-richesses-du-langage-python>`_
+* Hors-série Linux Mag : Explorez les richesses du langage Python
+  (dead URL: ``http://www.haypocalc.com/blog/index.php/2009/01/27/185-hors-serie-linux-mag-explorez-les-richesses-du-langage-python``)
   (january/february 2009).
   I wrote 4 articles:
 
@@ -78,16 +78,12 @@ Paper Articles
 
 * "Comment réaliser un fuzzer ?" (french), MISC magazine n°36 (march 2008)
 
-  - http://www.haypocalc.com/blog/index.php/2008/03/10/136-comment-raliser-un-fuzzer
+  - dead URL: ``http://www.haypocalc.com/blog/index.php/2008/03/10/136-comment-raliser-un-fuzzer``
 
 
 Python projects
 ===============
 
-* `astoptimizer <https://bitbucket.org/haypo/astoptimizer>`_: experimental
-  optimizer for Python code working on the Abstract Syntax Tree (AST,
-  high-level representration). It does as much work as possible at compile
-  time.
 * `Fusil <http://fusil.readthedocs.org/>`_: Fusil is a Python library used
   to write fuzzing programs. It includes fuzzers for Firefox, ClamAV, Mplayer,
   Python, etc. I am no more working actively on the project, but it still
@@ -128,6 +124,9 @@ Old removed projects
 * Hasard: pseudo-random number generator (PRNG) library.
 * aioeventlet: implementation of the asyncio API (PEP 3156) on top of eventlet.
 * aiogevent: implementation of the asyncio API (PEP 3156) on top of gevent.
+* astoptimizer: experimental optimizer for Python code working on the Abstract
+  Syntax Tree (AST, high-level representration). It does as much work as
+  possible at compile time.
 * macfly: tool allowing to run one or more programs with a shifted clock
   compared to system clock. project written at INL for the french CNES
   (National Centre for Space Studies)

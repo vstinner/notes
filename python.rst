@@ -159,9 +159,8 @@ operating system see 24 or 30 MB.
 See also:
 
 * `pytracemalloc <http://pytracemalloc.readthedocs.org/>`_
-* `Fragmentation of the Heap Memory
-  <http://haypo-notes.readthedocs.org/heap_fragmentation.html>`_
-* `Python Memory <http://haypo-notes.readthedocs.org/python_memory.html>`_
+* :ref:`Fragmentation of the Heap Memory <heap-fragmentation>`
+* :ref:`Python Memory <python-memory>`
 
 
 Zero copy

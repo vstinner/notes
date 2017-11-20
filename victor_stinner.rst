@@ -30,7 +30,7 @@ Public profiles
 
 - `Twitter account <https://twitter.com/VictorStinner>`_
 - `Github profile <http://github.com/vstinner/>`_
-- `Bitbucket profile <https://bitbucket.org/haypo/>`_
+- `Bitbucket profile <https://bitbucket.org/vstinner/>`_
 - `Flickr profile (photos) <http://www.flickr.com/photos/haypo/>`_
 - `Launchpad <https://launchpad.net/~victor-stinner>`_
 
@@ -59,7 +59,7 @@ About me
 * Twitter: "Opensource Python Hacker"
 * Pycon US 2014: Python core developer since 2010, I'm the author of various
   Python applications and libraries Python. See my profile on `Bitbucket
-  <https://bitbucket.org/haypo/>`_ and and `Github
+  <https://bitbucket.org/vstinner/>`_ and and `Github
   <http://github.com/vstinner/>`_.  I'm now working on OpenStack at `Enovance
   <http://www.enovance.com>`_ (Paris).
 * FOSDEM 2013: Python code developer since 3 years, I love hacking free
@@ -110,4 +110,3 @@ Other people talking about me
 .. image:: paintings_krakow_street.jpg
    :alt: Paintings in a street of Krakow (Poland)
    :align: center
-   :target: http://www.haypocalc.com/wiki/Image:Tableaux_cracovie.jpg
