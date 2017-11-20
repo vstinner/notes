@@ -964,7 +964,7 @@ IEEE 754 defines 4 modes:
 * ROUND_CEILING
 * ROUND_DOWN
 
-See also: https://haypo.github.io/pytime.html
+See also: https://vstinner.github.io/pytime.html
 
 
 Process wide vs multithreading

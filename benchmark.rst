@@ -10,20 +10,20 @@ My articles
 ===========
 
 * `My journey to stable benchmark, part 1 (system)
-  <https://haypo.github.io/journey-to-stable-benchmark-system.html>`_ (May 21, 2016)
+  <https://vstinner.github.io/journey-to-stable-benchmark-system.html>`_ (May 21, 2016)
 * `My journey to stable benchmark, part 2 (deadcode)
-  <https://haypo.github.io/journey-to-stable-benchmark-deadcode.html>`_ (May 22, 2016)
+  <https://vstinner.github.io/journey-to-stable-benchmark-deadcode.html>`_ (May 22, 2016)
 * `My journey to stable benchmark, part 3 (average)
-  <https://haypo.github.io/journey-to-stable-benchmark-average.html>`_ (May 23, 2016)
+  <https://vstinner.github.io/journey-to-stable-benchmark-average.html>`_ (May 23, 2016)
 * `Visualize the system noise using perf and CPU isolation
-  <https://haypo.github.io/perf-visualize-system-noise-with-cpu-isolation.html>`_ (June 16, 2016)
+  <https://vstinner.github.io/perf-visualize-system-noise-with-cpu-isolation.html>`_ (June 16, 2016)
 * `Intel CPUs: P-state, C-state, Turbo Boost, CPU frequency, etc.
-  <https://haypo.github.io/intel-cpus.html>`_ (July 15, 2016)
+  <https://vstinner.github.io/intel-cpus.html>`_ (July 15, 2016)
 * `Intel CPUs (part 2): Turbo Boost, temperature, frequency and Pstate C0 bug
-  <https://haypo.github.io/intel-cpus-part2.html>`_
+  <https://vstinner.github.io/intel-cpus-part2.html>`_
   (September 23, 2016)
 * `Analysis of a Python performance issue
-  <https://haypo.github.io/analysis-python-performance-issue.html>`_
+  <https://vstinner.github.io/analysis-python-performance-issue.html>`_
   (November 19, 2016)
 
 
