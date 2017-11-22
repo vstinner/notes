@@ -84,10 +84,6 @@ Paper Articles
 Python projects
 ===============
 
-* `Fusil <http://fusil.readthedocs.org/>`_: Fusil is a Python library used
-  to write fuzzing programs. It includes fuzzers for Firefox, ClamAV, Mplayer,
-  Python, etc. I am no more working actively on the project, but it still
-  works.
 * `pysandbox <https://github.com/vstinner/pysandbox>`_: Sandbox to run untrusted
   Python code. Project stopped because it is broken by design.
 * `python-ipy <https://github.com/vstinner/python-ipy>`_: Python classes and tools
@@ -122,6 +118,9 @@ Old removed projects
 ====================
 
 * Hasard: pseudo-random number generator (PRNG) library.
+* Fusil: Fusil is a Python library used to write fuzzing programs. It includes
+  fuzzers for Firefox, ClamAV, Mplayer, Python, etc. I am no more working
+  actively on the project, but it still works.
 * aioeventlet: implementation of the asyncio API (PEP 3156) on top of eventlet.
 * aiogevent: implementation of the asyncio API (PEP 3156) on top of gevent.
 * astoptimizer: experimental optimizer for Python code working on the Abstract
