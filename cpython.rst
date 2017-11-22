@@ -181,6 +181,8 @@ See also ``PYTHONASYNCIODEBUG=1`` for asyncio.
 Embedded libraries
 ==================
 
+Update dependencies: https://github.com/python/cpython-source-deps/blob/master/README.rst
+
 See my `external_versions.py
 <https://github.com/vstinner/misc/blob/master/cpython/external_versions.py>`_
 script: external version of embedded libraries from CPython source code
