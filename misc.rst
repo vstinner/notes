@@ -1041,3 +1041,18 @@ Write a raw image to a USB key::
     lsblk # check if the USB key is connected
     sudo dd if=bios.img of=/dev/disk/by-id/usb-LEXAR_JUMPDRIVE_0A4F1007191812160305-0\:0 status=progress oflag=direct
 
+
+ssh-agent
+=========
+
+List keys of ssh-agent::
+
+    ssh-add -l
+
+Add a key::
+
+    ssh-add ~/.ssh/id_rsa
+
+Remove all keys::
+
+    ssh-add -D
