@@ -1032,3 +1032,12 @@ wget --mirror --no-parent -e robots=off URL
 
 robots=off is needed to downloda OpenStack CI logs, since the robots.txt
 disallow everything.
+
+dd
+==
+
+Write a raw image to a USB key::
+
+    lsblk # check if the USB key is connected
+    sudo dd if=bios.img of=/dev/disk/by-id/usb-LEXAR_JUMPDRIVE_0A4F1007191812160305-0\:0 status=progress oflag=direct
+
