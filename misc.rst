@@ -1056,3 +1056,17 @@ Add a key::
 Remove all keys::
 
     ssh-add -D
+
+
+stdin, stdout, stderr buffering
+===============================
+
+Unbuffered standard streams with the stdbuf tool::
+
+    stdbuf -i0 -o0 -e0 producer | consumer
+
+Line buffering::
+
+    stdbuf -oL -eL command
+
+See also unbuffer.
