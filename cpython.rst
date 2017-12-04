@@ -255,8 +255,18 @@ Supported platforms
 
 PEP 11 lists removed platforms:
 
-* MS-DOS
+* MS-DOS: 2014:
+  `bpo-22591: Drop support of MS-DOS (DJGPP compiler)
+  <https://bugs.python.org/issue22591>`_,
+  `commit b71c7dc9 <https://github.com/python/cpython/commit/b71c7dc9ddd6997be49ed6aaabf99a067e2c0388>`_
 * Python 3.4: VMS, OS/2, Windows 2000
+
+  * VMS:
+    `bpo-16136: Removal of VMS support <https://bugs.python.org/issue16136>`_,
+    `main removal commit <https://github.com/python/cpython/commit/af01f668173d4061893148b54a0f01b91c7716c2>`_
+    (`remove VMSError doc commit
+    <https://github.com/python/cpython/commit/b2788fe854173b6b213010a7462c05594d703c06>`_)
+
 * Python 3.7: IRIX
 
 Windows:
@@ -286,3 +296,10 @@ Platforms not supported officially:
 * Cygwin
 * MinGW
 * HP-UX
+
+Unofficial projects:
+
+* `Python for OpenVMS <https://www.vmspython.org/>`_
+* `PythonD <http://www.caddit.net/pythond/>`_:  PythonD is a 32-bit,
+  multi-threaded, networking- and OpenGL-enabled Python interpreter for DOS and
+  Windows.
