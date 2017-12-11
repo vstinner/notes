@@ -790,8 +790,9 @@ Yubikey
 
 * Fedora: dnf install -y u2f-hidraw-policy
   See https://gist.github.com/fntlnz/a4513162960e1e9fdb99
-* Firefox: https://addons.mozilla.org/fr/firefox/addon/u2f-support-add-on/
-  https://github.com/prefiks/u2f4moz
+* Firefox: builtin since Firefox 57, see https://www.yubico.com/2017/11/how-to-navigate-fido-u2f-in-firefox-quantum/
+  For older Firefox, use https://addons.mozilla.org/fr/firefox/addon/u2f-support-add-on/
+  (proect: https://github.com/prefiks/u2f4moz)
 * GitHub: https://github.com/settings/two_factor_authentication/configure click on [Register new device]
 * Firefox plugin doesn't work on Google nor Bitbucket
 
