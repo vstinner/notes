@@ -37,6 +37,7 @@ PEP         Python  Status    Title
 :pep:`564`  3.7     Final     Add new time functions with nanosecond resolution (ex: ``time.time_ns()``)
 :pep:`546`  2.7     Accepted  Backport ssl.MemoryBIO and ssl.SSLObject to Python 2.7 -- co-written with Cory Benfield
 :pep:`545`  ---     Final     Python Documentation Translations -- co-written with Juliend Palard and Naoki IANADA
+:pep:`540`  3.7     Accepted      Add a new UTF-8 mode
 :pep:`524`  3.6     Final     Make os.urandom() blocking on Linux
 :pep:`509`  3.6     Final     Add a private version to dict
 :pep:`475`  3.5     Final     Retry system calls failing with EINTR -- co-written with Charles-François Natali
@@ -45,15 +46,6 @@ PEP         Python  Status    Title
 :pep:`445`  3.4     Final     Add new APIs to customize Python memory allocators
 :pep:`418`  3.3     Final     Add monotonic time, performance counter, and process time functions
 ==========  ======  ========  =======================================================================================
-
-Draft PEPs
-----------
-
-==========  ======  ============  =================================================
-PEP         Python  Status        Title
-==========  ======  ============  =================================================
-:pep:`540`  3.7     Draft         Add a new UTF-8 mode
-==========  ======  ============  =================================================
 
 Rejected PEPs
 -------------
