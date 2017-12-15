@@ -1,3 +1,5 @@
+.. _brainstorm_cpython_tutorial:
+
 ++++++++++++++++++++++++++++
 Brainstorm: CPython tutorial
 ++++++++++++++++++++++++++++

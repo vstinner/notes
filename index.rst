@@ -25,6 +25,7 @@ Contents:
    python_packaging.rst
    python3.rst
    python_perf.rst
+   cpython_community.rst
    pypy_warmups.rst
    c_language.rst
    unicode.rst
