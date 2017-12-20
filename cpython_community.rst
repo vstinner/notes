@@ -68,6 +68,17 @@ Ideas
 * Bot to thanks automatically new contributors with cute emojis? "Congrats 🙌
   for your first PR merged into CPython 🐍!" (do email notifications like
   emojis?)
+* Create subteams:
+
+  * IDLE
+  * asyncio
+  * Documentation
+  * Windows
+  * Workgroup Community // core-workflow
+  * XXX: need a bot on GitHub to restrict permissions to files/directories?
+
+* Missing in action: drop core dev for inactive developers?
+
 
 Links
 =====

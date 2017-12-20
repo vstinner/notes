@@ -113,7 +113,7 @@ Cygwin    ``cygwin``                                         ?
 FreeBSD   ``freebsd5``, ``freebsd6``, ...                    ``posix``
 Java      ``java`` (with a suffix?)                          ?
 Linux     ``linux`` on Python 3, ``linux2`` on Python 2 (*)  ``posix``
-Mac OS X  ``darwin``                                         ``posix``
+macOS     ``darwin``                                         ``posix``
 NetBSD    ``netbsd`` (with a suffix?)                        ``posix``
 OpenBSD   ``openbsd5``                                       ``posix``
 Solaris   ``sunos5``                                         ``posix``
