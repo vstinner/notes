@@ -1071,3 +1071,12 @@ Line buffering::
     stdbuf -oL -eL command
 
 See also unbuffer.
+
+Copy for backup using rsnyc
+===========================
+
+Commands::
+
+    $ sudo mount -o uid=haypo,gid=haypo,utf8 /dev/disk/by-label/DataSeagate /mnt/usb/
+    $ rsync --archive --verbose --progress -r /btrfs/data/videos/  /mnt/usb/videos/
+
