@@ -23,6 +23,7 @@ Contents:
    cpython.rst
    cpython_windows.rst
    python_packaging.rst
+   python_new_stable_api.rst
    python3.rst
    python_perf.rst
    cpython_community.rst
