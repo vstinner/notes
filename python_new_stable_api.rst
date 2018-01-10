@@ -220,3 +220,15 @@ Currently, the stable API (Py_LIMITED_API), the private functions (``_Py``
 prefix), functions that must only be used in CPython core (``Py_BUILD_CORE``)
 and other functions (regular C API) are all defined in the same file. It is
 easy to add a function to the wrong API by mistake.
+
+
+No public C functions if it can't be done in Python
+===================================================
+
+**Goal**: Remove public functions which do things which are not doable in pure
+Python.
+
+There shouldn't be C APIs that do something that you can't do in Python.
+
+Example: the C buffer protocol, the Python ``memoryview`` type only expose a
+subset of ``buffer`` features.
