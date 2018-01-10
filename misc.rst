@@ -1080,3 +1080,26 @@ Commands::
     $ sudo mount -o uid=haypo,gid=haypo,utf8 /dev/disk/by-label/DataSeagate /mnt/usb/
     $ rsync --archive --verbose --progress -r /btrfs/data/videos/  /mnt/usb/videos/
 
+
+virt-manager: virtual network
+=============================
+
+Enable Router Advertissement on your phyiscal devices.
+
+* Create file ``/etc/sysctl.d/60-victor-network.conf``::
+
+    net.ipv6.conf.enp0s31f6.accept_ra = 2
+    net.ipv6.conf.wlp4s0.accept_ra = 2
+
+  where ``enp0s31f6`` and ``wlp4s0`` are my physical NICs.
+
+* Run::
+
+    sudo systemctl restart systemd-sysctl
+
+Virt-manager, create a network:
+
+* Right click on a domain, Detail: Network, Add a network
+* IPv4 Network: 192.168.100.0/24 ; enable DHCP
+* IPv6 Network: fd00:e81d:a6d7:5ab8::/64 ; enable DHCPv6
+* Give access to any physical NIC

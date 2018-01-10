@@ -344,10 +344,23 @@ Type::
 DevStack
 ========
 
-To install Fedora:
+Download Fedora ISO:
 
 * Download boot ISO at https://boot.fedoraproject.org/
+
+Create virtual machine:
+
+* New VM
+* Memory: 4 GB
+* CPU: 2
+* Disk: 30 GB
+* Select manually the OS: Linux, Fedora 26
+* Network "virtnet": NAT
+
+To install Fedora:
+
 * Select Install Supported Fedora
+* Select Fedora 27 x86_64 Server
 * In the installer GUI, select packages: (o) Minimal Install
 * Create user haypo
 * Reboot
@@ -356,6 +369,7 @@ To install Fedora:
 * Log as haypo
 * sudo dnf install -y git tmux
 * git clone https://git.openstack.org/openstack-dev/devstack
+
 
 
 OpenStack openstack_citest
