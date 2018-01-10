@@ -111,7 +111,7 @@ It becomes possible to design new flavors of CPython with radical changes:
 The C API is too big
 ====================
 
-**Goal:** Small C API.
+**Goal:** Smaller C API.
 
 Common complain from PyPy developers. Writing a new Python implementation with
 implements the full C API is a huge work.
@@ -119,6 +119,10 @@ implements the full C API is a huge work.
 Slowly **remove** functions from the future stable ABI? It should be done
 gradually and update most famous Python C extensions in parrallel to not "break
 Python".
+
+Some C functions can easily be replaced by a function call, these functions are
+mostly written for **internal** usage, to make the CPython code base simpler.
+But they should not be exposed (they should be private).
 
 
 The C API must not leak implementation details anymore
