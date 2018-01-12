@@ -139,3 +139,60 @@ Issues
   impossible to write GB2312 data which is supposed to be read back by these
   other systems.
 
+
+Test non-ASCII characters with locales
+======================================
+
+localeconv()
+------------
+
+Tested on Fedora 27.
+
+==============  ========  ===============  ========================  ===========================
+LC_ALL locale   Encoding  Field            Bytes                     Text
+==============  ========  ===============  ========================  ===========================
+es_MX.utf8      UTF-8     thousands_sep    ``0xE2 0x80 0x89``        U+2009
+fr_FR.UTF-8     UTF-8     currency_symbol  ``0xE2 0x82 0xAC``        U+20AC
+ps_AF.utf8      UTF-8     thousands_sep    ``0xD9 0xAC``             U+066C
+uk_UA.koi8u     KOI8-U    currency_symbol  ``0xC7 0xD2 0xCE 0x2E``   U+0433 U+0440 U+043d U+002E
+uk_UA.koi8u     KOI8-U    thousands_sep    ``0x9A``                  U+00A0
+==============  ========  ===============  ========================  ===========================
+
+strftime(), tzname
+------------------
+
+==============  ========  ===============  ==============  ===========================
+LC_ALL locale   Encoding  Month %b         Bytes           Text
+==============  ========  ===============  ==============  ===========================
+fr_FR           Latin1    December         ``b'd\xe9c.'``  ``'d\xe9c.'``
+==============  ========  ===============  ==============  ===========================
+
+Python2::
+
+    vstinner@apu$ python2
+    >>> import time, locale
+    >>> locale.setlocale(locale.LC_ALL, "fr_FR")
+    'fr_FR'
+    >>> time.strftime("%A, %d %B %Y", time.localtime(time.mktime((2018, 2, 1, 12, 0, 0, 0, 0, 0))))
+    'jeudi, 01 f\xe9vrier 2018'
+
+* https://bugs.python.org/issue5905
+* https://bugs.python.org/issue13560
+* https://bugs.python.org/issue16322
+* `Commit af02e1c8: Add PyUnicode_DecodeLocaleAndSize() and PyUnicode_DecodeLocale()
+  <https://github.com/python/cpython/commit/af02e1c85a66009cdc645a64de7d7ee1335c8301>`_
+  "Fix time.strftime() (if wcsftime() is missing): decode strftime() result
+  from the current locale encoding, not from the filesystem encoding."
+* `Commit 720f34a3:  Issue #5905
+  <https://github.com/python/cpython/commit/720f34a3e8567ee7c46ee7d8752617168bfb5258>`_:
+  "time.strftime() is now using the locale encoding, instead of UTF-8, if the
+  wcsftime() function is not available."
+
+strerror()
+----------
+
+* https://bugs.python.org/issue13560
+* `Commit 1f33f2b0
+  <https://github.com/python/cpython/commit/1f33f2b0c381337d5991c227652d65eadd168209>`_:
+  "Issue #13560: os.strerror() now uses the current locale encoding instead
+  of UTF-8"
