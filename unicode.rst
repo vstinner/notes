@@ -176,6 +176,8 @@ Python2::
     >>> time.strftime("%A, %d %B %Y", time.localtime(time.mktime((2018, 2, 1, 12, 0, 0, 0, 0, 0))))
     'jeudi, 01 f\xe9vrier 2018'
 
+* `non-ASCII tzname on Windows <https://bugs.python.org/issue16322#msg173755>`_:
+  "'東京 (標準時)' means 'Tokyo (Standard Time)' in Japanese."
 * https://bugs.python.org/issue5905
 * https://bugs.python.org/issue13560
 * https://bugs.python.org/issue16322
@@ -191,6 +193,8 @@ Python2::
 strerror()
 ----------
 
+* `non-ASCII strerror <https://bugs.python.org/issue13643#msg150031>`_:
+  "os.strerror(23) = 'Trop de fichiers ouverts dans le syst\\xe8me'."
 * https://bugs.python.org/issue13560
 * `Commit 1f33f2b0
   <https://github.com/python/cpython/commit/1f33f2b0c381337d5991c227652d65eadd168209>`_:
