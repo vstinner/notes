@@ -143,6 +143,10 @@ Issues
 Test non-ASCII characters with locales
 ======================================
 
+It seems like FreeBSD 11 doesn't all encodings: only Latin1 and UTF-8 seem to
+be implemented.  At least, KOI8-R, Big5 and CP1131 are not implemented
+properly.
+
 localeconv()
 ------------
 
