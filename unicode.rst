@@ -152,15 +152,15 @@ localeconv()
 
 Fedora 27:
 
-==============  ========  ===============  ========================  ===========================
+==============  ========  ===============  ========================  ===================================
 LC_ALL locale   Encoding  Field            Bytes                     Text
-==============  ========  ===============  ========================  ===========================
+==============  ========  ===============  ========================  ===================================
 es_MX.utf8      UTF-8     thousands_sep    ``0xE2 0x80 0x89``        U+2009
-fr_FR.UTF-8     UTF-8     currency_symbol  ``0xE2 0x82 0xAC``        U+20AC
-ps_AF.utf8      UTF-8     thousands_sep    ``0xD9 0xAC``             U+066C
-uk_UA.koi8u     KOI8-U    currency_symbol  ``0xC7 0xD2 0xCE 0x2E``   U+0433 U+0440 U+043d U+002E
+fr_FR.UTF-8     UTF-8     currency_symbol  ``0xE2 0x82 0xAC``        U+20AC (€)
+ps_AF.utf8      UTF-8     thousands_sep    ``0xD9 0xAC``             U+066C (٬)
+uk_UA.koi8u     KOI8-U    currency_symbol  ``0xC7 0xD2 0xCE 0x2E``   U+0433 U+0440 U+043d U+002E (грн.)
 uk_UA.koi8u     KOI8-U    thousands_sep    ``0x9A``                  U+00A0
-==============  ========  ===============  ========================  ===========================
+==============  ========  ===============  ========================  ===================================
 
 macOS 10.13.2:
 
@@ -170,13 +170,31 @@ LC_ALL locale    Encoding   Field            Bytes                     Text
 ru_RU.ISO8859-5  ISO8859-5  currency_symbol  ``b'\xe0\xe3\xd1.'``      U+0440 U+0443 U+0431 U+002e (руб.)
 ===============  =========  ===============  ========================  ==================================
 
+FreeBSD 11:
+
+===============  =========  ===============  =====================================  =================================================
+LC_ALL locale    Encoding   Field            Bytes                                  Text
+===============  =========  ===============  =====================================  =================================================
+ar_SA.UTF-8      UTF-8      decimal_point    ``b'\xd9\xab'``                        U+066b ('٫')
+ar_SA.UTF-8      UTF-8      thousands_sep    ``b'\xd9\xac'``                        U+066c ('٬')
+ar_SA.UTF-8      UTF-8      currency_symbol  ``b'\xd8\xb1.\xd8\xb3.\xe2\x80\x8f'``  U+0631 U+002e U+0633 U+002e U+200f ('ر.س.\u200f')
+zh_TW.Big5       Big5       currency_symbol  ``b'\xa2\xdc\xa2\xe2\xa2\x43'``        ``u'\uff2e\uff34\uff04'`` (ＮＴ＄)
+zh_TW.Big5       Big5       decimal_point    ``b'\xa1\x44'``                        ``u'\uff0e'`` (．)
+zh_TW.Big5       Big5       thousands_sep    ``b'\xa1\x41'``                        ``u'\uff0c'`` (，)
+===============  =========  ===============  =====================================  =================================================
+
+Note: On FreeBSD with LC_CTYPE="zh_TW.Big5", mbstowcs() doesn't use Big5 but a
+different encoding and so returns mojibake.
+
 strftime(), tzname
 ------------------
+
+Fedora 27:
 
 ==============  ========  ===============  ==============  ===========================
 LC_ALL locale   Encoding  Month %b         Bytes           Text
 ==============  ========  ===============  ==============  ===========================
-fr_FR           Latin1    December         ``b'd\xe9c.'``  ``'d\xe9c.'``
+fr_FR           Latin1    December         ``b'd\xe9c.'``  ``'d\xe9c.'`` (déc.)
 ==============  ========  ===============  ==============  ===========================
 
 Python2::
@@ -204,6 +222,14 @@ Python2::
 
 strerror()
 ----------
+
+===============  ==========  ===========================================  ===========================================
+LC_ALL locale    Encoding    Bytes                                        Text
+===============  ==========  ===========================================  ===========================================
+fr_FR.ISO8859-1  ISO-8859-1  ``b'Fichier ou r\xe9pertoire inexistant'``   ``'Fichier ou r\xe9pertoire inexistant'``
+===============  ==========  ===========================================  ===========================================
+
+Links:
 
 * `non-ASCII strerror <https://bugs.python.org/issue13643#msg150031>`_:
   "os.strerror(23) = 'Trop de fichiers ouverts dans le syst\\xe8me'."

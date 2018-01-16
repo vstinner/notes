@@ -1103,3 +1103,24 @@ Virt-manager, create a network:
 * IPv4 Network: 192.168.100.0/24 ; enable DHCP
 * IPv6 Network: fd00:e81d:a6d7:5ab8::/64 ; enable DHCPv6
 * Give access to any physical NIC
+
+Install FreeBSD VM
+==================
+
+* https://www.freebsd.org/where.html : Download amd64/qcow2 virtual machine image,
+* Uncompress the image: unxz file.qcow2.xz
+* Move the image to /var/lib/libvirt/images/
+* Create a FreeBSD VM using this disk image
+* kbdcontrol -l fr.iso
+* Log as root
+* pkg install sudo bash screen
+* adduser: add user, add it to the wheel group
+* visudo: allow sudo for the whell group
+* Unlog, log again as the new user
+* chsh -s /usr/local/bin/bash
+* Unlog, log again (to get bash)
+* Enable the SSH server:
+
+ * Add sshd_enable="YES" to /etc/rc.conf
+ * service sshd start
+ * https://www.freebsd.org/doc/handbook/openssh.html
