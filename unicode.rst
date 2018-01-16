@@ -228,6 +228,15 @@ zh_TW.Big5       Big5       thousands_sep    ``b'\xa1\x41'``                    
 Note: On FreeBSD with LC_CTYPE="zh_TW.Big5", mbstowcs() doesn't use Big5 but a
 different encoding and so returns mojibake.
 
+Windows 7.1:
+
+===============  =========  ===============  ===========  ======
+LC_ALL locale    Encoding   Field            Bytes        Text
+===============  =========  ===============  ===========  ======
+fr-FR            cp1252     currency_symbol  ``b'\x80'``  U+20AC
+fr-FR            cp1252     thousands_sep    ``b'\xA0'``  U+00A0
+===============  =========  ===============  ===========  ======
+
 strftime(), tzname
 ------------------
 
@@ -238,6 +247,15 @@ LC_ALL locale   Encoding  Month %b         Bytes           Text
 ==============  ========  ===============  ==============  ===========================
 fr_FR           Latin1    December         ``b'd\xe9c.'``  ``'d\xe9c.'`` (déc.)
 ==============  ========  ===============  ==============  ===========================
+
+Windows 8.1:
+
+==============  ========  ===============  ==============  ====================
+LC_ALL locale   Encoding  Date, format     Bytes           Text
+==============  ========  ===============  ==============  ====================
+fr-FR           cp1252    December, %b     ``b'd\xe9c.'``  ``'d\xe9c.'`` (déc.)
+ja-JP           cp932?    Monday, %a       -               ``'\u6708'``
+==============  ========  ===============  ==============  ====================
 
 Python2::
 
