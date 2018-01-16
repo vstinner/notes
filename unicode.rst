@@ -147,6 +147,16 @@ It seems like FreeBSD 11 doesn't all encodings: only Latin1 and UTF-8 seem to
 be implemented.  At least, KOI8-R, Big5 and CP1131 are not implemented
 properly.
 
+Use cases
+---------
+
+* Latin1 or UTF-8 encoding (locale different than C and POSIX)
+* C or POSIX locale: ASCII encoding on Linux, Latin1 encoding on
+  FreeBSD/Solaris (but ASCII announced by nl_langinfo(CODESET))
+* LC_NUMERIC != LC_CTYPE: the fun localeconv() bug, https://bugs.python.org/issue31900
+* python 3.7 -X utf8
+* macOS and Android UTF-8
+
 localeconv()
 ------------
 
