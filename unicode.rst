@@ -157,6 +157,24 @@ Use cases
 * python 3.7 -X utf8
 * macOS and Android UTF-8
 
+Locale, announced encoding, effective encoding
+----------------------------------------------
+
+================  ==========  ==================  ==================
+Operating system  Locale      Announced encoding  Effective encoding
+================  ==========  ==================  ==================
+FreeBSD           C, POSIX    US-ASCII            ISO-8859-1
+FreeBSD           zh_TW.Big5  Big5                ? (not Big5)
+macOS             C, POSIX    US-ASCII            ISO-8859-1
+macOS             zh_TW.Big5  Big5                ? (not Big5)
+Linux             C, POSIX    ANSI_X3.4-1968      ASCII
+================  ==========  ==================  ==================
+
+Tested operating systems:
+
+* macOS 10.13.2:
+* FreeBSD 11.1
+
 localeconv()
 ------------
 
