@@ -160,6 +160,8 @@ Use cases
 Locale, announced encoding, effective encoding
 ----------------------------------------------
 
+Inconsistent:
+
 ================  ==========  ==================  ==================
 Operating system  Locale      Announced encoding  Effective encoding
 ================  ==========  ==================  ==================
@@ -167,13 +169,23 @@ FreeBSD           C, POSIX    US-ASCII            ISO-8859-1
 FreeBSD           zh_TW.Big5  Big5                ? (not Big5)
 macOS             C, POSIX    US-ASCII            ISO-8859-1
 macOS             zh_TW.Big5  Big5                ? (not Big5)
-Linux             C, POSIX    ANSI_X3.4-1968      ASCII
 ================  ==========  ==================  ==================
+
+Consistent, announced encoding = effective encoding:
+
+================  ===========  ==================
+Operating system  Locale       Encoding
+================  ===========  ==================
+Fedora 27         C, POSIX     ASCII
+Fedora 27         fr_FR.UTF-8  UTF-8
+Fedora 27         zh_TW.Big5   Big5
+================  ===========  ==================
 
 Tested operating systems:
 
 * macOS 10.13.2:
 * FreeBSD 11.1
+* Fedora 27 (glibc 2.26)
 
 localeconv()
 ------------
