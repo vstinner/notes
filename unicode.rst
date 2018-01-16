@@ -177,6 +177,8 @@ Consistent, announced encoding = effective encoding:
 Operating system  Locale       Encoding
 ================  ===========  ==================
 Fedora 27         C, POSIX     ASCII
+FreeBSD           fr_FR.UTF-8  UTF-8
+macOS             fr_FR.UTF-8  UTF-8
 Fedora 27         fr_FR.UTF-8  UTF-8
 Fedora 27         zh_TW.Big5   Big5
 ================  ===========  ==================
