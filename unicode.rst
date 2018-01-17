@@ -256,7 +256,7 @@ Windows 8.1:
 LC_ALL locale   Encoding  Date, format     Bytes           Text
 ==============  ========  ===============  ==============  ====================
 fr-FR           cp1252    December, %b     ``b'd\xe9c.'``  ``'d\xe9c.'`` (déc.)
-ja-JP           cp932?    Monday, %a       -               ``'\u6708'``
+ja-JP           cp932?    Monday, %a       N/A             ``'\u6708'``
 ==============  ========  ===============  ==============  ====================
 
 Python2::
