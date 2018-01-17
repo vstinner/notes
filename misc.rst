@@ -1124,3 +1124,12 @@ Install FreeBSD VM
  * Add sshd_enable="YES" to /etc/rc.conf
  * service sshd start
  * https://www.freebsd.org/doc/handbook/openssh.html
+
+
+Status pages
+============
+
+* Python : https://status.python.org/
+* GitHub : https://status.github.com/ and https://twitter.com/githubstatus
+* Travis CI : https://www.traviscistatus.com/ and https://twitter.com/traviscistatus
+
