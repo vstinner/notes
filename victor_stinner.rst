@@ -100,12 +100,25 @@ Awards
 Other people talking about me
 =============================
 
+* `8 Python developers that inspired me in 2017
+  <https://hackernoon.com/8-python-developers-that-inspired-me-in-2017-85cb43b302a0>`_
+  (Dec, 2017)
+* `Understanding your benchmarks and easy tips for fixing them
+  <https://blog.phusion.nl/2017/07/13/understanding-your-benchmarks-and-easy-tips-for-fixing-them/>`_
+  (July, 2017)
+* PythonBytes podcast.  `Episode #32: 8 ways to contribute to open source when
+  you have no time
+  <https://pythonbytes.fm/episodes/show/32/8-ways-to-contribute-to-open-source-when-you-have-no-time>`_
+  (July, 2017); "Michael #2: Keeping Python competitive" part
+* `PyDev of the Week: Victor Stinner
+  <https://www.blog.pythonlibrary.org/2017/02/27/pydev-of-the-week-victor-stinner/>`_
+  (February, 2017)
 * Montreal Python User Group: Person of the Month:
   `Victor Stinner #MP42 <http://www.youtube.com/watch?v=ATncy-ws4NI>`_
+  (December, 2013)
 * `developer of note: Victor Stinner
-  <http://tshepang.net/developer-of-note-victor-stinner>`_ by Tshepang
-  Lekhonkhobe
-
+  <http://tshepang.net/developer-of-note-victor-stinner>`_ (June 2012)
+  by Tshepang Lekhonkhobe
 
 .. image:: paintings_krakow_street.jpg
    :alt: Paintings in a street of Krakow (Poland)
