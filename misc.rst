@@ -596,19 +596,29 @@ macOS 10.4      Tiger          8.x             2004
   * Fedora 20: 2013-12, Heisenbug
   * Fedora 19: 2013-07, Schrödinger's Cat
 
-* `FreeBSD releases <https://en.wikipedia.org/wiki/FreeBSD#Version_history>`_:
-
-  * FreeBSD 10: 2014-01
-  * FreeBSD 9: 2012-01
-  * FreeBSD 8.1: 2010-07
-  * FreeBSD 7: 2008-02
-  * FreeBSD 6.2: 2007-01
-
 * `Debian releases <https://www.debian.org/releases/>`_:
 
   * Debian 9 "Stretch": June 17th, 2017
   * Debian 8 "Jessie": April 26th, 2015
 
+.. _freebsd-list:
+
+`FreeBSD releases <https://en.wikipedia.org/wiki/FreeBSD#Version_history>`_,
+and `Unsupported FreeBSD Releases
+<https://www.freebsd.org/security/unsupported.html>`_:
+
+============  =======  ===========
+FreeBSD       Release  End of life
+============  =======  ===========
+FreeBSD 11.0  2016-10  2021-09-30
+FreeBSD 10.0  2014-01  2018-10-31
+FreeBSD 9.0   2012-01  2016-12
+FreeBSD 8.1   2010-07  2012-07
+FreeBSD 7.0   2008-02  2009-04
+FreeBSD 6.2   2007-01  2008-05
+============  =======  ===========
+
+.. _windows-list:
 
 `Microsoft Windows versions
 <https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions>`_:

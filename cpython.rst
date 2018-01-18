@@ -277,22 +277,28 @@ PEP 11 on Windows:
     releases will support the same Windows releases as the original feature
     release (even if the extended support phase has ended).
 
-Windows:
+:ref:`Windows <windows-list>`:
 
 * `Windows Supported Versions in Python
   <https://docs.python.org/dev/using/windows.html#supported-versions>`_
   (in the Python development ``master`` branch)
-* Windows XP supported in Python 2.7, not supported in Python 3.6
+* Windows Vista support dropped in Python 3.7
+* Windows XP support dropped in Python 3.5
+* Windows 2000 support dropped in Python 3.4
 * `bpo-23451 <https://bugs.python.org/issue23451>`_, 2015-03: "Python 3.5 now
   requires Windows Vista or newer". See `change1
   <https://hg.python.org/cpython/rev/57e2549cc9a6>`_ and `change2
   <https://hg.python.org/cpython/rev/f64d0b99d405>`_.
-* Windows 2000 support dropped in Python 3.4
+* Python 2.7 supports Windows XP and newer
+
+:ref:`FreeBSD <freebsd-list>`:
+
+* FreeBSD 9 buildbot wokers have been removed in 2017
 
 Well supported platforms on Python 3.6 and 2.7:
 
 * Linux
-* Windows: XXX min version?
+* Windows: Vista and newer for Python 3.6, XP and newer for Python 2.7
 * macOS: XXX min version?
 * FreeBSD
 
