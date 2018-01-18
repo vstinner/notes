@@ -567,16 +567,6 @@ macOS 10.5      Leopard        9.x             2006
 macOS 10.4      Tiger          8.x             2004
 ==============  ============== ==============  ============
 
-* `Microsoft Windows versions
-  <https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions>`_:
-
-  - Windows 10: (under development)
-  - Windows 8.1: 2013
-  - Windows 8: 2012
-  - Windows 7: 2009
-  - Windows Vista: 2007
-  - Windows XP: 2001
-
 * `Linux kernel versions
   <https://en.wikipedia.org/wiki/Linux_kernel#Maintenance>`_:
 
@@ -618,6 +608,23 @@ macOS 10.4      Tiger          8.x             2004
 
   * Debian 9 "Stretch": June 17th, 2017
   * Debian 8 "Jessie": April 26th, 2015
+
+
+`Microsoft Windows versions
+<https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions>`_:
+
+===========================  ==========  =========================  ================
+Windows                      Release     End of mainstream support  Extended support
+===========================  ==========  =========================  ================
+Windows 10                   2015-07     2020-10                    2025-10
+Windows 8.1                  2013-10     2018-01                    2023-01
+Windows 8                    2012-10     2016-01                    2016-01
+Windows 7                    2009-10     2015-01                    2020-01
+Windows Vista                2007-01     2012-04                    2017-04
+Windows XP Professional x64  2005-04     2009-04                    2014-04
+Windows XP                   2001-10     2009-04                    2014-04
+===========================  ==========  =========================  ================
+
 
 Programming advices
 ===================

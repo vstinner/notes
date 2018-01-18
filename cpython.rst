@@ -253,7 +253,7 @@ and `cpython-source-deps <https://github.com/python/cpython-source-deps>`_.
 Supported platforms
 ===================
 
-PEP 11 lists removed platforms:
+PEP 11 lists removal of supported platforms:
 
 * MS-DOS: 2014:
   `bpo-22591: Drop support of MS-DOS (DJGPP compiler)
@@ -269,9 +269,24 @@ PEP 11 lists removed platforms:
 
 * Python 3.7: IRIX
 
+PEP 11 on Windows:
+
+    CPython's Windows support now follows [Microsoft product support
+    lifecycle]. A new feature release X.Y.0 will support all Windows releases
+    whose extended support phase is not yet expired. Subsequent bug fix
+    releases will support the same Windows releases as the original feature
+    release (even if the extended support phase has ended).
+
 Windows:
 
+* `Windows Supported Versions in Python
+  <https://docs.python.org/dev/using/windows.html#supported-versions>`_
+  (in the Python development ``master`` branch)
 * Windows XP supported in Python 2.7, not supported in Python 3.6
+* `bpo-23451 <https://bugs.python.org/issue23451>`_, 2015-03: "Python 3.5 now
+  requires Windows Vista or newer". See `change1
+  <https://hg.python.org/cpython/rev/57e2549cc9a6>`_ and `change2
+  <https://hg.python.org/cpython/rev/f64d0b99d405>`_.
 * Windows 2000 support dropped in Python 3.4
 
 Well supported platforms on Python 3.6 and 2.7:
