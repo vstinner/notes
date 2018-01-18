@@ -100,6 +100,10 @@ Awards
 Other people talking about me
 =============================
 
+* Interview in `Julien Danjou's book "Scaling Python"
+  <https://scaling-python.com/>`_ (Dec 2017)
+* Interview in `Julien Danjou's book "The Hacker's Guide to Python"
+  <https://thehackerguidetopython.com/>`_ (May 2015)
 * `8 Python developers that inspired me in 2017
   <https://hackernoon.com/8-python-developers-that-inspired-me-in-2017-85cb43b302a0>`_
   (Dec, 2017)
