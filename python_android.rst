@@ -10,6 +10,10 @@ Android CI for Python
 * https://bugs.python.org/issue30386
 * https://github.com/python/cpython/pull/1629
 
+pmpp's plan: "Test on VMs with Android 4.4 (arm/i386) and Android 7 or 8 (all
+platforms)".
+
+
 People
 ======
 
@@ -23,9 +27,16 @@ People
 Android?
 ========
 
+Android is not the common "Linux" system, only the Linux kernel is shared,
+everything else is different:
+
 * Kernel: Linux
 * libc: Bionic
 * SDK: "NDK"
+* Different filesystem:
+
+  * /system/bin/sh
+  * /system/lib/libc.so
 
 The Android API version combines Linux kernel and bionic versions.
 
@@ -34,7 +45,7 @@ Bionic
 
 * https://en.wikipedia.org/wiki/Bionic_(software)
 * Broken locales
-* No shmem
+* No shmem -- see https://github.com/pelya/android-shmem
 
 C++ stdlib has a working localeconv()!? Example::
 
@@ -58,20 +69,22 @@ C++ stdlib has a working localeconv()!? Example::
         }
     }
 
-NDK API version
-===============
+Android, NDK and API versions
+=============================
 
 Android versions
 ----------------
 
 https://en.wikipedia.org/wiki/Android_version_history :
 
-===============  ========  =======
-Android version  Name      Release
-===============  ========  =======
-Android 7        Nougat    2016-08
-Android 4.4      KitKat    2013-10
-===============  ========  =======
+========================  =======  ============
+Android version           Release  API versions
+========================  =======  ============
+Android 7 (Nougat)        2016-08  24-25
+Android 6 (Marshmallow)   2015-10  23
+Android 5 (Lollipop)      2014-11  21-22
+Android 4.4 (Kitkat)      2013-10  19-20
+========================  =======  ============
 
 Supported API
 -------------
@@ -80,6 +93,9 @@ Supported API
 * Panda3D plans to support API 19+
 * Kivy used to support API 9+, but now supports 19+
 * Python 3.7 currently targets API 21+
+
+XXX Python 3.7 should have a basic API 19+ support: fix compilation, but it's
+ok if some tests fail. Just push upstream existing patches for API 19.
 
 API 19
 ------
@@ -136,11 +152,18 @@ Drawback: broken DNS resolution.
 Devices to develop Python on Android?
 =====================================
 
-Raspberry PI?
+Devices:
 
+* Raspberry PI 3: arm64
+
+Software (Android):
+
+* Lineage (ex-cyanogen)
+* Android TV
 
 TTY on Android?
 ===============
 
 * Python REPL
 * ncurses
+
