@@ -94,6 +94,10 @@ Supported API
 * Kivy used to support API 9+, but now supports 19+
 * Python 3.7 currently targets API 21+
 
+Cheap devices only support old versions of Android. Cheap devices allow
+developers to work on Android without having to buy expensive devices just for
+this platforms.
+
 XXX Python 3.7 should have a basic API 19+ support: fix compilation, but it's
 ok if some tests fail. Just push upstream existing patches for API 19.
 
