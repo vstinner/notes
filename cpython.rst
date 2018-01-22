@@ -293,6 +293,7 @@ PEP 11 on Windows:
 
 :ref:`FreeBSD <freebsd-list>`:
 
+* Python 3.7 dropped support for FreeBSD 9 and older.
 * FreeBSD 9 buildbot wokers have been removed in 2017
 
 Well supported platforms on Python 3.6 and 2.7:
