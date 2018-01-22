@@ -89,9 +89,10 @@ Android 4.4 (Kitkat)      2013-10  19-20
 Supported API
 -------------
 
-* Unity supports API 9+
-* Kivy used to support API 9+, but now supports 19+
 * Python 3.7 currently targets API 21+
+  (but may have a partial support of API 19+)
+* Unity supports API 16+
+* Kivy supports API 19+
 
 Cheap devices only support old versions of Android. Cheap devices allow
 developers to work on Android without having to buy expensive devices just for
