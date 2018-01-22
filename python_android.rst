@@ -1,0 +1,146 @@
++++++++++++++++++
+Python on Android
++++++++++++++++++
+
+Android CI for Python
+=====================
+
+* https://mail.python.org/pipermail/python-dev/2017-December/151171.html
+* Guido wants a PEP?
+* https://bugs.python.org/issue30386
+* https://github.com/python/cpython/pull/1629
+
+People
+======
+
+* Xavier de Gaye: was given push privileges on June 3, 2016 on the
+  recommendation of Victor Stinner to pursue its work on porting Python on
+  Android.
+* Chih-Hsuan Ye aka *yan12125*
+* *pmpp*: Panda3D contributor, wants to "port" Panda3D on Android (especially
+  Python binding of Panda3D)
+
+Android?
+========
+
+* Kernel: Linux
+* libc: Bionic
+* SDK: "NDK"
+
+The Android API version combines Linux kernel and bionic versions.
+
+Bionic
+======
+
+* https://en.wikipedia.org/wiki/Bionic_(software)
+* Broken locales
+* No shmem
+
+C++ stdlib has a working localeconv()!? Example::
+
+    #include <locale>
+
+    using namespace std;
+
+    static char decimal_point;
+    static char thousands_sep;
+    static lconv lc_cache ;
+
+    extern "C" {
+        struct lconv *localeconv(void){
+            decimal_point = std::use_facet<std::numpunct<char> >(std::locale(std::setlocale(LC_ALL, NULL))).decimal_point();
+            lc_cache.decimal_point = &decimal_point;
+
+            thousands_sep = std::use_facet<std::numpunct<char> >(std::locale(std::setlocale(LC_ALL, NULL))).thousands_sep();
+            lc_cache.thousands_sep = &thousands_sep ;
+
+            return &lc_cache;
+        }
+    }
+
+NDK API version
+===============
+
+Android versions
+----------------
+
+https://en.wikipedia.org/wiki/Android_version_history :
+
+===============  ========  =======
+Android version  Name      Release
+===============  ========  =======
+Android 7        Nougat    2016-08
+Android 4.4      KitKat    2013-10
+===============  ========  =======
+
+Supported API
+-------------
+
+* Unity supports API 9+
+* Panda3D plans to support API 19+
+* Kivy used to support API 9+, but now supports 19+
+* Python 3.7 currently targets API 21+
+
+API 19
+------
+
+* Basically, the full locale API is broken
+* mmap() works but is not exported in libc headers
+
+Python on Android
+=================
+
+* A lot of changes merged since 2016
+* Python uses UTF-8 as its "filesystem encoding" and uses directly Python's
+  codec rather than mbstowcs() and wcstombs()
+* Python 3.7 added `sys.getandroidapilevel()
+  <https://docs.python.org/dev/library/sys.html#sys.getandroidapilevel>`_: API
+  level used to *build* Python, not the runtime API version.
+  ``sys.getandroidapilevel()`` mostly exists to implement the test "is Python
+  running on Android?".
+
+XXX should we change sys.platform from "linux" to "android" on Android?
+
+Patches for API 19:
+
+* https://github.com/pmp-p/droid-pydk/tree/master/sources.32
+* https://github.com/yan12125/python3-android
+
+
+Build Python for Android
+========================
+
+Stdlib packed into a ZIP file.
+
+Cross-compilation
+-----------------
+
+Xavier's favorite option.
+
+Build Python on Android
+-----------------------
+
+pmpp's favorite option.
+
+Hackish option
+--------------
+
+pmpp's second choice.
+
+* Link Python to a static libc on Linux using Android linker
+* Extract object files from libpython.a and link again on Android
+
+Drawback: broken DNS resolution.
+
+
+Devices to develop Python on Android?
+=====================================
+
+Raspberry PI?
+
+
+TTY on Android?
+===============
+
+* Python REPL
+* ncurses
