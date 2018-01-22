@@ -21,8 +21,8 @@ People
   recommendation of Victor Stinner to pursue its work on porting Python on
   Android.
 * Chih-Hsuan Ye aka *yan12125*
-* *pmpp*: Panda3D contributor, wants to "port" Panda3D on Android (especially
-  Python binding of Panda3D)
+* Paul Peny aka *pmpp*: Panda3D contributor, wants to "port" Panda3D on Android
+  (especially Python binding of Panda3D)
 
 Android?
 ========
