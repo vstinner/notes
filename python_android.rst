@@ -90,7 +90,6 @@ Supported API
 -------------
 
 * Unity supports API 9+
-* Panda3D plans to support API 19+
 * Kivy used to support API 9+, but now supports 19+
 * Python 3.7 currently targets API 21+
 
