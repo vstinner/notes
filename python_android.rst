@@ -171,3 +171,7 @@ TTY on Android?
 * Python REPL
 * ncurses
 
+See `Terminal Emulator for Android
+<https://play.google.com/store/apps/details?id=jackpal.androidterm>`_ (Google
+Play).
+
