@@ -122,3 +122,23 @@ See also
 
 * :ref:`Compile Python extensions on Windows <py-windows>`
 * :ref:`Operating systems <operating-systems>`
+
+Windows variants
+================
+
+Flavors:
+
+* Family: basic feature set
+* Pro: more features
+* Entreprise: even more features
+
+Variants:
+
+* "N": Not with Media Player; for Europe.
+* "KN": specially designed for Korean market and does not include Windows Media
+  Player (WMP) and an instant messenger.
+* "VL": Volume License,  a single license key can be used to activate multiple
+  installations of Windows 10. This is usually used by large enterprises.
+* "S": "Windows 10 S can only run apps from the Windows Store". Windows 10 S is
+  designed to run well even on lower-end laptops. Windows 10 S is focused on
+  speed, better battery life, and higher performance.
