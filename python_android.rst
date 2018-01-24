@@ -137,6 +137,9 @@ Cross-compilation
 
 Xavier's favorite option.
 
+Drawback: pip cannot be used to install C extensions (see :ref:`pip
+<android-pip>`).
+
 Build Python on Android
 -----------------------
 
@@ -181,6 +184,8 @@ dlopen() RTLD_BIND_NOW
 Bionic dlopen() doesn't support RTDL_LAZY. Dependencies must be loaded
 explicitly!
 
+.. _android-pip:
+
 pip, MACHDEP, sysconfig
 =======================
 
@@ -190,3 +195,5 @@ pip, MACHDEP, sysconfig
   Issue on cross-compilation. sysconfig uses sys.platform to recreate
   the module name at runtime.
 
+If Python was cross-compiled, pip fails to build C extensions. The C compiler
+fails to locate Python header files.
