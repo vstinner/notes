@@ -111,11 +111,20 @@ Argument:
 * ``x86_amd64``: cross-compile to 64-bit mode on a 32-bit system
 
 
+Configuration
+=============
+
 Git configuration file
-======================
+----------------------
 
 Filename: ``C:\Users\haypo\.gitconfig``. Run cmd.exe as administrator to be
 allowed to create symbolic links.
+
+Windows console, cmd.exe
+------------------------
+
+Right click on the title, Properties: set Buffer Size of Command History to
+999 (default: 50).
 
 See also
 ========
@@ -125,6 +134,10 @@ See also
 
 Windows variants
 ================
+
+To develop on CPython: get a "multi-version" of Windows 10 (no N, KN or VL
+variant) and use a "Pro - Retail" product key. Create of a VM with 40 GB of
+disk.
 
 Flavors:
 

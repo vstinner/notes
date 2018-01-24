@@ -29,6 +29,21 @@ Build a Windows VM
 Python and Visual Studio version matrix
 =======================================
 
+For Python 3.7, the minimum is VS 2017 Community:
+
+* Workload: only [x] "Desktop development with C++"
+* Optional: only [x] "VC++ 2017 v141 toolset (x86, x64")
+* Individual Components:
+
+  * [x] "MSBuild"
+  * [x] "VC++ 2017 v141 toolset (x86, x64)"
+  * SDK: [x] "Visual C++ ATL support"
+  * SDK: [x] "Windows 10 SDK (xxx) for Desktop C++ [x86 and x64]"
+
+* Language pack: [x] "English"
+
+Install size: 1.7 GB.
+
 ===================  =======================
 Python version       Visual Studio
 ===================  =======================
