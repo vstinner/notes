@@ -110,6 +110,13 @@ API 19
 * Basically, the full locale API is broken
 * mmap() works but is not exported in libc headers
 
+NDK
+---
+
+XXX what is NDK? :-)
+
+NDK 14b is the first release to use "Unified headers".
+
 Python on Android
 =================
 
