@@ -212,3 +212,22 @@ SELinux
 =======
 
 SELinux is enforced on arm64 since Android 7 (Nougat).
+
+CrystaX NDK
+===========
+
+In short, `CrystaX NDK <https://www.crystax.net/>`_ is closer to a regular
+Linux glibc.
+
+CrystaX NDK is a drop-in replacement for Google's NDK. Following are the main
+goals of CrystaX NDK:
+
+* Better standard compatibility
+* Easy porting of existing code to Android
+* New features for Android native development
+
+It provides Python 2.7 and Python 3.5, Python compiled with patches to support
+Android.
+
+The Kivy project uses the Python of CrystaX.
+
