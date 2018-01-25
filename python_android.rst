@@ -221,7 +221,7 @@ fails to locate Python header files.
 SELinux
 =======
 
-SELinux is enforced on arm64 since Android 7 (Nougat).
+SELinux is enforced on arm64 since Android 5 (Lollipop).
 
 CrystaX NDK
 ===========
