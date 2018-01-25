@@ -6,8 +6,11 @@ Survivor Guide to Develop on Windows
 
 Guide written for Linux developers.
 
-See also :ref:`Python Packaging <python_packaging>` which contains specific
-information for Python on Windows.
+See also:
+
+* :ref:`Python Packaging <python_packaging>` which contains specific
+  information for Python on Windows.
+* :ref:`Compile CPython on Windows <python-windows>`
 
 Useful tools
 ============

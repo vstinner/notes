@@ -22,27 +22,18 @@ People who understands these things.
 Build a Windows VM
 ==================
 
-* Windows 10 or newer is recommanded
-* 60 GB of disk space or more is recommanded
+* Windows 10 or newer is recommanded. Get a "multi-version" of Windows 10
+  (no N, KN or VL variant) and use a "Pro - Retail" product key.
+* At least 40 GB of disk space is needed, 60 GB or more is recommended.
 
 
 Python and Visual Studio version matrix
 =======================================
 
-For Python 3.7, the minimum is VS 2017 Community:
+For Python 3.7, the minimum is VS 2017 Community, minimum installer options:
 
 * Workload: only [x] "Desktop development with C++"
-* Optional: only [x] "VC++ 2017 v141 toolset (x86, x64")
-* Individual Components:
-
-  * [x] "MSBuild"
-  * [x] "VC++ 2017 v141 toolset (x86, x64)"
-  * SDK: [x] "Visual C++ ATL support"
-  * SDK: [x] "Windows 10 SDK (xxx) for Desktop C++ [x86 and x64]"
-
 * Language pack: [x] "English"
-
-Install size: 1.7 GB.
 
 ===================  =======================
 Python version       Visual Studio
