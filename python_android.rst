@@ -2,6 +2,9 @@
 Python on Android
 +++++++++++++++++
 
+Xavier's "Android support" document (Decembre 2017):
+https://github.com/xdegaye/cagibi/blob/master/doc/android_support.rst
+
 Android CI for Python
 =====================
 
@@ -197,3 +200,8 @@ pip, MACHDEP, sysconfig
 
 If Python was cross-compiled, pip fails to build C extensions. The C compiler
 fails to locate Python header files.
+
+SELinux
+=======
+
+SELinux is enforced on arm64 since Android 7 (Nougat).
