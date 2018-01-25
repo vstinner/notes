@@ -2,6 +2,16 @@
 Python on Android
 +++++++++++++++++
 
+Summary:
+
+* Python 2.7 and 3.5 can be used on Android using CrystaX NDK. It uses
+  patches on Python.
+* Python 3.6 (from python.org) mostly work on Android API 24 without further
+  patches, but need recipes to be build and these recipes are not standardized
+  yet.
+* The goal is to get a full Android API 24 support for Python 3.7 using a
+  standard build recipe; Android buildbot using qemu.
+
 Xavier's "Android support" document (Decembre 2017):
 https://github.com/xdegaye/cagibi/blob/master/doc/android_support.rst
 
