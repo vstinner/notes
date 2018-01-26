@@ -33,7 +33,7 @@ People
 * Xavier de Gaye: was given push privileges on June 3, 2016 on the
   recommendation of Victor Stinner to pursue its work on porting Python on
   Android.
-* Chih-Hsuan Ye aka *yan12125*
+* Chih-Hsuan Yen aka *yan12125*
 * Paul Peny aka *pmpp*: Panda3D contributor, wants to "port" Panda3D on Android
   (especially Python binding of Panda3D)
 
@@ -144,6 +144,9 @@ XXX should we change sys.platform from "linux" to "android" on Android?
 Patches for API 19:
 
 * https://github.com/pmp-p/droid-pydk/tree/master/sources.32
+
+Build system and patches for API 21:
+
 * https://github.com/yan12125/python3-android
 
 
