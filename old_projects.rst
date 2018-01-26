@@ -23,7 +23,7 @@ Old websites (dead)
 
 - `Wiki <http://haypo.alwaysdata.net/wiki/>`_
   (last new article in december 2013).
-- `Blog Haypo <http://haypo.alwaysdata.net/blog/>` (last article in 2011)
+- `Blog Haypo <http://haypo.alwaysdata.net/blog/>`_ (last article in 2011)
 - Wordpress Blog (dead URL: ``http://www.haypocalc.com/wordpress/``)
   (last article in 2011)
 
