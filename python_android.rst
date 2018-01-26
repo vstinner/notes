@@ -243,5 +243,10 @@ It provides Python 2.7 and Python 3.5, Python compiled with patches to support
 Android.
 
 The Kivy project uses the Python of CrystaX. Kivy updated CrystaX Python get to
-Python 3.6: `buildozer <https://github.com/kivy/buildozer>`_, Generic Python
-packager for Android and iOS.
+Python 3.6:
+
+* `python-for-android <https://python-for-android.readthedocs.io/>`_ (aka
+  "p4a"): Turn your Python application into an Android APK.  (`GitHub
+  python-for-android <https://github.com/kivy/python-for-android/>`_)
+* `buildozer <https://github.com/kivy/buildozer>`_, Generic Python packager for
+  Android and iOS.
