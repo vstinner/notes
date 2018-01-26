@@ -21,14 +21,14 @@ Websites
 Old websites (dead)
 ===================
 
-- Wiki (dead URL: ``http://www.haypocalc.com/wiki/``)
+- `Wiki <http://haypo.alwaysdata.net/wiki/>`_
   (last new article in december 2013).
-  haypocalc.com domain created in december 2001, died in december 2017 (16
-  years later).
-- Blog Haypo (dead URL: ``http://www.haypocalc.com/blog/``)
-  (last article in 2011)
+- `Blog Haypo <http://haypo.alwaysdata.net/blog/>` (last article in 2011)
 - Wordpress Blog (dead URL: ``http://www.haypocalc.com/wordpress/``)
   (last article in 2011)
+
+These sites were hosted at the haypocalc.com domain created in december 2001,
+but the domain died in december 2017, 16 years later.
 
 Articles on linuxfr.org
 =======================
