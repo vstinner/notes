@@ -100,6 +100,23 @@ Awards
 Other people talking about me
 =============================
 
+LWN:
+
+* `Python 3, ASCII, and UTF-8 <https://lwn.net/Articles/741176/>`_
+  by Jake Edge (December, 2017)
+* `Rationalizing Python's APIs <https://lwn.net/Articles/727973/>`_
+  by Jake Edge (July, 2017)
+* `Making Python faster <https://lwn.net/Articles/725114/>`_
+  by Jake Edge (June, 2017)
+* `Keeping Python competitive <https://lwn.net/Articles/723949/>`_
+  by Jake Edge (May, 2017)
+* `Python's os.urandom() in the absence of entropy <https://lwn.net/Articles/693189/>`_
+  by Jonathan Corbet (July, 2016)
+* `The failure of pysandbox <https://lwn.net/Articles/574215/>`_
+  by Jake Edge (November, 2013)
+
+Articles:
+
 * Interview in `Julien Danjou's book "Scaling Python"
   <https://scaling-python.com/>`_ (Dec 2017)
 * Interview in `Julien Danjou's book "The Hacker's Guide to Python"
