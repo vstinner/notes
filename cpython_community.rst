@@ -4,6 +4,16 @@ CPython community
 
 See also :ref:`Brainstorm: CPython tutorial <brainstorm_cpython_tutorial>`.
 
+    *Pull requests can be like someone trying to give you a puppy you didn't
+    ask for; they mean well, but they can forget a puppy is a decade-or-more
+    commitment and you just don't like the puppy.*
+    -- `Brett Cannon <https://twitter.com/brettsky/status/958511462300884992>`_
+
+    *Maintaining an open-source project is like being a Flight Attendant for an
+    airline where all tickets are free and the majority of customer surveys
+    offer suggestions on how to fly the airplane.*
+    -- `Kelsey Hightower <https://twitter.com/kelseyhightower/status/958349496076742658>`_
+
 Communication channels
 ======================
 
