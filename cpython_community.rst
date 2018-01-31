@@ -4,6 +4,9 @@ CPython community
 
 See also :ref:`Brainstorm: CPython tutorial <brainstorm_cpython_tutorial>`.
 
+    *Come for the Language, Stay for the Community*
+    -- `Brett Cannon (and Naomi Ceder) <https://twitter.com/brettsky/status/764862972468408320>`_
+
     *Pull requests can be like someone trying to give you a puppy you didn't
     ask for; they mean well, but they can forget a puppy is a decade-or-more
     commitment and you just don't like the puppy.*
@@ -13,6 +16,19 @@ See also :ref:`Brainstorm: CPython tutorial <brainstorm_cpython_tutorial>`.
     airline where all tickets are free and the majority of customer surveys
     offer suggestions on how to fly the airplane.*
     -- `Kelsey Hightower <https://twitter.com/kelseyhightower/status/958349496076742658>`_
+
+Talks
+=====
+
+* `The give and take of open source
+  <https://www.youtube.com/watch?v=y19s6vPpGXA>`_
+  by Brett Cannon, JupyterCon, August 2017
+* `Dial M For Mentor PyCon 2017
+  <https://www.youtube.com/watch?v=Wc1krFb5ifQ>`_
+  by Mariatta Wijaya, Pycon US, May 2017
+* `Come for the Language, Stay for the Community
+  <https://www.youtube.com/watch?v=cCCiA-IlVco>`_
+  by Naomi Ceder, EuroPython 2016
 
 Communication channels
 ======================
