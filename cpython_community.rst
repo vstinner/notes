@@ -30,6 +30,13 @@ Talks
   <https://www.youtube.com/watch?v=cCCiA-IlVco>`_
   by Naomi Ceder, EuroPython 2016
 
+Articles
+========
+
+* `The Zero Theory (first edition)
+  <https://www.linkedin.com/pulse/zero-theory-first-edition-ha%C3%AFkel-gu%C3%A9mar/>`_
+  by Haïkel Guémar (May, 2015)
+
 Communication channels
 ======================
 
