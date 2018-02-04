@@ -17,6 +17,17 @@ Conferences 2011-today
    :alt: Pycon US 2014 logo
    :target: https://us.pycon.org/
 
+* February 2018, FOSDEM at Brussels
+
+  - `Looking back at Python evolutions of the last 10 years
+    <https://fosdem.org/2018/schedule/event/python3/>`_
+  - `Slides
+    <https://github.com/vstinner/conf/raw/master/2018-FOSDEM/python3_10years_later.pdf>`_
+    (PDF)
+  - Sorry for the bad sound in the video, there was an issue with sound during
+    my talk and the video team and only fixed it after my talk: "*we had some
+    issues with microphone charging cables and other sillyness at some point*".
+
 * May 2017, Pycon US at Portland (Oregon, USA)
 
   - LWN article: `Making Python faster <https://lwn.net/Articles/725114/>`_
@@ -35,11 +46,10 @@ Conferences 2011-today
 
 * February 2017, FOSDEM at Brussels (Belgium)
 
-  - Talk: `How to run a stable benchmark
+  - Video: `How to run a stable benchmark
     <https://fosdem.org/2017/schedule/event/python_stable_benchmark/>`_
   - `Slides (PDF): How to run stable benchmarks
     <https://github.com/vstinner/conf/raw/master/2017-FOSDEM-Brussels/howto_run_stable_benchmarks.pdf>`_
-  - Video is being reviewed, should be online shortly
 
 * July 2016, EuroPython at Bilbao (Spain)
 
