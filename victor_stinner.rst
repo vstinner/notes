@@ -15,10 +15,6 @@ See :ref:`my contributions to CPython <contrib>`.
 Contact me
 ==========
 
-.. image:: victor_stinner.jpg
-   :alt: Photo of Victor Stinner
-   :align: right
-
 * Email: victor.stinner@gmail.com
 * IRC: my nickname is **vstinner** on `Freenode <https://freenode.net/>`_,
   I'm usually connected to #python-fr and #python-dev. Previously, I used
