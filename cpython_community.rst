@@ -18,7 +18,7 @@ See also :ref:`Brainstorm: CPython tutorial <brainstorm_cpython_tutorial>`.
     -- `Kelsey Hightower <https://twitter.com/kelseyhightower/status/958349496076742658>`_
 
     *Having a great language is... great, but having a community around it gives you a sense of belonging, which is one of the most basic instincts and desires we have as animals.*
-    -- Sawyer X (Perl 5 maintainer), `Pragmatic Perl Interviews <http://pragmaticperl.com/interviews-book/download.html>`_
+    -- Sawyer X (Perl 5 maintainer), `Pragmatic Perl Interviews <http://pragmaticperl.com/interviews-book/download.html>`_, May 2013
 
 
 Talks
