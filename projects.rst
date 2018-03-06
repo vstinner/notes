@@ -20,7 +20,7 @@ Websites
    :target: http://www.flickr.com/photos/haypo/11914396795/
 
 - `Haypo Blog 2 <http://vstinner.github.io/>`_ (new blog, created in 2015)
-- `Victor Stinner's Notes <http://vstinner-notes.readthedocs.org/>`_ (this site, created
+- `Victor Stinner's Notes <http://vstinner.readthedocs.org/>`_ (this site, created
   in 2014)
 
 Documentation

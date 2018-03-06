@@ -1,1 +1,1 @@
-Victor Stinner's notes: http://vstinner-notes.readthedocs.io/
+Victor Stinner's notes: http://vstinner.readthedocs.io/
