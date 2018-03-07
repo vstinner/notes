@@ -164,6 +164,13 @@ Bug::
     y=abcd1234
 
 
+volatile
+========
+
+volatile is discouraged in the Linux kernel in favor of smaller locks:
+https://github.com/torvalds/linux/blob/master/Documentation/process/volatile-considered-harmful.rst
+
+
 GCC warnings
 ============
 
