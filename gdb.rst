@@ -5,6 +5,10 @@ GDB: GNU debugger
 +++++++++++++++++
 
 
+.. image:: debugging.png
+   :alt: Debugging
+   :target: http://www.monkeyuser.com/2018/debugging/
+
 Debug methodolody
 =================
 
