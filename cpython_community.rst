@@ -20,6 +20,12 @@ See also :ref:`Brainstorm: CPython tutorial <brainstorm_cpython_tutorial>`.
     *Having a great language is... great, but having a community around it gives you a sense of belonging, which is one of the most basic instincts and desires we have as animals.*
     -- Sawyer X (Perl 5 maintainer), `Pragmatic Perl Interviews <http://pragmaticperl.com/interviews-book/download.html>`_, May 2013
 
+    "When you choose a language, you're choosing more than a set of technical
+    trade-offs-you're choosing a community."
+    -- `Joshua Bloch <https://twitter.com/CodeWisdom/status/976452643173302274>`_.
+    ("Coders at Work: Reflections on the Craft of Programming". Book by Peter
+    Seibel, 2009.)
+
 
 Talks
 =====
