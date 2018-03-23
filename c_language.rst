@@ -205,3 +205,9 @@ Compiler defines
   ``#ifdef __clang__``
 * :ref:`Visual Studio <visual-studio>`:
   ``#if defined(_MSC_VER) && _MSC_VER >= 1800``
+
+
+GCC flags
+=========
+
+https://developers.redhat.com/blog/2018/03/21/compiler-and-linker-flags-gcc/
