@@ -95,14 +95,14 @@ Python projects
 * `registervm <http://hg.python.org/sandbox/registervm>`_: My fork of Python
   3.3 using register-based bytecode, instead of stack-code bytecode. Read
   `REGISTERVM.txt <http://hg.python.org/sandbox/registervm/file/tip/REGISTERVM.txt>`_
-* `python-ptrace <http://python-ptrace.readthedocs.org/>`_: Python binding
+* `python-ptrace <http://python-ptrace.readthedocs.io/>`_: Python binding
   of ptrace library to debug processes on UNIX and BSD.
 
 
 Other projects
 ==============
 
-* `Trollius <http://trollius.readthedocs.org/>`_:  portage of the Tulip
+* `Trollius <http://trollius.readthedocs.io/>`_:  portage of the Tulip
   project (asyncio module, PEP 3156) on Python 2, asynchronous input/output
   library.
 * `Hachoir3 <http://hachoir3.readthedocs.io/>`_: Python library that allows
