@@ -86,7 +86,7 @@ Python projects
 
 * `pysandbox <https://github.com/vstinner/pysandbox>`_: Sandbox to run untrusted
   Python code. Project stopped because it is broken by design.
-* `python-ipy <https://github.com/vstinner/python-ipy>`_: Python classes and tools
+* `python-ipy <https://github.com/autocracy/python-ipy>`_: Python classes and tools
   for handling of IPv4 and IPv6 addresses and networks. I don't need this
   module anymore and so I am no more interested to maintain it, the new
   maintainer is Jeff Ferland aka autocracy. Python 3.3 now includes `ipaddress
@@ -102,7 +102,7 @@ Python projects
 Other projects
 ==============
 
-* `Trollius <http://trollius.readthedocs.io/>`_:  portage of the Tulip
+* `Trollius <https://github.com/vstinner/trollius/>`_:  portage of the Tulip
   project (asyncio module, PEP 3156) on Python 2, asynchronous input/output
   library.
 * `Hachoir3 <http://hachoir3.readthedocs.io/>`_: Python library that allows
