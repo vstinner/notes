@@ -984,6 +984,7 @@ Rounding modes for floating point numbers:
   * Python: ``int(float)``
   * Python: ``int(0.9) == 0``
   * Python: ``int(-0.9) == 0``
+  * Python: ``float.__trunc__()``
 
 Other rounding modes (ex: Python decimal module):
 
