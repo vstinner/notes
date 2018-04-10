@@ -43,6 +43,7 @@ Contents:
    misc.rst
    brainstorm_cpython_tutorial.rst
    old_python_versions.rst
+   python_numbers.rst
 
 
 Indices and tables
