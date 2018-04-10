@@ -22,8 +22,9 @@ specified by the `PEP 3141 -- A Type Hierarchy for Numbers
 * numbers.Number: base class
 * numbers.Complex: Add ``real``, ``imag``, ``conjugate()``
 * numbers.Real: subclass of Complex; add many float operations.
-* numbers.Rational: subtype of Real; add ``numerator`` and ``denominator``
+* numbers.Rational: subclass of Real; add ``numerator`` and ``denominator``
   attributes
+* numbers.Integral: subclass of Rational
 
 int, float, complex methods and attributes:
 
