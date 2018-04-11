@@ -239,8 +239,8 @@ goals of CrystaX NDK:
 * Easy porting of existing code to Android
 * New features for Android native development
 
-It provides Python 2.7 and Python 3.5, Python compiled without patches to support
-Android, ( patching is done via dynamic linking of libcrystax a better posix layer for api < 21 ).
+It provides Python 2.7 and Python 3.5/3.6/3.7, Python compiled without patches to support
+Android, ( patching is done via dynamic linking of libcrystax a better posix layer for api < 21, though without patches some tests of stdlib may fail at runtime due to specific os requirements).
 
 The Kivy project uses the Python of CrystaX. Kivy updated CrystaX Python get to
 Python 3.6:
