@@ -44,6 +44,7 @@ Contents:
    brainstorm_cpython_tutorial.rst
    old_python_versions.rst
    python_numbers.rst
+   systemd.rst
 
 
 Indices and tables
