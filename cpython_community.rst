@@ -20,17 +20,17 @@ See also :ref:`Brainstorm: CPython tutorial <brainstorm_cpython_tutorial>`.
     *Having a great language is... great, but having a community around it gives you a sense of belonging, which is one of the most basic instincts and desires we have as animals.*
     -- Sawyer X (Perl 5 maintainer), `Pragmatic Perl Interviews <http://pragmaticperl.com/interviews-book/download.html>`_, May 2013
 
-    "When you choose a language, you're choosing more than a set of technical
-    trade-offs-you're choosing a community."
+    *"When you choose a language, you're choosing more than a set of technical
+    trade-offs-you're choosing a community."*
     -- `Joshua Bloch <https://twitter.com/CodeWisdom/status/976452643173302274>`_.
     ("Coders at Work: Reflections on the Craft of Programming". Book by Peter
     Seibel, 2009.)
 
-    You can't solve people problems with software
+    *"You can't solve people problems with software."*
     -- `Baldur Bjarnason
     <https://www.baldurbjarnason.com/notes/people-problems/>`_ (September 2015)
 
-    Don't solve problems with software that should be solved with talking.
+    *"Don't solve problems with software that should be solved with talking."*
     -- `Tanya Reilly <https://twitter.com/whereistanya/status/959050582479835136>`_
     (Feb. 2018)
 
