@@ -45,6 +45,7 @@ Contents:
    old_python_versions.rst
    python_numbers.rst
    systemd.rst
+   red_hat_python.rst
 
 
 Indices and tables
