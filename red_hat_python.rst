@@ -18,11 +18,13 @@ Next RHEL  Python 3
 =========  ===========
 
 System Python is supported as long as RHEL.
-
-Python 2.7 has been deprecated in RHEL 7.5. The next major RHEL version
-will replace Python 2 with Python 3 (only provide Python 3).
-
 RHEL support: https://access.redhat.com/support/policy/updates/errata
+
+April 2018, `RHEL 7.5 Release Notes: Chapter 54. Deprecated Functionality
+<https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/7.5_release_notes/chap-red_hat_enterprise_linux-7.5_release_notes-deprecated_functionality>`_:
+
+    Python 2 has been deprecated: **Python 2 will be replaced with Python 3 in
+    the next Red Hat Enterprise Linux** (RHEL) major release.
 
 Software Collections
 ====================
