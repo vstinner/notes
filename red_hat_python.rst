@@ -4,10 +4,10 @@ Red Hat and Python
 
 * Red Hat contributes to Python upstream.
 
-System Python
-=============
+Python shipped with RHEL
+========================
 
-System Python are /usr/bin/pythonX.Y binaries.
+The Python shipped with RHEL is the /usr/bin/pythonX.Y binary.
 
 =========  ===========
 RHEL       Python
@@ -17,7 +17,7 @@ RHEL 7     Python 2.7
 Next RHEL  Python 3
 =========  ===========
 
-System Python is supported as long as RHEL.
+The Python shipped with RHEL is supported as long as RHEL.
 RHEL support: https://access.redhat.com/support/policy/updates/errata
 
 April 2018, `RHEL 7.5 Release Notes: Chapter 54. Deprecated Functionality
