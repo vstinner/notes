@@ -7,8 +7,6 @@ Red Hat and Python
 Python shipped with RHEL
 ========================
 
-The Python shipped with RHEL is the /usr/bin/pythonX.Y binary.
-
 =========  ===========
 RHEL       Python
 =========  ===========
