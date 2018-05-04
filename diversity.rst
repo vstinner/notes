@@ -89,11 +89,8 @@ Articles:
     Initiative at `Conference anti-harassment/Policy
     <http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy>`_.
 
-Code of Conduct issues
-======================
-
 Leaving LLVM because of the CoC
--------------------------------
+===============================
 
 * `[llvm-dev] I am leaving llvm
   <http://lists.llvm.org/pipermail/llvm-dev/2018-May/122922.html>`_ (May 2, 2018)
@@ -104,11 +101,11 @@ Leaving LLVM because of the CoC
 * Lobsters: `aphyr's comment
   <https://lobste.rs/s/nf3xgg/i_am_leaving_llvm#c_ubyrb0>`_
 
-Pycon Ukraine
--------------
+Issues with speaker diversity in tech conference
+================================================
 
-`Mariatta Wijaya <https://twitter.com/mariatta/status/987450414298685440>`_
-(April 20, 2018):
+* `Mariatta Wijaya <https://twitter.com/mariatta/status/987450414298685440>`_
+  (April 20, 2018):
 
     Trying not to do any community engagement this month, but this is such high
     priority, and I can't stay silent. I'm so utterly heartbroken and
@@ -122,6 +119,11 @@ Pycon Ukraine
 * `Postmorten on the lineup at PyCon Ukraine this year
   <https://medium.com/@hotsyk/postmorten-on-the-lineup-at-pycon-ukraine-this-year-827c3df41b27>`_
   by Volodymyr Hotsyk (Apr 22, 2018)
+* Geek Feminism Wiki: `PyCon [US] 2013 forking and dongles incident
+  <http://geekfeminism.wikia.com/wiki/PyCon_2013_forking_and_dongles_incident>`_.
+* `How could GitHub announce an all-male conference line up the same week it
+  shares results from an OSS demographics survey with 3% women?
+  <https://subfictional.com/how-could-github-announce-an-all-male-conference-line-up-the-same-week-it-shares-results-from-an-oss-demographics-survey-with-3-women/>`_
 
 Python
 ======
@@ -156,3 +158,6 @@ Links
 * `The Zero Theory (first edition)
   <https://www.linkedin.com/pulse/zero-theory-first-edition-ha%C3%AFkel-gu%C3%A9mar/>`_
   by Haïkel Guémar (May, 2015)
+* `Diversity and inclusion: Stop talking and do your homework
+  <https://opensource.com/article/17/9/diversity-and-inclusion-innovation>`_
+  by Emma Irwin (Sep 2017)

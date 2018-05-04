@@ -1168,3 +1168,14 @@ Status pages
 * GitHub : https://status.github.com/ and https://twitter.com/githubstatus
 * Travis CI : https://www.traviscistatus.com/ and https://twitter.com/traviscistatus
 
+KDE Connect on Fedora
+=====================
+
+Commands::
+
+    sudo dnf install kde-connect-nautilus
+    sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/tcp
+    sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/udp
+    sudo systemctl restart firewalld.service
+
+See also https://community.kde.org/KDEConnect
