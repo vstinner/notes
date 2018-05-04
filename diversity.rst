@@ -17,8 +17,28 @@ See also :ref:`CPython community <cpython-community>`.
     because of this. We will not be silenced."*
     -- `Mariatta Wijaya <https://twitter.com/mariatta/status/988008670205100033>`_ (April 2018)
 
+First issue: become aware of diversity issues
+=============================================
+
+Usually, people involved since a long time in a project and who are in the
+short priviledged group (ex: "core reviewers" or "core developers"), are not
+aware of diversity issue. If there is no issue, who should anyone care of
+diversity?
+
+**Unconscious Bias** can be a first hint.
+
+Discuss Diversity
+=================
+
+Communities
+-----------
+
+* `PyLadies <http://www.pyladies.com/>`_
+* `Django Girls <https://djangogirls.org/>`_
+* `Geek Feminism Wiki <http://geekfeminism.wikia.com/>`_
+
 Mailing Lists
-=============
+-------------
 
 * `OpenStreetMap Diversity-talk
   <https://lists.openstreetmap.org/listinfo/diversity-talk>`_
@@ -28,8 +48,34 @@ Mailing Lists
 
 Python had a diversity mailing list.
 
-Code of Conduct
+Positive Action
 ===============
+
+Wikipedia: `Positive Action <https://en.wikipedia.org/wiki/Positive_action>`_.
+
+* Mentor people of underrepresented groups
+* `Diversity Tickets <https://diversitytickets.org/>`_
+* `Outreachy Internships <https://www.outreachy.org/>`_. See `Outreachy
+  Eligibility Rules <https://www.outreachy.org/apply/eligibility/>`_.
+* `Red Hat Women in Open Source
+  <https://www.redhat.com/fr/about/women-in-open-source>`_.
+
+Code of Conduct (CoC)
+=====================
+
+Codes of Conduct:
+
+* `Python Community Code of Conduct
+  <https://www.python.org/psf/codeofconduct/>`_
+
+  * Apply to python-ideas, python-dev and python-committers mailing lists
+  * Apply to the bug tracker
+
+* `OpenStretMap Code of Conduct
+  <https://wiki.openstreetmap.org/wiki/Diversity/MailingList/CodeOfConduct>`_
+* `Django Code of Conduct <https://www.djangoproject.com/conduct/>`_
+
+Articles:
 
 * `Code of Conduct Updates for PyCon [US] 2018
   <https://pycon.blogspot.fr/2018/04/code-of-conduct-updates-for-pycon-2018.html>`_
@@ -43,23 +89,11 @@ Code of Conduct
     Initiative at `Conference anti-harassment/Policy
     <http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy>`_.
 
+Code of Conduct issues
+======================
 
-
-Codes of Conduct (CoC)
-----------------------
-
-* `Python Community Code of Conduct
-  <https://www.python.org/psf/codeofconduct/>`_
-
-  * Apply to python-ideas, python-dev and python-committers mailing lists
-  * Apply to the bug tracker
-
-* `OpenStretMap Code of Conduct
-  <https://wiki.openstreetmap.org/wiki/Diversity/MailingList/CodeOfConduct>`_
-* `Django Code of Conduct <https://www.djangoproject.com/conduct/>`_
-
-LLVM
-----
+Leaving LLVM because of the CoC
+-------------------------------
 
 * `[llvm-dev] I am leaving llvm
   <http://lists.llvm.org/pipermail/llvm-dev/2018-May/122922.html>`_ (May 2, 2018)
@@ -105,26 +139,20 @@ Diversity Statement:
 
 For example, don't say "hey *guys*!" or "fellas" but "hey **everyone**!".
 
-Outreachy
-=========
-
-* `Outreachy Internships <https://www.outreachy.org/>`_
-* `Outreachy Eligibility Rules <https://www.outreachy.org/apply/eligibility/>`_
-
-See also `Red Hat Women in Open Source
-<https://www.redhat.com/fr/about/women-in-open-source>`_.
-
-Groups
-======
-
-* `PyLadies <http://www.pyladies.com/>`_
-* `Django Girls <https://djangogirls.org/>`_
-* `Geek Feminism Wiki <http://geekfeminism.wikia.com/>`_
-
 Links
 =====
 
-* `Diversity Tickets <https://diversitytickets.org/>`_
+* Wikipedia: `Imposter syndrome
+  <https://en.wikipedia.org/wiki/Impostor_syndrome>`_
+* Wikipedia: `Underrepresented group
+  <https://en.wikipedia.org/wiki/Underrepresented_group>`_
+* Unconscious Bias:
+
+  * Wikipedia: `implicit bias or implicit stereotype
+    <https://en.wikipedia.org/wiki/Implicit_stereotype>`_
+  * Wikipedia: `Unconscious bias training
+    <https://en.wikipedia.org/wiki/Unconscious_bias_training>`_
+
 * `The Zero Theory (first edition)
   <https://www.linkedin.com/pulse/zero-theory-first-edition-ha%C3%AFkel-gu%C3%A9mar/>`_
   by Haïkel Guémar (May, 2015)
