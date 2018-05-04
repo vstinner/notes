@@ -46,6 +46,7 @@ Contents:
    python_numbers.rst
    systemd.rst
    red_hat_python.rst
+   diversity.rst
 
 
 Indices and tables

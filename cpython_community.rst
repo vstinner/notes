@@ -1,8 +1,11 @@
+.. _cpython-community:
+
 +++++++++++++++++
 CPython community
 +++++++++++++++++
 
-See also :ref:`Brainstorm: CPython tutorial <brainstorm_cpython_tutorial>`.
+See also :ref:`Diversity <diversity>` and :ref:`Brainstorm: CPython tutorial
+<brainstorm_cpython_tutorial>`.
 
     *Come for the Language, Stay for the Community*
     -- `Brett Cannon (and Naomi Ceder) <https://twitter.com/brettsky/status/764862972468408320>`_
@@ -26,14 +29,6 @@ See also :ref:`Brainstorm: CPython tutorial <brainstorm_cpython_tutorial>`.
     ("Coders at Work: Reflections on the Craft of Programming". Book by Peter
     Seibel, 2009.)
 
-    *"You can't solve people problems with software."*
-    -- `Baldur Bjarnason
-    <https://www.baldurbjarnason.com/notes/people-problems/>`_ (September 2015)
-
-    *"Don't solve problems with software that should be solved with talking."*
-    -- `Tanya Reilly <https://twitter.com/whereistanya/status/959050582479835136>`_
-    (Feb. 2018)
-
 Talks
 =====
 
@@ -46,13 +41,6 @@ Talks
 * `Come for the Language, Stay for the Community
   <https://www.youtube.com/watch?v=cCCiA-IlVco>`_
   by Naomi Ceder, EuroPython 2016
-
-Articles
-========
-
-* `The Zero Theory (first edition)
-  <https://www.linkedin.com/pulse/zero-theory-first-edition-ha%C3%AFkel-gu%C3%A9mar/>`_
-  by Haïkel Guémar (May, 2015)
 
 Communication channels
 ======================
@@ -77,22 +65,6 @@ Mentoring
 
 * https://www.python.org/dev/core-mentorship/
 * https://mail.python.org/mailman/listinfo/core-mentorship/
-
-Diversity
-=========
-
-Diversity Statement:
-
-    The Python Software Foundation and the global Python community welcome and
-    encourage participation by everyone. Our community is based on mutual
-    respect, tolerance, and encouragement, and we are working to help each
-    other live up to these principles. We want our community to be more
-    diverse: whoever you are, and whatever your background, we welcome you.
-
-* https://www.python.org/community/diversity/
-* http://wiki.python.org/moin/DiversityInPython
-
-For example, don't say "hey *guys*!" or "fellas" but "hey **everyone**!".
 
 Work In Progress
 ================
