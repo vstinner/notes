@@ -15,7 +15,7 @@ See also :ref:`CPython community <cpython-community>`.
     *"When women speak out about diversity and the community, they get
     penalized and branded as non-technical. Some women chose not to speak out
     because of this. We will not be silenced."*
-    -- `Mariatta Wijaya <https://twitter.com/mariatta/status/988008670205100033>`_ (April 2018)
+    -- `Mariatta Wijaya <https://twitter.com/mariatta/status/988008670205100033>`__ (April 2018)
 
 First issue: become aware of diversity issues
 =============================================
@@ -100,11 +100,12 @@ Leaving LLVM because of the CoC
   by Renato Golin
 * Lobsters: `aphyr's comment
   <https://lobste.rs/s/nf3xgg/i_am_leaving_llvm#c_ubyrb0>`_
+* http://nondot.org/sabre/2018-05-02-Rafael.html
 
 Issues with speaker diversity in tech conference
 ================================================
 
-* `Mariatta Wijaya <https://twitter.com/mariatta/status/987450414298685440>`_
+* `Mariatta Wijaya <https://twitter.com/mariatta/status/987450414298685440>`__
   (April 20, 2018):
 
     Trying not to do any community engagement this month, but this is such high
