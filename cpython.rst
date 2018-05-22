@@ -250,6 +250,15 @@ See also `cpython-bin-deps <https://github.com/python/cpython-bin-deps>`_
 and `cpython-source-deps <https://github.com/python/cpython-source-deps>`_.
 
 
+Supported architectures
+=======================
+
+* Intel x86 and x86_64 (aka AMD64)
+* PPC64
+* ARMv7
+
+Maybe some others?
+
 Supported platforms
 ===================
 

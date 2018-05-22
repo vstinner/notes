@@ -47,6 +47,7 @@ Contents:
    systemd.rst
    red_hat_python.rst
    diversity.rst
+   cpython_tasks.rst
 
 
 Indices and tables
