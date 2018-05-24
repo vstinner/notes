@@ -48,6 +48,7 @@ Contents:
    red_hat_python.rst
    diversity.rst
    cpython_tasks.rst
+   cpython_crash.rst
 
 
 Indices and tables

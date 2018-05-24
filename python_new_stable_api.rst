@@ -232,3 +232,16 @@ There shouldn't be C APIs that do something that you can't do in Python.
 
 Example: the C buffer protocol, the Python ``memoryview`` type only expose a
 subset of ``buffer`` features.
+
+
+For internal use only
+=====================
+
+The C API documentation contains a few functions with the note "For internal
+use only". Examples:
+
+* _PyImport_Init()
+* PyImport_Cleanup()
+* _PyImport_Fini()
+
+Why PyImport_Cleanup() is still a public method?
