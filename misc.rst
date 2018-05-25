@@ -621,19 +621,27 @@ FreeBSD 6.2   2007-01  2008-05
 .. _windows-list:
 
 `Microsoft Windows versions
-<https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions>`_:
+<https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions>`_
+(`version numbers <https://msdn.microsoft.com/en-us/library/windows/desktop/ms724832(v=vs.85).aspx>`_):
 
-===========================  ==========  =========================  ================
-Windows                      Release     End of mainstream support  Extended support
-===========================  ==========  =========================  ================
-Windows 10                   2015-07     2020-10                    2025-10
-Windows 8.1                  2013-10     2018-01                    2023-01
-Windows 8                    2012-10     2016-01                    2016-01
-Windows 7                    2009-10     2015-01                    2020-01
-Windows Vista                2007-01     2012-04                    2017-04
-Windows XP Professional x64  2005-04     2009-04                    2014-04
-Windows XP                   2001-10     2009-04                    2014-04
-===========================  ==========  =========================  ================
+===========================  =======  =======  =========================  ================
+Windows                      Version  Release  End of mainstream support  Extended support
+===========================  =======  =======  =========================  ================
+Windows 10                      10.0  2015-07  2020-10                    2025-10
+Windows 8.1                      6.3  2013-10  2018-01                    2023-01
+Windows 8                        6.2  2012-10  2016-01                    2016-01
+Windows 7                        6.1  2009-10  2015-01                    2020-01
+Windows Vista                    6.0  2007-01  2012-04                    2017-04
+Windows XP Professional x64      5.2  2005-04  2009-04                    2014-04
+Windows XP                       5.1  2001-10  2009-04                    2014-04
+===========================  =======  =======  =========================  ================
+
+.. note::
+
+   For applications that have been manifested for Windows 8.1 or Windows 10.
+   Applications not manifested for Windows 8.1 or Windows 10 will return the
+   Windows 8 OS version value (6.2). To manifest your applications for Windows
+   8.1 or Windows 10, refer to Targeting your application for Windows.
 
 Linux kernel:
 

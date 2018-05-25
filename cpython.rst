@@ -104,6 +104,12 @@ Services used by unit tests
 
   * test_ssl uses it to test x509 certificate signed by SHA256: HTTPS (tcp/443)
 
+python.org
+----------
+
+* https://github.com/python/pythondotorg/ Source code of python.org
+* wiki.python.org runs MoinMoin
+
 Package Index (PyPI)
 --------------------
 

@@ -143,6 +143,11 @@ Diversity Statement:
 For example, don't say "hey *guys*!" or "fellas" but "hey **everyone**!", forks
 or "y'all".
 
+Comment template:
+
+     In the future please use gender-neutral words such as "folks" and "y'all"
+     instead of "guys". Thanks.
+
 Links
 =====
 
