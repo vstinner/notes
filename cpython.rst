@@ -311,12 +311,17 @@ PEP 11 on Windows:
 * Python 3.7 dropped support for FreeBSD 9 and older.
 * FreeBSD 9 buildbot wokers have been removed in 2017
 
+macOS:
+
+* 2018-05-28: macOS El Capitan (macOS 10.11, 2015) is currently the minimum
+  macOS officially supported version.
+* February 2018: Tiger (macOS 10.4, 2004) buildbots removed, which indirectly
+  means that Tiger is no longer officially supported.
+
 Well supported platforms on Python 3.6 and 2.7:
 
 * Linux
 * Windows: Vista and newer for Python 3.6, XP and newer for Python 2.7
-* macOS: Tiger (macOS 10.4, 2004) is the minimum version. There is a
-  x86 Tiger buildbot.
 * FreeBSD
 
 Tested by Travis CI and buildbots.
