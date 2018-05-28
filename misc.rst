@@ -549,6 +549,8 @@ What Google knowns on you:
 Operating systems
 =================
 
+.. _macos-list:
+
 `macOS (Mac OS X) versions
 <https://en.wikipedia.org/wiki/macOS#Release_history>`_:
 

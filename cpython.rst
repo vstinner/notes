@@ -311,7 +311,7 @@ PEP 11 on Windows:
 * Python 3.7 dropped support for FreeBSD 9 and older.
 * FreeBSD 9 buildbot wokers have been removed in 2017
 
-macOS:
+:ref:`macOS <macos-list>`:
 
 * 2018-05-28: macOS El Capitan (macOS 10.11, 2015) is currently the minimum
   macOS officially supported version.
