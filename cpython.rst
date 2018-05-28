@@ -313,8 +313,9 @@ PEP 11 on Windows:
 
 :ref:`macOS <macos-list>`:
 
-* 2018-05-28: macOS El Capitan (macOS 10.11, 2015) is currently the minimum
-  macOS officially supported version.
+* 2018-05-28: macOS Leopard (macOS 10.6, 2008) is `currently
+  <https://mail.python.org/pipermail/python-dev/2018-May/153725.html>`_ the
+  minimum officially supported macOS version.
 * February 2018: Tiger (macOS 10.4, 2004) buildbots removed, which indirectly
   means that Tiger is no longer officially supported.
 
