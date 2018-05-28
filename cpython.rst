@@ -315,7 +315,8 @@ Well supported platforms on Python 3.6 and 2.7:
 
 * Linux
 * Windows: Vista and newer for Python 3.6, XP and newer for Python 2.7
-* macOS: XXX min version?
+* macOS: Tiger (macOS 10.4, 2004) is the minimum version. There is a
+  x86 Tiger buildbot.
 * FreeBSD
 
 Tested by Travis CI and buildbots.
