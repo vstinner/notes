@@ -211,3 +211,16 @@ GCC flags
 =========
 
 https://developers.redhat.com/blog/2018/03/21/compiler-and-linker-flags-gcc/
+
+
+Compile in 32-bit mode on Fedora
+================================
+
+* dnf install glibc-devel.i686
+* gcc -m32
+
+Example::
+
+    $ echo 'int main() { return sizeof(void *); }' > x.c
+    $ gcc x.c -o x -m32 && ./x; echo $?
+    4
