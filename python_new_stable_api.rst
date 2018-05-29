@@ -177,6 +177,9 @@ Bad design for the C API:
   access directly fields, to not use fixed offset at the ABI level. Replace
   macros with functions calls. PyPy already this in its C API (``cpyext``).
 
+XXX weird PyObject_CallFunction() API: https://bugs.python.org/issue28977
+XXX Fix the API or document it?
+
 XXX should we do something for reference counting, Py_INCREF and Py_DECREF?
 
 PyPy requests:

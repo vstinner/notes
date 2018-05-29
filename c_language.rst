@@ -224,3 +224,12 @@ Example::
     $ echo 'int main() { return sizeof(void *); }' > x.c
     $ gcc x.c -o x -m32 && ./x; echo $?
     4
+
+Configure in 32-bit::
+
+    ./configure CFLAGS="-m32" LDFLAGS="-m32" && make
+
+For Python, install also zlib::
+
+    dnf install -y zlib-devel.i686
+
