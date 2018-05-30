@@ -49,6 +49,7 @@ Contents:
    diversity.rst
    cpython_tasks.rst
    cpython_crash.rst
+   cpython_buildbots.rst
 
 
 Indices and tables

@@ -4,7 +4,10 @@
 CPython
 +++++++
 
-See also :ref:`Compile CPython on Windows <cpython-windows>`.
+See also:
+
+* :ref:`CPython buildbots <cpython-buildbots>`
+* :ref:`Compile CPython on Windows <cpython-windows>`
 
 Python developer mode
 =====================
