@@ -1189,3 +1189,14 @@ Commands::
     sudo systemctl restart firewalld.service
 
 See also https://community.kde.org/KDEConnect
+
+docker
+======
+
+sudo docker pull ubuntu:trusty
+sudo docker run -ti ubuntu:trusty /bin/bash
+root@xxx# exit
+sudo docker commit xxx pet
+sudo docker run -ti pet /bin/bash
+sudo docker container ps
+sudo docker container ps -a

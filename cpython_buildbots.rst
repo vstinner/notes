@@ -16,6 +16,22 @@ CPython buildbots:
   <https://github.com/python/buildmaster-config/>`_: Buildbot configuration
 * `Devguide: buildbots <https://devguide.python.org/buildbots/>`_
 
+Travis CI
+=========
+
+* `Travis CI: Build History
+  <https://travis-ci.org/python/cpython/builds>`_
+* `CPython: Travis CI configuration (.travis.yml)
+  <https://github.com/python/cpython/blob/master/.travis.yml>`_
+
+AppVeyor
+========
+
+* `AppVeyor: CPython build history
+  <https://ci.appveyor.com/project/python/cpython/history>`_
+* `CPython: AppVeyor configuration (.github/appveyor.yml)
+  <https://github.com/python/cpython/blob/master/.github/appveyor.yml>`_
+
 Buildbots notifications
 =======================
 
