@@ -31,4 +31,5 @@ Tasks
   Ezio, Brett, Maciej?
 * `Run pythontest.net <http://www.pythontest.net/>`_. Maintainers: ?
 * Run GitHub bots. Maintainers: Brett and Mariatta.
-
+* Update external dependencies
+* Update unicodedata on new Unicode release.

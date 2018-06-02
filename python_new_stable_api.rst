@@ -248,3 +248,11 @@ use only". Examples:
 * _PyImport_Fini()
 
 Why PyImport_Cleanup() is still a public method?
+
+
+Check for ABI changes
+=====================
+
+* https://abi-laboratory.pro/tracker/timeline/python/
+* https://bugs.python.org/issue21142
+* https://sourceware.org/libabigail/
