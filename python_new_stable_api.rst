@@ -25,9 +25,12 @@ Written at 31-May-2017, it wasn't updated since May 2017.
 Timeline
 ========
 
+* 2018-06: capi-sig mailing list migrated to Mailman 3
 * 2017-11: Idea proposed on python-dev, `[Python-Dev] Make the stable API-ABI
   usable
   <https://mail.python.org/pipermail/python-dev/2017-November/150607.html>`_
+* 2017-09: Blog post: `A New C API for CPython
+  <https://vstinner.github.io/new-python-c-api.html>`_
 * 2017-09: Idea discussed at the CPython sprint at Instagram (California).
   Liked by all core developers. The expected performance slowdown is likely to
   be accepted.
