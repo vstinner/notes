@@ -23,6 +23,7 @@ Travis CI
   <https://travis-ci.org/python/cpython/builds>`_
 * `CPython: Travis CI configuration (.travis.yml)
   <https://github.com/python/cpython/blob/master/.travis.yml>`_
+* https://docs.travis-ci.com/user/running-build-in-debug-mode/
 
 AppVeyor
 ========
