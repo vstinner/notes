@@ -31,6 +31,7 @@ AppVeyor
   <https://ci.appveyor.com/project/python/cpython/history>`_
 * `CPython: AppVeyor configuration (.github/appveyor.yml)
   <https://github.com/python/cpython/blob/master/.github/appveyor.yml>`_
+* `AppVeyor status page <https://appveyor.statuspage.io/>`_
 
 Buildbots notifications
 =======================
