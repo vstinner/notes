@@ -35,7 +35,6 @@ Accepted PEPs
 PEP         Python  Status    Title
 ==========  ======  ========  =======================================================================================
 :pep:`564`  3.7     Final     Add new time functions with nanosecond resolution (ex: ``time.time_ns()``)
-:pep:`546`  2.7     Accepted  Backport ssl.MemoryBIO and ssl.SSLObject to Python 2.7 -- co-written with Cory Benfield
 :pep:`545`  ---     Final     Python Documentation Translations -- co-written with Juliend Palard and Naoki IANADA
 :pep:`540`  3.7     Final     Add a new UTF-8 mode
 :pep:`524`  3.6     Final     Make os.urandom() blocking on Linux
@@ -53,6 +52,7 @@ Rejected PEPs
 ==========  ======  ============  ====================================================================================
 PEP         Python  Status        Title
 ==========  ======  ============  ====================================================================================
+:pep:`546`  2.7     Rejected      Backport ssl.MemoryBIO and ssl.SSLObject to Python 2.7 -- co-written with Cory Benfield
 :pep:`511`  3.6     Rejected      API for code transformers
 :pep:`510`  3.6     Rejected      Specialize functions with guards
 :pep:`490`  3.6     Rejected      Chain exceptions at C level
