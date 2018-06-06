@@ -158,3 +158,10 @@ Variants:
 * "S": "Windows 10 S can only run apps from the Windows Store". Windows 10 S is
   designed to run well even on lower-end laptops. Windows 10 S is focused on
   speed, better battery life, and higher performance.
+
+
+Some Windows error codes
+========================
+
+* Exception Code: ``c0000005`` (variant: ``-1073741819``): "access violation",
+  EXCEPTION_ACCESS_VIOLATION.
