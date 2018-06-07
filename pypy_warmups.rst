@@ -4,8 +4,6 @@
 Analyze of PyPy warmup in performance benchmarks
 ++++++++++++++++++++++++++++++++++++++++++++++++
 
-See also :ref:`Python performance <python-perf>`.
-
 .. contents::
    :depth: 2
 

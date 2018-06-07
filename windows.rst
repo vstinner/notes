@@ -6,12 +6,6 @@ Survivor Guide to Develop on Windows
 
 Guide written for Linux developers.
 
-See also:
-
-* :ref:`Python Packaging <python_packaging>` which contains specific
-  information for Python on Windows.
-* :ref:`Compile CPython on Windows <python-windows>`
-
 Useful tools
 ============
 
@@ -132,7 +126,6 @@ Right click on the title, Properties: set Buffer Size of Command History to
 See also
 ========
 
-* :ref:`Compile Python extensions on Windows <py-windows>`
 * :ref:`Operating systems <operating-systems>`
 
 Windows variants
@@ -165,3 +158,4 @@ Some Windows error codes
 
 * Exception Code: ``c0000005`` (variant: ``-1073741819``): "access violation",
   EXCEPTION_ACCESS_VIOLATION.
+* 996: ERROR_IO_INCOMPLETE: Overlapped I/O event is not in a signaled state.

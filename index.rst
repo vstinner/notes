@@ -19,15 +19,8 @@ Contents:
    victor_stinner.rst
    python_contrib.rst
    contributions.rst
-   python.rst
    cpython.rst
-   cpython_windows.rst
-   python_packaging.rst
    python_new_stable_api.rst
-   python3.rst
-   python_perf.rst
-   cpython_community.rst
-   python_android.rst
    pypy_warmups.rst
    c_language.rst
    unicode.rst
@@ -36,19 +29,14 @@ Contents:
    openstack.rst
    time.rst
    heap_fragmentation.rst
-   python_memory.rst
    benchmark.rst
    windows.rst
    gdb.rst
    misc.rst
    brainstorm_cpython_tutorial.rst
-   old_python_versions.rst
-   python_numbers.rst
    systemd.rst
    red_hat_python.rst
-   diversity.rst
    cpython_tasks.rst
-   cpython_crash.rst
    cpython_buildbots.rst
 
 

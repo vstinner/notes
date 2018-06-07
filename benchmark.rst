@@ -4,8 +4,6 @@
 Benchmarks
 ++++++++++
 
-See also :ref:`Python performance <python-perf>`.
-
 My articles
 ===========
 

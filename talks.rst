@@ -35,26 +35,26 @@ Conferences 2011-today
     <https://us.pycon.org/2017/schedule/presentation/487/>`_
   - `Video (Youtube) <https://www.youtube.com/watch?v=d65dCD3VH9Q>`_
   - `Slides (PDF): Optimizations which made Python 3.6 faster than Python 3.5
-    <https://github.com/vstinner/conf/raw/master/2017-PyconUS/python36_opt.pdf>`_
+    <https://github.com/vstinner/conf/raw/master/2017-PyconUS/python36_opt.pdf>`__
 
 * May 2017, Language Summit during Pycon US at Portland (Oregon, USA)
 
   - LWN article: `Keeping Python competitive <https://lwn.net/Articles/723752/#723949>`_
   - Talk: Python performance
   - `Slides (PDF): Python performance
-    <https://github.com/vstinner/conf/raw/master/2017-PyconUS/summit.pdf>`_
+    <https://github.com/vstinner/conf/raw/master/2017-PyconUS/summit.pdf>`__
 
 * February 2017, FOSDEM at Brussels (Belgium)
 
   - Video: `How to run a stable benchmark
     <https://fosdem.org/2017/schedule/event/python_stable_benchmark/>`_
   - `Slides (PDF): How to run stable benchmarks
-    <https://github.com/vstinner/conf/raw/master/2017-FOSDEM-Brussels/howto_run_stable_benchmarks.pdf>`_
+    <https://github.com/vstinner/conf/raw/master/2017-FOSDEM-Brussels/howto_run_stable_benchmarks.pdf>`__
 
 * July 2016, EuroPython at Bilbao (Spain)
 
   - `Slides (PDF): FAT Python, a new static optimizer for CPython 3.6
-    <https://github.com/vstinner/conf/raw/master/2016-EuroPython-Bilbao/fat_python.pdf>`_
+    <https://github.com/vstinner/conf/raw/master/2016-EuroPython-Bilbao/fat_python.pdf>`__
   - Video on Youtube: `Victor Stinner - FAT Python: a new static optimizer for
     Python 3.6 <https://www.youtube.com/watch?v=zFl9RAfbSXE>`_
 
@@ -75,7 +75,7 @@ Conferences 2011-today
   - `asyncio community, one year later
     <https://ep2015.europython.eu/conference/talks/asyncio-community-one-year-later>`_
   - `slides (PDF)
-    <https://github.com/vstinner/conf/raw/master/2015-EuroPython-Bilbao/asyncio-community.pdf>`_
+    <https://github.com/vstinner/conf/raw/master/2015-EuroPython-Bilbao/asyncio-community.pdf>`__
     (`copy at europython website
     <https://ep2015.europython.eu/media/conference/slides/asyncio-community-one-year-later.pdf>`_)
   - `slides at slideshare
@@ -86,7 +86,7 @@ Conferences 2011-today
   - `Exploration de la boucle d'événements asyncio
     <http://www.pycon.fr/2014/schedule/presentation/5/>`_
   - `slides (PDF)
-    <https://github.com/vstinner/conf/blob/master/2014-Pycon-Lyon/asyncio.pdf?raw=true>`_
+    <https://github.com/vstinner/conf/blob/master/2014-Pycon-Lyon/asyncio.pdf?raw=true>`__
   - `slides at SpeackerDeck
     <https://speakerdeck.com/haypo/exploration-de-la-boucle-devenements-asyncio>`_
   - `video
@@ -97,7 +97,7 @@ Conferences 2011-today
   - `Track memory leaks in Python
     <https://us.pycon.org/2014/schedule/presentation/165/>`_
   - `slides (PDF)
-    <https://github.com/vstinner/conf/blob/master/2014-Pycon-Montreal/tracemalloc.pdf?raw=true>`_
+    <https://github.com/vstinner/conf/blob/master/2014-Pycon-Montreal/tracemalloc.pdf?raw=true>`__
   - `slides at SpeakerDeck
     <https://speakerdeck.com/pycon2014/track-memory-leaks-in-python-by-victor-stinner>`_
   - `video <https://www.youtube.com/watch?v=umQOVzFDzTo>`__
@@ -105,7 +105,7 @@ Conferences 2011-today
 * 2013, Pycon FR at Strasbourg (France): "Traquer les fuites mémoires Python"
 
   - `slides (PDF)
-    <https://github.com/vstinner/conf/blob/master/2013-PyconFR-Strasbourg/tracemalloc.pdf?raw=true>`_
+    <https://github.com/vstinner/conf/blob/master/2013-PyconFR-Strasbourg/tracemalloc.pdf?raw=true>`__
   - `slides at slideshare
     <http://fr.slideshare.net/haypo/traquer-les-fuites-mmoires-avec-python>`__
   - `video <http://www.youtube.com/watch?v=oQ17KDBr24I>`__
@@ -113,7 +113,7 @@ Conferences 2011-today
 * 2013, FOSDEM at Brussels (Belgium): "Two projects to optimize Python" (astoptimizer, register-based bytecode)
 
   - `slides (PDF)
-    <https://github.com/vstinner/conf/blob/master/2013-FOSDEM/faster_cpython.pdf?raw=true>`_
+    <https://github.com/vstinner/conf/blob/master/2013-FOSDEM/faster_cpython.pdf?raw=true>`__
   - `slides at slideshare
     <http://fr.slideshare.net/haypo/faster-python-fosdem>`__
 
@@ -135,7 +135,7 @@ Conferences 2011-today
   - "Développement de CPython":
 
     * `slides (PDF)
-      <https://github.com/vstinner/conf/blob/master/2011-PyconFR-Rennes/developpement_cpython/cpython.pdf?raw=true>`_
+      <https://github.com/vstinner/conf/blob/master/2011-PyconFR-Rennes/developpement_cpython/cpython.pdf?raw=true>`__
     * `slides at slideshare
       <http://fr.slideshare.net/haypo/cpython>`__
 
@@ -149,12 +149,12 @@ Conferences 2005-2009
 * 2009, Pycon FR at Paris (France):
 
   - Comprendre les erreurs Unicode: `slides
-    <https://github.com/vstinner/conf/blob/master/2009-PyconFR-Paris/comprendre_errurs_unicode.pdf?raw=true>`_,
+    <https://github.com/vstinner/conf/blob/master/2009-PyconFR-Paris/comprendre_errurs_unicode.pdf?raw=true>`__,
     `video <http://dl.afpy.org/pycon-fr-09/videos/Comprendre_les_erreurs_Unicode.mp4>`__
   - `Contribuer à Python
     <https://github.com/vstinner/conf/blob/master/2009-PyconFR-Paris/correction_bug_cpython.pdf?raw=true>`_
   - Python bling bling: `slides
-    <https://github.com/vstinner/conf/blob/master/2009-PyconFR-Paris/python_language_bling_bling.pdf?raw=true>`_,
+    <https://github.com/vstinner/conf/blob/master/2009-PyconFR-Paris/python_language_bling_bling.pdf?raw=true>`__,
     `video <http://dl.afpy.org/pycon-fr-09/videos/Fonctionnalit%c3%a9s_sexy_de_Python.mp4>`__
   - `Interview of myself <http://dl.afpy.org/pycon-fr-09/videos/Interview_de_Victor_Stinner.mp4>`_
 

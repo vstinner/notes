@@ -29,14 +29,14 @@ Software Collections
 
 Currently supported (last document update: 2018-04-23):
 
-============================================================================  ==============
-Python version                                                                Supported RHEL
-============================================================================  ==============
-`Python27 <https://www.softwarecollections.org/en/scls/rhscl/python27/>`_     RHEL 7, RHEL 6
-`Python35 <https://www.softwarecollections.org/en/scls/rhscl/rh-python34/>`_  RHEL 7, RHEL 6
-`Python35 <https://www.softwarecollections.org/en/scls/rhscl/rh-python35/>`_  RHEL 7, RHEL 6
-`Python36 <https://www.softwarecollections.org/en/scls/rhscl/rh-python36/>`_  RHEL 7
-============================================================================  ==============
+=============================================================================  ==============
+Python version                                                                 Supported RHEL
+=============================================================================  ==============
+`Python27 <https://www.softwarecollections.org/en/scls/rhscl/python27/>`__     RHEL 7, RHEL 6
+`Python35 <https://www.softwarecollections.org/en/scls/rhscl/rh-python34/>`__  RHEL 7, RHEL 6
+`Python35 <https://www.softwarecollections.org/en/scls/rhscl/rh-python35/>`__  RHEL 7, RHEL 6
+`Python36 <https://www.softwarecollections.org/en/scls/rhscl/rh-python36/>`__  RHEL 7
+=============================================================================  ==============
 
 No longer supported:
 
