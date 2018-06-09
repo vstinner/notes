@@ -19,6 +19,8 @@ Websites
    :align: right
    :target: http://www.flickr.com/photos/haypo/11914396795/
 
+- `Python Development <http://pythondev.readthedocs.io/>`_
+  (created in Juny 2018)
 - `Victor Stinner's Blog 3 <http://vstinner.github.io/>`_
   (new blog, created in 2015)
 - `Victor Stinner's Notes <http://vstinner.readthedocs.io/>`_
