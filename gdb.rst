@@ -136,6 +136,8 @@ Gdb
 * Enter TUI/exit TUI: CTRL+x a
 * https://sourceware.org/gdb/onlinedocs/gdb/TUI-Keys.html
 * CTRL+x o: change active window
+* Display full print value: ``set print elements 1024``
+  (or ``set print elements 0`` if you are brave)
 
 
 x86_64 assembler, gdb

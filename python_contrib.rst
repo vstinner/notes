@@ -23,6 +23,20 @@ Reports
 * `2015 Q4 <https://vstinner.github.io/contrib-cpython-2015q4.html>`_
 * `2015 Q3 <https://vstinner.github.io/contrib-cpython-2015q3.html>`_
 
+Core developers
+===============
+
+I promoted the following developers as core devs:
+
+* 2017-12-08: `Julien Palard
+  <https://mail.python.org/pipermail/python-committers/2017-December/004989.html>`__
+* 2016-11-21: `Xiang Zhang
+  <https://mail.python.org/pipermail/python-committers/2016-November/004045.html>`__
+* 2016-06-03: `Xavier de Gaye
+  <https://mail.python.org/pipermail/python-committers/2016-May/003896.html>`__
+* 2011-05-19: `Charles-François Natali
+  <https://mail.python.org/pipermail/python-committers/2011-May/001660.html>`__
+
 Python Enhancement Proposals (PEP)
 ==================================
 
