@@ -156,6 +156,6 @@ Variants:
 Some Windows error codes
 ========================
 
-* Exception Code: ``c0000005`` (variant: ``-1073741819``): "access violation",
-  EXCEPTION_ACCESS_VIOLATION.
+* Exception Code: ``c0000005`` (decimal: ``3221225477`` or ``-1073741819``):
+  "access violation", EXCEPTION_ACCESS_VIOLATION.
 * 996: ERROR_IO_INCOMPLETE: Overlapped I/O event is not in a signaled state.
