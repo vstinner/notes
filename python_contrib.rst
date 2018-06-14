@@ -23,8 +23,17 @@ Reports
 * `2015 Q4 <https://vstinner.github.io/contrib-cpython-2015q4.html>`_
 * `2015 Q3 <https://vstinner.github.io/contrib-cpython-2015q3.html>`_
 
-Core developers
-===============
+Mentoring, bug triage permission, core developers
+=================================================
+
+I gave the bug triage permission to:
+
+* 2018-01-18: `Pablo Galindo Salgado
+  <https://mail.python.org/pipermail/python-committers/2018-January/005133.html>`__
+* 2017-12-06: `Cheryl Sabella
+  <https://mail.python.org/pipermail/python-committers/2017-December/004963.html>`__
+* 2017-12-06: `Sanyam Khurana
+  <https://mail.python.org/pipermail/python-committers/2017-December/004977.html>`__
 
 I promoted the following developers as core devs:
 
