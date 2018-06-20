@@ -37,6 +37,8 @@ I gave the bug triage permission to:
 
 I promoted the following developers as core devs:
 
+* 2018-06-20: `Pablo Galindo Salgado
+  <https://mail.python.org/pipermail/python-committers/2018-June/005621.html>`_
 * 2017-12-08: `Julien Palard
   <https://mail.python.org/pipermail/python-committers/2017-December/004989.html>`__
 * 2016-11-21: `Xiang Zhang
