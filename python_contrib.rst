@@ -163,55 +163,16 @@ Major work
   - new time functions: ``time.monotonic``, ``time.perf_counter``,
     ``time.process_time`` (PEP 418)
 
-* Unicode support: most work done during development of Python 3.1-3.3
-* Early work on Unicode before Python 3 in the "Python 3000" branch
-* Fuzzing
+* Python 3.0 - 3.2
 
-
-My accepted PEPs
-================
-
-* `PEP 524: Make os.urandom() blocking on Linux
-  <https://www.python.org/dev/peps/pep-0524/>`_ (Python 3.6)
-
-* PEP 511
-
-* PEP 510
-
-* `PEP 509: Add a private version to dict
-  <https://www.python.org/dev/peps/pep-0509/>`_ (Python 3.6)
-
-* `PEP 454: Add a new tracemalloc module to trace Python memory allocations
-  <http://www.python.org/dev/peps/pep-0454/>`_ (Python 3.4)
-
-* `PEP 446: Make newly created file descriptors non-inheritable
-  <http://www.python.org/dev/peps/pep-0446/>`_ (Python
-  3.4).  See also the `PEP 433: Easier suppression of file descriptor
-  inheritance <http://www.python.org/dev/peps/pep-0433/>`_ which was the
-  previous try.
-
-* `PEP 445: Add new APIs to customize Python memory allocators
-  <http://www.python.org/dev/peps/pep-0445/>`_ (Python 3.4)
-
-* `PEP 418: Add monotonic time, performance counter, and process time functions
-  <http://www.python.org/dev/peps/pep-0418/>`_ (Python 3.3)
-
-
-My rejected PEPs
-================
-
-* `PEP 416 (rejected): Add a frozendict builtin type
-  <http://www.python.org/dev/peps/pep-0416/>`_
-
-* `PEP 410 (rejected): Use decimal.Decimal type for timestamps
-  <http://www.python.org/dev/peps/pep-0410/>`_
-
-* `PEP 400 (deferred): Deprecate codecs.StreamReader and codecs.StreamWriter
-  <http://www.python.org/dev/peps/pep-0400/>`_
+  - Major work on Unicode support to handle all platforms and all corner
+    cases
 
 
 Old contributions to Python
 ===========================
+
+Fuzzing on Python using my fuzzer "Fusil".
 
 Accepted patches:
 
@@ -233,14 +194,10 @@ Accepted patches:
 * 2006-08-23: `Bug report with patch <http://sourceforge.net/tracker/index.php?func=detail&aid=1545341&group_id=5470&atid=105470>`_, La fonction setup() du module distutils refusait un tuple (au lieu d'une liste) pour la commande « register » (le patch a été retouché pour fonctionner sur Python 2.1)
 * 2005-11-25: `bug report + patch <http://sourceforge.net/tracker/index.php?func=detail&aid=1366000&group_id=5470&atid=105470>`_. La méthode seek(0,2) d'un objet du module bz2 était boguée dans Python 2.4.2
 
-Pending patches:
+Other patches (fixed as well):
 
-* 2008-07-09: `_multiprocessing.Connection() doesn't check handle <http://bugs.python.org/issue3321>`_
 * 2008-07-06: `block operation on closed socket/pipe for multiprocessing <http://bugs.python.org/issue3311>`_
 * 2008-07-06: `invalid check of _bsddb creation failure <http://bugs.python.org/issue3307>`_
 * 2008-07-06: `invalid object destruction in re.finditer() <http://bugs.python.org/issue3299>`_
 * 2007-07-23: `Unable to register or upload project (http error 302: moved) <http://sourceforge.net/tracker/index.php?func=detail&aid=1758778&group_id=66150&atid=513503>`_
 * 2007-07-17: `Problem with socket.gethostbyaddr() and KeyboardInterrupt <http://sourceforge.net/tracker/index.php?func=detail&aid=1755388&group_id=5470&atid=105470>`_
-
-
-
