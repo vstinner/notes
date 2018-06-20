@@ -30,6 +30,9 @@ Public profiles
 - `Flickr profile (photos) <http://www.flickr.com/photos/haypo/>`_
 - `Launchpad <https://launchpad.net/~victor-stinner>`_
 
+See also Victor Stinner in `Python Core Developer Motivations and Affiliations
+<https://devguide.python.org/motivations/#published-entries>`.
+
 
 Code statistics
 ===============
