@@ -31,6 +31,11 @@ Note: On my Lenovo T430 laptop, I have to use the "Fn" key:
 * Fn + P: Pause
 * Fn + S: SysRq
 
+Alternative terminals for Windows:
+
+* `ConEmu <https://conemu.github.io/>`_
+* `mintty <https://mintty.github.io>`_
+
 
 cmd.exe (Windows "shell", Windows console, the MS-DOS black window)
 ===================================================================

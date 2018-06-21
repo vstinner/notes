@@ -883,6 +883,8 @@ Install FreeBSD CURRENT in a VM
 * chsh: write /usr/local/bin/bash (check before with "which bash")
 * Delog, log again as haypo
 
+Change the keyboard layout: run ``kbdmap``.
+
 
 tmux
 ====
