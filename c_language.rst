@@ -229,7 +229,7 @@ Configure in 32-bit::
 
     ./configure CFLAGS="-m32" LDFLAGS="-m32" && make
 
-For Python, install also zlib::
+For Python, install also libffi, openssl and zlib::
 
-    dnf install -y zlib-devel.i686
+    dnf install -y libffi-devel.i686 openssl-devel.i686 zlib-devel.i686
 

@@ -893,6 +893,7 @@ tmux
 * tmux ls
 * CTRL+b ...
 
+  - ``[``: navigation (scroll), 'q' to quit navigation mode
   - ``d``: detach
   - ``c``: new window
   - ``n`` / ``p``: next/previous window
@@ -1013,6 +1014,8 @@ IEEE 754 defines 4 modes:
 * ROUND_DOWN
 
 See also: https://vstinner.github.io/pytime.html
+
+See also "double-rounding": https://bugs.python.org/issue24567
 
 
 Process wide vs multithreading
