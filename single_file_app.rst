@@ -6,7 +6,10 @@ There are different projects to install an application as a single file:
 
 * `Flatpak <https://www.flatpak.org/>`_: `Flathub <https://flathub.org/>`_ (App Store)
 * `Snapcraft (Snap) <https://snapcraft.io/>`_: `Snapcraft Store <https://snapcraft.io/store>`_ (App Store)
-* `AppImage <https://appimage.org/>`_: No App Store?
+* `AppImage <https://appimage.org/>`_: `AppImageHub <https://appimage.github.io/apps/>`_
+
+The first usage case is to easy install graphical applications ("desktop GUI
+apps").
 
 Others:
 
@@ -35,9 +38,36 @@ Features:
 
 Supporters:
 
-* Flatpak: Red Hat, Gnome
+* Flatpak: Red Hat, Endless, Gnome
 * Snapcraft: Canonical (Ubuntu)
 * AppImage: OpenSUSE
+
+Comparisons:
+
+* https://github.com/AppImage/AppImageKit/wiki/Similar-projects
+
+Popular Linux applications:
+
+* Audacity
+* GIMP
+* LibreOffice
+* VLC
+
+
+Linux technologies
+==================
+
+Containers pushed many features to the Linux kernel and userspace to isolate
+"services" (daemon servers):
+
+* CGroups
+* Namespaces for everything: user identifiers, process identifiers, filesystem
+  root, network, etc.
+* Sandboxing
+
+  * Linux SECCOMP
+  * `bubblewrap <https://github.com/projectatomic/bubblewrap>`_:
+    "Unprivileged sandboxing tool"
 
 
 Flatpak
@@ -55,6 +85,7 @@ Flatpak
   * Spotify
   * Skype
   * Steam
+  * Slack
 
 * `winepak <https://www.winepak.org/>`_: Flatpak-ing Microsoft Windows
   applications with Wine.
@@ -66,3 +97,35 @@ Flatpak
   * Fortnite
   * League of Legends
   * etc.
+
+* Old names of Flatpak: "Glick" (followed by "Glick2"), then "xdg-app".
+* Old name of "BubbleWrap": "xdg-app-helper".
+
+See also:
+
+* `OSTree <https://ostree.readthedocs.io/>`_
+* `Project Atomic <https://www.projectatomic.io/>`_
+* `CoreOS <https://coreos.com/>`_
+
+Snap
+====
+
+* Contributors must sign a CLA.
+
+AppImage
+========
+
+* Old AppImage name: "klik".
+
+Misc
+====
+
+* macOS uses `.dmg files <https://en.wikipedia.org/wiki/Apple_Disk_Image>`_:
+  one file per application.
+* Nix/Guix: closer to regular package manages (multiple files), but can be
+  used without being root.
+* `0install <http://0install.net/>`_
+* Image signature?
+* `Revisiting How We Put Together Linux Systems
+  <http://0pointer.net/blog/revisiting-how-we-put-together-linux-systems.html>`_
+  by Lennart Poettering (Sept 2014)
