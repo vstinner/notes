@@ -38,6 +38,7 @@ Contents:
    red_hat_python.rst
    cpython_tasks.rst
    cpython_buildbots.rst
+   single_file_app.rst
 
 
 Indices and tables
