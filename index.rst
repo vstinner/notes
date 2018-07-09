@@ -19,7 +19,6 @@ Contents:
    victor_stinner.rst
    python_contrib.rst
    contributions.rst
-   cpython.rst
    python_new_stable_api.rst
    pypy_warmups.rst
    c_language.rst
@@ -36,8 +35,6 @@ Contents:
    brainstorm_cpython_tutorial.rst
    systemd.rst
    red_hat_python.rst
-   cpython_tasks.rst
-   cpython_buildbots.rst
    single_file_app.rst
 
 
