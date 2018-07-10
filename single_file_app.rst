@@ -4,29 +4,19 @@ Single file application
 
 There are different projects to install an application as a single file:
 
-* `Flatpak <https://www.flatpak.org/>`_: `Flathub <https://flathub.org/>`_ (App Store)
-* `Snapcraft (Snap) <https://snapcraft.io/>`_: `Snapcraft Store <https://snapcraft.io/store>`_ (App Store)
-* `AppImage <https://appimage.org/>`_: `AppImageHub <https://appimage.github.io/apps/>`_
+=============================================   ===================================================
+Project                                         Application Store
+=============================================   ===================================================
+`Flatpak <https://www.flatpak.org/>`_           `Flathub <https://flathub.org/>`_
+`Snaps (Snapcraft) <https://snapcraft.io/>`_    `Snapcraft Store <https://snapcraft.io/store>`_
+`AppImage <https://appimage.org/>`_             `AppImageHub <https://appimage.github.io/apps/>`_
+=============================================   ===================================================
 
-The first usage case is to easy install graphical applications ("desktop GUI
-apps").
+The first use case is to easy install graphical applications ("desktop GUI
+apps"), but Snaps is also designed to package services (server daemons).
 
-Others:
-
-* Click?
-* Genymotion?
-* Docker: different usage
-* Virtual Machine (VirtualBox, virt-manager, qemu, etc.): different usage
-* systemd:
-
-  * systemd-nspawn
-  * machinectl
-  * casync? (`blog article
-    <http://0pointer.net/blog/casync-a-tool-for-distributing-file-system-images.html>`_)
-  * `portable services (blog article)
-    <http://0pointer.net/blog/walkthrough-for-portable-services.html>`_
-  * `dynamic users with systemd (blog article)
-    <http://0pointer.net/blog/dynamic-users-with-systemd.html>`_
+Comparison written by AppImage (not objective): `AppImage: Similar Projects
+<https://github.com/AppImage/AppImageKit/wiki/Similar-projects>`_.
 
 Features:
 
@@ -42,23 +32,31 @@ Supporters:
 * Snapcraft: Canonical (Ubuntu)
 * AppImage: OpenSUSE
 
-Comparisons:
+Applications
+============
 
-* https://github.com/AppImage/AppImageKit/wiki/Similar-projects
+Example of applications that you can find packaged:
 
-Popular Linux applications:
+* Popular open source applications:
 
-* Audacity
-* GIMP
-* LibreOffice
-* VLC
+  * Audacity
+  * GIMP
+  * LibreOffice
+  * VLC
 
+* Popular commercial applications:
+
+  * Spotify
+  * Skype
+  * Steam
+  * Slack
 
 Linux technologies
 ==================
 
-Containers pushed many features to the Linux kernel and userspace to isolate
-"services" (daemon servers):
+"Applications as a single file" reuse many features which have been pushed by
+containers to the Linux kernel and userspace to isolate "services" (daemon
+servers):
 
 * CGroups
 * Namespaces for everything: user identifiers, process identifiers, filesystem
@@ -67,8 +65,8 @@ Containers pushed many features to the Linux kernel and userspace to isolate
 
   * Linux SECCOMP
   * `bubblewrap <https://github.com/projectatomic/bubblewrap>`_:
-    "Unprivileged sandboxing tool"
-
+    "Unprivileged sandboxing tool": used by docker, systemd-nspawn and flatpak
+    for example.
 
 Flatpak
 =======
@@ -80,12 +78,6 @@ Flatpak
   <https://www.loganasherjones.com/2018/05/using-flatpak-with-python/>`_
   by Logan Jones (May 2018)
 * Portals: ???
-* Commercial applications:
-
-  * Spotify
-  * Skype
-  * Steam
-  * Slack
 
 * `winepak <https://www.winepak.org/>`_: Flatpak-ing Microsoft Windows
   applications with Wine.
@@ -99,7 +91,8 @@ Flatpak
   * etc.
 
 * Old names of Flatpak: "Glick" (followed by "Glick2"), then "xdg-app".
-* Old name of "BubbleWrap": "xdg-app-helper".
+* Old name of "BubbleWrap" (sandbox used internally by Flatpak):
+  "xdg-app-helper".
 
 See also:
 
@@ -119,6 +112,20 @@ AppImage
 
 Misc
 ====
+
+* Click?
+* Docker: different usage
+* Virtual Machine (VirtualBox, virt-manager, qemu, etc.): different usage
+* systemd:
+
+  * systemd-nspawn
+  * machinectl
+  * casync? (`blog article
+    <http://0pointer.net/blog/casync-a-tool-for-distributing-file-system-images.html>`_)
+  * `portable services (blog article)
+    <http://0pointer.net/blog/walkthrough-for-portable-services.html>`_
+  * `dynamic users with systemd (blog article)
+    <http://0pointer.net/blog/dynamic-users-with-systemd.html>`_
 
 * macOS uses `.dmg files <https://en.wikipedia.org/wiki/Apple_Disk_Image>`_:
   one file per application.
