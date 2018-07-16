@@ -20,11 +20,14 @@ Comparison written by AppImage (not objective): `AppImage: Similar Projects
 
 Features:
 
-* "Shared Runtime"
-* Upgrade
+* "Shared Runtime": don't duplicate files on disk, share memory between
+ processes, whenever possible
+* Easy and atomic upgrade
 * App Store (centralized or distributed repositories)
 * Sandboxing for security
 * Number of packaged applications
+* Don't depend on the Linux distribution: installable on Debian, OpenSUSE,
+  Fedora, etc.
 
 Supporters:
 
@@ -70,6 +73,14 @@ servers):
 
 Flatpak
 =======
+
+Flatpak is made of 3 things:
+
+* software deployment
+* package management
+* application virtualization
+
+Links:
 
 * `Flatpak – a history
   <https://blogs.gnome.org/alexl/2018/06/20/flatpak-a-history/>`_
@@ -136,3 +147,4 @@ Misc
 * `Revisiting How We Put Together Linux Systems
   <http://0pointer.net/blog/revisiting-how-we-put-together-linux-systems.html>`_
   by Lennart Poettering (Sept 2014)
+* https://en.wikipedia.org/wiki/Application_virtualization
