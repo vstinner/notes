@@ -4,13 +4,10 @@
 Victor Stinner: Contact Me
 ++++++++++++++++++++++++++
 
-I'm currently working for Red Hat since October 2013. I joined eNovance which
-was acquired by Red Hat in 2014. I am working on the OpenStack project, one of
-my task is to `port OpenStack to Python 3
-<https://wiki.openstack.org/wiki/Python3>`_.
-
-I'm actively contributing to CPython upstream (on the next Python 3.6 version).
-See :ref:`my contributions to CPython <contrib>`.
+I am paid by Red Hat to maintain Python upstream and downstream (RHEL, CentOS,
+Fedora & Software collections). They also cover the cost of travels to Pycon US
+and EuroPython: meeting people is as important if not more than code. My
+contributions to Python: :ref:`My contributions to Python <python-contrib>`_.
 
 Contact me
 ==========
