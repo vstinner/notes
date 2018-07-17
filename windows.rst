@@ -40,6 +40,8 @@ Alternative terminals for Windows:
 cmd.exe (Windows "shell", Windows console, the MS-DOS black window)
 ===================================================================
 
+* Change prompt: ``set PROMPT=$P$G``
+
 * Redirect stdout and stderr into the file ``outlog.log``:
   ``command >output.log 2>&1``
 
@@ -164,3 +166,37 @@ Some Windows error codes
 * Exception Code: ``c0000005`` (decimal: ``3221225477`` or ``-1073741819``):
   "access violation", EXCEPTION_ACCESS_VIOLATION.
 * 996: ERROR_IO_INCOMPLETE: Overlapped I/O event is not in a signaled state.
+
+
+OpenSSH server
+==============
+
+To use the OpenSSH server from Microsoft (the "Optional feature"), you need
+at least Windows 10 build 1803. Before, this flavor was unusable.
+
+* Go to settings, search for "Manage Optional Features": enable OpenSSH
+* In my case, I had to run ``\Windows\System32\OpenSSH\ssh-keygen -A``
+* The SSH private key is stored in %ProgramData%\ssh\ssh_host_ed25519_key.
+  This file must be owned by SYSTEM and the only permission must be that SYSTEM
+  is allowed to Read this file.
+* Run PowerShell as administrator and type:
+  ``New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH SSH Server' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22``
+  to allow incoming TCP connections to port 22 (SSH)
+* Copy your SSH public key into C:\Users\vstinner\.ssh\authorized_keys (replace
+  vstinner with your username!)
+* Go to Windows Menu>search for "Services". In Services, search for "OpenSSH
+  Server": click on Start.
+* If OpenSSH server doesn't work, look into %ProgramData%\ssh\Logs\sshd.log
+* If the server works, you can change the Service start from Manual to
+  Automatic.
+
+To debug, you can install psexec, open a shell as SYSTEM with
+``psexec -i -s -d cmd.exe`` and then type:
+``C:\Windows\System32\OpenSSH\sshd.exe`` to run the SSH server in foreground.
+
+Files and directories:
+
+* C:\Windows\System32\OpenSSH\sshd.exe: the SSH server program
+* C:\ProgramData\ssh\ssh_host_ed25519_key: SSH server private key
+* C:\ProgramData\ssh\sshd_config: SSH server configuration file
+* C:\ProgramData\ssh\Logs\sshd.log: SSH server logs
