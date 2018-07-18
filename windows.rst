@@ -200,3 +200,8 @@ Files and directories:
 * C:\ProgramData\ssh\ssh_host_ed25519_key: SSH server private key
 * C:\ProgramData\ssh\sshd_config: SSH server configuration file
 * C:\ProgramData\ssh\Logs\sshd.log: SSH server logs
+
+Misc
+====
+
+* Get system load:: ``wmic cpu get loadpercentage``
