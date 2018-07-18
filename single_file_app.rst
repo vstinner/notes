@@ -21,7 +21,7 @@ Comparison written by AppImage (not objective): `AppImage: Similar Projects
 Features:
 
 * "Shared Runtime": don't duplicate files on disk, share memory between
- processes, whenever possible
+  processes, whenever possible
 * Easy and atomic upgrade
 * App Store (centralized or distributed repositories)
 * Sandboxing for security

@@ -176,17 +176,18 @@ at least Windows 10 build 1803. Before, this flavor was unusable.
 
 * Go to settings, search for "Manage Optional Features": enable OpenSSH
 * In my case, I had to run ``\Windows\System32\OpenSSH\ssh-keygen -A``
-* The SSH private key is stored in %ProgramData%\ssh\ssh_host_ed25519_key.
+* The SSH private key is stored in ``%ProgramData%\ssh\ssh_host_ed25519_key``.
   This file must be owned by SYSTEM and the only permission must be that SYSTEM
   is allowed to Read this file.
-* Run PowerShell as administrator and type:
-  ``New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH SSH Server' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22``
-  to allow incoming TCP connections to port 22 (SSH)
-* Copy your SSH public key into C:\Users\vstinner\.ssh\authorized_keys (replace
+* To allow incoming TCP connections to port 22 (SSH), run PowerShell as administrator and type::
+
+    New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH SSH Server' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
+
+* Copy your SSH public key into ``C:\Users\vstinner\.ssh\authorized_keys`` (replace
   vstinner with your username!)
 * Go to Windows Menu>search for "Services". In Services, search for "OpenSSH
   Server": click on Start.
-* If OpenSSH server doesn't work, look into %ProgramData%\ssh\Logs\sshd.log
+* If OpenSSH server doesn't work, look into ``%ProgramData%\ssh\Logs\sshd.log``
 * If the server works, you can change the Service start from Manual to
   Automatic.
 
@@ -196,10 +197,10 @@ To debug, you can install psexec, open a shell as SYSTEM with
 
 Files and directories:
 
-* C:\Windows\System32\OpenSSH\sshd.exe: the SSH server program
-* C:\ProgramData\ssh\ssh_host_ed25519_key: SSH server private key
-* C:\ProgramData\ssh\sshd_config: SSH server configuration file
-* C:\ProgramData\ssh\Logs\sshd.log: SSH server logs
+* ``C:\Windows\System32\OpenSSH\sshd.exe``: the SSH server program
+* ``C:\ProgramData\ssh\ssh_host_ed25519_key``: SSH server private key
+* ``C:\ProgramData\ssh\sshd_config``: SSH server configuration file
+* ``C:\ProgramData\ssh\Logs\sshd.log``: SSH server logs
 
 Misc
 ====
