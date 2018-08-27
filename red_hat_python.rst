@@ -24,6 +24,11 @@ April 2018, `RHEL 7.5 Release Notes: Chapter 54. Deprecated Functionality
     Python 2 has been deprecated: **Python 2 will be replaced with Python 3 in
     the next Red Hat Enterprise Linux** (RHEL) major release.
 
+How to install Python 3 on RHEL 7
+=================================
+
+https://developers.redhat.com/blog/2018/08/13/install-python3-rhel/
+
 Software Collections
 ====================
 
