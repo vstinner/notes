@@ -189,6 +189,7 @@ Platforms #define
 
 * AIX: ``#ifdef _AIX``
 * FreeBSD: ``#ifdef __FreeBSD__``
+* HP-UX: ``#ifdef __hpux``
 * Linux: ``#ifdef __linux__``
 * NetBSD: ``#ifdef __NetBSD__``
 * Solaris: ``#ifdef sun``
