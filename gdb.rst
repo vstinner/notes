@@ -138,6 +138,8 @@ Gdb
 * CTRL+x o: change active window
 * Display full print value: ``set print elements 1024``
   (or ``set print elements 0`` if you are brave)
+* Print variable type: ``whatis variable``
+* Dump the structure of a variable: ``ptype variable``
 
 
 x86_64 assembler, gdb

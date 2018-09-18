@@ -300,3 +300,16 @@ Links:
   <https://github.com/python/cpython/commit/1f33f2b0c381337d5991c227652d65eadd168209>`_:
   "Issue #13560: os.strerror() now uses the current locale encoding instead
   of UTF-8"
+
+
+Political and regional differences
+==================================
+
+Unicode provides a single standard and so cannot have special cases depending
+on country or recent political changes. Examples:
+
+* 2018: `lower() on Turkish letter "İ" returns a 2-chars-long string
+  <https://bugs.python.org/issue34723>`_
+* 2017: `Germany made the upper case ß official. 'ß'.upper() should now return ẞ.
+  <https://bugs.python.org/issue30810>`_
+

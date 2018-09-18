@@ -869,19 +869,21 @@ Install FreeBSD CURRENT in a VM
   * Date/Time: Skip
   * Service started at boot: sshd
   * (no option)
-  * Add a new user: username haypo
+  * Add a new user: username vstinner
   * Exit: Manual config? No
   * Reboot
 
 * (After reboot)
 * Log as root
-* type "pkg sudo" and install it
+* type "pkg install sudo" and install it
 * run "visudo" and uncomment "%whell ALL.." without password
-* add haypo user to the wheel group: pw group mod wheel -m haypo
-* Relog as haypo
+* add vstinner user to the wheel group: pw group mod wheel -m vstinner
+* Relog as vstinner
 * sudo pkg install bash git
 * chsh: write /usr/local/bin/bash (check before with "which bash")
-* Delog, log again as haypo
+* Delog, log again as vstinner
+
+To rerun the installer configuration, run:: ``bsdconfig``.
 
 Change the keyboard layout: run ``kbdmap``.
 
@@ -1163,7 +1165,7 @@ Install FreeBSD VM
 * Create a FreeBSD VM using this disk image
 * kbdcontrol -l fr.iso
 * Log as root
-* pkg install sudo bash screen
+* pkg install sudo bash screen vim-console
 * adduser: add user, add it to the wheel group
 * visudo: allow sudo for the whell group
 * Unlog, log again as the new user
