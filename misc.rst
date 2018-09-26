@@ -52,6 +52,16 @@ Python:
 Fedora
 ======
 
+Download a source RPM::
+
+   sudo yum install yum-utils
+   yumdownloader --source <package>
+   # install build dependencies:
+   yum-builddep python
+
+You may have to enable "Source" repositories: see also
+"yumdownloader --enablerepo=xxx" option.
+
 Search a package without updating yum cache::
 
     yum search -C pattern
@@ -1015,9 +1025,11 @@ IEEE 754 defines 4 modes:
 * ROUND_CEILING
 * ROUND_DOWN
 
-See also: https://vstinner.github.io/pytime.html
+Python links:
 
-See also "double-rounding": https://bugs.python.org/issue24567
+* https://vstinner.github.io/pytime.html
+* "double-rounding" https://bugs.python.org/issue24567
+* https://bugs.python.org/issue32956
 
 
 Process wide vs multithreading
