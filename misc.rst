@@ -758,6 +758,11 @@ Give operator permission to someone::
 
     /msg ChanServ flags #python-fr skyice +Aeiortv
 
+#python-dev flags to prevent people who are not logged in to an account from
+talking::
+
+   /mode #python-dev -q $~a
+
 
 SSH keygen
 ==========
