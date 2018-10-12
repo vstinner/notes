@@ -140,6 +140,7 @@ Gdb
   (or ``set print elements 0`` if you are brave)
 * Print variable type: ``whatis variable``
 * Dump the structure of a variable: ``ptype variable``
+* LD_LIBRARY_PATH: ``gdb -iex "set env LD_LIBRARY_PATH=$PWD" --args ./python Lib/test/gdb_sample.py``
 
 
 x86_64 assembler, gdb
