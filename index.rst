@@ -36,6 +36,7 @@ Contents:
    systemd.rst
    red_hat_python.rst
    single_file_app.rst
+   fedora.rst
 
 
 Indices and tables
