@@ -141,6 +141,8 @@ Gdb
 * Print variable type: ``whatis variable``
 * Dump the structure of a variable: ``ptype variable``
 * LD_LIBRARY_PATH: ``gdb -iex "set env LD_LIBRARY_PATH=$PWD" --args ./python Lib/test/gdb_sample.py``
+* Autoload Python: ``set auto-load python-scripts on``
+* Load a Python script: ``source script.py``
 
 
 x86_64 assembler, gdb
