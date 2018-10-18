@@ -165,9 +165,13 @@ Variants:
 Some Windows error codes
 ========================
 
+* 5: ERROR_ACCESS_DENIED: Access is denied.
 * Exception Code: ``c0000005`` (decimal: ``3221225477`` or ``-1073741819``):
   "access violation", EXCEPTION_ACCESS_VIOLATION.
 * 996: ERROR_IO_INCOMPLETE: Overlapped I/O event is not in a signaled state.
+
+See the full list of `Windows System Error Codes
+<https://docs.microsoft.com/en-us/windows/desktop/debug/system-error-codes>`_.
 
 
 OpenSSH server
