@@ -798,53 +798,6 @@ Yubikey
 * Firefox plugin doesn't work on Google nor Bitbucket
 
 
-Install FreeBSD CURRENT in a VM
-===============================
-
-* Download ftp://ftp.freebsd.org/pub/FreeBSD/releases/amd64/amd64/ISO-IMAGES/11.0/FreeBSD-11.0-RELEASE-amd64-disc1.iso.xz
-* Uncompress: unxz FreeBSD-11.0-RELEASE-amd64-disc1.iso.xz
-* Create a new VM:
-
-  * Name: FreeBSD
-  * Boot from an ISO: specify the path to the .iso file
-  * System: select Show all, select UNIX, pick FreeBSD 11
-  * 1 cpu, 1 GB of RAM
-  * Disk size: 20 GB
-  * Select network: shared interface, br0
-
-* FreeBSD installer:
-
-
-  * <install>
-  * Keymap: French ISO-8859-1
-  * Hostname: freebsd
-  * Distribution: only keep [*] ports
-  * Partition: auto, <Entire disk>, MBR, Finish, Commit
-  * (choose a root password)
-  * network: configure IPv4, use DHCP, yes, configure IPv6, auto, yes
-  * Time Zone: 8 Europe, 14 France
-  * Date/Time: Skip
-  * Service started at boot: sshd
-  * (no option)
-  * Add a new user: username vstinner
-  * Exit: Manual config? No
-  * Reboot
-
-* (After reboot)
-* Log as root
-* type "pkg install sudo" and install it
-* run "visudo" and uncomment "%whell ALL.." without password
-* add vstinner user to the wheel group: pw group mod wheel -m vstinner
-* Relog as vstinner
-* sudo pkg install bash git
-* chsh: write /usr/local/bin/bash (check before with "which bash")
-* Delog, log again as vstinner
-
-To rerun the installer configuration, run:: ``bsdconfig``.
-
-Change the keyboard layout: run ``kbdmap``.
-
-
 tmux
 ====
 
@@ -1137,6 +1090,53 @@ Install FreeBSD VM
  * https://www.freebsd.org/doc/handbook/openssh.html
 
 
+Install FreeBSD CURRENT in a VM
+===============================
+
+* Download ftp://ftp.freebsd.org/pub/FreeBSD/releases/amd64/amd64/ISO-IMAGES/11.0/FreeBSD-11.0-RELEASE-amd64-disc1.iso.xz
+* Uncompress: unxz FreeBSD-11.0-RELEASE-amd64-disc1.iso.xz
+* Create a new VM:
+
+  * Name: FreeBSD
+  * Boot from an ISO: specify the path to the .iso file
+  * System: select Show all, select UNIX, pick FreeBSD 11
+  * 1 cpu, 1 GB of RAM
+  * Disk size: 20 GB
+  * Select network: shared interface, br0
+
+* FreeBSD installer:
+
+
+  * <install>
+  * Keymap: French ISO-8859-1
+  * Hostname: freebsd
+  * Distribution: only keep [*] ports
+  * Partition: auto, <Entire disk>, MBR, Finish, Commit
+  * (choose a root password)
+  * network: configure IPv4, use DHCP, yes, configure IPv6, auto, yes
+  * Time Zone: 8 Europe, 14 France
+  * Date/Time: Skip
+  * Service started at boot: sshd
+  * (no option)
+  * Add a new user: username vstinner
+  * Exit: Manual config? No
+  * Reboot
+
+* (After reboot)
+* Log as root
+* type "pkg install sudo" and install it
+* run "visudo" and uncomment "%whell ALL.." without password
+* add vstinner user to the wheel group: pw group mod wheel -m vstinner
+* Relog as vstinner
+* sudo pkg install bash git
+* chsh: write /usr/local/bin/bash (check before with "which bash")
+* Delog, log again as vstinner
+
+To rerun the installer configuration, run:: ``bsdconfig``.
+
+Change the keyboard layout: run ``kbdmap``.
+
+
 Status pages
 ============
 
@@ -1166,3 +1166,28 @@ sudo docker commit xxx pet
 sudo docker run -ti pet /bin/bash
 sudo docker container ps
 sudo docker container ps -a
+
+SELinux
+=======
+
+Config file::
+
+   [vstinner@fedora27 ~]$ cat /etc/selinux/config
+
+   # This file controls the state of SELinux on the system.
+   # SELINUX= can take one of these three values:
+   #     enforcing - SELinux security policy is enforced.
+   #     permissive - SELinux prints warnings instead of enforcing.
+   #     disabled - No SELinux policy is loaded.
+   SELINUX=enforcing
+   # SELINUXTYPE= can take one of these three values:
+   #     targeted - Targeted processes are protected,
+   #     minimum - Modification of targeted policy. Only selected processes are protected.
+   #     mls - Multi Level Security protection.
+   SELINUXTYPE=targeted
+
+Check current SELinux config::
+
+   [vstinner@fedora27 ~]$ getenforce
+   Enforcing
+

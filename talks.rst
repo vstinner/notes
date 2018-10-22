@@ -17,6 +17,34 @@ Conferences 2011-today
    :alt: Pycon US 2014 logo
    :target: https://us.pycon.org/
 
+* October 2018, Pycon FR at Lille (France)
+
+  - `Comment avoir plus de contributeurs à Python
+    <https://github.com/vstinner/conf/raw/master/2018-PyconFR/python_diversity.pdf>`__:
+    PDF slides
+  - `Comment avoir plus de contributeurs à Python
+    <https://www.youtube.com/watch?v=Qfmi9d8ElfQ>`__: video on Youtube, the
+    video has subtitles in french (you can enable automatic translation to
+    english, or maybe other languages)
+
+* July 2018, EuroPython at Edinburgh, Scotland, UK (keynote)
+
+  - `Python 3: ten years later
+    <https://ep2018.europython.eu/conference/talks/python-3-ten-years-later>`__.
+    (same talk than FOSDEM 2018)
+
+* May 2018, Pycon US at Cleveland, Ohio, USA
+
+  - `Python 3: ten years later
+    <https://us.pycon.org/2018/schedule/presentation/86/>`__: keynote.
+    (same talk than FOSDEM 2018)
+
+* April 2018, Pycon Italy at Firenze (keynote)
+
+  - `Python 3, ten years later
+    <https://www.pycon.it/conference/talks/python-3-10-years-later-looking-back-python-evolutions-last-10-years>`__
+    (same talk than FOSDEM 2018)
+
 * February 2018, FOSDEM at Brussels
 
   - `Looking back at Python evolutions of the last 10 years

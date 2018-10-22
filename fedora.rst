@@ -2,6 +2,14 @@
 Fedora
 ++++++
 
+Debuginfo
+=========
+
+To debug python3-cryptography, install debug symbols::
+
+   sudo dnf debuginfo-install python3-cryptography
+
+
 Download a source RPM
 =====================
 
@@ -83,4 +91,9 @@ Unpack file.rpm in a new dir/ subdirectory::
     rpm2cpio file.rpm | cpio -idmv
 
 
+sudo: add user to wheel group
+=============================
 
+::
+
+   usermod -aG wheel vstinner
