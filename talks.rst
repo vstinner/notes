@@ -33,6 +33,11 @@ Conferences 2011-today
     <https://ep2018.europython.eu/conference/talks/python-3-ten-years-later>`__.
     (same talk than FOSDEM 2018)
 
+* June 2018, PyLondonium at London, UK (keynote)
+
+  - `Python 3: ten years later <https://pylondinium.org/>`__.
+    (same talk than FOSDEM 2018)
+
 * May 2018, Pycon US at Cleveland, Ohio, USA
 
   - `Python 3: ten years later
