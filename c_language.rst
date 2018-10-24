@@ -238,3 +238,26 @@ Compiler and linker options
 ===========================
 
 * https://wiki.debian.org/Hardening
+
+Macros
+======
+
+``<sys/cdefs.h>`` defines two macros::
+
+   #define __CONCAT(x,y) x ## y
+   #define __STRING(x) #x
+
+But ``__CONCAT`` and ``__STRING`` are not portable. For example, NetBSD says
+"only works with ANSI C". Comment on Linux: "For these things, GCC
+behaves the ANSI way normally, and the non-ANSI way under -traditional."
+
+CPython uses::
+
+   #define _Py_XSTRINGIFY(x) #x
+
+   /* Convert the argument to a string. For example, Py_STRINGIFY(123)
+      is replaced with "123" by the preprocessor. Defines are also
+      replaced by their value.  For example Py_STRINGIFY(__LINE__)
+      is replaced by the line number, not by "__LINE__". */
+   #define Py_STRINGIFY(x) _Py_XSTRINGIFY(x)
+
