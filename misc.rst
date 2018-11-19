@@ -932,54 +932,6 @@ Python links:
 * https://bugs.python.org/issue32956
 
 
-Process wide vs multithreading
-==============================
-
-Multithreading is hard because many functions of system C library (libc):
-
-* modify a state for the whole process: change process wide
-* is not reentrant
-* rely on a global state
-* is not "async signal safe"
-
-Examples of process-wide states:
-
-* *Current working directory* aka **cwd**
-
-  * Modified by ``chdir()``
-  * Most "legacy" filesystem functions taking a filename rely on the "current
-    working directory" (cwd), especially using relative path. Exampes:
-    ``open()`` or ``chmod()``.
-  * The new Linux "at" functions don't rely on the current working directory.
-    Examples: openat() or chmodat().
-
-* Locales
-
-  * Modified by ``setlocale()``
-  * For example, used by ``strftime()`` and ``localeconv()``.
-  * Functions using "wide character strings" (wcs) avoid some issues.
-    Example: ``wcsftime()``.
-  * Some libraries don't rely on a global locale but expect a locale argument
-
-* Unix signals
-
-  * Signal handlers are registered by signal() and sigaction()
-  * ``raise()`` or ``kill()`` to send a signal to a process
-  * Per thread API: ``pthread_kill()`` (send a signal to a thread),
-    ``pthread_sigmask()`` (block signals)
-
-Others:
-
-* File descriptors: not really an issue in practice if a FD is only used
-  in a single thread.
-* Heap memory, malloc()/free(): modern malloc() implementations scales on
-  threads/CPUs. Not an issue if a memory block is only used in a single thread.
-* User and groups
-
-See also `Ghosts of Unix Past: a historical search for design patterns
-<https://lwn.net/Articles/411845/>`_ by Neil Brown (October, 2010).
-
-
 Linux: follow process execution
 ===============================
 
