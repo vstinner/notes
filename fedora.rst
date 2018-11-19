@@ -97,3 +97,9 @@ sudo: add user to wheel group
 ::
 
    usermod -aG wheel vstinner
+
+Python
+======
+
+* `Multiple Python interpreters
+  <https://developer.fedoraproject.org/tech/languages/python/multiple-pythons.html>`_
