@@ -1143,3 +1143,12 @@ Check current SELinux config::
    [vstinner@fedora27 ~]$ getenforce
    Enforcing
 
+Security
+========
+
+Static analyzer vs PHP:
+
+* Fixed bug #55439 (crypt() returns only the salt for MD5). (Stas)
+* https://bugs.php.net/bug.php?id=55439
+* https://github.com/rflynn/bugs/blob/master/case/php-md5-broken-by-rasmus.json
+* https://github.com/php/php-src/commit/97bc4c84032881cd398e46098e8cfbae6f3a9590
