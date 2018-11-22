@@ -247,8 +247,48 @@ Compiler and linker options
 
 * https://wiki.debian.org/Hardening
 
-Macros
-======
+C macros (preprocessor)
+=======================
+
+* ``typeof(expr)``: C99
+* ``offsetof(type, member)``: ``<stddef.h>``, C89
+* ``_builtin_types_compatible_p(type1, type2)``: true if type1 is type2;
+  GCC and clang.
+
+Magic ``BUILD_ASSERT_EXPR()`` macro by `Rusty Russell
+<http://ccodearchive.net/>`__::
+
+   #define BUILD_ASSERT_EXPR(cond) \
+       (sizeof(char [1 - 2*!(cond)]) - 1)
+
+Magic ``ARRAY_LENGTH()`` macro by `Rusty Russell <http://ccodearchive.net/>`__,
+compilation error with GCC if the argument is not an array but a pointer::
+
+   #if (defined(__GNUC__) && !defined(__STRICT_ANSI__) && \
+       (((__GNUC__ == 3) && (__GNUC_MINOR__ >= 1)) || (__GNUC__ >= 4)))
+   /* Two gcc extensions.
+      &a[0] degrades to a pointer: a different type from an array */
+   #define ARRAY_LENGTH(array) \
+       (sizeof(array) / sizeof((array)[0]) \
+        + BUILD_ASSERT_EXPR(!__builtin_types_compatible_p(typeof(array), \
+                                                          typeof(&(array)[0]))))
+   #else
+   #define ARRAY_LENGTH(array) \
+       (sizeof(array) / sizeof((array)[0]))
+   #endif
+
+Convert to a string
+-------------------
+
+``STRINGIFY(expr)`` macro::
+
+   #define _XSTRINGIFY(x) #x
+
+   /* Convert the argument to a string. For example, STRINGIFY(123) is replaced
+      with "123" by the preprocessor. Defines are also replaced by their value.
+      For example STRINGIFY(__LINE__) is replaced by the line number, not
+      by "__LINE__". */
+   #define STRINGIFY(x) _XSTRINGIFY(x)
 
 ``<sys/cdefs.h>`` defines two macros::
 
@@ -258,14 +298,3 @@ Macros
 But ``__CONCAT`` and ``__STRING`` are not portable. For example, NetBSD says
 "only works with ANSI C". Comment on Linux: "For these things, GCC
 behaves the ANSI way normally, and the non-ANSI way under -traditional."
-
-CPython uses::
-
-   #define _Py_XSTRINGIFY(x) #x
-
-   /* Convert the argument to a string. For example, Py_STRINGIFY(123)
-      is replaced with "123" by the preprocessor. Defines are also
-      replaced by their value.  For example Py_STRINGIFY(__LINE__)
-      is replaced by the line number, not by "__LINE__". */
-   #define Py_STRINGIFY(x) _Py_XSTRINGIFY(x)
-
