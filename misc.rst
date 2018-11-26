@@ -1020,8 +1020,31 @@ Virt-manager, create a network:
 * IPv6 Network: fd00:e81d:a6d7:5ab8::/64 ; enable DHCPv6
 * Give access to any physical NIC
 
+FreeBSD
+=======
+
+Upgrade
+-------
+
+Upgrade to FreeBSD 12.0-RC2::
+
+   sudo freebsd-update fetch -r 12.0-RC2
+   sudo freebsd-update install
+   sudo reboot
+   # after reboot
+   sudo freebsd-update install
+
+Repair pkg, if needed::
+
+   sudo pkg bootstrap -f
+
+If something goes wrong, reinstall everything installed by pkg::
+
+   sudo pkg-static upgrade -f
+
+
 Install FreeBSD VM
-==================
+------------------
 
 * https://www.freebsd.org/where.html : Download amd64/qcow2 virtual machine image,
 * Uncompress the image: unxz file.qcow2.xz
@@ -1043,7 +1066,7 @@ Install FreeBSD VM
 
 
 Install FreeBSD CURRENT in a VM
-===============================
+-------------------------------
 
 * Download ftp://ftp.freebsd.org/pub/FreeBSD/releases/amd64/amd64/ISO-IMAGES/11.0/FreeBSD-11.0-RELEASE-amd64-disc1.iso.xz
 * Uncompress: unxz FreeBSD-11.0-RELEASE-amd64-disc1.iso.xz
@@ -1084,9 +1107,18 @@ Install FreeBSD CURRENT in a VM
 * chsh: write /usr/local/bin/bash (check before with "which bash")
 * Delog, log again as vstinner
 
-To rerun the installer configuration, run:: ``bsdconfig``.
+Use FreeBSD
+-----------
 
-Change the keyboard layout: run ``kbdmap``.
+* Rerun the installer configuration, run:: ``bsdconfig``.
+* Change the keyboard layout: run ``kbdmap``.
+* Upgrade to FreeBSD 12.0-RC1::
+
+   $ sudo freebsd-update upgrade -r 12.0-RC1
+   Does this look reasonable (y/n)? y
+   $ sudo shutdown -r now
+   $ sudo freebsd-update install
+
 
 
 Status pages
