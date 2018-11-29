@@ -521,6 +521,8 @@ macOS 10.5      Leopard        9.x             2006
 macOS 10.4      Tiger          8.x             2004
 ==============  ============== ==============  ============
 
+Use ``sw_vers`` in the command line to get macOS version.
+
 * `Linux kernel versions
   <https://en.wikipedia.org/wiki/Linux_kernel#Maintenance>`_:
 
@@ -1184,3 +1186,22 @@ Static analyzer vs PHP:
 * https://bugs.php.net/bug.php?id=55439
 * https://github.com/rflynn/bugs/blob/master/case/php-md5-broken-by-rasmus.json
 * https://github.com/php/php-src/commit/97bc4c84032881cd398e46098e8cfbae6f3a9590
+
+Shell
+=====
+
+* sh is supposed to be the minimalist shell (faster, but less feature)
+* bash has more feature and is quite common, but not available by default
+  on FreeBSD for example.
+* dash is a minimalist shell used as 'sh' on Debian
+
+Test:
+
+* [ is a program: /usr/bin/[ on Linux
+* man test
+* man [ # sometimes display bash manual page
+* [[ ... ]] is a bash built-in, so specific to bash
+
+Misc:
+
+* https://pypi.org/project/bashate/
