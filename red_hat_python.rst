@@ -4,6 +4,15 @@ Red Hat and Python
 
 * Red Hat contributes to Python upstream.
 
+Packages
+========
+
+RHEL8
+-----
+
+* python3: Python 3.6
+* python2 (Module): Python 2.7
+
 Python shipped with RHEL
 ========================
 
@@ -24,10 +33,12 @@ April 2018, `RHEL 7.5 Release Notes: Chapter 54. Deprecated Functionality
     Python 2 has been deprecated: **Python 2 will be replaced with Python 3 in
     the next Red Hat Enterprise Linux** (RHEL) major release.
 
+
 How to install Python 3 on RHEL 7
 =================================
 
 https://developers.redhat.com/blog/2018/08/13/install-python3-rhel/
+
 
 Software Collections
 ====================
