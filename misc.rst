@@ -1205,3 +1205,54 @@ Test:
 Misc:
 
 * https://pypi.org/project/bashate/
+
+Debug TLS issue
+===============
+
+Use OpenSSL client::
+
+   openssl s_client -connect bugs.python.org -port 443
+
+See https://github.com/python/psf-infra-meta/issues/4
+
+Dump Python SSLContext configuration::
+
+   def dump_context(context):
+        print("ciphers:", ":".join([cipher['name'] for cipher in context.get_ciphers()]))
+        print("proto", context.protocol)
+        print("opts", context.options)
+        print("opts", context.verify_mode, context.verify_flags)
+        print("min/max ver", context.minimum_version, context.maximum_version)
+        print("cert stats", context.cert_store_stats())
+
+On Fedora 29, Python is compiled with ``./configure
+--with-ssl-default-suites=openssl``: ``ssl.SSLContext`` constructor doesn't
+call ``SSL_CTX_set_cipher_list()`` and so uses OpenSSL default cipher list.
+
+See also `Python SSL and TLS security
+<https://python-security.readthedocs.io/ssl.html>`_.
+
+`test_asyncio fails on RHEL8, or on Fedora using NEXT security policy
+<https://bugs.python.org/issue35352>`_. Fedora and RHEL have a
+``update-crypto-policies`` system command to change the crypto policy
+
+Python can now use OpenSSL default cipher list: `TLS cipher suite compile time
+option for downstream <https://bugs.python.org/issue31429>`_, creation of
+``./configure --with-ssl-default-suites=openssl`` option (enabled on Fedora).
+
+Use nmap to scan for ciphers: https://nmap.org/nsedoc/scripts/ssl-enum-ciphers.html
+
+By default, OpenSSL reads configuration files for TLS::
+
+   $ ls -l /etc/crypto-policies/back-ends/openssl*.config
+   /etc/crypto-policies/back-ends/opensslcnf.config -> /usr/share/crypto-policies/DEFAULT/opensslcnf.txt
+   /etc/crypto-policies/back-ends/openssl.config -> /usr/share/crypto-policies/DEFAULT/openssl.txt
+
+   $ cat /etc/crypto-policies/back-ends/openssl.config
+   @SECLEVEL=1:kEECDH:-kRSA:kEDH:-AES-128-GCM:kPSK:kDHEPSK:kECDHEPSK:-aDSS:-3DES:!DES:!RC4:!RC2:!IDEA:-SEED:!eNULL:!aNULL:-SHA1:!MD5:-SHA384:-CAMELLIA:-ARIA:-AESCCM8
+
+   $ cat /etc/crypto-policies/back-ends/opensslcnf.config
+   CipherString = @SECLEVEL=1:kEECDH:-kRSA:kEDH:kPSK:kDHEPSK:kECDHEPSK:-aDSS:-3DES:!DES:!RC4:!RC2:!IDEA:-SEED:!eNULL:!aNULL:-SHA1:!MD5:-SHA384:-CAMELLIA:-ARIA:-AESCCM8
+   Ciphersuites = TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_AES_128_CCM_SHA256
+   MinProtocol = TLSv1
+
