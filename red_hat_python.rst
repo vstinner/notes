@@ -3,6 +3,8 @@ Red Hat and Python
 ++++++++++++++++++
 
 * Red Hat contributes to Python upstream.
+* `Red Hat is a Diamond sponsor of the PSF
+  <https://www.python.org/psf/sponsorship/sponsors/>`_
 
 Packages
 ========
