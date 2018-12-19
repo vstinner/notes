@@ -6,8 +6,8 @@ Victor Stinner: Contact Me
 
 I am paid by Red Hat to maintain Python upstream and downstream (RHEL, CentOS,
 Fedora & Software collections). They also cover the cost of travels to Pycon US
-and EuroPython: meeting people is as important if not more than code. My
-contributions to Python: :ref:`My contributions to Python <python-contrib>`.
+and EuroPython: meeting people is as important if not more than code. :ref:`My
+contributions to Python <python-contrib>`.
 
 Contact me
 ==========
@@ -28,7 +28,7 @@ Public profiles
 - `Launchpad <https://launchpad.net/~victor-stinner>`_
 
 See also Victor Stinner in `Python Core Developer Motivations and Affiliations
-<https://devguide.python.org/motivations/#published-entries>`.
+<https://devguide.python.org/motivations/#published-entries>`_.
 
 
 Code statistics
