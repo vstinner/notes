@@ -7,7 +7,7 @@ Victor Stinner: Contact Me
 I am paid by Red Hat to maintain Python upstream and downstream (RHEL, CentOS,
 Fedora & Software collections). They also cover the cost of travels to Pycon US
 and EuroPython: meeting people is as important if not more than code. My
-contributions to Python: :ref:`My contributions to Python <python-contrib>`_.
+contributions to Python: :ref:`My contributions to Python <python-contrib>`.
 
 Contact me
 ==========

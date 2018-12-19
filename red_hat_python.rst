@@ -15,6 +15,16 @@ RHEL8
 * python3: Python 3.6
 * python2 (Module): Python 2.7
 
+See:
+
+* `Python in RHEL 8
+  <https://developers.redhat.com/blog/2018/11/14/python-in-rhel-8/>`_
+  (November 2018) by Petr Viktorin
+* `What, No Python in RHEL 8 Beta?
+  <https://developers.redhat.com/blog/2018/11/27/what-no-python-in-rhel-8-beta/>`_
+  (November 2018) by Langdon White
+
+
 Python shipped with RHEL
 ========================
 
