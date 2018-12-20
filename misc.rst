@@ -1030,7 +1030,8 @@ Upgrade
 
 Upgrade to FreeBSD 12.0-RC2::
 
-   sudo freebsd-update fetch -r 12.0-RC2
+   sudo freebsd-update fetch
+   sudo freebsd-update upgrade -r 12.0
    sudo freebsd-update install
    sudo reboot
    # after reboot
