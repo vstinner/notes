@@ -171,6 +171,14 @@ Major work
     cases
 
 
+April Fool
+==========
+
+* [Python-Dev] The next major Python version will be Python 8
+* https://mail.python.org/pipermail/python-dev/2016-March/143603.html
+* https://hg.python.org/cpython/rev/9aedec2dbc01
+
+
 Old contributions to Python
 ===========================
 

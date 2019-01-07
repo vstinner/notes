@@ -1257,3 +1257,23 @@ By default, OpenSSL reads configuration files for TLS::
    Ciphersuites = TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_AES_128_CCM_SHA256
    MinProtocol = TLSv1
 
+posix_spawn
+===========
+
+Python issues:
+
+* `expose posix_spawn(p)
+  <https://bugs.python.org/issue20104>`_
+* `Support POSIX_SPAWN_USEVFORK flag in posix_spawn
+  <https://bugs.python.org/issue34663>`_
+* `subprocess uses os.posix_spawn in some cases
+  <https://bugs.python.org/issue35537>`_
+
+vfork:
+
+* https://ewontfix.com/7/
+
+Performance:
+
+* https://github.com/rtomayko/posix-spawn
+
