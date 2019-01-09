@@ -38,16 +38,25 @@ Conferences 2011-today
   - `Python 3: ten years later <https://pylondinium.org/>`__.
     (same talk than FOSDEM 2018)
 
-* May 2018, Pycon US at Cleveland, Ohio, USA
+* May 2018, Pycon US at Cleveland, Ohio, USA: **3 talks**!
 
   - `Python 3: ten years later
-    <https://us.pycon.org/2018/schedule/presentation/86/>`__: keynote.
-    (same talk than FOSDEM 2018)
+    <https://us.pycon.org/2018/schedule/presentation/86/>`__ (same talk than
+    FOSDEM 2018):
+    `slides (PDF) <https://github.com/vstinner/conf/raw/master/2018-PyconUS/python3_10years_later.pdf>`_
+    and `Youtube video <https://www.youtube.com/watch?v=Aj3KMefwOqI>`_
+  - Mentoring and diversity for Python: `slides (PDF)
+    <https://github.com/vstinner/conf/raw/master/2018-PyconUS/contributors.pdf>`__
+    and `LWN article <https://lwn.net/Articles/757715/>`__. I focused on
+    contributors and mentoring, then Mariatta Wijaya talked about diversity.
+  - `Stable ABI
+    <https://github.com/vstinner/conf/raw/master/2018-PyconUS/stable_abi.pdf>`__
+    (slides, PDF)
 
 * April 2018, Pycon Italy at Firenze (keynote)
 
   - `Python 3, ten years later
-    <https://www.pycon.it/conference/talks/python-3-10-years-later-looking-back-python-evolutions-last-10-years>`__
+    <https://www.pycon.it/conference/talks/python-3-10-years-later-looking-back-python-evolutions-last-10-years>`__: keynote.
     (same talk than FOSDEM 2018)
 
 * February 2018, FOSDEM at Brussels
