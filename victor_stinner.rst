@@ -26,6 +26,7 @@ Public profiles
 - `Bitbucket profile <https://bitbucket.org/vstinner/>`_
 - `Flickr profile (photos) <http://www.flickr.com/photos/haypo/>`_
 - `Launchpad <https://launchpad.net/~victor-stinner>`_
+- `SpeakerHub <https://speakerhub.com/speaker/victor-stinner>`_
 
 See also Victor Stinner in `Python Core Developer Motivations and Affiliations
 <https://devguide.python.org/motivations/#published-entries>`_.
