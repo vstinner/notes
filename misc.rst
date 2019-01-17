@@ -927,11 +927,12 @@ IEEE 754 defines 4 modes:
 * ROUND_CEILING
 * ROUND_DOWN
 
-Python links:
+Links:
 
 * https://vstinner.github.io/pytime.html
 * "double-rounding" https://bugs.python.org/issue24567
 * https://bugs.python.org/issue32956
+* double to float rounding on ppc64le: https://gcc.gnu.org/bugzilla/show_bug.cgi?id=88892
 
 
 Linux: follow process execution
