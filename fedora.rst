@@ -1,6 +1,10 @@
+.. _fedora:
+
 ++++++
 Fedora
 ++++++
+
+See also: :ref:`Python in Fedora <python-in_fedora>`.
 
 Debuginfo
 =========

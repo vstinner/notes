@@ -75,3 +75,16 @@ Software Collections support: https://access.redhat.com/support/policy/updates/r
 Support shorter than RHEL support.
 
 Python27 will likely be supported at least until 2020.
+
+
+.. _python-in_fedora:
+
+Python in Fedora
+================
+
+* `Fedora Loves Python <https://fedoralovespython.org/>`_
+* `Fedora Developer: Multiple Python interpreters
+  <https://developer.fedoraproject.org/tech/languages/python/multiple-pythons.html>`_
+* `Fedora EPEL <https://fedoraproject.org/wiki/EPEL>`_
+
+See also :ref:`Fedora <fedora>`.
