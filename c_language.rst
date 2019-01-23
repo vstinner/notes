@@ -245,6 +245,7 @@ For Python, install also libffi, openssl and zlib::
 Compiler and linker options
 ===========================
 
+* https://developers.redhat.com/blog/2018/03/21/compiler-and-linker-flags-gcc/
 * https://wiki.debian.org/Hardening
 
 C macros (preprocessor)
