@@ -1278,3 +1278,13 @@ Performance:
 
 * https://github.com/rtomayko/posix-spawn
 
+Matrix
+======
+
+* https://riot.im/app/
+* Freenode IRC server
+
+  * Join IRC Freenode channel XXX: /join #freenode_#XXX:matrix.org
+  * In Riot.im, click on the Person icon (bottom left) to start a private
+    chat with @appservice-irc:matrix.org: type
+  * https://github.com/matrix-org/matrix-appservice-irc/blob/master/HOWTO.md#changing-nicks
