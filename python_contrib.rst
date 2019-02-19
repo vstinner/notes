@@ -39,8 +39,12 @@ I promoted the following developers as core devs:
 
 * 2019-02-19: `Cheryl Sabella
   <https://mail.python.org/pipermail/python-committers/2019-February/006575.html>`_
+  (`vote
+  <https://discuss.python.org/t/vote-to-promote-cheryl-sabella-as-a-core-developer/862>`__)
 * 2018-06-20: `Pablo Galindo Salgado
   <https://mail.python.org/pipermail/python-committers/2018-June/005621.html>`_
+  (`vote
+  <https://mail.python.org/pipermail/python-committers/2018-June/005564.html>`__)
 * 2017-12-08: `Julien Palard
   <https://mail.python.org/pipermail/python-committers/2017-December/004989.html>`__
 * 2016-11-21: `Xiang Zhang
