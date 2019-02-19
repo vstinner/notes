@@ -17,6 +17,14 @@ Conferences 2011-today
    :alt: Pycon US 2014 logo
    :target: https://us.pycon.org/
 
+* January 2019, Devconf.CZ at Brno (Czech Republic)
+
+
+  - `Howto engage Python contributors in the long term?
+    <https://devconfcz2019.sched.com/event/JcfE/howto-engage-python-contributors-in-the-long-term>`_
+  - `slides (PDF)
+    <https://github.com/vstinner/conf/blob/master/2019-DevConfCZ/python_diversity.pdf>`__
+
 * October 2018, Pycon FR at Lille (France)
 
   - `Comment avoir plus de contributeurs à Python
