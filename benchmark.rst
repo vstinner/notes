@@ -176,6 +176,9 @@ Micro optimisation
   <https://lwn.net/Articles/444336/>`_: "So the conclusion is: prefetches are
   absolutely toxic, even if the NULL ones are excluded."
 * Linux kernel likely() / unlikely() based on GCC __builtin_expect()
+* `How new-lines affect the Linux kernel performance
+  <https://nadav.amit.zone/linux/2018/10/10/newline.html>`_
+  by Nadav Amit
 
 
 Memory
