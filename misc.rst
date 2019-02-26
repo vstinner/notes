@@ -387,41 +387,6 @@ Fun:
 * http://www.commitlogsfromlastnight.com/
 
 
-systemd
-=======
-
-list servers
-------------
-
-Find the name of the systemd unit for MariaDB or RabbitMQ server.
-
-List all installed services, including disabled services, and search for "maria"::
-
-    systemctl list-unit-files --type=service | grep maria
-
-Alternative if you know the package::
-
-    $ rpm -ql mariadb-server|grep service
-    /usr/lib/systemd/system/mariadb.service
-
-List enabled services::
-
-    systemctl list-units
-
-Note: it looks like "list-units" doesn't show mariadb.service, probably because
-it is disabled (not started at boot).
-
-
-system logs (syslogs), journald
--------------------------------
-
-* Show syslog from the most recent to the oldest logs: ``journalctl --reverse``
-* Show all logs since the last boot: ``journalctl -b 0``
-* List boots: ``journalctl --list-boots``
-* ``tail -f /var/log/syslog``: ``journalctl -f``
-* ``tail -f /var/log/syslog`` but only for apache: ``journalctl -u apache.service -f``
-
-
 getaddrinfo
 ===========
 
