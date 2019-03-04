@@ -29,6 +29,7 @@ Contents:
    time.rst
    heap_fragmentation.rst
    benchmark.rst
+   freebsd.rst
    windows.rst
    gdb.rst
    misc.rst
