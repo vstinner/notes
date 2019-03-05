@@ -149,6 +149,11 @@ properly.
 
 Windows locales: "fr-FR", "en-US", "ja-JP", etc.
 
+On Windows, before setlocale(LC_CTYPE, "") is called, LC_CTYPE uses the Latin1
+encoding in practice (see `Python issue #29571
+<https://bugs.python.org/issue29571#msg337185>`_). Call setlocale(LC_CTYPE, "")
+to use the ANSI code page.
+
 My tools:
 
 * `test_all_locales.py
