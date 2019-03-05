@@ -149,6 +149,17 @@ properly.
 
 Windows locales: "fr-FR", "en-US", "ja-JP", etc.
 
+My tools:
+
+* `test_all_locales.py
+  <https://github.com/vstinner/misc/blob/master/python/test_all_locales.py>`_:
+  test Python implementation of locales. Only support a few operating systems.
+* `all_locales.py
+  <https://github.com/vstinner/misc/blob/master/python/all_locales.py>`_:
+  script to list all **working** locales, can be different than "locale -a"
+* `c_locale.c <https://github.com/vstinner/misc/blob/master/misc/c_locale.c>`_:
+  basic info on the "C" locale
+
 Use cases
 ---------
 
