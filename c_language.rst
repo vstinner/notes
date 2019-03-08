@@ -278,6 +278,10 @@ compilation error with GCC if the argument is not an array but a pointer::
        (sizeof(array) / sizeof((array)[0]))
    #endif
 
+Is a type signed or unsigned? ::
+
+    #define IS_TYPE_UNSIGNED(type) (((type)0 - 1) > 0)
+
 Convert to a string
 -------------------
 
