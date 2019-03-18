@@ -1151,3 +1151,38 @@ Matrix
   * In Riot.im, click on the Person icon (bottom left) to start a private
     chat with @appservice-irc:matrix.org: type
   * https://github.com/matrix-org/matrix-appservice-irc/blob/master/HOWTO.md#changing-nicks
+
+
+Wayland and Xorg
+================
+
+Get GPUs::
+
+    $ lspci|grep VGA
+    00:02.0 VGA compatible controller: Intel Corporation HD Graphics 530 (rev 06)
+    01:00.0 VGA compatible controller: NVIDIA Corporation GM107GLM [Quadro M1000M] (rev a2)
+
+Get OpenGL GPU::
+
+    $ glxinfo|grep -E 'Device|rendering'
+    direct rendering: Yes
+        Device: Mesa DRI Intel(R) HD Graphics 530 (Skylake GT2)  (0x191b)
+
+Get screen resolution::
+
+    $ xrandr
+    Screen 0: minimum 320 x 200, current 3840 x 1080, maximum 8192 x 8192
+    XWAYLAND0 connected 1920x1080+0+0 (normal left inverted right x axis y axis) 510mm x 290mm
+       1920x1080     59.96*+
+    XWAYLAND1 connected 1920x1080+1920+0 (normal left inverted right x axis y axis) 480mm x 270mm
+       1920x1080     59.96*+
+
+Get screen DPI (96x96 in this example)::
+
+    $ xdpyinfo | grep -B 2 resolution
+    screen #0:
+      dimensions:    3840x1080 pixels (1016x286 millimeters)
+      resolution:    96x96 dots per inch
+
+Check if an application is using Xorg or Wayland in Wayland: run ``xprop``,
+the mouse cursor becomes a cross only for Xorg appplications.
