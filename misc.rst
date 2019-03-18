@@ -1186,3 +1186,15 @@ Get screen DPI (96x96 in this example)::
 
 Check if an application is using Xorg or Wayland in Wayland: run ``xprop``,
 the mouse cursor becomes a cross only for Xorg appplications.
+
+My Lenovo P50 has 2 GPU, one slow integrated Intel GPU and one fast Nvidia GPU.
+There is a `switcheroo-control <https://github.com/hadess/switcheroo-control>`_
+D-Bus service to check if the system has 2 GPUs.
+
+Linux kernel ``vgaswitcheroo``::
+
+    $ sudo cat /sys/kernel/debug/vgaswitcheroo/switch
+    0:IGD:+:Pwr:0000:00:02.0
+    1:DIS: :DynPwr:0000:01:00.0
+
+See `bumblebee <https://docs.fedoraproject.org/en-US/quick-docs/bumblebee/>`_.
