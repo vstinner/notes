@@ -1156,6 +1156,14 @@ Matrix
 Wayland and Xorg
 ================
 
+Environment to opt-in for Wayland support::
+
+    export GDK_BACKEND=wayland
+
+To run Firefow with Firefox, edit ``/etc/environment`` to add the line::
+
+    MOZ_ENABLE_WAYLAND=1
+
 Get GPUs::
 
     $ lspci|grep VGA
