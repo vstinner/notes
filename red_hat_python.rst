@@ -88,3 +88,29 @@ Python in Fedora
 * `Fedora EPEL <https://fedoraproject.org/wiki/EPEL>`_
 
 See also :ref:`Fedora <fedora>`.
+
+
+Fedora packages
+===============
+
+In April 2019, 3 branches are supported:
+
+* f29: Fedora 29 (stable)
+* f39: Fedora 30 (beta)
+* master: Fedora Rawhide (unstable)
+
+There are the following packages for Python:
+
+* `python2 <https://src.fedoraproject.org/rpms/python2/>`_: Python 2.7
+* `python34 <https://src.fedoraproject.org/rpms/python34/>`_: Python 3.4
+* `python35 <https://src.fedoraproject.org/rpms/python35/>`_: Python 3.5
+* `python36 <https://src.fedoraproject.org/rpms/python36/>`_: Python 3.6
+* `python3 <https://src.fedoraproject.org/rpms/python3/>`_: Python 3.7
+* `python38 <https://src.fedoraproject.org/rpms/python38/>`_: Python 3.8
+
+Old stuff:
+
+* Old branches: f27 (Fedora 27), f26 (Fedora 26), ... (``python`` package has
+  branches up to f10: Fedora 10)
+* The `python <https://src.fedoraproject.org/rpms/python/>`_ package is now
+  dead. It has been renamed to ``python2``.
