@@ -35,6 +35,7 @@ Contents:
    misc.rst
    brainstorm_cpython_tutorial.rst
    systemd.rst
+   fedora_python.rst
    red_hat_python.rst
    single_file_app.rst
    fedora.rst

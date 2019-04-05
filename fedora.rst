@@ -4,7 +4,7 @@
 Fedora
 ++++++
 
-See also: :ref:`Python in Fedora <python-in_fedora>`.
+See also: :ref:`Python in Fedora <python-fedora>`.
 
 Debuginfo
 =========
