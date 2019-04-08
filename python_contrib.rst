@@ -26,25 +26,17 @@ Reports
 Mentoring, bug triage permission, core developers
 =================================================
 
-I gave the bug triage permission to:
-
-* 2018-01-18: `Pablo Galindo Salgado
-  <https://mail.python.org/pipermail/python-committers/2018-January/005133.html>`__
-* 2017-12-06: `Cheryl Sabella
-  <https://mail.python.org/pipermail/python-committers/2017-December/004963.html>`__
-* 2017-12-06: `Sanyam Khurana
-  <https://mail.python.org/pipermail/python-committers/2017-December/004977.html>`__
-
 I promoted the following developers as core devs:
 
+* 2019-04-08: `Stéphane Wirtel
+  <https://mail.python.org/pipermail/python-committers/2019-April/006677.html>`_
+  (`vote <https://discuss.python.org/t/vote-to-promote-stephane-wirtel-as-a-core-dev/1044>`_)
 * 2019-02-19: `Cheryl Sabella
   <https://mail.python.org/pipermail/python-committers/2019-February/006575.html>`_
-  (`vote
-  <https://discuss.python.org/t/vote-to-promote-cheryl-sabella-as-a-core-developer/862>`__)
+  (`vote <https://discuss.python.org/t/vote-to-promote-cheryl-sabella-as-a-core-developer/862>`__)
 * 2018-06-20: `Pablo Galindo Salgado
   <https://mail.python.org/pipermail/python-committers/2018-June/005621.html>`_
-  (`vote
-  <https://mail.python.org/pipermail/python-committers/2018-June/005564.html>`__)
+  (`vote <https://mail.python.org/pipermail/python-committers/2018-June/005564.html>`__)
 * 2017-12-08: `Julien Palard
   <https://mail.python.org/pipermail/python-committers/2017-December/004989.html>`__
 * 2016-11-21: `Xiang Zhang
@@ -53,6 +45,15 @@ I promoted the following developers as core devs:
   <https://mail.python.org/pipermail/python-committers/2016-May/003896.html>`__
 * 2011-05-19: `Charles-François Natali
   <https://mail.python.org/pipermail/python-committers/2011-May/001660.html>`__
+
+I gave the bug triage permission to:
+
+* 2018-01-18: `Pablo Galindo Salgado
+  <https://mail.python.org/pipermail/python-committers/2018-January/005133.html>`__
+* 2017-12-06: `Cheryl Sabella
+  <https://mail.python.org/pipermail/python-committers/2017-December/004963.html>`__
+* 2017-12-06: `Sanyam Khurana
+  <https://mail.python.org/pipermail/python-committers/2017-December/004977.html>`__
 
 Python Enhancement Proposals (PEP)
 ==================================
