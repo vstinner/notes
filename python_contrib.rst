@@ -48,6 +48,14 @@ I promoted the following developers as core devs:
 
 I gave the bug triage permission to:
 
+* 2019-02-22: `Andrés Delfino
+  <https://mail.python.org/pipermail/python-committers/2019-February/006588.html>`_
+* 2019-02-15: `Paul Ganssle
+  <https://mail.python.org/pipermail/python-committers/2019-February/006567.html>`_
+* 2019-02-02: `Alexey Izbyshev
+  <https://mail.python.org/pipermail/python-committers/2019-February/006511.html>`_
+* 2019-02-01: `Joannah Nanjekye
+  <https://mail.python.org/pipermail/python-committers/2019-February/006510.html>`_
 * 2018-01-18: `Pablo Galindo Salgado
   <https://mail.python.org/pipermail/python-committers/2018-January/005133.html>`__
 * 2017-12-06: `Cheryl Sabella
