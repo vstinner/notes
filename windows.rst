@@ -57,6 +57,7 @@ Windows command         UNIX command          Comment
 ``cmd >NUL``            ``cmd >/dev/null``    Ignore command stdout (redirect it to null)
 ``echo %errorlevel%``   ``echo $?``           Display the exit code of the previous command
 ``set PROMPT=$$ ``      ``export PS1='$ '``   Change the command line prompt to ``$ ``
+``dir NAME /s /p``      ``find -name NAME``   Find a file by its name in subdirectories
 ======================  ====================  ==========================================================
 
 
