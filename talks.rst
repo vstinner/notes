@@ -17,8 +17,16 @@ Conferences 2011-today
    :alt: Pycon US 2014 logo
    :target: https://us.pycon.org/
 
-* January 2019, Devconf.CZ at Brno (Czech Republic)
+* May 2019, Pycon US at Cleveland (Ohio, USA)
 
+  - `How to engage Python contributors in the long term? Tech is easy, people
+    are hard.
+    <https://us.pycon.org/2019/schedule/presentation/241/>`_
+  - `video on Youtube <https://www.youtube.com/watch?v=O3UmUj9h_Eo>`_
+  - `slides (PDF)
+    <https://github.com/vstinner/conf/blob/master/2019-Pycon/python_diversity.pdf>`__
+
+* January 2019, Devconf.CZ at Brno (Czech Republic)
 
   - `Howto engage Python contributors in the long term?
     <https://devconfcz2019.sched.com/event/JcfE/howto-engage-python-contributors-in-the-long-term>`_
