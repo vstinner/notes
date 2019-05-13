@@ -1206,3 +1206,32 @@ Linux kernel ``vgaswitcheroo``::
     1:DIS: :DynPwr:0000:01:00.0
 
 See `bumblebee <https://docs.fedoraproject.org/en-US/quick-docs/bumblebee/>`_.
+
+
+git
+===
+
+Error::
+
+    $ git gc
+    fatal: impossible de lire
+    378a172cc98d7bc8dc5b6a304ec47cf4f24276ca
+    fatal: failed to run repack
+
+    $ git fsck --connectivity-only
+    broken link from    tree     30d4ac5eb9e7bbc9104e0b8117c7eccf0ca7d68c
+                  to    blob     378a172cc98d7bc8dc5b6a304ec47cf4f24276ca
+    ...
+
+Fix::
+
+    git -c gc.reflogExpire=0 -c gc.reflogExpireUnreachable=0 -c gc.rerereresolved=0 -c gc.rerereunresolved=0 -c gc.pruneExpire=now gc
+
+Try also::
+
+    git reflog expire --expire-unreachable=now --all
+    git gc --prune=now
+
+Check::
+
+    git fsck --connectivity-only
