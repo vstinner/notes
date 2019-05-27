@@ -107,3 +107,14 @@ Python
 
 * `Multiple Python interpreters
   <https://developer.fedoraproject.org/tech/languages/python/multiple-pythons.html>`_
+
+
+Upgrade
+=======
+
+Upgrade Fedora 29 to Fedora 30 in command line::
+
+    # sudo dnf upgrade --refresh
+    sudo dnf install dnf-plugin-system-upgrade
+    sudo dnf system-upgrade download --refresh --releasever=30
+    sudo dnf system-upgrade reboot
