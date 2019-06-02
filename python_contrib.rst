@@ -23,6 +23,21 @@ Reports
 * `2015 Q4 <https://vstinner.github.io/contrib-cpython-2015q4.html>`_
 * `2015 Q3 <https://vstinner.github.io/contrib-cpython-2015q3.html>`_
 
+Python 3.8 Contributions
+========================
+
+* PEP 587: https://docs.python.org/dev/c-api/init_config.html
+* New `sys.unraisablehook
+  <https://docs.python.org/dev/library/sys.html#sys.unraisablehook>`_ function
+* New `threading.excepthook
+  <https://docs.python.org/dev/library/threading.html#threading.excepthook>`_
+  function
+* ``io.IOBase`` finalizer now logs close() exception using
+  ``sys.unraisablehook()``
+* ``_thread.start_new_thread()`` now logs thread function exception using
+  ``sys.unraisablehook()``, rather than ``sys.excepthook()``, so the hook gets
+  the function which created the thread and a more helpful error message.
+
 Mentoring, bug triage permission, core developers
 =================================================
 
