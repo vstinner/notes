@@ -43,6 +43,9 @@ Mentoring, bug triage permission, core developers
 
 I promoted the following developers as core devs:
 
+* 2019-06-16: `Paul Ganssle
+  <https://mail.python.org/archives/list/python-committers@python.org/thread/YGHU7QPBTIMAU5X5K3PGJMHQQJ2XCNLY/>`_
+  (`vote <https://discuss.python.org/t/vote-to-promote-paul-ganssle-as-a-core-developer/1826>`_)
 * 2019-04-08: `Stéphane Wirtel
   <https://mail.python.org/pipermail/python-committers/2019-April/006677.html>`_
   (`vote <https://discuss.python.org/t/vote-to-promote-stephane-wirtel-as-a-core-dev/1044>`_)
