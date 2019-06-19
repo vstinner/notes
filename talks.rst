@@ -17,6 +17,22 @@ Conferences 2011-today
    :alt: Pycon US 2014 logo
    :target: https://us.pycon.org/
 
+* May 2019, Python Language Summit (during Pycon US) at Cleveland (Ohio, USA)
+
+
+  * `Python Core Developer Mentorship
+    <http://pyfound.blogspot.com/2019/05/python-core-developer-mentorship.html>`_
+    with Chery Sabella and Pablo Galindo Salgado
+  * `slides
+    <https://github.com/vstinner/conf/blob/master/2019-Pycon/mentoring.pdf>`_
+
+* May 2019, Python Language Summit (during Pycon US) at Cleveland (Ohio, USA)
+
+
+  * `Status of stable API and stable ABI in Python 3.8
+    <https://github.com/vstinner/conf/blob/master/2019-Pycon/status_stable_api_abi.pdf>`_:
+    lightning talk (5 min)
+
 * May 2019, Pycon US at Cleveland (Ohio, USA)
 
   - `How to engage Python contributors in the long term? Tech is easy, people
