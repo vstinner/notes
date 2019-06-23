@@ -41,6 +41,16 @@ Contents:
    fedora.rst
 
 
+See also
+========
+
+* `Python Development Documentation
+  <https://pythondev.readthedocs.io/>`_
+* `Victor Stinner blog 3
+  <http://vstinner.github.io/>`_
+* `Tutorial to contribute to the CPython project's documentation!
+  <https://cpython-core-tutorial.readthedocs.io/>`_
+
 Indices and tables
 ==================
 
