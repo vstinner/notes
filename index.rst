@@ -19,7 +19,6 @@ Contents:
    victor_stinner.rst
    python_contrib.rst
    contributions.rst
-   python_new_stable_api.rst
    pypy_warmups.rst
    c_language.rst
    unicode.rst
