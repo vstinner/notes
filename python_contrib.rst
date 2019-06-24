@@ -66,7 +66,7 @@ I promoted the following developers as core devs:
 
 I gave the bug triage permission to:
 
-* 2019-06-06: `Zackery Spytz got the bug triage permission
+* 2019-06-06: `Zackery Spytz
   <https://mail.python.org/archives/list/python-committers@python.org/thread/IMYXXTA2VN44ASGA33D7LVUZEWKEAUCQ/#WUZNQLX2GAETCZT62SRLL7NYDLYH7Y7F>`_
 * 2019-02-22: `Andrés Delfino
   <https://mail.python.org/pipermail/python-committers/2019-February/006588.html>`_
