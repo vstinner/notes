@@ -118,3 +118,17 @@ Upgrade Fedora 29 to Fedora 30 in command line::
     sudo dnf install dnf-plugin-system-upgrade
     sudo dnf system-upgrade download --refresh --releasever=30
     sudo dnf system-upgrade reboot
+
+
+ABRT: ignore crashes in $HOME
+=============================
+
+Edit ``BlackListedPaths`` in ``/etc/abrt/abrt-action-save-package-data.conf``::
+
+    $ sudo vim /etc/abrt/abrt-action-save-package-data.conf
+    BlackListedPaths = (...), /home/vstinner/*
+
+where ``(...)`` was the existing configuration. Full example::
+
+    BlackListedPaths = /usr/share/doc/*, */example*, /usr/bin/nspluginviewer, /usr/lib*/firefox/plugin-container, /home/vstinner/*
+
