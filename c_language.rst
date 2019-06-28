@@ -330,3 +330,12 @@ Single ``*``, constant ``x`` and constant ``*x``::
     const int * const x = (const int * const)1;
     x = (const int * const)2; /* compilation error */
     *x = 3;  /* compilation error */
+
+Problem of casting ``char **`` to ``const char **``:
+c-faq.com/ansi/constmismatch.html
+
+
+C FAQ
+=====
+
+http://c-faq.com/
