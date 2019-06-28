@@ -303,3 +303,30 @@ Convert to a string
 But ``__CONCAT`` and ``__STRING`` are not portable. For example, NetBSD says
 "only works with ANSI C". Comment on Linux: "For these things, GCC
 behaves the ANSI way normally, and the non-ANSI way under -traditional."
+
+
+const
+=====
+
+General:
+
+* ``const int *x`` is the same than ``int const *x``:
+  it only matters if ``const`` if before or after ``*``
+
+Single ``*``, constant ``x``, but ``*x`` is mutable::
+
+    int * const x = (int * const)1;
+    x = (int * const)2; /* compilation error */
+    *x = 3; /* ok */
+
+Single ``*``, constant ``*x``, but ``x`` is mutable::
+
+    const int *x = (const int *)1;
+    x = (const int *)2; /* ok */
+    *x = 3; /* compilation error */
+
+Single ``*``, constant ``x`` and constant ``*x``::
+
+    const int * const x = (const int * const)1;
+    x = (const int * const)2; /* compilation error */
+    *x = 3;  /* compilation error */
