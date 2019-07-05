@@ -57,3 +57,9 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+    "All problems in computer science can be solved by another level of
+    indirection... except for the problem of too many layers of indirection."
+    -- joke based on a famous aphorism of *David Wheeler*
+
+    "There are 2 hard problems in computer science: cache invalidation, naming
+    things, and off-by-1 errors."
