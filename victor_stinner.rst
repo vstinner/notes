@@ -37,10 +37,6 @@ Code statistics
 
 - `My profile on Open HUB: statistics on programming
   <https://www.openhub.net/accounts/haypo>`_
-- `My Open Source Report Card (haypo) <http://osrc.dfm.io/haypo>`_: it looks
-  to be based on github
-- `Stackalytics: Victor Stinner activity report
-  <http://stackalytics.com/report/users/victor-stinner>`_ (OpenStack)
 
 
 My projects and talks
