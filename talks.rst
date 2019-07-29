@@ -17,6 +17,14 @@ Conferences 2011-today
    :alt: Pycon US 2014 logo
    :target: https://us.pycon.org/
 
+* July 2019, EuroPython at Basel (Switzerland)
+
+  * "Python Performance: Past, Present and Future" keynote
+  * `Slides <https://github.com/vstinner/talks/blob/master/2019-EuroPython/python_performance.pdf>`__
+  * `Video
+    <https://www.youtube.com/watch?v=T6vC_LOHBJ4&feature=youtu.be&t=1875>`__ (9h
+    YouTube video, link to the start of the my talk, at 31:15)
+
 * May 2019, Python Language Summit (during Pycon US) at Cleveland (Ohio, USA)
 
 
