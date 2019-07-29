@@ -105,7 +105,7 @@ Other projects
 * `Trollius <https://github.com/vstinner/trollius/>`_:  portage of the Tulip
   project (asyncio module, PEP 3156) on Python 2, asynchronous input/output
   library.
-* `Hachoir3 <http://hachoir3.readthedocs.io/>`_: Python library that allows
+* `Hachoir <http://hachoir.readthedocs.io/>`_: Python library that allows
   to view and edit a binary stream field by field. In other words, Hachoir
   allows you to "browse" any binary stream just like you browse directories and
   files. A file is split in a tree of fields, where the smallest field is just
