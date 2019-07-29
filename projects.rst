@@ -35,9 +35,6 @@ Documentation
 * `Programming with Unicode <http://unicodebook.readthedocs.io/>`_
   (source code: `unicode_book at github
   <https://github.com/vstinner/unicode_book>`_)
-* `CPython Internals <http://cpython-internals.readthedocs.io/>`_
-  (source code: `cpython_internals at bitbucket
-  <https://bitbucket.org/vstinner/cpython_internals>`_)
 
 
 Python Projects
