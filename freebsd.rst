@@ -2,6 +2,13 @@
 FreeBSD
 +++++++
 
+Minimum packages to develop on FreeBSD
+======================================
+
+Install::
+
+    sudo pkg install vim-console git
+
 Misc
 ====
 
