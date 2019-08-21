@@ -132,3 +132,20 @@ where ``(...)`` was the existing configuration. Full example::
 
     BlackListedPaths = /usr/share/doc/*, */example*, /usr/bin/nspluginviewer, /usr/lib*/firefox/plugin-container, /home/vstinner/*
 
+
+Rawhide and GPG keys
+====================
+
+Rawhide: https://fedoraproject.org/wiki/Releases/Rawhide
+
+GPG::
+
+    $ rpm -qf /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-31-x86_64
+    fedora-gpg-keys-31-0.2.noarch
+
+Import Fedora's GPG key(s) (command comming from
+https://getfedora.org/security/):
+
+    curl https://getfedora.org/static/fedora.gpg | gpg --import
+
+Last resort: disable gpgcheck in /etc/yum.repos.d/fedora-rawhide.repo (then reenable it).
