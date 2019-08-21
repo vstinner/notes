@@ -19,12 +19,14 @@ Use FreeBSD
    $ sudo shutdown -r now
    $ sudo freebsd-update install
 
-
-
-
-
 Upgrade
 =======
+
+Upgrade the system::
+
+    sudo freebsd-update fetch
+    sudo freebsd-update install
+    pkg upgrade
 
 Upgrade to FreeBSD 12.0-RC2::
 
