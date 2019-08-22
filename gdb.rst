@@ -9,6 +9,13 @@ GDB: GNU debugger
    :alt: Debugging
    :target: http://www.monkeyuser.com/2018/debugging/
 
+gdb commands
+============
+
+* ``info sharedlibrary``: list loaded shared libraries (see also
+  ``sharedlibrary`` command to explicitly load shared libraries)
+* ``info sources``: list code source files
+
 Debug methodolody
 =================
 
