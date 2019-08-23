@@ -94,7 +94,7 @@ Accepted PEPs
 ==========  ======  ========  =======================================================================================
 PEP         Python  Status    Title
 ==========  ======  ========  =======================================================================================
-:pep:`587`  3.8     Accepted  Python Initialization Configuration
+:pep:`587`  3.8     Final     Python Initialization Configuration
 :pep:`564`  3.7     Final     Add new time functions with nanosecond resolution (ex: ``time.time_ns()``)
 :pep:`545`  ---     Final     Python Documentation Translations -- co-written with Juliend Palard and Naoki IANADA
 :pep:`540`  3.7     Final     Add a new UTF-8 mode
