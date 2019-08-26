@@ -31,6 +31,9 @@ Public profiles
 See also Victor Stinner in `Python Core Developer Motivations and Affiliations
 <https://devguide.python.org/motivations/#published-entries>`_.
 
+Note for myself: see also `gravatar.com <https://en.gravatar.com/>`_
+(ex: used by Fedora Pagure).
+
 
 Code statistics
 ===============
