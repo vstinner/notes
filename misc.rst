@@ -1235,3 +1235,11 @@ Try also::
 Check::
 
     git fsck --connectivity-only
+
+
+Thunderbird
+===========
+
+Use multiple profiles::
+
+    thunderbird -ProfileManager
