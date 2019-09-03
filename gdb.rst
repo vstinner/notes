@@ -253,3 +253,22 @@ Use this macro::
     end
     echo "\n
     end
+
+
+Breakpoint in GDB
+=================
+
+Write following code into ``bp.py``::
+
+    class MyBreakpoint(gdb.Breakpoint):
+        def stop(self):
+            caller = gdb.newest_frame().older()
+            caller_name = caller.name() if caller else 'none'
+            return (caller_name != 'func_dealloc')
+
+    MyBreakpoint('func_clear')
+
+In gdb, type: ``source bp.py``.
+
+It puts a breakpoint on the function ``func_clear()`` but stop if the
+the caller function name is not ``func_dealloc()``.
