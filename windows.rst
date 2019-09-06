@@ -61,6 +61,12 @@ Windows command         UNIX command          Comment
 ``shutdown /p /f``      ``sudo poweroff``     Turn off the computer
 ======================  ====================  ==========================================================
 
+To emulate top on Windows, run powershell.exe and type::
+
+    while (1) { ps | sort -desc cpu | select -first 15; sleep -seconds 2; cls }
+
+Press CTRL+c to stop it.
+
 
 Configure vim on Windows
 ========================
@@ -215,3 +221,24 @@ Misc
 ====
 
 * Get system load:: ``wmic cpu get loadpercentage``
+
+
+Disable Windows Defender Realtime protection
+============================================
+
+On an idle Windows VM, the VM uses between more than 150% of the CPU. If I move
+the mouse cursor, the CPU usage goes to 50%. It is the ``msmpeng.exe`` process
+which uses the CPU. "ps" in PowerShell and the Task Manager don't agree
+on the CPU usage: 50% according to ps, 2% according to the Task Manager...
+
+If I disable Real Time protection in Windows Defender, the feature is enabled
+again at next reboot...
+
+I had to add a key into registry to ensure that Windows doesn't reenable
+Real Time protection after reboot:
+
+* run regedit.exe
+* Go to HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender
+* Create a "DWORD (32-bit)" key called "DisableAntiSpyware", set its value
+  to 1.
+* Done.
