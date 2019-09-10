@@ -1156,6 +1156,10 @@ Matrix
 Wayland and Xorg
 ================
 
+Debug: https://fedoraproject.org/wiki/How_to_debug_Wayland_problems
+
+See also: https://fedoraproject.org/wiki/How_to_debug_Firefox_problems
+
 Environment to opt-in for Wayland support::
 
     export GDK_BACKEND=wayland
@@ -1195,6 +1199,18 @@ Get screen DPI (96x96 in this example)::
 Check if an application is using Xorg or Wayland in Wayland: run ``xprop``,
 the mouse cursor becomes a cross only for Xorg appplications.
 
+Dual GPU
+--------
+
+Fedora 30, add an argument to all GRUB kernel configurations::
+
+    sudo grubby --update-kernel=ALL --args="xdg.force_integrated=0"
+
+Disable switcheroo-control (don't run it anymore at startup)::
+
+    sudo systemctl stop switcheroo-control.service
+    sudo systemctl disable switcheroo-control.service
+
 My Lenovo P50 has 2 GPU, one slow integrated Intel GPU and one fast Nvidia GPU.
 There is a `switcheroo-control <https://github.com/hadess/switcheroo-control>`_
 D-Bus service to check if the system has 2 GPUs.
@@ -1205,7 +1221,38 @@ Linux kernel ``vgaswitcheroo``::
     0:IGD:+:Pwr:0000:00:02.0
     1:DIS: :DynPwr:0000:01:00.0
 
+* IGD: Integrated Graphics Device
+* DIS: DIScrete graphics device
+* "+": active card
+
+Links:
+
+* https://www.kernel.org/doc/html/latest/gpu/vga-switcheroo.html
+* https://help.ubuntu.com/community/HybridGraphics
+
+DBus::
+
+    gdbus introspect --system --dest net.hadess.SwitcherooControl --object-path /net/hadess/SwitcherooControl
+    ...
+    interface net.hadess.SwitcherooControl {
+      ...
+      properties:
+        readonly b HasDualGpu = true;
+    };
+
 See `bumblebee <https://docs.fedoraproject.org/en-US/quick-docs/bumblebee/>`_.
+
+Launch an application with Nvidia GPU from a terminal::
+
+    DRI_PRIME=1 firefox
+
+Firefox:
+
+* Go to about:support and search for the Graphics section
+* WebGL https://webglreport.com/ ::
+
+    Unmasked Vendor: nouveau
+    Unmasked Renderer: NV117
 
 
 git
