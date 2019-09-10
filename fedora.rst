@@ -119,6 +119,8 @@ Upgrade Fedora 29 to Fedora 30 in command line::
     sudo dnf system-upgrade download --refresh --releasever=30
     sudo dnf system-upgrade reboot
 
+https://fedoraproject.org/wiki/DNF_system_upgrade
+
 
 ABRT: ignore crashes in $HOME
 =============================
