@@ -1202,6 +1202,10 @@ the mouse cursor becomes a cross only for Xorg appplications.
 Dual GPU
 --------
 
+Disable Nouveau driver::
+
+    sudo grubby --update-kernel=ALL --args="modprobe.blacklist=nouveau"
+
 Fedora 30, add an argument to all GRUB kernel configurations::
 
     sudo grubby --update-kernel=ALL --args="xdg.force_integrated=0"
@@ -1290,3 +1294,17 @@ Thunderbird
 Use multiple profiles::
 
     thunderbird -ProfileManager
+
+My bugs
+=======
+
+* [Wayland] Window partially or not updated when switching between two tabs
+  https://bugzilla.mozilla.org/show_bug.cgi?id=1580152
+* When I started my IRC client, Xwayland crashed which closed my Gnome session:
+  https://bugzilla.redhat.com/show_bug.cgi?id=1729200#c9
+  The bug was already fixed in xserver by my colleague Olivier Fourdan 1 month
+  ago, but the fix didn't land into Fedora yet (when I had the bug):
+  https://gitlab.freedesktop.org/xorg/xserver/merge_requests/242
+* Firefox with Wayland crash on wl_abort() when selecting more than 4000 characters in a <textarea>
+  https://bugzilla.mozilla.org/show_bug.cgi?id=1539773
+
