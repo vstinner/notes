@@ -1306,5 +1306,34 @@ My bugs
   ago, but the fix didn't land into Fedora yet (when I had the bug):
   https://gitlab.freedesktop.org/xorg/xserver/merge_requests/242
 * Firefox with Wayland crash on wl_abort() when selecting more than 4000 characters in a <textarea>
+  https://gitlab.gnome.org/GNOME/gtk/issues/1783
   https://bugzilla.mozilla.org/show_bug.cgi?id=1539773
+  https://src.fedoraproject.org/rpms/gtk3/pull-request/5
+  https://bodhi.fedoraproject.org/updates/FEDORA-2019-d67ec97b0b
+* In Wayland, gnome-shell short freeze: a key press was repeated by mistake,
+  like "helloooooooooooooooooooooo" instead of "hello"
+  On a desktop notification, GNOME actived the discrete graphical device (my
+  NVIDIA GPU) which was suspended.
 
+  Bug discussed on IRC in May 2018
+
+  Upload HW cursor sprite on-demand
+  https://gitlab.gnome.org/GNOME/mutter/merge_requests/106
+  Fix by Jonas Ådahl
+
+    <jadahl> vstinner: the problem is that we upload hw cursor sprites on both GPUs. if you aren't actually using the secondary GPU it'll wake up it up over and over again, causing the kernel (I assume) to wait for something each time
+    <jadahl> for example, IIRC if you have a monitor connected to the HDMI, the issue will go away since the secondary GPU is always awake anyway
+
+
+On a GNOME freeze (6 june 2018 .. 31 oct 2018):
+
+    (June 6, 2018: I was hitting the bug for 3 to 4 monts)
+
+    org.gnome.Shell.desktop[1759]: Window manager warning: last_user_time
+    (96952164) is greater than comparison timestamp (96951714). This most
+    likely represents a buggy client sending inaccurate timestamps in
+    messages such as _NET_ACTIVE_WINDOW. Trying to work around...
+
+    Upgrade to F29
+
+Bug when gnome-shell tries to active the suspended NVIDIA GPU (Hybrid Graphics).
