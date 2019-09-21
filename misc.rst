@@ -906,7 +906,8 @@ Linux: follow process execution
 * `execsnoop <http://www.brendangregg.com/blog/2014-07-28/execsnoop-for-linux.html>`_
 * `linux process monitoring <http://bewareofgeek.livejournal.com/2945.html>`_:
   NETLINK_CONNECTOR with CN_IDX_PROC and CN_VAL_PROC commands
-
+* `exec-notify.c  <https://gist.github.com/L-P/9487407>`_:
+  PROC_EVENT_EXEC reading /proc/pid/cmdline
 
 wget mirror
 ===========
