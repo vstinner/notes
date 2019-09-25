@@ -36,12 +36,15 @@ System logs: journald and journalctl
   with better timestamp)
 * Retain only journald logs of the past 30 days:
   ``journalctl --vacuum-time=30d``
+* Filters:
+
+  * ``journalctl _PID=7797`` show logs of process pid 7797
 
 Advantages over scattered text log files:
 
 * Timestamps seem to be more reliable, especially for kernel logs
 * Ability to display logs in the reverse order
-* Ability to filter logs by service or by boot
+* Ability to filter logs by service, by user, by process pid, by boot, etc.
 * ... in fact, I rarely use logs, so I don't have strong expectations for logs
   :-)
 
