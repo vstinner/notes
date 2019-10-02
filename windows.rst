@@ -174,13 +174,20 @@ Some Windows error codes
 ========================
 
 * 5: ERROR_ACCESS_DENIED: Access is denied.
-* Exception Code: ``c0000005`` (decimal: ``3221225477`` or ``-1073741819``):
-  "access violation", EXCEPTION_ACCESS_VIOLATION.
 * 996: ERROR_IO_INCOMPLETE: Overlapped I/O event is not in a signaled state.
 * 10060: WSAETIMEDOUT
 
 See the full list of `Windows System Error Codes
 <https://docs.microsoft.com/en-us/windows/desktop/debug/system-error-codes>`_.
+
+
+Windows exceptions
+==================
+
+* EXCEPTION_ACCESS_VIOLATION = STATUS_ACCESS_VIOLATION = ``c0000005`` (hex) = ``3221225477`` or ``-1073741819``
+* CONTROL_C_EXIT = STATUS_CONTROL_C_EXIT = ``C000013A`` (hex) = ``3221225786``
+* https://github.com/wine-mirror/wine/blob/master/include/winbase.h
+* https://github.com/wine-mirror/wine/blob/master/include/winnt.h
 
 
 OpenSSH server
