@@ -1338,3 +1338,32 @@ On a GNOME freeze (6 june 2018 .. 31 oct 2018):
     Upgrade to F29
 
 Bug when gnome-shell tries to active the suspended NVIDIA GPU (Hybrid Graphics).
+
+
+Debug network issue to a website
+================================
+
+If https://github.com looks down:
+
+* Test network connectivity using ICMP:
+
+  * ``ping github.com``
+  * ``traceroute github.com``
+  * ``mtr github.com``
+
+* Test HTTPS:
+
+  * ``time curl --verbose https://github.com/``
+  * ``time wget -O- https://github.com/``
+  * TLS v1.0: ``time curl --tlsv1.0 --verbose https://github.com/``
+  * HTTP2: ``time curl --http2 --verbose https://github.com/``
+
+
+* Test SSL/TLS handshake:
+
+  * ``time openssl s_client -connect github.com:443``
+  * SSLv3: ``time openssl s_client -connect github.com:443 -ssl3``
+  * TLS v1.0: ``time openssl s_client -connect github.com:443 -tls1_0``
+  * TLS v1.1: ``time openssl s_client -connect github.com:443 -tls1_1``
+  * TLS v1.2: ``time openssl s_client -connect github.com:443 -tls1_2``
+
