@@ -34,6 +34,28 @@ April 2018, `RHEL 7.5 Release Notes: Chapter 54. Deprecated Functionality
     Python 2 has been deprecated: **Python 2 will be replaced with Python 3 in
     the next Red Hat Enterprise Linux** (RHEL) major release.
 
+By default on RHEL8, python3 is ``/usr/libexec/platform-python3.6`` which
+dynamically linked to ``/lib64/libpython3.6m.so.1.0``::
+
+    $ which python3
+    /usr/bin/python3
+
+    $ ls -l /usr/bin/python3
+    /usr/bin/python3 -> /etc/alternatives/python3
+
+    $ ls -l /etc/alternatives/python3
+    /etc/alternatives/python3 -> /usr/bin/python3.6
+
+    $ ls -l /usr/bin/python3.6
+    /usr/bin/python3.6 -> /usr/libexec/platform-python3.6
+
+    $ file /usr/libexec/platform-python3.6
+    /usr/libexec/platform-python3.6: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, ...
+
+    $ ldd /usr/libexec/platform-python3.6
+        libpython3.6m.so.1.0 => /lib64/libpython3.6m.so.1.0 (0x00007f9ad79f6000)
+        ...
+
 
 Python packages in RHEL
 =======================
