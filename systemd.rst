@@ -96,6 +96,13 @@ dependencies to the system, and so run an old application on a newer system, or
 the opposite. Embedding libraries in Flatpak "containers" comes with its own
 set of issues, but that's a different topic ;-)
 
+coredumpctl
+===========
+
+Configuration: https://www.freedesktop.org/software/systemd/man/coredump.conf.html
+
+See also: https://wiki.archlinux.org/index.php/Core_dump
+
 systemd trolls
 ==============
 

@@ -1053,6 +1053,14 @@ Static analyzer vs PHP:
 * https://github.com/rflynn/bugs/blob/master/case/php-md5-broken-by-rasmus.json
 * https://github.com/php/php-src/commit/97bc4c84032881cd398e46098e8cfbae6f3a9590
 
+OpenSSL vulnerability in RAND_bytes() on Debian:
+
+* https://lwn.net/Articles/282230/
+* https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=363516
+* https://lists.debian.org/debian-security-announce/2008/msg00152.html
+* https://research.swtch.com/openssl
+
+
 Shell
 =====
 
@@ -1367,3 +1375,26 @@ If https://github.com looks down:
   * TLS v1.1: ``time openssl s_client -connect github.com:443 -tls1_1``
   * TLS v1.2: ``time openssl s_client -connect github.com:443 -tls1_2``
 
+
+Valgrind
+========
+
+`Valgrind with gdb server
+<http://valgrind.org/docs/manual/manual-core-adv.html>`_ to inspect a bug in gdb::
+
+    # First terminal
+    valgrind --vgdb=yes --vgdb-error=0 program [arg1 arg2 ...]
+
+    # Second terminal
+    gdb
+    # then type in gdb:
+    # (gdb) target remote | vgdb
+
+Generate a suppression for a false alarm::
+
+    --gen-suppressions=yes
+
+Python issues related to Valgrind:
+
+* https://bugs.python.org/issue38118
+* https://bugs.python.org/issue37329
