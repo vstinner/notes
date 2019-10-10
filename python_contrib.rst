@@ -44,14 +44,14 @@ Mentoring, bug triage permission, core developers
 I promoted the following developers as core devs:
 
 * 2019-09-23: `Joannah Nanjekye
-  <https://mail.python.org/archives/list/python-committers@python.org/thread/DLT3RQ7W7XYGN7GH4G34DAVMWYOZIHDI/>`_
-  (`vote <https://discuss.python.org/t/vote-to-promote-joannah-nanjekye-as-a-core-dev/2347>`_)
+  <https://mail.python.org/archives/list/python-committers@python.org/thread/DLT3RQ7W7XYGN7GH4G34DAVMWYOZIHDI/>`__
+  (`vote <https://discuss.python.org/t/vote-to-promote-joannah-nanjekye-as-a-core-dev/2347>`__)
 * 2019-06-16: `Paul Ganssle
-  <https://mail.python.org/archives/list/python-committers@python.org/thread/YGHU7QPBTIMAU5X5K3PGJMHQQJ2XCNLY/>`_
-  (`vote <https://discuss.python.org/t/vote-to-promote-paul-ganssle-as-a-core-developer/1826>`_)
+  <https://mail.python.org/archives/list/python-committers@python.org/thread/YGHU7QPBTIMAU5X5K3PGJMHQQJ2XCNLY/>`__
+  (`vote <https://discuss.python.org/t/vote-to-promote-paul-ganssle-as-a-core-developer/1826>`__)
 * 2019-04-08: `Stéphane Wirtel
   <https://mail.python.org/pipermail/python-committers/2019-April/006677.html>`_
-  (`vote <https://discuss.python.org/t/vote-to-promote-stephane-wirtel-as-a-core-dev/1044>`_)
+  (`vote <https://discuss.python.org/t/vote-to-promote-stephane-wirtel-as-a-core-dev/1044>`__)
 * 2019-02-19: `Cheryl Sabella
   <https://mail.python.org/pipermail/python-committers/2019-February/006575.html>`_
   (`vote <https://discuss.python.org/t/vote-to-promote-cheryl-sabella-as-a-core-developer/862>`__)
@@ -70,15 +70,15 @@ I promoted the following developers as core devs:
 I gave the bug triage permission to:
 
 * 2019-06-06: `Zackery Spytz
-  <https://mail.python.org/archives/list/python-committers@python.org/thread/IMYXXTA2VN44ASGA33D7LVUZEWKEAUCQ/#WUZNQLX2GAETCZT62SRLL7NYDLYH7Y7F>`_
+  <https://mail.python.org/archives/list/python-committers@python.org/thread/IMYXXTA2VN44ASGA33D7LVUZEWKEAUCQ/#WUZNQLX2GAETCZT62SRLL7NYDLYH7Y7F>`__
 * 2019-02-22: `Andrés Delfino
-  <https://mail.python.org/pipermail/python-committers/2019-February/006588.html>`_
+  <https://mail.python.org/pipermail/python-committers/2019-February/006588.html>`__
 * 2019-02-15: `Paul Ganssle
-  <https://mail.python.org/pipermail/python-committers/2019-February/006567.html>`_
+  <https://mail.python.org/pipermail/python-committers/2019-February/006567.html>`__
 * 2019-02-02: `Alexey Izbyshev
   <https://mail.python.org/pipermail/python-committers/2019-February/006511.html>`_
 * 2019-02-01: `Joannah Nanjekye
-  <https://mail.python.org/pipermail/python-committers/2019-February/006510.html>`_
+  <https://mail.python.org/pipermail/python-committers/2019-February/006510.html>`__
 * 2018-01-18: `Pablo Galindo Salgado
   <https://mail.python.org/pipermail/python-committers/2018-January/005133.html>`__
 * 2017-12-06: `Cheryl Sabella
