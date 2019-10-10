@@ -38,6 +38,7 @@ Contents:
    red_hat_python.rst
    single_file_app.rst
    fedora.rst
+   gnome.rst
 
 
 See also
