@@ -193,3 +193,29 @@ Firefox:
 
     Unmasked Vendor: nouveau
     Unmasked Renderer: NV117
+
+
+Xorg BadWindow issue
+====================
+
+Set ``GDK_SYNCHRONIZE`` environment variable to debug such issue::
+
+    The program 'gnome-shell' received an X Window System error.
+    This probably reflects a bug in the program.
+    The error was 'BadWindow (invalid Window parameter)'.
+      (Details: serial 352312 error_code 3 request_code 18 (core protocol) minor_code 0)
+      (Note to programmers: normally, X errors are reported asynchronously;
+       that is, you will receive the error a while after causing it.
+       To debug your program, run it with the GDK_SYNCHRONIZE environment
+       variable to change this behavior. You can then get a meaningful
+       backtrace from your debugger if you break on the gdk_x_error() function.)
+
+* https://gitlab.gnome.org/GNOME/gnome-shell/issues/760
+* https://gitlab.gnome.org/GNOME/gnome-shell/issues/1230
+* https://gitlab.gnome.org/GNOME/gnome-shell/issues/661
+* https://gitlab.gnome.org/GNOME/gnome-shell/issues/627
+* https://gitlab.gnome.org/GNOME/gnome-shell/issues/496
+* https://gitlab.gnome.org/GNOME/gnome-shell/issues/375
+* https://gitlab.gnome.org/GNOME/gnome-shell/issues/213
+* Ubuntu: https://bugs.launchpad.net/ubuntu/+source/gnome-shell/+bug/1821427
+* Fedora: https://bugzilla.redhat.com/show_bug.cgi?id=712612
