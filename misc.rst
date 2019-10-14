@@ -862,6 +862,8 @@ Rounding modes for floating point numbers:
   * Python: ``round(0.5) == 0``
   * Python: ``round(1.5) == 2``
   * Python: ``round(2.5) == 2``
+  * This is the default rounding mode used in IEEE 754 floating-point
+    operations.
 
 * ROUND_UP: Round away from zero.
 
