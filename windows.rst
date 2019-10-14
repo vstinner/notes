@@ -249,3 +249,22 @@ Real Time protection after reboot:
 * Create a "DWORD (32-bit)" key called "DisableAntiSpyware", set its value
   to 1.
 * Done.
+
+
+Maximum path length
+===================
+
+* https://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-file
+* MAX_PATH = 260 characters
+* Does the **system** support long path? Query ``ntdll.RtlAreLongPathsEnabled()``
+
+Application manifest to opt-in for "long path"::
+
+    <application xmlns="urn:schemas-microsoft-com:asm.v3">
+      <windowsSettings>
+        <longPathAware xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">true</longPathAware>
+      </windowsSettings>
+    </application>
+
+An application only supports long if the system supports long path and the
+application opts in for long path.
