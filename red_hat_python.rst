@@ -34,6 +34,12 @@ April 2018, `RHEL 7.5 Release Notes: Chapter 54. Deprecated Functionality
     Python 2 has been deprecated: **Python 2 will be replaced with Python 3 in
     the next Red Hat Enterprise Linux** (RHEL) major release.
 
+`How is Python 2 supported in RHEL after 2020?
+<https://access.redhat.com/solutions/4455511>`_.
+
+* no new features will be added to Python 2 in RHEL 7 and earlier.
+* RHEL 8: Python 2.7 AppStream supported until June 2024.
+
 By default on RHEL8, python3 is ``/usr/libexec/platform-python3.6`` which
 dynamically linked to ``/lib64/libpython3.6m.so.1.0``::
 
