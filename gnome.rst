@@ -70,9 +70,11 @@ started in GNOME.
 Is this application using Wayland or Xorg?
 ------------------------------------------
 
-The ``xprop`` program can be in Wayland to check if an application is using
-Xorg or Wayland: the mouse cursor becomes a cross only and only if the
+``xprop`` or ``xwininfo`` program can be in Wayland to check if an application
+is using Xorg or Wayland: the mouse cursor becomes a cross only and only if the
 application is used Xorg (X11 API).
+
+``xlsclients`` command lists programs using XWayland.
 
 Opt-in for Wayland
 ------------------
