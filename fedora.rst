@@ -151,3 +151,15 @@ https://getfedora.org/security/):
     curl https://getfedora.org/static/fedora.gpg | gpg --import
 
 Last resort: disable gpgcheck in /etc/yum.repos.d/fedora-rawhide.repo (then reenable it).
+
+
+List all packages installed on the system
+==========================================
+
+Using dnf::
+
+    dnf history userinstalled
+
+Using rpm::
+
+    rpm -qa
