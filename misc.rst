@@ -1250,3 +1250,13 @@ Python issues related to Valgrind:
 
 * https://bugs.python.org/issue38118
 * https://bugs.python.org/issue37329
+
+
+Bash
+====
+
+Replace ``name.py`` string with ``name``, remove ``.py`` suffix::
+
+    script="name.py"
+    # display "name"
+    echo ${script:0:-3}
