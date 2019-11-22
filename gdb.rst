@@ -172,6 +172,8 @@ Calling convention:
 gdb
 ===
 
+* Truncated string: ``set print elements 0``
+
 * TUI:
 
   * CTRL+x a: enable/disable TUI
