@@ -827,12 +827,22 @@ Release a Python software
 macOS
 =====
 
+Malware
+-------
+
 Firefox malware: "Websecure WTC", system load near 10, CPU usage higher than
 99%. Remove manually in Firefox extensions.
 
 Anti-malware: don't trust the internet, full of crap. Search in AppStore.
 
 Untested yet: free Bitdefender.
+
+xcode
+-----
+
+"missing xcrun" error when running "make", install Xcode::
+
+    xcode-select --install
 
 Rounding
 ========
