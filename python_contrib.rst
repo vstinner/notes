@@ -116,6 +116,8 @@ Rejected PEPs
 ==========  ======  ============  ====================================================================================
 PEP         Python  Status        Title
 ==========  ======  ============  ====================================================================================
+:pep:`608`  3.9     Rejected      Coordinated Python release
+:pep:`606`  3.9     Rejected      Python Compatibility Version
 :pep:`546`  2.7     Rejected      Backport ssl.MemoryBIO and ssl.SSLObject to Python 2.7 -- co-written with Cory Benfield
 :pep:`511`  3.6     Rejected      API for code transformers
 :pep:`510`  3.6     Rejected      Specialize functions with guards
