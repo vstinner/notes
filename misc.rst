@@ -47,6 +47,10 @@ Python:
 
 * ``[[``, ``]]``: jump to previous/next of the class or fnuction
 
+Misc:
+
+* Open a file from encoding cp850: ``:e ++enc=cp850 document.txt``
+
 
 
 Code search
