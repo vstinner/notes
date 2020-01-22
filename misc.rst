@@ -25,34 +25,6 @@ URLs:
 * Add ``.patch`` to a pull request to get the change as an unified diff
 * In a message, ``<details> ... </details>`` creates a drop-down
 
-vim for developer
-=================
-
-In these examples, I'm using Mercurial with the command "hg". To use git, just
-replace "hg" with "git". I prefer the graphical editor gvim. To use the console
-version, replace "gvim" with "vim".
-
-View differences::
-
-    hg diff | gvim -
-
-Shortcuts:
-
-* ``a/asyncio/events.py``: to open the file, delete ``a\``, put the cursor
-  on the file type, type ``vs`` for a vertial split, and type ``gf`` (goto
-  file) to open the file
-* ``%bd``: close all buffers
-
-Python:
-
-* ``[[``, ``]]``: jump to previous/next of the class or fnuction
-
-Misc:
-
-* Open a file from encoding cp850: ``:e ++enc=cp850 document.txt``
-
-
-
 Code search
 ===========
 
@@ -658,6 +630,13 @@ Free space on the 16 GB SD card:
 
 * install CCleaner
 * Free space using CCleaner
+
+Avoid music applications (Spotify, radio) to stop when idle (phone locked):
+
+* Parameters > Network > Save data > select application:
+  allow your music applications
+* Parameters > Batterie > Applications:
+  allow your music applications
 
 
 IRC

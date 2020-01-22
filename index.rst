@@ -39,6 +39,7 @@ Contents:
    single_file_app.rst
    fedora.rst
    gnome.rst
+   vim.rst
 
 
 See also
