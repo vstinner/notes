@@ -45,21 +45,30 @@ cmd.exe (Windows "shell", Windows console, the MS-DOS black window)
 * Redirect stdout and stderr into the file ``outlog.log``:
   ``command >output.log 2>&1``
 
-======================  ====================  ==========================================================
-Windows command         UNIX command          Comment
-======================  ====================  ==========================================================
-``set``                 ``env``               Display all environment variables
-``type file.exe``       ``cat file.txt``      Display the content of ``file.txt``
-``echo %PATH%``         ``echo $PATH``        Display the value of the ``PATH`` environment variable
-``RMDIR /S /Q dir``     ``rm -rf dir``        Remove a directory and its content
-``cmd > log``           ``cmd > log``         Redirect command stdout into a new ``log`` file
-``cmd >log 2>&1``       ``cmd >log 2>&1``     Redirect command stdout and stderr into a new ``log`` file
-``cmd >NUL``            ``cmd >/dev/null``    Ignore command stdout (redirect it to null)
-``echo %errorlevel%``   ``echo $?``           Display the exit code of the previous command
-``set PROMPT=$$ ``      ``export PS1='$ '``   Change the command line prompt to ``$ ``
-``dir NAME /s /p``      ``find -name NAME``   Find a file by its name in subdirectories
-``shutdown /p /f``      ``sudo poweroff``     Turn off the computer
-======================  ====================  ==========================================================
+=======================  =========================  ==========================================================
+Windows command          UNIX command               Comment
+=======================  =========================  ==========================================================
+``set``                  ``env``                    Display all environment variables
+``type file.exe``        ``cat file.txt``           Display the content of ``file.txt``
+``echo %PATH%``          ``echo $PATH``             Display the value of the ``PATH`` environment variable
+``RMDIR /S /Q dir``      ``rm -rf dir``             Remove a directory and its content
+``cmd > log``            ``cmd > log``              Redirect command stdout into a new ``log`` file
+``cmd >log 2>&1``        ``cmd >log 2>&1``          Redirect command stdout and stderr into a new ``log`` file
+``cmd >NUL``             ``cmd >/dev/null``         Ignore command stdout (redirect it to null)
+``echo %errorlevel%``    ``echo $?``                Display the exit code of the previous command
+``set PROMPT=$$ ``       ``export PS1='$ '``        Change the command line prompt to ``$ ``
+``dir NAME /s /p``       ``find -name NAME``        Find a file by its name in subdirectories
+``shutdown /p /f``       ``sudo poweroff``          Turn off the computer
+``findstr PATTERN *.c``  ``grep PATTERN *.c``       Search *PATTERN* in files with name ending with ``.c``
+=======================  =========================  ==========================================================
+
+Get usage::
+
+    findstr /?
+
+grep in subdirectories::
+
+    findstr /S PATTERN *.c
 
 To emulate top on Windows, run powershell.exe and type::
 
