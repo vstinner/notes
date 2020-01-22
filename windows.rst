@@ -268,3 +268,12 @@ Application manifest to opt-in for "long path"::
 
 An application only supports long if the system supports long path and the
 application opts in for long path.
+
+C languages: Windows types
+==========================
+
+`Windows Data Types
+<https://docs.microsoft.com/en-us/windows/win32/winprog/windows-data-types>`_:
+
+* ``LPCTSTR``: ``CONST WCHAR *`` if ``UNICODE`` defined, ``CONST CHAR *``
+  otherwise
