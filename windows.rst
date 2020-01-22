@@ -277,3 +277,9 @@ C languages: Windows types
 
 * ``LPCTSTR``: ``CONST WCHAR *`` if ``UNICODE`` defined, ``CONST CHAR *``
   otherwise
+
+C Runtime library (CRT)
+=======================
+
+Visual Studio provides a C Runtime library (CRT). Its source code can be found
+in: "%ProgramFiles(x86)%\Windows Kits\10\Source\10.0.[version]\ucrt\env".
