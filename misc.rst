@@ -1258,3 +1258,24 @@ Replace ``name.py`` string with ``name``, remove ``.py`` suffix::
     script="name.py"
     # display "name"
     echo ${script:0:-3}
+
+
+Floating point number
+=====================
+
+Binary IEEE 754:
+
+* http://fabiensanglard.net/floating_point_visually_explained/
+* Python 3.9: math.ulp(), math.nextafter()
+* http://0.30000000000000004.com/
+
+Other:
+
+* `GMP <https://gmplib.org/>`_: free library for arbitrary precision
+  arithmetic, operating on signed integers, rational numbers, and
+  floating-point numbers.
+* `MPFR <https://www.mpfr.org/>`_: multiple-precision floating-point
+  computations with correct rounding. MPFR is based on the GMP
+  multiple-precision library.
+* `MPFI <https://gforge.inria.fr/projects/mpfi/>`_: multiple precision
+  **interval** arithmetic library based on MPFR
