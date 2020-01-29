@@ -1294,6 +1294,9 @@ Mount it (need root)::
     sudo losetup /dev/loop0 xfs_disk
     mkdir mnt
     sudo mount -o loop xfs_disk mnt/
+    cd mnt
+    # allow my user to write in /
+    sudo chown $USER: .
 
 Umount it::
 
