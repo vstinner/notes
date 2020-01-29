@@ -1279,3 +1279,23 @@ Other:
   multiple-precision library.
 * `MPFI <https://gforge.inria.fr/projects/mpfi/>`_: multiple precision
   **interval** arithmetic library based on MPFR
+
+
+Mount a filesystem from a disk
+==============================
+
+Create a 100 MB XFS filesystem in a file::
+
+    dd if=/dev/zero of=xfs_disk bs=1M count=100
+    mkfs.xfs xfs_disk
+
+Mount it (need root)::
+
+    sudo losetup /dev/loop0 xfs_disk
+    mkdir mnt
+    sudo mount -o loop xfs_disk mnt/
+
+Umount it::
+
+    sudo umount mnt/
+    rmdir mnt/
