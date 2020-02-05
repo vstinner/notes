@@ -1302,3 +1302,11 @@ Umount it::
 
     sudo umount mnt/
     rmdir mnt/
+
+
+Mplayer
+=======
+
+Increase maxiumum volume::
+
+    mplayer -softvol -softvol-max 300 video.avi

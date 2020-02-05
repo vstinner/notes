@@ -13,13 +13,14 @@ See also: :ref:`Python in Fedora <python-fedora>`.
 Python shipped with RHEL
 ========================
 
-=========  ===========
+=========  =========================
 RHEL       Python
-=========  ===========
+=========  =========================
 RHEL 6     Python 2.6
 RHEL 7     Python 2.7
+RHEL 7.7   Python 2.7 and Python 3.6
 RHEL 8     Python 3.6
-=========  ===========
+=========  =========================
 
 `How to install Python 3 on Red Hat Enterprise Linux 7
 <https://developers.redhat.com/blog/2018/08/13/install-python3-rhel/>`_ by Rob
