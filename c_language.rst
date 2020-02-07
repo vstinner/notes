@@ -7,6 +7,14 @@ See also:
 * :ref:`GDB <gdb>`
 * :ref:`Visual Studio <visual-studio>`
 
+i++ and --i
+===========
+
+* ``x = ++i;`` is equivalent of ``++i; x = i;`` or ``i += 1; x = i;``
+* ``x = i++;`` is equivalent of ``x = i; i++;`` or ``x = i; i += 1;``
+* ``x = --i;`` is equivalent of ``--i; x = i;`` or ``i -= 1; x = i;``
+* ``x = i--;`` is equivalent of ``x = i; i--;`` or ``x = i; i -= 1;``
+
 Lack of namespaces
 ==================
 
