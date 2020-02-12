@@ -163,3 +163,14 @@ Using dnf::
 Using rpm::
 
     rpm -qa
+
+
+dnf: file ... of xxx conflicts with file from package yyy
+=========================================================
+
+Attempt ``dnf remove xxx``.
+
+If it's really not possible::
+
+    dnf download yyy
+    sudo rpm -ihv --force <downloaded RPM file>
