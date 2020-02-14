@@ -1310,3 +1310,32 @@ Mplayer
 Increase maxiumum volume::
 
     mplayer -softvol -softvol-max 300 video.avi
+
+
+Virtualization: run an AArch64 VM on x86-64
+===========================================
+
+Before starting virt-manager, install (``edk2-aarch64`` is for UEFI)::
+
+    sudo dnf install qemu-system-aarch64 edk2-aarch64
+
+In virt-manager, pick "arch: AArch64" in the first dialog of the wizard.
+
+* https://fedoraproject.org/wiki/Architectures/AArch64/Install_with_QEMU
+
+
+QEMU User Mode
+==============
+
+* https://wiki.debian.org/QemuUserEmulation
+* https://www.kernel.org/doc/html/latest/admin-guide/binfmt-misc.html
+
+Fedora::
+
+    sudo dnf install -y qemu-user-static
+
+
+Debug or analyze glibc malloc()
+===============================
+
+https://pagure.io/glibc-malloc-trace-utils/
