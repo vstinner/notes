@@ -80,6 +80,8 @@ Issues with C++
 Undefined Behaviour
 ===================
 
+* ``memcpy(dst, src, 0)`` is safe (if *dst* is a valid address):
+  https://stackoverflow.com/questions/29844298/is-it-legal-to-call-memcpy-with-zero-length-on-a-pointer-just-past-the-end-of-an
 * `What Every C Programmer Should Know About Undefined Behavior #1/3
   <http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html>`_
 * `What Every C Programmer Should Know About Undefined Behavior #2/3
