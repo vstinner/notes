@@ -221,3 +221,22 @@ Set ``GDK_SYNCHRONIZE`` environment variable to debug such issue::
 * https://gitlab.gnome.org/GNOME/gnome-shell/issues/213
 * Ubuntu: https://bugs.launchpad.net/ubuntu/+source/gnome-shell/+bug/1821427
 * Fedora: https://bugzilla.redhat.com/show_bug.cgi?id=712612
+
+
+My GPU bugs on Fedora
+=====================
+
+My bugs:
+
+* 2020-01-28, Intel IGP: `i915 0000:00:02.0: GPU HANG: ecode 9:1:0x00000000, hang on rcs0
+  <https://gitlab.freedesktop.org/drm/intel/issues/1053>`_
+* 2020-01-23: `d_alloc: list_add corruption. next->prev should be prev (ffff930b5d4b6ca0), but was 0000000000000000. (next=ffff930beff5b690)
+  <https://bugzilla.redhat.com/show_bug.cgi?id=1794350>`_ (Intel IGP?)
+
+My laptop Lenovo P50 has two GPUs:
+
+* Integrated Graphics Device: Intel IGP (Intel HD Graphics 530)
+* Discrete Graphics Device: NVIDIA GPU (NVIDIA Quadro M1000M)
+
+See `Debug Hybrid Graphics issues on Linux
+<https://vstinner.github.io/debug-hybrid-graphics-issues-linux.html>`_.
