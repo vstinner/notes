@@ -26,8 +26,9 @@ There are the following packages for Python:
 * `python34 <https://src.fedoraproject.org/rpms/python34/>`_: Python 3.4
 * `python35 <https://src.fedoraproject.org/rpms/python35/>`_: Python 3.5
 * `python36 <https://src.fedoraproject.org/rpms/python36/>`_: Python 3.6
-* `python3 <https://src.fedoraproject.org/rpms/python3/>`_: Python 3.7
+* `python3 <https://src.fedoraproject.org/rpms/python3/>`_: Python 3.7 (in fc31)
 * `python38 <https://src.fedoraproject.org/rpms/python38/>`_: Python 3.8
+* `python39 <https://src.fedoraproject.org/rpms/python39/>`_: Python 3.9
 
 Old stuff:
 
