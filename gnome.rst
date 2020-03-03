@@ -7,6 +7,11 @@ My articles:
 * https://vstinner.github.io/debug-hybrid-graphics-issues-linux.html
 * https://vstinner.github.io/graphics-bugs-firefox-gnome.html
 
+Fedora IRC channel
+==================
+
+Join `#fedora-desktop on irc.gnome.org <irc://irc.gnome.org/fedora-desktop>`_.
+
 GNOME
 =====
 

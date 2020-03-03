@@ -148,3 +148,18 @@ Misc
   <http://0pointer.net/blog/revisiting-how-we-put-together-linux-systems.html>`_
   by Lennart Poettering (Sept 2014)
 * https://en.wikipedia.org/wiki/Application_virtualization
+
+Debug Flatpak
+=============
+
+System service::
+
+    systemctl status flatpak-system-helper.service
+
+User session service::
+
+    systemctl --user status flatpak-session-helper.service
+
+Debug system helper::
+
+    sudo /usr/libexec/flatpak-system-helper -vv -r --no-idle-exit

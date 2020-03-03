@@ -1017,6 +1017,12 @@ sudo docker container ps -a
 SELinux
 =======
 
+Display SELinux alerts in Gnome: ``sealert``.
+
+Dummy command to restore SELinux labels on the whole operating system::
+
+    restorecon -Rv /
+
 Config file::
 
    [vstinner@fedora27 ~]$ cat /etc/selinux/config
