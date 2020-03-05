@@ -101,6 +101,9 @@ LWN:
 * `Postponing some feature removals in Python 3.9
   <https://lwn.net/Articles/811369/>`_ by Jake Edge
   (February, 2020)
+* `Mentoring and diversity for Python
+  <https://lwn.net/Articles/757715/>`_, at 2018 Python Language Summit,
+  by Jake Edge (June, 2018)
 * `Python 3, ASCII, and UTF-8 <https://lwn.net/Articles/741176/>`_
   by Jake Edge (December, 2017)
 * `Rationalizing Python's APIs <https://lwn.net/Articles/727973/>`_
