@@ -113,6 +113,9 @@ LWN:
 
 Articles:
 
+* `Ledende Python-coreudvikler: Eksplosion i popularitet har øget presset
+  <https://pro.ing.dk/datatech/artikel/ledende-python-coreudvikler-eksplosion-i-popularitet-har-oeget-presset-5572>`_
+  (February 26, 2020) by Magnus Boye: article in Danish.
 * Interview in `Julien Danjou's book "Scaling Python"
   <https://scaling-python.com/>`_ (Dec 2017)
 * Interview in `Julien Danjou's book "The Hacker's Guide to Python"
