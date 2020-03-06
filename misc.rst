@@ -1345,3 +1345,32 @@ Debug or analyze glibc malloc()
 ===============================
 
 https://pagure.io/glibc-malloc-trace-utils/
+
+
+Coredump Linux
+==============
+
+Default configuration::
+
+    $ cat /proc/sys/kernel/core_pattern
+    |/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h
+
+Create coredump file in the current directory::
+
+    sudo bash -c 'echo "%e.%p.core" > /proc/sys/kernel/core_pattern'
+
+Create coredump filename like ``python-123.core``.
+
+Maximum core dump size::
+
+    $ ulimit -c
+    unlimited
+
+Test::
+
+    $ ./python -c 'import ctypes; ctypes.string_at(0)'
+    Segmentation fault (core dumped)
+    $ ls *.core
+    python.347656.core
+
+See also ``man core``.

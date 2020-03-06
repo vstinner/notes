@@ -245,3 +245,15 @@ My laptop Lenovo P50 has two GPUs:
 
 See `Debug Hybrid Graphics issues on Linux
 <https://vstinner.github.io/debug-hybrid-graphics-issues-linux.html>`_.
+
+
+Wayland copy/paste in command line
+==================================
+
+Commands::
+
+    $ wl-copy bla
+    $ wl-paste
+    bla
+
+Fedora: ``dnf install wl-clipboard``.
