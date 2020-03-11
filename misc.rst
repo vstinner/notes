@@ -1374,3 +1374,13 @@ Test::
     python.347656.core
 
 See also ``man core``.
+
+
+Contributions to open source
+============================
+
+GCC bug reports:
+
+* https://gcc.gnu.org/bugzilla/show_bug.cgi?id=93384
+* https://gcc.gnu.org/bugzilla/show_bug.cgi?id=88892
+* https://gcc.gnu.org/bugzilla/show_bug.cgi?id=47271
