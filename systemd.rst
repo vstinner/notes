@@ -39,6 +39,53 @@ System logs: journald and journalctl
 * Filters:
 
   * ``journalctl _PID=7797`` show logs of process pid 7797
+  * ``journalctl _COMM=chronyd -r`` shows latest logs of the program ``chronyd``
+
+* Other fields:
+
+  * ``_EXE``: program full path
+  * ``_CMDLINE``: program command line with arguments
+  * ``_UID``: user identifier
+  * ``_GID``: group identifier
+  * ``_BOOT_ID``: boot UUID
+  * ``_MACHINE_ID``: machine UUID
+  * ``_HOSTNAME``: hostname
+  * ``SYSLOG_IDENTIFIER``
+
+* See all journalctl fields: ``journalctl -o export``
+
+Example of a single log entry (in ``export`` mode)::
+
+    __CURSOR=s=c9faccefcf184d67b8a1a1a8c9441d83;i=9417;b=b6852be278a647e3b1f1047604d828c8;m=3e8ae848;t=5a093d6b361fa;x=2c3f533b3fc622ed
+    __REALTIME_TIMESTAMP=1583931706270202
+    __MONOTONIC_TIMESTAMP=1049290824
+    _BOOT_ID=b6852be278a647e3b1f1047604d828c8
+    PRIORITY=6
+    SYSLOG_FACILITY=3
+    _UID=1000
+    _GID=1000
+    _SELINUX_CONTEXT=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+    _AUDIT_SESSION=3
+    _AUDIT_LOGINUID=1000
+    _SYSTEMD_OWNER_UID=1000
+    _SYSTEMD_UNIT=user@1000.service
+    _SYSTEMD_SLICE=user-1000.slice
+    _SYSTEMD_USER_SLICE=-.slice
+    _MACHINE_ID=1a6df4a3ce76477790264e5d3a9fa609
+    _HOSTNAME=apu
+    _TRANSPORT=stdout
+    SYSLOG_IDENTIFIER=gnome-shell
+    _COMM=gnome-shell
+    _EXE=/usr/bin/gnome-shell
+    _CMDLINE=/usr/bin/gnome-shell
+    _CAP_EFFECTIVE=800000
+    _SYSTEMD_CGROUP=/user.slice/user-1000.slice/user@1000.service/gnome-shell-wayland.service
+    _SYSTEMD_USER_UNIT=gnome-shell-wayland.service
+    _PID=1702
+    _SYSTEMD_INVOCATION_ID=5afe30294e9c49d6b27ff3011323619a
+    _STREAM_ID=e46f4fd89cd3445fbac494d0814d34a5
+    MESSAGE
+    <80>^@^@^@^@^@^@^@libinput error: client bug: timer event13 debounce short: scheduled expiry is in the past (-5ms), your system is too slow
 
 Advantages over scattered text log files:
 
