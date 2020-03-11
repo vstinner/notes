@@ -27,6 +27,7 @@ it is disabled (not started at boot).
 System logs: journald and journalctl
 ====================================
 
+* Binary logs are written into ``/var/log/journal/``
 * Show syslog from the most recent to the oldest logs: ``journalctl --reverse``
 * Show all logs since the last boot: ``journalctl -b 0``
 * List boots: ``journalctl --list-boots``
@@ -143,12 +144,39 @@ dependencies to the system, and so run an old application on a newer system, or
 the opposite. Embedding libraries in Flatpak "containers" comes with its own
 set of issues, but that's a different topic ;-)
 
+.. _coredumpctl:
+
 coredumpctl
 ===========
+
+See also :ref:`Fedora ABRT <abrt>`.
 
 Configuration: https://www.freedesktop.org/software/systemd/man/coredump.conf.html
 
 See also: https://wiki.archlinux.org/index.php/Core_dump
+
+coredumpctl checks for coredump in ``/var/lib/systemd/coredump/`` directory::
+
+    $ coredumpctl list
+    TIME                            PID   UID   GID SIG COREFILE  EXE
+    Wed 2020-03-11 13:46:38 CET    3350  1000  1000  11 present   /usr/bin/python3.7
+    Wed 2020-03-11 13:48:28 CET    2211  1000  1000  11 present   /usr/bin/abrt-applet
+
+    $ coredumpctl dump /usr/bin/abrt-applet > core
+               PID: 2211 (abrt-applet)
+    (...)
+            Signal: 11 (SEGV)
+         Timestamp: Wed 2020-03-11 13:48:27 CET (30min ago)
+      Command Line: /usr/bin/abrt-applet --gapplication-service
+    (...)
+           Storage: /var/lib/systemd/coredump/core.abrt-applet.1000.b6852be278a647e3b1f1047604d828c8.2211.1583930907000000000000.lz4
+           Message: Process 2211 (abrt-applet) of user 1000 dumped core.
+
+                    Stack trace of thread 2211:
+                    #0  0x00007f978e419fec problem_get_argv0 (libreport-gtk.so.0)
+                    #1  0x00005632d09a4d83 notify_problem_list (abrt-applet)
+                    #2  0x00005632d09a5291 show_problem_list_notification (abrt-applet)
+    (...)
 
 systemd trolls
 ==============

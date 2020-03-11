@@ -121,9 +121,24 @@ Upgrade Fedora 29 to Fedora 30 in command line::
 
 https://fedoraproject.org/wiki/DNF_system_upgrade
 
+.. _abrt:
 
-ABRT: ignore crashes in $HOME
-=============================
+ABRT
+====
+
+See also :ref:`systemd coredumpctl <coredumpctl>`.
+
+ABRT components
+---------------
+
+* /usr/bin/abrt-applet
+* /usr/bin/abrt-dump-journal-core run by abrt-journal-core.service
+* /usr/sbin/abrtd run by abrtd.service
+* /usr/sbin/abrt-dbus run by DBus activation
+* /usr/bin/abrt-dump-journal-oops run by abrt-oops.service
+
+Ignore crashes in $HOME
+-----------------------
 
 Edit ``BlackListedPaths`` in ``/etc/abrt/abrt-action-save-package-data.conf``::
 
