@@ -292,6 +292,11 @@ Is a type signed or unsigned? ::
 
     #define IS_TYPE_UNSIGNED(type) (((type)0 - 1) > 0)
 
+Libc
+----
+
+* ``__GLIBC__``: GNU libc
+
 Convert to a string
 -------------------
 
