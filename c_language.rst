@@ -323,6 +323,10 @@ behaves the ANSI way normally, and the non-ANSI way under -traditional."
 const
 =====
 
+First read: `Why const Doesn't Make C Code Faster
+<https://theartofmachinery.com/2019/08/12/c_const_isnt_for_performance.html>`_
+(August 2019) by Simon Arneaud.
+
 General:
 
 * ``const int *x`` is the same than ``int const *x``:
