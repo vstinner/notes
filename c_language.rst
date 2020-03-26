@@ -351,7 +351,7 @@ Single ``*``, constant ``x`` and constant ``*x``::
     *x = 3;  /* compilation error */
 
 Problem of casting ``char **`` to ``const char **``:
-c-faq.com/ansi/constmismatch.html
+http://c-faq.com/ansi/constmismatch.html
 
 
 C FAQ
