@@ -122,6 +122,11 @@ Articles:
 * `Ledende Python-coreudvikler: Eksplosion i popularitet har øget presset
   <https://pro.ing.dk/datatech/artikel/ledende-python-coreudvikler-eksplosion-i-popularitet-har-oeget-presset-5572>`_
   (February 26, 2020) by Magnus Boye: article in Danish.
+* `Python Core Developer Mentorship
+  <http://pyfound.blogspot.com/2019/05/python-core-developer-mentorship.html>`_
+  (May 2019) by A. Jesse Jiryu Davis: Talk that I gave with Pablo Galindo
+  Salgado and Cheryl Sabella at the Language Summit 2019 (during Pycon US
+  2019).
 * Interview in `Julien Danjou's book "Scaling Python"
   <https://scaling-python.com/>`_ (Dec 2017)
 * Interview in `Julien Danjou's book "The Hacker's Guide to Python"
