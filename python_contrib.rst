@@ -43,6 +43,9 @@ Mentoring, bug triage permission, core developers
 
 I promoted the following developers as core devs:
 
+* 2020-04-09: `Dong-hee Na
+  <https://mail.python.org/archives/list/python-committers@python.org/thread/5ZZVHJHAEHT3DW5Q3X5S336KM5FE4B2C/>`_
+  (`vote <https://discuss.python.org/t/vote-to-promote-dong-hee-na/3794>`__)
 * 2019-09-23: `Joannah Nanjekye
   <https://mail.python.org/archives/list/python-committers@python.org/thread/DLT3RQ7W7XYGN7GH4G34DAVMWYOZIHDI/>`__
   (`vote <https://discuss.python.org/t/vote-to-promote-joannah-nanjekye-as-a-core-dev/2347>`__)
