@@ -353,6 +353,8 @@ Single ``*``, constant ``x`` and constant ``*x``::
 Problem of casting ``char **`` to ``const char **``:
 http://c-faq.com/ansi/constmismatch.html
 
+GCC: use -Wcast-qual option.
+
 
 C FAQ
 =====
