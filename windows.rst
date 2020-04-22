@@ -286,6 +286,7 @@ C languages: Windows types
 
 * ``LPCTSTR``: ``CONST WCHAR *`` if ``UNICODE`` defined, ``CONST CHAR *``
   otherwise
+* ``UINT:``: ``unsigned int``
 
 C Runtime library (CRT)
 =======================

@@ -1384,3 +1384,11 @@ GCC bug reports:
 * https://gcc.gnu.org/bugzilla/show_bug.cgi?id=93384
 * https://gcc.gnu.org/bugzilla/show_bug.cgi?id=88892
 * https://gcc.gnu.org/bugzilla/show_bug.cgi?id=47271
+
+
+Firefox
+=======
+
+``about:config``:
+
+* image.animation = once (default = "normal")
