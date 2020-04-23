@@ -988,7 +988,7 @@ Status pages
 ============
 
 * Python : https://status.python.org/
-* GitHub : https://status.github.com/ and https://twitter.com/githubstatus
+* GitHub : https://www.githubstatus.com/ and https://twitter.com/githubstatus
 * Travis CI : https://www.traviscistatus.com/ and https://twitter.com/traviscistatus
 
 KDE Connect on Fedora
