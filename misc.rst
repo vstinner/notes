@@ -1392,3 +1392,8 @@ Firefox
 ``about:config``:
 
 * image.animation = once (default = "normal")
+* mousewheel.with_alt.action = 1:
+
+  * https://fedoraproject.org/wiki/Common_F32_bugs#Trying_to_scroll_with_mouse_wheel_in_inactive_Firefox_window_results_in_back.2Fforward_instead
+  * https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=1650051
+  * https://gitlab.gnome.org/GNOME/gtk/issues/2112
