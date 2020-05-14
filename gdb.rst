@@ -274,3 +274,13 @@ In gdb, type: ``source bp.py``.
 
 It puts a breakpoint on the function ``func_clear()`` but stop if the
 the caller function name is not ``func_dealloc()``.
+
+
+Reverse
+=======
+
+* http://www.sourceware.org/gdb/wiki/ProcessRecord/Tutorial
+* "Process record does not support instruction 0xc5 at address ...":
+  gdb doesn't support AVX. Workaround?
+
+  * LD_HWCAP_MASK=0?

@@ -10,14 +10,7 @@ Unsorted Notes
 GitHub
 ======
 
-Fedora::
-
-    sudo dnf install -y hub
-
-Download a pull request::
-
-    git checkout -b pr104
-    git am -3 https://github.com/python/cpython/pull/104
+* https://github.com/pulls/review-requested
 
 URLs:
 
