@@ -23,6 +23,28 @@ Reports
 * `2015 Q4 <https://vstinner.github.io/contrib-cpython-2015q4.html>`_
 * `2015 Q3 <https://vstinner.github.io/contrib-cpython-2015q3.html>`_
 
+Python 3.9 Contributions
+========================
+
+* New `math.nextafter()
+  <https://docs.python.org/dev/library/math.html#math.nextafter>`_
+  and `math.ulp()
+  <https://docs.python.org/dev/library/math.html#math.ulp>`_ functions.
+* New `os.waitstatus_to_exitcode()
+  <https://docs.python.org/dev/library/os.html#os.waitstatus_to_exitcode>`_:
+  convert a waitpid wait status to an exit code.
+* New `random.randbytes()
+  <https://docs.python.org/dev/library/random.html#random.randbytes>`_
+  function.
+* Add --with-platlibdir option to the configure script and add `sys.platlibdir
+  <https://docs.python.org/dev/library/sys.html#sys.platlibdir>`_ attribute:
+  used by Fedora and OpenSUSE Linux distributions to install files
+  in ``/usr/lib64`` rather than ``/usr/lib``.
+* Remove tons of deprecated features and deprecated a few more functions.
+* `C API Changes <https://docs.python.org/dev/whatsnew/3.9.html#c-api-changes>`_:
+  new functions to access structure members, private functions removed or moved
+  o the internal C API. Many macros converted to static inline functions.
+
 Python 3.8 Contributions
 ========================
 
