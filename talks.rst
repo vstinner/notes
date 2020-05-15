@@ -17,6 +17,11 @@ Conferences 2011-today
    :alt: Pycon US 2014 logo
    :target: https://us.pycon.org/
 
+* May 2020, Pycon US, Online (becuse of COVID-19)
+
+  * `Python Steering Council Community Address <https://www.youtube.com/watch?v=xX8fGuh4T_o>`_:
+    Brett Cannon, Barry Warsaw, Carol Willing, Thomas Woulters, Victor Stinner.
+
 * July 2019, EuroPython at Basel (Switzerland)
 
   * "Python Performance: Past, Present and Future" keynote
