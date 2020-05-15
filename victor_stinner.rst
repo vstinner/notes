@@ -119,6 +119,9 @@ LWN:
 
 Articles:
 
+* Welcome to the Jungle: `Under Discussion: The Performance of Python
+  <https://www.welcometothejungle.com/en/articles/btc-performance-python>`_
+  (May 2020), interview of Julien Danjou and me.
 * `Ledende Python-coreudvikler: Eksplosion i popularitet har øget presset
   <https://pro.ing.dk/datatech/artikel/ledende-python-coreudvikler-eksplosion-i-popularitet-har-oeget-presset-5572>`_
   (February 26, 2020) by Magnus Boye: article in Danish.
