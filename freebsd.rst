@@ -14,18 +14,6 @@ Misc
 
 * Coredump filename: ``sudo sysctl -w 'kern.corefile =%N.%P.core'``
 
-Use FreeBSD
-===========
-
-* Rerun the installer configuration, run:: ``bsdconfig``.
-* Change the keyboard layout: run ``kbdmap``.
-* Upgrade to FreeBSD 12.0-RC1::
-
-   $ sudo freebsd-update upgrade -r 12.0-RC1
-   Does this look reasonable (y/n)? y
-   $ sudo shutdown -r now
-   $ sudo freebsd-update install
-
 Upgrade
 =======
 
@@ -35,6 +23,16 @@ Upgrade the system::
     sudo freebsd-update install
     pkg upgrade
 
+Configuration
+=============
+
+* Rerun the installer configuration, run:: ``bsdconfig``.
+* Change the keyboard layout: run ``kbdmap``.
+
+
+Upgrade to newer FreeBSD
+========================
+
 Upgrade to FreeBSD 12.0-RC2::
 
    sudo freebsd-update fetch
@@ -43,6 +41,10 @@ Upgrade to FreeBSD 12.0-RC2::
    sudo reboot
    # after reboot
    sudo freebsd-update install
+
+
+Repair pkg
+==========
 
 Repair pkg, if needed::
 
