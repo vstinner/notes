@@ -202,3 +202,43 @@ Links:
 
 BSD systems don't use systemd but reimplemented the strict minimum systemd APIs
 required by Gnome.
+
+Slow boot: systemd-udev-settle and hdaudioC1D0
+==============================================
+
+systemd-analyze::
+
+    [root@apu vstinner]# systemd-analyze blame
+    2min 546ms systemd-udev-settle.service
+       47.157s dnf-makecache.service
+        5.935s NetworkManager-wait-online.service
+        3.331s plymouth-quit-wait.service
+        2.803s lvm2-monitor.service
+        2.695s fwupd.service
+        (...)
+
+System logs::
+
+    [root@apu vstinner]# journalctl -b
+    mai 25 14:05:46 apu kernel: Linux version 5.6.12-300.fc32.x86_64 (...)
+    (...)
+    mai 25 14:06:53 apu systemd-udevd[626]: hdaudioC1D0: Worker [648] processing SEQNUM=3956 is taking a long time
+    (...)
+    mai 25 14:07:49 apu systemd[1]: systemd-udev-settle.service: Main process exited, code=exited, status=1/FAILURE
+    (...)
+    mai 25 14:07:49 apu systemd[1]: systemd-udev-settle.service: Failed with result 'exit-code'.
+    mai 25 14:07:49 apu systemd[1]: Failed to start udev Wait for Complete Device Initialization.
+    (...)
+    mai 25 14:08:53 apu systemd-udevd[626]: hdaudioC1D0: Worker [648] processing SEQNUM=3956 killed
+    mai 25 14:08:53 apu systemd-udevd[626]: Worker [648] terminated by signal 9 (KILL)
+    mai 25 14:08:53 apu systemd-udevd[626]: hdaudioC1D0: Worker [648] failed
+
+Blacklist ``i2c_nvidia_gpu`` kernel module::
+
+    sudo bash -c 'echo "blacklist i2c_nvidia_gpu" >/etc/modprobe.d/blacklist-i2c-nvidia-gpu.conf'
+
+`Kernel driver i2c-nvidia-gpu
+<https://www.kernel.org/doc/html/latest/i2c/busses/i2c-nvidia-gpu.html>`_:
+"driver for I2C controller included in NVIDIA Turing and later GPUs and it is
+used to communicate with Type-C controller on GPUs".
+
