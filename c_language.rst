@@ -356,6 +356,35 @@ http://c-faq.com/ansi/constmismatch.html
 GCC: use -Wcast-qual option.
 
 
+Atomic variables
+================
+
+* C11 <stdatomic.h>. Supported by:
+
+  * GCC
+  * clang
+
+* https://gcc.gnu.org/wiki/Atomic/GCCMM/AtomicSync
+* MSC: Interlocked functions like `InterlockedAdd
+  <https://docs.microsoft.com/en-us/windows/win32/api/winnt/nf-winnt-interlockedadd>`_.
+  Only support 32-bit and 64-bit variables.
+
+Linux kernel: `Detecting and handling split locks
+<https://lwn.net/Articles/790464/>`_. Only x86 and x86-64 architectures are
+impacted.  Other architectures (such as ARM or RISC-V) do not allow misaligned
+memory access. Follow-up: `VMX virtualization runs afoul of split-lock
+detection <https://lwn.net/Articles/816918/>`_.
+
+Generic functions:
+
+* ``__atomic_load_n(&var, __ATOMIC_RELAXED)``
+* ``__atomic_add_fetch(&var, 1, __ATOMIC_SEQ_CST)``
+* ``__atomic_fetch_add(&var, 1, __ATOMIC_SEQ_CST)``
+* etc.
+* `GCC: Built-in Functions for Memory Model Aware Atomic Operations
+  <https://gcc.gnu.org/onlinedocs/gcc/_005f_005fatomic-Builtins.html>`_
+
+
 C FAQ
 =====
 
