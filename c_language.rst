@@ -330,7 +330,7 @@ First read: `Why const Doesn't Make C Code Faster
 General:
 
 * ``const int *x`` is the same than ``int const *x``:
-  it only matters if ``const`` if before or after ``*``
+  it only matters if ``const`` is before or after ``*``
 
 Single ``*``, constant ``x``, but ``*x`` is mutable::
 
