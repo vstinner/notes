@@ -610,6 +610,9 @@ http://fedora.12.x6.nabble.com/gnome-terminal-amp-select-by-word-characters-td50
 * https://bugzilla.gnome.org/show_bug.cgi?id=727743
 * https://bugzilla.gnome.org/show_bug.cgi?id=730632#c33
 
+To see notifications on irssi, use XTerm color theme, rather than the default
+"Tango" theme: XTerm theme has a better contrast.
+
 
 Android
 =======
