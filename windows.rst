@@ -195,6 +195,7 @@ Windows exceptions
 
 * EXCEPTION_ACCESS_VIOLATION = STATUS_ACCESS_VIOLATION = ``c0000005`` (hex) = ``3221225477`` or ``-1073741819``
 * CONTROL_C_EXIT = STATUS_CONTROL_C_EXIT = ``C000013A`` (hex) = ``3221225786``
+* STATUS_STACK_BUFFER_OVERRUN = ``C0000409`` (hex) = ``3221226505``
 * https://github.com/wine-mirror/wine/blob/master/include/winbase.h
 * https://github.com/wine-mirror/wine/blob/master/include/winnt.h
 
