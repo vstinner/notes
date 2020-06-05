@@ -40,6 +40,7 @@ Contents:
    fedora.rst
    gnome.rst
    vim.rst
+   assembly_x86.rst
 
 
 See also

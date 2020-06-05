@@ -37,7 +37,7 @@ Conferences 2011-today
     <http://pyfound.blogspot.com/2019/05/python-core-developer-mentorship.html>`_
     with Chery Sabella and Pablo Galindo Salgado
   * `slides
-    <https://github.com/vstinner/talks/blob/master/2019-Pycon/mentoring.pdf>`_
+    <https://github.com/vstinner/talks/blob/master/2019-Pycon/mentoring.pdf>`__
 
 * May 2019, Python Language Summit (during Pycon US) at Cleveland (Ohio, USA)
 
