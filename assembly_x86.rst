@@ -7,6 +7,9 @@ Instructions
 
 * CDQE: RAX ← sign-extend of EAX.
 * MOVSXD rcx,ecx: Move doubleword to quadword with sign-extension.
+* MOVABS rcx, <imm64>: to load arbitrary 64-bit constant into register and to
+  load/store integer register from/to arbitrary constant 64-bit address is
+  available.
 
 x86-64 ABI
 ==========
