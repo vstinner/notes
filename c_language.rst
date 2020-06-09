@@ -384,6 +384,12 @@ Generic functions:
 * `GCC: Built-in Functions for Memory Model Aware Atomic Operations
   <https://gcc.gnu.org/onlinedocs/gcc/_005f_005fatomic-Builtins.html>`_
 
+Memory order:
+
+* __ATOMIC_SEQ_CST: Enforces total ordering with all other __ATOMIC_SEQ_CST
+  operations.
+* __ATOMIC_RELAXED: Implies no inter-thread ordering constraints.
+
 See also `GCC: Legacy __sync Built-in Functions for Atomic Memory Access
 <https://gcc.gnu.org/onlinedocs/gcc/_005f_005fsync-Builtins.html>`_ like
 ``__sync_fetch_and_add(&var, 1)``.
