@@ -51,6 +51,8 @@ System logs: journald and journalctl
   * ``_BOOT_ID``: boot UUID
   * ``_MACHINE_ID``: machine UUID
   * ``_HOSTNAME``: hostname
+  * ``__REALTIME_TIMESTAMP``: timestamp: number of microseconds (10**-6) since
+    Unix epoch (January 1st, 1970 at 00:00), in the UTC timezone.
   * ``SYSLOG_IDENTIFIER``
 
 * See all journalctl fields: ``journalctl -o export``

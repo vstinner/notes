@@ -10,6 +10,20 @@ Instructions
 * MOVABS rcx, <imm64>: to load arbitrary 64-bit constant into register and to
   load/store integer register from/to arbitrary constant 64-bit address is
   available.
+* ENDBR64: "End Branch 64 bit", Terminate Indirect Branch in 64 bit. Related
+  to Control flow Enforcement Technology (CET) hardening
+  (-fcf-protection=branch option of GCC). Executed as NOP if the CPU doesn't
+  support CET.
+
+Registers
+=========
+
+============  ==========  =========  ========
+64b register  Lower  32b  Lower 16b  Lower 8b
+============  ==========  =========  ========
+rax           eax         ax         al
+r9            r9d         r9w        r9b
+============  ==========  =========  ========
 
 x86-64 ABI
 ==========
