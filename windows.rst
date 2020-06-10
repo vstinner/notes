@@ -60,6 +60,7 @@ Windows command          UNIX command               Comment
 ``dir NAME /s /p``       ``find -name NAME``        Find a file by its name in subdirectories
 ``shutdown /p /f``       ``sudo poweroff``          Turn off the computer
 ``findstr PATTERN *.c``  ``grep PATTERN *.c``       Search *PATTERN* in files with name ending with ``.c``
+``cd``                   ``pwd``                    Current directory
 =======================  =========================  ==========================================================
 
 Get usage::
