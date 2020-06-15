@@ -9,6 +9,67 @@ GDB: GNU debugger
    :alt: Debugging
    :target: http://www.monkeyuser.com/2018/debugging/
 
+Symbols
+=======
+
+By default, gdb processes an expression as C code. ``func@plt`` is valid.
+Use quotes to pass special symbols.
+
+Wrong::
+
+    (gdb) p PyTuple_New.constprop.0
+    A syntax error in expression, near `.0'.
+
+Good::
+
+    (gdb) p 'PyTuple_New.constprop.0'
+    $5 = {PyObject *(Py_ssize_t)} 0x47cb60 <PyTuple_New>
+
+Function with multiple locations
+================================
+
+Example::
+
+    (gdb) b PyTuple_New
+    Breakpoint 2 at 0x47cb60: PyTuple_New. (2 locations)
+
+    (gdb) info breakpoints
+    Num     Type           Disp Enb Address            What
+    2       breakpoint     keep y   <MULTIPLE>
+    2.1                         y   0x000000000047cb60 in PyTuple_New at ./Include/internal/pycore_pystate.h:141
+    2.2                         y   0x000000000047d540 in PyTuple_New at ./Include/internal/pycore_pystate.h:141
+
+    (gdb) info symbol 0x000000000047cb60
+    PyTuple_New.constprop.0 in section .text
+
+    (gdb) info symbol 0x000000000047d540
+    PyTuple_New in section .text
+
+gdb picks the first in the symbol table::
+
+    (gdb) info address PyTuple_New
+    Symbol "PyTuple_New" is a function at address 0x47cb60.
+
+    (gdb) p PyTuple_New
+    $6 = {PyObject *(Py_ssize_t)} 0x47cb60 <PyTuple_New>
+
+
+``.constprop.0`` stands for "constant propagation". GCC specialized
+``PyTuple_New(size)`` for ``size==0``.
+
+There is also ``.isra.3`` which comes from ``-fipa-sra``:
+
+    Perform **interprocedural scalar replacement** of aggregates, removal of
+    unused parameters and replacement of parameters passed by reference by
+    parameters passed by value.
+
+Try also:
+
+* ``set print demangle off``
+* ``set print asm-demangle``
+* ``info functions PyTuple_New``
+
+
 gdb commands
 ============
 
