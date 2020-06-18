@@ -13,14 +13,17 @@ See also: :ref:`Python in Fedora <python-fedora>`.
 Python shipped with RHEL
 ========================
 
-=========  =============================
+=========  =================================================
 RHEL       Python
-=========  =============================
+=========  =================================================
 RHEL 6     Python 2.6
 RHEL 7     Python 2.7
 RHEL 7.7   Python 2.7.5 and Python 3.6.8
-RHEL 8     Python 3.6.8, Python 3.8.0
-=========  =============================
+RHEL 8     Python 3.6.8, Python 3.8.0 (*), Python 2.7.15 (*)
+=========  =================================================
+
+In RHEL 8, Python 2.7 and Python 3.8 have shorter support than RHEL, they are
+shipped as app streams, not in the base operating system.
 
 (Latest table update: 2020-06-18.)
 
