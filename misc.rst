@@ -1261,6 +1261,13 @@ Replace ``name.py`` string with ``name``, remove ``.py`` suffix::
     # display "name"
     echo ${script:0:-3}
 
+``<<<`` injects a string as a stdin pipe, it adds a newline character:
+
+    $ echo hello | wc -c
+    6
+    $ wc -c <<<'hello'
+    6
+
 
 Floating point number
 =====================
