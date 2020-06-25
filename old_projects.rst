@@ -61,11 +61,11 @@ Paper Articles
 ==============
 
 * `Netfilter et le filtrage du protocole IPv6
-  <http://www.unixgarden.com/index.php/gnu-linux-magazine-hs/netfilter-et-le-filtrage-du-protocole-ipv6>`_
+  <https://connect.ed-diamond.com/GNU-Linux-Magazine/GLMFHS-041/Netfilter-et-le-filtrage-du-protocole-IPv6>`_
   (french): GNU/Linux Magazine HS 41 (April 2009)
 
-* Hors-série Linux Mag : Explorez les richesses du langage Python
-  (dead URL: ``http://www.haypocalc.com/blog/index.php/2009/01/27/185-hors-serie-linux-mag-explorez-les-richesses-du-langage-python``)
+* `Hors-série Linux Mag : Explorez les richesses du langage Python
+  <http://haypo.alwaysdata.net/blog/index.php/2009/01/27/185-hors-serie-linux-mag-explorez-les-richesses-du-langage-python>`_
   (january/february 2009).
   I wrote 4 articles:
 
@@ -76,20 +76,28 @@ Paper Articles
 
 * "Pratique du fuzzing avec Fusil" (french), MISC magazine n°39 (september 2008)
 
-* "Comment réaliser un fuzzer ?" (french), MISC magazine n°36 (march 2008)
-
-  - dead URL: ``http://www.haypocalc.com/blog/index.php/2008/03/10/136-comment-raliser-un-fuzzer``
+* `Comment réaliser un fuzzer ?
+  <http://haypo.alwaysdata.net/blog/index.php/2008/03/10/136-comment-raliser-un-fuzzer>`_
+  (french), MISC magazine n°36 (march 2008)
 
 
 Python projects
 ===============
 
+* `pytracemalloc <https://github.com/vstinner/pytracemalloc/>`_: debug tool to
+  trace memory blocks allocated by Python. The module is part of Python
+  standard library since Python 3.4, I maintain a backport for Python 2.7 and
+  3.3 (it should work on Python 2.6-3.3).
+* `faulthandler <https://github.com/vstinner/faulthandler>`_: Dump Python
+  tracebacks explicitly, on a fault, after a timeout, or on a user signal.
+  The module is part of Python 3.3 and newer.
 * `pysandbox <https://github.com/vstinner/pysandbox>`_: Sandbox to run untrusted
   Python code. Project stopped because it is broken by design.
-* `python-ipy <https://github.com/autocracy/python-ipy>`_: Python classes and tools
-  for handling of IPv4 and IPv6 addresses and networks. I don't need this
-  module anymore and so I am no more interested to maintain it, the new
-  maintainer is Jeff Ferland aka autocracy. Python 3.3 now includes `ipaddress
+* `python-ipy <https://github.com/autocracy/python-ipy>`_: The project is still
+  active, but I don't maintain it anymore. Python classes and tools for
+  handling of IPv4 and IPv6 addresses and networks. I don't need this module
+  anymore and so I am no more interested to maintain it, the new maintainer is
+  Jeff Ferland aka autocracy. Python 3.3 now includes `ipaddress
   <http://docs.python.org/3/library/ipaddress.html>`_, a concurrent module to
   handle IP addresses and networks.
 * `registervm <http://hg.python.org/sandbox/registervm>`_: My fork of Python
@@ -105,11 +113,6 @@ Other projects
 * `Trollius <https://github.com/vstinner/trollius/>`_:  portage of the Tulip
   project (asyncio module, PEP 3156) on Python 2, asynchronous input/output
   library.
-* `Hachoir <http://hachoir.readthedocs.io/>`_: Python library that allows
-  to view and edit a binary stream field by field. In other words, Hachoir
-  allows you to "browse" any binary stream just like you browse directories and
-  files. A file is split in a tree of fields, where the smallest field is just
-  one bit.
 * `Warmux <http://fr.wikipedia.org/wiki/Warmux>`_, previously known as "Wormux":
   Open source clone of the famous 2D game "Worms" by Team17.
 

@@ -46,18 +46,16 @@ Python Projects
   <http://faster-cpython.readthedocs.io/fat_python.html>`_ project.
 * `bytecode <http://bytecode.readthedocs.io/>`_: API to modify Python
   bytecode, and a peephole optimizer.
-* `faulthandler <http://faulthandler.readthedocs.io/>`_: Dump Python
-  tracebacks explicitly, on a fault, after a timeout, or on a user signal.
-  The module is part of Python 3.3 and newer.
-* `pytracemalloc <http://pytracemalloc.readthedocs.io/>`_: debug tool to
-  trace memory blocks allocated by Python. The module is part of Python
-  standard library since Python 3.4, I maintain a backport for Python 2.7 and
-  3.3 (it should work on Python 2.6-3.3).
 * `pyfailmalloc <https://github.com/vstinner/pyfailmalloc>`_: Debug tool for
   Python injecting memory allocation faults to simulate a low memory system to
   test how your application handles MemoryError exceptions.
 * `sixer <https://pypi.python.org/pypi/sixer>`_: add Python 3 support
   to Python 2 applications using the six module.
+* `Hachoir <http://hachoir.readthedocs.io/>`_: Python library that allows
+  to view and edit a binary stream field by field. In other words, Hachoir
+  allows you to "browse" any binary stream just like you browse directories and
+  files. A file is split in a tree of fields, where the smallest field is just
+  one bit.
 
 Other Projects
 ==============
