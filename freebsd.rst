@@ -21,7 +21,7 @@ Upgrade the system::
 
     sudo freebsd-update fetch
     sudo freebsd-update install
-    pkg upgrade
+    sudo pkg upgrade
 
 Configuration
 =============
