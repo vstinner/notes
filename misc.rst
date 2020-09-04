@@ -428,6 +428,7 @@ What Google knowns on you:
 * https://myactivity.google.com/
 * https://myaccount.google.com/
 * https://maps.google.fr/locationhistory/
+* https://takeout.google.com/
 
 
 .. _operating-systems:

@@ -4,6 +4,8 @@
 Python in Fedora
 ++++++++++++++++
 
+* https://fedora-python.readthedocs.io/
+* https://fedoraproject.org/wiki/SIGs/Python
 * `Fedora Loves Python <https://fedoralovespython.org/>`_
 * `Fedora Developer: Multiple Python interpreters
   <https://developer.fedoraproject.org/tech/languages/python/multiple-pythons.html>`_
