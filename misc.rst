@@ -1401,3 +1401,20 @@ Firefox
   * https://fedoraproject.org/wiki/Common_F32_bugs#Trying_to_scroll_with_mouse_wheel_in_inactive_Firefox_window_results_in_back.2Fforward_instead
   * https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=1650051
   * https://gitlab.gnome.org/GNOME/gtk/issues/2112
+
+
+Enter namespace filesystem of a Flatpak application or container
+================================================================
+
+If a Flatpak application is the pid 76688, inspect the process with:
+
+* /proc/76688/root/ : Filesystem of the process.
+* /proc/76688/mountinfo : Mount informations
+* /proc/76688/ns/mnt : points to "mnt:[4026533594]"
+
+For example, in a Flatpak application, the first line of mountinfo is something
+like "(...) /newroot / rw,nosuid,nodev,relatime - tmpfs tmpfs (...)" which
+means that the whole operating system is in memory, not on disk. Only following
+mounts can map to directories on the machine disk.
+
+See also the ``nsenter`` command, and ``ip netns help`` for network namespaces.
