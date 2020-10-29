@@ -295,3 +295,16 @@ C Runtime library (CRT)
 
 Visual Studio provides a C Runtime library (CRT). Its source code can be found
 in: "%ProgramFiles(x86)%\Windows Kits\10\Source\10.0.[version]\ucrt\env".
+
+Debug Windows Update failure
+============================
+
+* Google the error code
+* Open cmd.exe as an adminitrator and run: ``sfc /scannow``
+  (SFC fixes system files integrity)
+* Open cmd.exe as an adminitrator and run:
+  ``DISM /Online /Cleanup-Image /RestoreHealth``
+  (repair corrupted files of installed packages)
+
+Not tested: ``CHKDSK C: /F /R`` (``/F`` repairs errors, ``/R`` checks for bad
+sectors).
