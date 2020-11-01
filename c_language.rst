@@ -399,3 +399,15 @@ C FAQ
 =====
 
 http://c-faq.com/
+
+Thread Local Storage (TLS)
+==========================
+
+* GCC and clang extension: ``__thread``. Example: ``__thread int i;``.
+  See `GCC Thread Local documentation
+  <https://gcc.gnu.org/onlinedocs/gcc/Thread-Local.html>`_.
+  GCC and clang use the FS register on x86-64.
+* pthread
+
+  * pthread_getspecific(), pthread_setspecific()
+  * pthread_key_create(), pthread_key_delete()
