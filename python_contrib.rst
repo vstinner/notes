@@ -102,14 +102,18 @@ I gave the bug triage permission to:
   <https://mail.python.org/pipermail/python-committers/2019-February/006588.html>`__
 * 2019-02-15: `Paul Ganssle
   <https://mail.python.org/pipermail/python-committers/2019-February/006567.html>`__
+  (is now a core dev)
 * 2019-02-02: `Alexey Izbyshev
   <https://mail.python.org/pipermail/python-committers/2019-February/006511.html>`_
 * 2019-02-01: `Joannah Nanjekye
   <https://mail.python.org/pipermail/python-committers/2019-February/006510.html>`__
+  (is now a core dev)
 * 2018-01-18: `Pablo Galindo Salgado
   <https://mail.python.org/pipermail/python-committers/2018-January/005133.html>`__
+  (is now a core dev)
 * 2017-12-06: `Cheryl Sabella
   <https://mail.python.org/pipermail/python-committers/2017-December/004963.html>`__
+  (is now a core dev)
 * 2017-12-06: `Sanyam Khurana
   <https://mail.python.org/pipermail/python-committers/2017-December/004977.html>`__
 
