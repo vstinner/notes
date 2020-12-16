@@ -22,21 +22,15 @@ Contents:
    pypy_warmups.rst
    c_language.rst
    unicode.rst
-   asyncio.rst
    threads.rst
-   openstack.rst
-   time.rst
-   heap_fragmentation.rst
    benchmark.rst
    freebsd.rst
    windows.rst
    gdb.rst
    misc.rst
-   brainstorm_cpython_tutorial.rst
    systemd.rst
    fedora_python.rst
    red_hat_python.rst
-   single_file_app.rst
    fedora.rst
    gnome.rst
    vim.rst
