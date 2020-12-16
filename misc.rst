@@ -148,12 +148,34 @@ Shell script
 * `shellcheck <http://www.shellcheck.net/>`_: static analysis and linting tool
   for sh/bash scripts
 * ``$'...'`` interprets escape sequences (like ``\n``) in ``'...'``
+* ``<<<"HELLO"`` syntax, known as "here-string", creates a temporary file which
+  contains the string ``HELLO`` and uses this file as the child process
+  ``stdin`` (fd 0).
+* ``"$(...)"`` syntax allows to pass the output of a command to a program with newline characters::
+
+    python3 -c "$(echo -e "for i in range(3):\n  print(i)")"
 
 Example::
 
     haypo@selma$ echo $'a\rb'|hexdump -C
     00000000  61 0d 62 0a                                       |a.b.|
     00000004
+
+* sh is supposed to be the minimalist shell (faster, but less feature)
+* bash has more feature and is quite common, but not available by default
+  on FreeBSD for example.
+* dash is a minimalist shell used as 'sh' on Debian
+
+Test:
+
+* [ is a program: /usr/bin/[ on Linux
+* man test
+* man [ # sometimes display bash manual page
+* [[ ... ]] is a bash built-in, so specific to bash
+
+Misc:
+
+* https://pypi.org/project/bashate/
 
 Ftrace
 ======
@@ -1058,25 +1080,6 @@ OpenSSL vulnerability in RAND_bytes() on Debian:
 * https://lists.debian.org/debian-security-announce/2008/msg00152.html
 * https://research.swtch.com/openssl
 
-
-Shell
-=====
-
-* sh is supposed to be the minimalist shell (faster, but less feature)
-* bash has more feature and is quite common, but not available by default
-  on FreeBSD for example.
-* dash is a minimalist shell used as 'sh' on Debian
-
-Test:
-
-* [ is a program: /usr/bin/[ on Linux
-* man test
-* man [ # sometimes display bash manual page
-* [[ ... ]] is a bash built-in, so specific to bash
-
-Misc:
-
-* https://pypi.org/project/bashate/
 
 Debug TLS issue
 ===============
