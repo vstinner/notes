@@ -189,3 +189,9 @@ If it's really not possible::
 
     dnf download yyy
     sudo rpm -ihv --force <downloaded RPM file>
+
+RPM specfile
+============
+
+* ``%bcond_without rpmwheels`` enables rpmwheels feature (true)
+* ``%bcond_with rpmwheels`` disables rpmwheels feature (false)
