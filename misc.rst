@@ -677,3 +677,9 @@ means that the whole operating system is in memory, not on disk. Only following
 mounts can map to directories on the machine disk.
 
 See also the ``nsenter`` command, and ``ip netns help`` for network namespaces.
+
+Debian
+======
+
+* List files contained in a package: ``dpkg --listfiles python3.9-dev``.
+* Search which package contains a file: ``dpkg -S /path/to/file``.
