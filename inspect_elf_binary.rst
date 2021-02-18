@@ -1,6 +1,9 @@
 ++++++++++++++++++++++++++
-objdump: inspect ELF files
+Inspect an ELF binary file
 ++++++++++++++++++++++++++
+
+On Linux, they are two main kinds of ELF binary files: programs
+(``/usr/bin/bash``) and dynamic libraries (``/usr/lib64/libc.so.6``).
 
 Symbols
 =======
@@ -24,4 +27,3 @@ Misc
 Disassemble all sections::
 
     objdump -d file
-

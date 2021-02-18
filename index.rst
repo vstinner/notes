@@ -28,7 +28,7 @@ Contents:
    windows.rst
    gdb.rst
    misc.rst
-   objdump.rst
+   inspect_elf_binary.rst
    systemd.rst
    fedora_python.rst
    red_hat_python.rst
