@@ -28,6 +28,7 @@ Contents:
    windows.rst
    gdb.rst
    misc.rst
+   objdump.rst
    systemd.rst
    fedora_python.rst
    red_hat_python.rst
