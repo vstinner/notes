@@ -683,3 +683,13 @@ Debian
 
 * List files contained in a package: ``dpkg --listfiles python3.9-dev``.
 * Search which package contains a file: ``dpkg -S /path/to/file``.
+
+Gmail filters
+=============
+
+* `Google Support: Gmail filters
+  <https://support.google.com/mail/answer/7190?hl=en>`_
+* `GitHub notifications
+  <https://docs.github.com/en/rest/reference/activity#notifications>`_
+* `Manage GitHub notification messages in Gmail with Google Apps Scripts
+  <https://lyzidiamond.com/posts/github-notifications-google-script>`_
