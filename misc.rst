@@ -693,3 +693,10 @@ Gmail filters
   <https://docs.github.com/en/rest/reference/activity#notifications>`_
 * `Manage GitHub notification messages in Gmail with Google Apps Scripts
   <https://lyzidiamond.com/posts/github-notifications-google-script>`_
+
+Dev Cython
+==========
+
+Run a single test of the Cython test suite::
+
+    ~/python/master/python runtests.py '.*test_unicode.*' -vv
