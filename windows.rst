@@ -159,8 +159,8 @@ Windows variants
 ================
 
 To develop on CPython: get a "multi-version" of Windows 10 (no N, KN or VL
-variant) and use a "Pro - Retail" product key. Create of a VM with 40 GB of
-disk.
+variant) and use a "Pro - Retail" product key. Create of a VM with 60 GB of
+disk (prevously I used 40 GB, it was too small).
 
 Flavors:
 
@@ -308,3 +308,10 @@ Debug Windows Update failure
 
 Not tested: ``CHKDSK C: /F /R`` (``/F`` repairs errors, ``/R`` checks for bad
 sectors).
+
+
+MSDN
+====
+
+* Download Windows 10 ISO: https://www.microsoft.com/en-us/software-download/windows10ISO
+* Get a Windows Product key: https://my.visualstudio.com/productkeys
