@@ -204,6 +204,19 @@ Windows exceptions
 OpenSSH server
 ==============
 
+* Go to Settings
+* Search for "Manage Optional Features"
+* Add an optional feature: "OpenSSH Server"
+* Install it.
+* Go to the Windows Start menu, search for Services.
+* In Services, search for the OpenSSH SSH Server.
+* Right click, properties:
+
+  * Starting type: Automatic.
+  * Click: OK
+
+* Right click: Start.
+
 To use the OpenSSH server from Microsoft (the "Optional feature"), you need
 at least Windows 10 build 1803. Before, this flavor was unusable.
 
