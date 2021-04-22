@@ -700,3 +700,10 @@ Dev Cython
 Run a single test of the Cython test suite::
 
     ~/python/master/python runtests.py '.*test_unicode.*' -vv
+
+
+Video for Linux (V4L): control your webcam
+==========================================
+
+* GUI: ``gtk-v4l``
+* CLI: ``v4l2-ctl --list-devices``
