@@ -116,8 +116,12 @@ Upgrade Fedora 29 to Fedora 30 in command line::
 
     # sudo dnf upgrade --refresh
     sudo dnf install dnf-plugin-system-upgrade
-    sudo dnf system-upgrade download --refresh --releasever=30
+    sudo dnf system-upgrade download --refresh --releasever=34 --allowerasing # --skip-broken
     sudo dnf system-upgrade reboot
+    # at first boot on the new Fedora, fix SELinux labels:
+    sudo fixfiles -B onboot
+    # and reboot
+
 
 https://fedoraproject.org/wiki/DNF_system_upgrade
 
