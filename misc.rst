@@ -291,13 +291,17 @@ Avoid music applications (Spotify, radio) to stop when idle (phone locked):
 IRC
 ===
 
+Give operator and owner permission to *mdk*::
+
+    /msg chanserv FLAGS #python-fr mdk +AFRefiorstv
+
+Kick a spammer with a link to AFPy charter::
+
+    /msg ChanServ AKICK #python-fr ADD spammer_nickname !T 1h https://www.afpy.org/docs/charte
+
 List operators of channel::
 
     /msg ChanServ access #python-fr list
-
-Give operator permission to someone::
-
-    /msg ChanServ flags #python-fr skyice +Aeiortv
 
 #python-dev flags to prevent people who are not logged in to an account from
 talking::
