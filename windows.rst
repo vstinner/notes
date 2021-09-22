@@ -328,3 +328,50 @@ MSDN
 
 * Download Windows 10 ISO: https://www.microsoft.com/en-us/software-download/windows10ISO
 * Get a Windows Product key: https://my.visualstudio.com/productkeys
+
+Time
+====
+
+Kernel ticks:
+
+* The kernel uses an interruption at 64 Hz: 15.625 ms per **tick**
+* NtQueryTimerResolution() gives the min/max and current resolution of the tick
+
+Wait:
+
+* WaitForSingleObject(): resolution of **1 tick**
+* Sleep(): resolution of **1 tick**
+
+System clock:
+
+* GetSystemTimeAsFileTime(): resolution of **1 tick**
+* GetSystemTimePreciseAsFileTime() (Windows 8 and newer)
+
+Monotonic clock:
+
+* GetTickCount64(): resolution of **1 tick**
+
+Performance counter:
+
+* QueryPerformanceCounter(): resolution of 1 / frequency (100 ns on Windows 10)
+* QueryPerformanceFrequency(): 10 MHz on Windows 10
+
+Timer:
+
+* CreateWaitableTimer()
+* SetWaitableTimer(): resolution of 100 ns
+
+Multimedia API, ``winmm.lib`` and ``timeapi.h``:
+
+* Frequency up to 1 kHz: 1 ms per tick
+* timeBeginPeriod()
+  * "Setting a higher resolution can improve the accuracy of time-out intervals
+    in wait functions. However, it can also reduce overall system performance,
+    because the thread scheduler switches tasks more often. High resolutions
+    can also prevent the CPU power management system from entering power-saving
+    modes. Setting a higher resolution does not improve the accuracy of the
+    high-resolution performance counter."
+
+See also:
+
+* `The Windows Timestamp Project <http://www.windowstimestamp.com/description>`_
