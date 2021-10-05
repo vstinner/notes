@@ -13,14 +13,14 @@ See also: :ref:`Python in Fedora <python-fedora>`.
 Python shipped with RHEL
 ========================
 
-=========  =================================================
+=========  ===============================================================
 RHEL       Python
-=========  =================================================
+=========  ===============================================================
 RHEL 6     Python 2.6
 RHEL 7     Python 2.7
 RHEL 7.7   Python 2.7.5 and Python 3.6.8
-RHEL 8     Python 3.6.8, Python 3.8.0 (*), Python 2.7.15 (*)
-=========  =================================================
+RHEL 8     Python 3.6.8, Python 3.8.0 (*), Python 3.9, Python 2.7.15 (*)
+=========  ===============================================================
 
 In RHEL 8, Python 2.7 and Python 3.8 have shorter support than RHEL, they are
 shipped as app streams, not in the base operating system.
@@ -45,6 +45,10 @@ April 2018, `RHEL 7.5 Release Notes: Chapter 54. Deprecated Functionality
 
 * no new features will be added to Python 2 in RHEL 7 and earlier.
 * RHEL 8: Python 2.7 AppStream supported until June 2024.
+
+See also `Debugging Python C extensions with GDB
+<https://developers.redhat.com/articles/2021/09/08/debugging-python-c-extensions-gdb>`_
+(using Python 3.9 debug build built with gcc -O0).
 
 By default on RHEL8, python3 is ``/usr/libexec/platform-python3.6`` which
 dynamically linked to ``/lib64/libpython3.6m.so.1.0``::

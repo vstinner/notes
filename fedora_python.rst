@@ -24,13 +24,14 @@ In April 2019, 3 Fedora versions are maintained:
 
 There are the following packages for Python:
 
-* `python2 <https://src.fedoraproject.org/rpms/python2/>`_: Python 2.7
-* `python34 <https://src.fedoraproject.org/rpms/python34/>`_: Python 3.4
-* `python35 <https://src.fedoraproject.org/rpms/python35/>`_: Python 3.5
-* `python36 <https://src.fedoraproject.org/rpms/python36/>`_: Python 3.6
-* `python3 <https://src.fedoraproject.org/rpms/python3/>`_: Python 3.7 (in fc31)
-* `python38 <https://src.fedoraproject.org/rpms/python38/>`_: Python 3.8
-* `python39 <https://src.fedoraproject.org/rpms/python39/>`_: Python 3.9
+* `python2 <https://src.fedoraproject.org/rpms/python2.7/>`_: Python 2.7
+* `python3.4 <https://src.fedoraproject.org/rpms/python3.4/>`_: Python 3.4
+* `python3.5 <https://src.fedoraproject.org/rpms/python3.5/>`_: Python 3.5
+* `python3.6 <https://src.fedoraproject.org/rpms/python3.6/>`_: Python 3.6
+* `python3.7 <https://src.fedoraproject.org/rpms/python3.7/>`_: Python 3.7 (in fc31)
+* `python3.8 <https://src.fedoraproject.org/rpms/python3.8/>`_: Python 3.8
+* `python3.9 <https://src.fedoraproject.org/rpms/python3.9/>`_: Python 3.9
+* `python3.10 <https://src.fedoraproject.org/rpms/python3.10/>`_: Python 3.10
 
 Old stuff:
 
