@@ -188,9 +188,13 @@ Default configuration::
     $ cat /proc/sys/kernel/core_pattern
     |/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h
 
-Disable::
+To disable systemd-coredump, create ``/etc/sysctl.d/50-coredump.conf`` file which contains::
 
-    sudo sed -i 's!kernel.core_pattern=.*!kernel.core_pattern=!' /usr/lib/sysctl.d/50-coredump.conf
+    # Disable systemd-coredump
+    kernel.core_pattern=
+
+And reboot. After reboot, check that ``/proc/sys/kernel/core_pattern`` is
+empty.
 
 
 systemd trolls
