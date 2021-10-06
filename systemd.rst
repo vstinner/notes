@@ -180,6 +180,19 @@ coredumpctl checks for coredump in ``/var/lib/systemd/coredump/`` directory::
                     #2  0x00005632d09a5291 show_problem_list_notification (abrt-applet)
     (...)
 
+Disable systemd-coredump
+========================
+
+Default configuration::
+
+    $ cat /proc/sys/kernel/core_pattern
+    |/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h
+
+Disable::
+
+    sudo sed -i 's!kernel.core_pattern=.*!kernel.core_pattern=!' /usr/lib/sysctl.d/50-coredump.conf
+
+
 systemd trolls
 ==============
 
