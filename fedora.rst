@@ -204,6 +204,8 @@ RPM specfile
 Change root password
 ====================
 
+Official doc: https://docs.fedoraproject.org/en-US/quick-docs/reset-root-password/
+
 * At boot, hold the CTRL key
 * In GRUB, select the latest kernel with up/down keys, press "e", edit the
   "linux" line, add ``rw init=/bin/bash``, press CTRL+x or F10 to boot.
