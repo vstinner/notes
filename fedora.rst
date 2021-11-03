@@ -199,3 +199,22 @@ RPM specfile
 
 * ``%bcond_without rpmwheels`` enables rpmwheels feature (true)
 * ``%bcond_with rpmwheels`` disables rpmwheels feature (false)
+
+
+Change root password
+====================
+
+* At boot, hold the CTRL key
+* In GRUB, select the latest kernel with up/down keys, press "e", edit the
+  "linux" line, add ``rw init=/bin/bash``, press CTRL+x or F10 to boot.
+* In bash, type::
+
+  # mount -o remount,rw /  # if you forgot rw
+  # passwd
+  <enter new root password here>
+  # touch /.autorelabel
+  # sync
+  # /sbin/reboot -f
+
+The ``touch /.autorelabel`` command recreate SELinux labels, especially
+on the ``/etc/shadow`` file (label: ``system_u:object_r:shadow_t:s0``).
