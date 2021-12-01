@@ -23,6 +23,85 @@ Reports
 * `2015 Q4 <https://vstinner.github.io/contrib-cpython-2015q4.html>`_
 * `2015 Q3 <https://vstinner.github.io/contrib-cpython-2015q3.html>`_
 
+Python 3.10 Contributions
+=========================
+
+New features
+------------
+
+* Add ``sys.orig_argv`` attribute
+* Add ``sys.stdlib_module_names`` attribute
+* Add new ``./configure`` options:
+
+  * ``--without-static-libpython``
+  * ``--with-wheel-pkg-dir=PATH``
+
+* faulthandler now lists third party C extensions on a crash
+* faulthandler now detects if a fatal error occurs during a GC collection
+
+Changes
+-------
+
+* Optimize ``python3 -m module`` startup time: import less modules.
+* Static methods (@staticmethod) are now callable as regular functions
+  module: ``collections.MutableMapping`` must be replaced with
+  ``collections.abc.MutableMapping``.
+* At Python exit, if a callback registered with ``atexit.register()`` fails,
+  its exception is now logged
+* Remove distutils ``bdist_wininst`` command
+* Remove deprecated aliases to Abstract Base Classes from the collections
+
+New C API features
+------------------
+
+* Add ``PyConfig.orig_argv`` member
+* Add new functions:
+
+  * ``PyModule_AddObjectRef()``
+  * ``Py_Is()``
+  * ``Py_IsFalse()``
+  * ``Py_IsNone()``
+  * ``Py_IsTrue()``
+  * ``Py_NewRef()``
+  * ``Py_XNewRef()``
+
+* Add new ``Py_TPFLAGS_DISALLOW_INSTANTIATION`` and
+  ``Py_TPFLAGS_IMMUTABLETYPE`` type flags
+
+C API changes
+-------------
+
+* ``Py_REFCNT()`` can no longer be used as a l-value
+* Deprecate ``PyUnicode_InternImmortal()``
+* Remove ``_Py_CheckRecursionLimit`` variable
+* Remove header files:
+
+  * ``Python-ast.h``
+  * ``asdl.h``
+  * ``ast.h``
+  * ``symtable.h``
+
+* Remove functions:
+
+  * ``PyAST_Compile()``
+  * ``PyAST_CompileEx()``
+  * ``PyAST_CompileObject()``
+  * ``PyAST_Validate()``
+  * ``PyArena_AddPyObject()``
+  * ``PyArena_Free()``
+  * ``PyArena_Malloc()``
+  * ``PyArena_New()``
+  * ``PyFuture_FromAST()``
+  * ``PyFuture_FromASTObject()``
+  * ``PyOS_InitInterrupts()``
+  * ``PyParser_ASTFromFile()``
+  * ``PyParser_ASTFromFileObject()``
+  * ``PyParser_ASTFromFilename()``
+  * ``PyParser_ASTFromString()``
+  * ``PyParser_ASTFromStringObject()``
+  * ``Py_SymtableString()``
+
+
 Python 3.9 Contributions
 ========================
 
