@@ -7,6 +7,14 @@ My articles:
 * https://vstinner.github.io/debug-hybrid-graphics-issues-linux.html
 * https://vstinner.github.io/graphics-bugs-firefox-gnome.html
 
+Customize GNOME
+===============
+
+* Settings > Keyboard > Create a custom shortcut: ALT+E runs gnome-terminal
+* Settings > Keyboard > Navigate > Change window: set shortcut to ALT+TAB,
+  it removes the shortcut of "Change application" which groups windows of the
+  same application
+
 Fedora IRC channel
 ==================
 
