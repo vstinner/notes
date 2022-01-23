@@ -550,7 +550,7 @@ Valgrind
 Search for memory leak: malloc() not followed by free(), limit the call stack
 to 20 frames::
 
-    PYTHONMALLOC=malloc valgrind --leak-check=full  --num-callers=20 ./python x.py
+    PYTHONMALLOC=malloc valgrind --leak-check=full --log-file=valgrind.log --num-callers=20 ./python script.py
 
 `Valgrind with gdb server
 <http://valgrind.org/docs/manual/manual-core-adv.html>`_ to inspect a bug in gdb::

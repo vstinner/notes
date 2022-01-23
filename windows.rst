@@ -204,6 +204,32 @@ Windows exceptions
 OpenSSH server
 ==============
 
+Copy your SSH key
+-----------------
+
+Open ``C:\Users\vstinner\.ssh\authorized_keys`` file and put your public key
+there. Then fix file permissions::
+
+    icacls.exe "C:\Users\vstinner\.ssh\authorized_keys" /inheritance:r /grant "Administrators:F" /grant "SYSTEM:F"
+
+If your user is an administrator, you should edit the file ``C:\ProgramData\ssh\administrators_authorized_keys`` instead.
+Again, you need to change the permissions::
+
+    icacls.exe "C:\ProgramData\ssh\administrators_authorized_keys" /inheritance:r /grant "Administrators:F" /grant "SYSTEM:F"
+
+Documentation: `OpenSSH key management <https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement>`_.
+
+Enable sshd server logs
+-----------------------
+
+* As an administrator, edit ``C:\ProgramData\ssh\sshd_config``
+* Add ``SyslogFacility LOCAL0``.
+* Restart the sshd server: ``net stop sshd`` and then ``net start sshd``
+  (type these commands in an administrator terminal).
+
+Enable sshd server
+------------------
+
 * Go to Settings
 * Search for "Manage Optional Features"
 * Add an optional feature: "OpenSSH Server"
@@ -365,6 +391,7 @@ Multimedia API, ``winmm.lib`` and ``timeapi.h``:
 
 * Frequency up to 1 kHz: 1 ms per tick
 * timeBeginPeriod()
+
   * "Setting a higher resolution can improve the accuracy of time-out intervals
     in wait functions. However, it can also reduce overall system performance,
     because the thread scheduler switches tasks more often. High resolutions
