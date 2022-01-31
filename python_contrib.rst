@@ -164,7 +164,10 @@ Python 3.6 Contributions
   a Python release build.
 * New ast.Constant AST node.
 * faulthandler installs a handler for Windows exceptions.
-* Add os.getrandom function, PEP 524.
+* Implement `PEP 509: Add a private version to dict
+  <https://www.python.org/dev/peps/pep-0509/>`_
+* Add os.getrandom function, `PEP 524: Make os.urandom() blocking on Linux
+  <https://www.python.org/dev/peps/pep-0524/>`_.
 * subprocess destructor emits a ResourceWarning if the process is still
   running.
 * tracemalloc supports racing memory allocations in multiple different address
@@ -184,6 +187,8 @@ Python 3.5 Contributions
 * os.walk() is 7x to 20x faster on Windows, thanks to os.scandir()
 * Implement PEP 475 with  Charles-François Natali: Retry system calls failing
   with EINTR.
+  Refactor Modules/socketmodule.c to add ``sock_call()`` private API which
+  retries a syscall and recomputes the timeout.
 * asyncio:
 
   * Add create_task(), get_debug(), set_debug() and is_closed() functions.
@@ -200,13 +205,17 @@ Python 3.5 Contributions
 
   * New PyMem_Calloc() function.
   * New Py_DecodeLocale() and Py_EncodeLocale() functions.
+  * New private _PyTime API to handle nanosecond timestamps.
+  * Enhance Py_FatalError()
+  * New private _Py_CheckFunctionResult() function.
 
 Python 3.4 Contributions
 ========================
 
 * New tracemalloc module:
   PEP 454 – Add a new tracemalloc module to trace Python memory allocations
-* Implement PEP 446 – Make newly created file descriptors non-inheritable
+* Implement `PEP 446: Make newly created file descriptors non-inheritable
+  <http://www.python.org/dev/peps/pep-0446/>`_
 * Implement PEP 445 – Add new APIs to customize Python memory allocators
 * New functions:
 
@@ -221,10 +230,12 @@ Python 3.4 Contributions
 * select.devpoll: add fileno(), close() methods and closed attribute.
 * PyUnicode_FromFormat() supports width and precision specifications for
   %s, %A, %U, %V, %S, and %R. (Collaborative work with Ysj Ray.)
+* better handling of ``MemoryError`` exceptions
 
 Python 3.3 Contributions
 ========================
 
+* New ``faulthandler`` module
 * ssl: add RAND_bytes() and RAND_pseudo_bytes()
 * subprocess: command strings can now be bytes objects on posix platforms
 * time: add functions, PEP 418:
@@ -371,80 +382,6 @@ Other contributions to PEPs
   written by  Ethan Furman.
 * :pep:`471` (os.scandir): I helped Ben Hoyt to implement, test and benchmark
   his PEP 471
-
-Major work
-==========
-
-* Python 3.6:
-
-  - `PEP 524: Make os.urandom() blocking on Linux
-    <https://www.python.org/dev/peps/pep-0524/>`_
-  - `PEP 509: Add a private version to dict
-    <https://www.python.org/dev/peps/pep-0509/>`_
-
-* Python 3.5:
-
-  - I added the following functions:  os.get_blocking(fd) and
-    os.set_blocking(fd). See `issue #22054:
-    Add os.get_blocking() and os.set_blocking() functions
-    <http://bugs.python.org/issue22054>`_. I added these functions because
-    it's a common pattern in applications and signal.set_wakeup_fd() now
-    raises an exception if the fd is blocking (I also added this check).
-  - I worked with Charles-François Natali to implement the `PEP 475
-    <http://www.python.org/dev/peps/pep-0475>`_: "Retry system calls failing
-    with EINTR". The implementation was much more complex than expected, like
-    the implementation of socket.connect() which requires many syscalls (I
-    refactored Modules/socketmodule.c for that).
-  - I wrote the `first version of the PEP 460
-    <https://hg.python.org/peps/rev/7a92360bbdff>`_ (bytes % args), then
-    rewritten by Antoine Pitrou, to be later superseeded by the `PEP 461
-    <https://www.python.org/dev/peps/pep-0461/>`_ written by  Ethan Furman.
-  - I helped Ben Hoyt to implement, test and benchmark his `PEP 471
-    <https://www.python.org/dev/peps/pep-0471/>`_ (os.scandir)
-  - On Windows, signal.set_wakeup_fd() now also supports socket handles.
-  - The time.monotonic() function is now always available.
-  - New API for C memory allocators to support also calloc()
-  - The __name__ attribute of generator is now set from the function name,
-    instead of being set from the code name. Use gen.gi_code.co_name to
-    retrieve the code name. Generators also have a new __qualname__ attribute,
-    the qualified name, which is now used for the representation of a generator
-    (repr(gen)).
-  - New private _PyTime API to handle timestamps with a resolution of 1
-    nanosecond.
-  - os.urandom() now uses getrandom() on Linux 3.17 and newer, and getentropy()
-    on OpenBSD 5.6 and newer.
-  - New private _Py_CheckFunctionResult() function to ensure that the C API is
-    used correctly when calling a C function.
-  - Enhance Py_FatalError()
-
-    * Display the current Python stack if an exception was raised but the exception
-      has no traceback
-    * Disable faulthandler if an exception was raised (before it was only disabled
-      if no exception was raised)
-    * To display the current Python stack, call PyGILState_GetThisThreadState()
-      which works even if the GIL was released
-    * Try to flush stdout and stderr.
-
-  - Issue #23353: complex bug related to exception handling with generators
-
-* Python 3.4:
-
-  - new ``tracemalloc`` module (PEP 454)
-  - better handling of ``MemoryError`` exceptions
-  - `PEP 446: Make newly created file descriptors non-inheritable
-    <http://www.python.org/dev/peps/pep-0446/>`_
-
-* Python 3.3:
-
-  - new ``faulthandler`` module
-  - new time functions: ``time.monotonic``, ``time.perf_counter``,
-    ``time.process_time`` (PEP 418)
-
-* Python 3.0 - 3.2
-
-  - Major work on Unicode support to handle all platforms and all corner
-    cases
-
 
 April Fool
 ==========
