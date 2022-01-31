@@ -139,6 +139,118 @@ Python 3.8 Contributions
   ``sys.unraisablehook()``, rather than ``sys.excepthook()``, so the hook gets
   the function which created the thread and a more helpful error message.
 
+Python 3.7 Contributions
+========================
+
+* New Python UTF-8 Mode: -X utf8 and PYTHONUTF8=1, PEP 540.
+* New time functions with nanosecond resolution, PEP 564:
+
+  * time.clock_gettime_ns()
+  * time.clock_settime_ns()
+  * time.monotonic_ns()
+  * time.perf_counter_ns()
+  * time.process_time_ns()
+  * time.time_ns()
+
+* New sys.getandroidapilevel() function on Android.
+* C API:
+
+  * New PyTraceMalloc_Track() and PyTraceMalloc_Untrack() functions for numpy.
+
+Python 3.6 Contributions
+========================
+
+* Add PYTHONMALLOC env var: it becomes possible to use debug hooks on
+  a Python release build.
+* New ast.Constant AST node.
+* faulthandler installs a handler for Windows exceptions.
+* Add os.getrandom function, PEP 524.
+* subprocess destructor emits a ResourceWarning if the process is still
+  running.
+* tracemalloc supports racing memory allocations in multiple different address
+  spaces.
+* warnings: new ``source`` parameter, used to display the traceback where
+  an object was allocated when displaying a ``ResourceWarning``.
+* Optimize ASCII, Latin1 and UTF-8 decoders and encoders when handling
+  undecodable bytes and unencodable characters for common error handlers
+  (ignore, replace, surrogateescape, surrogatepass).
+* ``PyMem_Malloc()`` uses ``pymalloc`` allocator, rater than ``malloc()``.
+* Remove ``make touch``: add ``make regen-all``.
+
+Python 3.5 Contributions
+========================
+
+* Add os.scandir(): collaborative work with Ben Hoyt.
+* os.walk() is 7x to 20x faster on Windows, thanks to os.scandir()
+* Implement PEP 475 with  Charles-François Natali: Retry system calls failing
+  with EINTR.
+* asyncio:
+
+  * Add create_task(), get_debug(), set_debug() and is_closed() functions.
+  * Queue: new join() and task_done() methods.
+  * proactor event loop supports SSL, collaborative work with Antoine Pitrou
+
+* time.monotonic() is always available.
+* os.urandom() uses getrandom() on Linux
+* New os.get_blocking() and os.set_blocking() functions.
+* signal.set_wakeup_fd() accepts Windows socket handle
+* socket functions use a monotonic clock
+* Fix socket.sendall() timeout
+* C API:
+
+  * New PyMem_Calloc() function.
+  * New Py_DecodeLocale() and Py_EncodeLocale() functions.
+
+Python 3.4 Contributions
+========================
+
+* New tracemalloc module:
+  PEP 454 – Add a new tracemalloc module to trace Python memory allocations
+* Implement PEP 446 – Make newly created file descriptors non-inheritable
+* Implement PEP 445 – Add new APIs to customize Python memory allocators
+* New functions:
+
+  * os.get_inheritable(), os.set_inheritable()
+  * os.get_handle_inheritable(), os.set_handle_inheritable()
+  * socket.socket.get_inheritable(), socket.socket.set_inheritable()
+
+* UTF-8, UTF-16 and UTF-32 codecs reject surrogates: collaborative work with
+  Kang-Hao (Kenny) Lu and Serhiy Storchaka.
+* New os.cpu_count() function ( (Contributed by Trent Nelson, Yogesh Chaudhari,
+  Victor Stinner, and Charles-François Natali)
+* select.devpoll: add fileno(), close() methods and closed attribute.
+* PyUnicode_FromFormat() supports width and precision specifications for
+  %s, %A, %U, %V, %S, and %R. (Collaborative work with Ysj Ray.)
+
+Python 3.3 Contributions
+========================
+
+* ssl: add RAND_bytes() and RAND_pseudo_bytes()
+* subprocess: command strings can now be bytes objects on posix platforms
+* time: add functions, PEP 418:
+
+  * clock_getres()
+  * clock_gettime()
+  * clock_settime()
+  * get_clock_info()
+  * monotonic()
+  * perf_counter()
+  * process_time()
+
+Python 3.2 Contributions
+========================
+
+* Python’s import mechanism can now load modules installed in directories with
+  non-ASCII characters in the path name. This solved an aggravating problem
+  with home directories for users with non-ASCII characters in their usernames.
+* New os.getenvb() function and os.environb mapping
+
+Python 3.1 Contributions
+========================
+
+* int: add bit_length() method. I wrote a first implementation, Mark Dickinson
+  completed my implementation.
+
 Mentoring, bug triage permission, core developers
 =================================================
 
