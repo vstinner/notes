@@ -141,7 +141,8 @@ Python 3.8 Contributions
 Python 3.7 Contributions
 ========================
 
-* New Python UTF-8 Mode: -X utf8 and PYTHONUTF8=1, PEP 540.
+* New `Python UTF-8 Mode <https://docs.python.org/dev/library/os.html#python-utf-8-mode>`_:
+  ``-X utf8`` option and ``PYTHONUTF8=1`` env var, PEP 540.
 * New `Python Development Mode
   <https://docs.python.org/dev/library/devmode.html>`_:
   ``-X dev`` and ``PYTHONDEVMODE`` env var
