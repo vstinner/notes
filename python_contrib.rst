@@ -36,8 +36,8 @@ New features
   * ``--without-static-libpython``
   * ``--with-wheel-pkg-dir=PATH``
 
-* faulthandler now lists third party C extensions on a crash
-* faulthandler now detects if a fatal error occurs during a GC collection
+* ``faulthandler`` now lists third party C extensions on a crash
+* ``faulthandler`` now detects if a fatal error occurs during a GC collection
 
 Changes
 -------
@@ -101,7 +101,6 @@ C API changes
   * ``PyParser_ASTFromStringObject()``
   * ``Py_SymtableString()``
 
-
 Python 3.9 Contributions
 ========================
 
@@ -115,11 +114,11 @@ Python 3.9 Contributions
 * New `random.randbytes()
   <https://docs.python.org/dev/library/random.html#random.randbytes>`_
   function.
-* Add --with-platlibdir option to the configure script and add `sys.platlibdir
+* Add ``./configure --with-platlibdir`` option and add `sys.platlibdir
   <https://docs.python.org/dev/library/sys.html#sys.platlibdir>`_ attribute:
   used by Fedora and OpenSUSE Linux distributions to install files
   in ``/usr/lib64`` rather than ``/usr/lib``.
-* Remove tons of deprecated features and deprecated a few more functions.
+* Remove many deprecated features and deprecate some functions.
 * `C API Changes <https://docs.python.org/dev/whatsnew/3.9.html#c-api-changes>`_:
   new functions to access structure members, private functions removed or moved
   o the internal C API. Many macros converted to static inline functions.
@@ -143,36 +142,41 @@ Python 3.7 Contributions
 ========================
 
 * New Python UTF-8 Mode: -X utf8 and PYTHONUTF8=1, PEP 540.
+* New `Python Development Mode
+  <https://docs.python.org/dev/library/devmode.html>`_:
+  ``-X dev`` and ``PYTHONDEVMODE`` env var
 * New time functions with nanosecond resolution, PEP 564:
 
-  * time.clock_gettime_ns()
-  * time.clock_settime_ns()
-  * time.monotonic_ns()
-  * time.perf_counter_ns()
-  * time.process_time_ns()
-  * time.time_ns()
+  * ``time.clock_gettime_ns()``
+  * ``time.clock_settime_ns()``
+  * ``time.monotonic_ns()``
+  * ``time.perf_counter_ns()``
+  * ``time.process_time_ns()``
+  * ``time.time_ns()``
 
 * New sys.getandroidapilevel() function on Android.
 * C API:
 
-  * New PyTraceMalloc_Track() and PyTraceMalloc_Untrack() functions for numpy.
+  * New ``PyTraceMalloc_Track()`` and ``PyTraceMalloc_Untrack()`` functions for
+    numpy.
 
 Python 3.6 Contributions
 ========================
 
-* Add PYTHONMALLOC env var: it becomes possible to use debug hooks on
-  a Python release build.
-* New ast.Constant AST node.
-* faulthandler installs a handler for Windows exceptions.
+* Add `PYTHONMALLOC
+  <https://docs.python.org/dev/using/cmdline.html#envvar-PYTHONMALLOC>`_ env
+  var: it becomes possible to use debug hooks on a Python release build.
+* New ``ast.Constant`` AST node.
+* ``faulthandler`` installs a handler for Windows exceptions.
 * Implement `PEP 509: Add a private version to dict
   <https://www.python.org/dev/peps/pep-0509/>`_
-* Add os.getrandom function, `PEP 524: Make os.urandom() blocking on Linux
-  <https://www.python.org/dev/peps/pep-0524/>`_.
-* subprocess destructor emits a ResourceWarning if the process is still
-  running.
-* tracemalloc supports racing memory allocations in multiple different address
+* Add ``os.getrandom()`` function, `PEP 524: Make os.urandom() blocking on
+  Linux <https://www.python.org/dev/peps/pep-0524/>`_.
+* ``subprocess``: destructor emits a ``ResourceWarning`` if the process is
+  still running.
+* ``tracemalloc`` supports racing memory allocations in multiple different address
   spaces.
-* warnings: new ``source`` parameter, used to display the traceback where
+* ``warnings``: new ``source`` parameter, used to display the traceback where
   an object was allocated when displaying a ``ResourceWarning``.
 * Optimize ASCII, Latin1 and UTF-8 decoders and encoders when handling
   undecodable bytes and unencodable characters for common error handlers
@@ -183,70 +187,70 @@ Python 3.6 Contributions
 Python 3.5 Contributions
 ========================
 
-* Add os.scandir(): collaborative work with Ben Hoyt.
-* os.walk() is 7x to 20x faster on Windows, thanks to os.scandir()
+* Add ``os.scandir()``: collaborative work with Ben Hoyt.
+* ``os.walk()`` is 7x to 20x faster on Windows, thanks to os.scandir()
 * Implement PEP 475 with  Charles-François Natali: Retry system calls failing
-  with EINTR.
-  Refactor Modules/socketmodule.c to add ``sock_call()`` private API which
-  retries a syscall and recomputes the timeout.
+  with EINTR. Refactor ``Modules/socketmodule.c``: add ``sock_call()`` helper
+  function which retries a syscall and recomputes the timeout.
 * asyncio:
 
-  * Add create_task(), get_debug(), set_debug() and is_closed() functions.
-  * Queue: new join() and task_done() methods.
+  * Add ``create_task()``, ``get_debug()``, ``set_debug()`` and ``is_closed()``
+    functions.
+  * Queue: new ``join()`` and ``task_done()`` methods.
   * proactor event loop supports SSL, collaborative work with Antoine Pitrou
 
-* time.monotonic() is always available.
-* os.urandom() uses getrandom() on Linux
-* New os.get_blocking() and os.set_blocking() functions.
-* signal.set_wakeup_fd() accepts Windows socket handle
+* ``time.monotonic()`` is always available.
+* ``os.urandom()`` uses ``getrandom()`` on Linux
+* New ``os.get_blocking()`` and ``os.set_blocking()`` functions.
+* ``signal.set_wakeup_fd()`` accepts Windows socket handle
 * socket functions use a monotonic clock
 * Fix socket.sendall() timeout
 * C API:
 
-  * New PyMem_Calloc() function.
-  * New Py_DecodeLocale() and Py_EncodeLocale() functions.
-  * New private _PyTime API to handle nanosecond timestamps.
-  * Enhance Py_FatalError()
-  * New private _Py_CheckFunctionResult() function.
+  * New ``PyMem_Calloc()`` function.
+  * New ``Py_DecodeLocale()`` and ``Py_EncodeLocale()`` functions.
+  * New private ``_PyTime`` API to handle nanosecond timestamps.
+  * Enhance ``Py_FatalError()``
+  * New private ``_Py_CheckFunctionResult()`` function.
 
 Python 3.4 Contributions
 ========================
 
-* New tracemalloc module:
+* New ``tracemalloc`` module:
   PEP 454 – Add a new tracemalloc module to trace Python memory allocations
 * Implement `PEP 446: Make newly created file descriptors non-inheritable
-  <http://www.python.org/dev/peps/pep-0446/>`_
+  <http://www.python.org/dev/peps/pep-0446/>`_. New functions:
+
+  * ``os.get_inheritable()``, ``os.set_inheritable()``
+  * ``os.get_handle_inheritable()``, ``os.set_handle_inheritable()``
+  * ``socket.socket.get_inheritable()``, ``socket.socket.set_inheritable()``
+
 * Implement PEP 445 – Add new APIs to customize Python memory allocators
-* New functions:
-
-  * os.get_inheritable(), os.set_inheritable()
-  * os.get_handle_inheritable(), os.set_handle_inheritable()
-  * socket.socket.get_inheritable(), socket.socket.set_inheritable()
-
 * UTF-8, UTF-16 and UTF-32 codecs reject surrogates: collaborative work with
   Kang-Hao (Kenny) Lu and Serhiy Storchaka.
-* New os.cpu_count() function ( (Contributed by Trent Nelson, Yogesh Chaudhari,
+* New ``os.cpu_count()`` function ( (Contributed by Trent Nelson, Yogesh Chaudhari,
   Victor Stinner, and Charles-François Natali)
 * select.devpoll: add fileno(), close() methods and closed attribute.
-* PyUnicode_FromFormat() supports width and precision specifications for
-  %s, %A, %U, %V, %S, and %R. (Collaborative work with Ysj Ray.)
-* better handling of ``MemoryError`` exceptions
+* ``PyUnicode_FromFormat()`` supports width and precision specifications for
+  ``%s``, ``%A``, ``%U``, ``%V``, ``%S``, and ``%R``.
+  (Collaborative work with Ysj Ray.)
+* Better handling of ``MemoryError`` exceptions
 
 Python 3.3 Contributions
 ========================
 
 * New ``faulthandler`` module
-* ssl: add RAND_bytes() and RAND_pseudo_bytes()
+* ssl: add ``RAND_bytes()`` and ``RAND_pseudo_bytes()``
 * subprocess: command strings can now be bytes objects on posix platforms
 * time: add functions, PEP 418:
 
-  * clock_getres()
-  * clock_gettime()
-  * clock_settime()
-  * get_clock_info()
-  * monotonic()
-  * perf_counter()
-  * process_time()
+  * ``clock_getres()``
+  * ``clock_gettime()``
+  * ``clock_settime()``
+  * ``get_clock_info()``
+  * ``monotonic()``
+  * ``perf_counter()``
+  * ``process_time()``
 
 Python 3.2 Contributions
 ========================
@@ -259,8 +263,8 @@ Python 3.2 Contributions
 Python 3.1 Contributions
 ========================
 
-* int: add bit_length() method. I wrote a first implementation, Mark Dickinson
-  completed my implementation.
+* int: add ``bit_length()`` method. I wrote a first implementation, Mark
+  Dickinson completed my implementation.
 
 Mentoring, bug triage permission, core developers
 =================================================
