@@ -719,6 +719,7 @@ Copyright
 * https://github.com/pythoncapi/pythoncapi_compat/commit/14c4ade30c05153e9aa0ccd85bb7743ee0fdb5cb
 * https://github.com/MatthieuDartiailh/bytecode/pull/91
 * https://www.linuxfoundation.org/blog/copyright-notices-in-open-source-software-projects/
+* https://hynek.me/til/copyright-years/
 
 
 Licenses
