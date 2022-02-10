@@ -711,3 +711,22 @@ Video for Linux (V4L): control your webcam
 
 * GUI: ``gtk-v4l``
 * CLI: ``v4l2-ctl --list-devices``
+
+
+Copyright
+=========
+
+* https://github.com/pythoncapi/pythoncapi_compat/commit/14c4ade30c05153e9aa0ccd85bb7743ee0fdb5cb
+* https://github.com/MatthieuDartiailh/bytecode/pull/91
+* https://www.linuxfoundation.org/blog/copyright-notices-in-open-source-software-projects/
+
+
+Licenses
+========
+
+* issue: `pythoncapi_compat.h is MIT licensed
+  <https://github.com/MagicStack/immutables/pull/64>`_
+* `Clarify the license of the included pythoncapi_compat.h header
+  <https://github.com/MagicStack/immutables/commit/67c5edfb8284e39ab6a0be9a4644ede306c6e9bd>`_
+* Strict license agreement: `zodbpickle
+  <https://github.com/zopefoundation/zodbpickle/pull/64>`_
