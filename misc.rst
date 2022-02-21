@@ -327,9 +327,6 @@ Create an SSH key::
 
 Issues with ed25519:
 
-* Launchpad doesn't support ed25519: Launchpad is implemented on top of Twisted
-  which doesn't support ed25519 yet.
-  https://bugs.launchpad.net/launchpad/+bug/1282220
 * gnome-keyrign doesn't support the new SSH key format used by ed25519 by
   default:
   https://bugzilla.gnome.org/show_bug.cgi?id=723274
