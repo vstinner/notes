@@ -100,11 +100,17 @@ Awards
 Other people talking about me
 =============================
 
-LWN:
+LWN articles:
 
 * `CPython, C standards, and IEEE 754
   <https://lwn.net/Articles/886516/>`_ by Jake Edge
   (March, 2022)
+* `Python and deprecations redux
+  <https://lwn.net/Articles/883391/>`_ by Jake Edge
+  (February, 2022)
+* `Python discusses deprecations
+  <https://lwn.net/Articles/877957/>`_ by Jake Edge
+  (December, 2021)
 * `Postponing some feature removals in Python 3.9
   <https://lwn.net/Articles/811369/>`_ by Jake Edge
   (February, 2020)
