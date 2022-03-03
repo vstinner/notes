@@ -102,6 +102,9 @@ Other people talking about me
 
 LWN:
 
+* `CPython, C standards, and IEEE 754
+  <https://lwn.net/Articles/886516/>`_ by Jake Edge
+  (March, 2022)
 * `Postponing some feature removals in Python 3.9
   <https://lwn.net/Articles/811369/>`_ by Jake Edge
   (February, 2020)
