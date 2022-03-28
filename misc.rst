@@ -662,6 +662,9 @@ Firefox
   * https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=1650051
   * https://gitlab.gnome.org/GNOME/gtk/issues/2112
 
+* ``privacy.webrtc.legacyGlobalIndicator`` to set **false** to hide the "Share
+  indicator" (orange microphone/webcam indicator) window during video calls
+
 
 Enter namespace filesystem of a Flatpak application or container
 ================================================================
