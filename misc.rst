@@ -731,3 +731,39 @@ Licenses
   <https://github.com/MagicStack/immutables/commit/67c5edfb8284e39ab6a0be9a4644ede306c6e9bd>`_
 * Strict license agreement: `zodbpickle
   <https://github.com/zopefoundation/zodbpickle/pull/64>`_
+
+
+LVM
+===
+
+Hierarchy:
+
+* Disks and disk partitions (primary/secondary)
+
+  * ``lsblk``
+  * ``parted /dev/vda``
+  * (parted) Extend the second partition: ``resizepart 2 100%``
+
+* LVM Physical Volume (PV)
+
+  * ``pvs``
+  * ``pvscan``
+  * Extend a PV: ``pvresize /dev/vda2``
+
+* LVM Volume Group (VG)
+
+  * ``vgdisplay``
+  * ``vgs``
+  * ``vgscan``
+
+* LVM Logical Volume (LV)
+
+  * ``lvscan``
+  * Add 6 GB to ``/root``: ``lvextend -L +6G /dev/vg_root_python-builder-rhel7.osci.io/root``
+  * Add all free space to ``/home``: ``lvextend -l +100%FREE /dev/vg_root_python-builder-rhel7.osci.io/home``
+
+* Filesystem (ext4, XFS, btrfs, etc.)
+
+  * ``df -h``
+  * Resize ``/root`` to its LV: ``resize2fs /dev/mapper/vg_root_python--builder--rhel7.osci.io-root``
+  * Resize ``/home`` to its LV: ``resize2fs /dev/mapper/vg_root_python--builder--rhel7.osci.io-home``
