@@ -767,3 +767,10 @@ Hierarchy:
   * ``df -h``
   * Resize ``/root`` to its LV: ``resize2fs /dev/mapper/vg_root_python--builder--rhel7.osci.io-root``
   * Resize ``/home`` to its LV: ``resize2fs /dev/mapper/vg_root_python--builder--rhel7.osci.io-home``
+
+
+Blockchain
+==========
+
+* https://web3isgoinggreat.com/
+* https://defiwatch.net/
