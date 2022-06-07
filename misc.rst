@@ -703,7 +703,21 @@ Dev Cython
 
 Run a single test of the Cython test suite::
 
-    ~/python/master/python runtests.py '.*test_unicode.*' -vv
+    python runtests.py '.*test_unicode.*' -vv
+
+Compile ``file.pyx`` to ``file.c``::
+
+    python -m cython file.pyx
+
+or::
+
+    cython file.pyx
+
+Compile ``file.pyx`` to ``file.c`` and builds a dynamic library (C extension)::
+
+    cythonize -i file.pyx
+
+Documentation: `Source Files and Compilation <https://cython.readthedocs.io/en/stable/src/userguide/source_files_and_compilation.html>`_
 
 
 Video for Linux (V4L): control your webcam
