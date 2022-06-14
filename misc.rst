@@ -788,3 +788,13 @@ Blockchain
 
 * https://web3isgoinggreat.com/
 * https://defiwatch.net/
+
+C++ language
+============
+
+``__cplusplus`` macro:
+
+* C++98: 199711
+* C++11: 201103
+* C++14: 201402
+* C++17: 201500
