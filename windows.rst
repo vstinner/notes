@@ -402,3 +402,18 @@ Multimedia API, ``winmm.lib`` and ``timeapi.h``:
 See also:
 
 * `The Windows Timestamp Project <http://www.windowstimestamp.com/description>`_
+
+Chocolatery
+===========
+
+Package manager for Windows prodiving free softwares: https://chocolatey.org/
+
+Packages:
+
+* firefox
+* git
+* vim
+
+Run cmd as an administrator and type::
+
+    choco update all
