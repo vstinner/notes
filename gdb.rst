@@ -94,7 +94,7 @@ by a Version Control System (VCS like Git or Mercurial), you can "bisect"
 the source code history to find the changeset introducing the bug. Git and
 Mercurial have a builtin ``bisect`` command:
 
-* :ref:`hg bisect <hg-bisect>`
+* hg bisect
 * git bisect
 
 The best is to have a reliable script reproducing the bug which returns

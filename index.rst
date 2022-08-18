@@ -36,6 +36,7 @@ Contents:
    gnome.rst
    vim.rst
    assembly_x86.rst
+   linux_kernel.rst
 
 
 See also

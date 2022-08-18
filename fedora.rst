@@ -211,12 +211,12 @@ Official doc: https://docs.fedoraproject.org/en-US/quick-docs/reset-root-passwor
   "linux" line, add ``rw init=/bin/bash``, press CTRL+x or F10 to boot.
 * In bash, type::
 
-  # mount -o remount,rw /  # if you forgot rw
-  # passwd
-  <enter new root password here>
-  # touch /.autorelabel
-  # sync
-  # /sbin/reboot -f
+    # mount -o remount,rw /  # if you forgot rw
+    # passwd
+    <enter new root password here>
+    # touch /.autorelabel
+    # sync
+    # /sbin/reboot -f
 
 The ``touch /.autorelabel`` command recreate SELinux labels, especially
 on the ``/etc/shadow`` file (label: ``system_u:object_r:shadow_t:s0``).
