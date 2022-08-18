@@ -163,14 +163,6 @@ macOS 10.4      Tiger          8.x             2004
 
 Use ``sw_vers`` in the command line to get macOS version.
 
-* `Linux kernel versions
-  <https://en.wikipedia.org/wiki/Linux_kernel#Maintenance>`_:
-
-  - 4.0: 2015 (under development)
-  - 3.0: 2011
-  - 2.6: 2003
-  - 2.4: 2001
-
 * `Ubuntu releases
   <https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Table_of_versions>`_:
 
@@ -238,23 +230,6 @@ Windows XP                       5.1  2001-10  2009-04                    2014-0
    Applications not manifested for Windows 8.1 or Windows 10 will return the
    Windows 8 OS version value (6.2). To manifest your applications for Windows
    8.1 or Windows 10, refer to Targeting your application for Windows.
-
-Linux kernel:
-
-* `Active kernel releases
-  <https://www.kernel.org/category/releases.html>`_
-
-============  ===========  =============
-Linux kernel  Released     Projected EOL
-============  ===========  =============
-4.14          2017-11-12   2020-01
-4.9           2016-12-11   2019-01
-4.4           2016-01-10   2022-02
-4.1           2015-06-21   2018-05
-3.16          2014-08-03   2020-04
-3.2           2012-01-04   2018-05
-2.6           2003-12-17   2011-08
-============  ===========  =============
 
 
 Gnome-Terminal

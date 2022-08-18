@@ -34,3 +34,24 @@ ABRT reports
   in drm_find_cea_extension() at cold boot
   <https://bugzilla.redhat.com/show_bug.cgi?id=1839782>`_.
   Closed as outdated.
+
+
+Versions
+========
+
+* `Active kernel releases <https://www.kernel.org/category/releases.html>`_
+* `Linux kernel versions
+  <https://en.wikipedia.org/wiki/Linux_kernel#Maintenance>`_
+
+============  ===========  =============
+Linux kernel  Released     Projected EOL
+============  ===========  =============
+4.14          2017-11-12   2020-01
+4.9           2016-12-11   2019-01
+4.4           2016-01-10   2022-02
+4.1           2015-06-21   2018-05
+3.16          2014-08-03   2020-04
+3.2           2012-01-04   2018-05
+2.6           2003-12-17   2011-08
+============  ===========  =============
+
