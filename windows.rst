@@ -155,6 +155,28 @@ See also
 
 * :ref:`Operating systems <operating-systems>`
 
+Create a Windows VM on Linux to develop (VS)
+============================================
+
+https://getlabsdone.com/how-to-install-windows-11-on-kvm/
+
+Get Windows:
+
+* `Developer: Get a Windows 11 development environment
+  <https://developer.microsoft.com/windows/downloads/virtual-machines/>`_
+* `Get Windows 11 <https://www.microsoft.com/software-download/windows11>`_:
+  see below to get an ISO.
+
+Get a Windows Product key: https://my.visualstudio.com/productkeys
+
+* Get a "Windows 11 Professional N" key
+
+Create a VM from the ISO with a disk of 70 GB. Custom the machine:
+
+* Add device: TPM (emulated).
+
+https://askubuntu.com/questions/1146441/how-to-properly-configure-virt-manager-qemu-kvm-with-windows-guest
+
 Windows variants
 ================
 
@@ -348,12 +370,6 @@ Debug Windows Update failure
 Not tested: ``CHKDSK C: /F /R`` (``/F`` repairs errors, ``/R`` checks for bad
 sectors).
 
-
-MSDN
-====
-
-* Download Windows 10 ISO: https://www.microsoft.com/en-us/software-download/windows10ISO
-* Get a Windows Product key: https://my.visualstudio.com/productkeys
 
 Time
 ====
