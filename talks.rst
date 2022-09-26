@@ -17,6 +17,26 @@ Conferences 2011-today
    :alt: Pycon US 2014 logo
    :target: https://us.pycon.org/
 
+* September, 2022, `Pycon APAC (online) <https://tw.pycon.org/2022/en-us>`__
+
+  * keynote: `Python Incompatible Changes
+    <https://raw.githubusercontent.com/vstinner/talks/main/2022-PyconAPAC/python-incompatible-changes.pdf>`_
+  * `video (youtube) <https://www.youtube.com/watch?v=P-2riG7eegg>`__
+
+* May 2021, `Language Summit at Pycon US (online)
+  <https://us.pycon.org/2021/summits/language/>`__
+
+  * `Subinterpreters <https://raw.githubusercontent.com/vstinner/talks/main/2021-PyconUS/subinterpreters.pdf>`__: talk given with Dong-hee Na
+  * `Report <https://pyfound.blogspot.com/2021/05/the-2021-python-language-summit_16.html>`__ by Joanna Jablonski
+
+* October 2, 2020, `Pycon India (online) <https://in.pycon.org/2020/>`__
+
+  * keynote: `Python Performance: Past, Present, Future
+    <https://raw.githubusercontent.com/vstinner/talks/main/2020-PyconIndia/python_performance.pdf>`_:
+    same talk than EuroPython 2019
+  * `video (pyvideo) <https://pyvideo.org/pycon-india-2020/keynote-python-performance-past-present-future.html>`__
+  * `video (youtube) <https://www.youtube.com/watch?v=m6Q-jgoHw6k>`__
+
 * May 2020, Pycon US, Online (because of the COVID-19)
 
   * `Python Steering Council Community Address <https://www.youtube.com/watch?v=xX8fGuh4T_o>`_:
