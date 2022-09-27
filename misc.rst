@@ -773,3 +773,17 @@ C++ language
 * C++11: 201103
 * C++14: 201402
 * C++17: 201500
+
+
+Hardware bugs
+=============
+
+* CPU bugs: `Cores that don’t count
+  <https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s01-hochschild.pdf>`_:
+  "silent data corruption" (SDC).
+  See also `Silent Data Corruption
+  <https://support.google.com/cloud/answer/10759085?hl=en>`_.
+* `Skylake bug: a detective story
+  <https://tech.ahrefs.com/skylake-bug-a-detective-story-ab1ad2beddcd>`_ (2017)
+  by Joris Giovannangeli.
+  OCaml: bug in CPU microcode of Intel Kaby Lake and Skylake.
