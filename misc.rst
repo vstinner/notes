@@ -787,3 +787,5 @@ Hardware bugs
   <https://tech.ahrefs.com/skylake-bug-a-detective-story-ab1ad2beddcd>`_ (2017)
   by Joris Giovannangeli.
   OCaml: bug in CPU microcode of Intel Kaby Lake and Skylake.
+* `Machine-check exception (MCE)
+  <https://en.wikipedia.org/wiki/Machine-check_exception>`_
