@@ -19,6 +19,12 @@ Useful tools
 * `tortoisehg <http://tortoisehg.bitbucket.org/>`_
 
 
+Configure newly installed Windows
+=================================
+
+* Disable UAC
+* Disable Windows Firewall
+
 Windows console
 ===============
 
@@ -213,6 +219,7 @@ Links:
 
 * https://getlabsdone.com/how-to-install-windows-11-on-kvm/
 * https://askubuntu.com/questions/1146441/how-to-properly-configure-virt-manager-qemu-kvm-with-windows-guest
+* https://linustechtips.com/topic/1379063-windows-11-in-virt-manager/
 
 Windows variants
 ================
@@ -262,6 +269,15 @@ Windows exceptions
 
 OpenSSH server
 ==============
+
+sshd_config
+-----------
+
+Config::
+
+    PubkeyAuthentication yes
+    PasswordAuthentication yes  # optional
+    #StrictModes yes
 
 Copy your SSH key
 -----------------
