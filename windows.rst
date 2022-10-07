@@ -158,24 +158,61 @@ See also
 Create a Windows VM on Linux to develop (VS)
 ============================================
 
-https://getlabsdone.com/how-to-install-windows-11-on-kvm/
-
-Get Windows:
+Get Windows install ISO:
 
 * `Developer: Get a Windows 11 development environment
   <https://developer.microsoft.com/windows/downloads/virtual-machines/>`_
 * `Get Windows 11 <https://www.microsoft.com/software-download/windows11>`_:
   see below to get an ISO.
 
-Get a Windows Product key: https://my.visualstudio.com/productkeys
+Get a Windows Product key:
 
+* MSDN: https://my.visualstudio.com/productkeys
 * Get a "Windows 11 Professional N" key
 
-Create a VM from the ISO with a disk of 70 GB. Custom the machine:
+Create a VM from the ISO with a disk of 70 GB.
+
+Compared to Windows 10 and older, Windows 11 requires two things: a TPM device
+and SecureBoot. The `Qemu Q35 machine type
+<https://wiki.qemu.org/Features/Q35>`_ supports SecureBoot. A UEFI image is
+also needed for SecureBoot: on Linux, the OVMF image (port of Intel's tianocore
+firmware) can be used for that,
+
+Fedora: install OVMF image with: ``sudo dnf install edk2-ovmf``.
+
+Customize the VM:
 
 * Add device: TPM (emulated).
+* Edit the XML to configure SecureBoot, set machine type to ``pc-q35-6.2``,
+  load the UEFI image, enable SMM (Secure Management Mode) feature::
 
-https://askubuntu.com/questions/1146441/how-to-properly-configure-virt-manager-qemu-kvm-with-windows-guest
+    <os>
+        <type arch="x86_64" machine="pc-q35-6.2">hvm</type>
+        <loader readonly='yes' secure='yes' type='pflash'>/usr/share/OVMF/OVMF_CODE.secboot.fd</loader>
+    </os>
+    <features>
+        ...
+        <smm state='on'/>
+    </features>
+
+When I tried to use the ``q35`` machine type, it became ``pc-q35-6.2``.
+
+Not tested, it seems like the `following XML is enough to enable SecureBoot
+<https://specs.openstack.org/openstack/nova-specs/specs/train/approved/allow-secure-boot-for-qemu-kvm-guests.html>`_::
+
+    <os firmware='efi'>
+      <loader secure='yes'/>
+    </os>
+
+Command to get the OVMF image path::
+
+    $ rpm -ql edk2-ovmf | grep secboot
+    /usr/share/OVMF/OVMF_CODE.secboot.fd
+
+Links:
+
+* https://getlabsdone.com/how-to-install-windows-11-on-kvm/
+* https://askubuntu.com/questions/1146441/how-to-properly-configure-virt-manager-qemu-kvm-with-windows-guest
 
 Windows variants
 ================
