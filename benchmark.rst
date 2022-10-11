@@ -64,6 +64,7 @@ Links
 * `Biased Benchmarks
   <http://matthewrocklin.com/blog/work/2017/03/09/biased-benchmarks>`_
   (honesty is hard)
+* `stabilizer <https://emeryberger.com/research/stabilizer/>`_
 * `How to get consistent results when benchmarking on Linux?
   <https://easyperf.net/blog/2019/08/02/Perf-measurement-environment-on-Linux>`_
   (Aug 2019) by Denis Bakhvalov
