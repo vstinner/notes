@@ -23,6 +23,28 @@ Reports
 * `2015 Q4 <https://vstinner.github.io/contrib-cpython-2015q4.html>`_
 * `2015 Q3 <https://vstinner.github.io/contrib-cpython-2015q3.html>`_
 
+Commits
+=======
+
+Number of commits with the name "Victor Stinner", per year, from 2010 to
+2022-11-02:
+
+* 2010: 696
+* 2011: 1027 (migration to Mercurial)
+* 2012: 261
+* 2013: 630
+* 2014: 820
+* 2015: 731
+* 2016: 612
+* 2017: 420 (migration to Git on GitHub)
+* 2018: 306
+* 2019: 467
+* 2020: 524
+* 2021: 260
+* 2022: 300
+
+Total: 7054
+
 Python 3.10 Contributions
 =========================
 
