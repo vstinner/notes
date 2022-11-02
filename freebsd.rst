@@ -129,3 +129,10 @@ Configure as your user
 * chsh -s /usr/local/bin/bash
 * Log out and log in again to get bash
 * ``sudo pkg install git``
+
+Commands to develop Python on FreeBSD
+=====================================
+
+Install::
+
+    sudo pkg install pkgconf
