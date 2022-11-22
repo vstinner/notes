@@ -4,27 +4,167 @@
 My contributions to Python
 ++++++++++++++++++++++++++
 
-Commits
-=======
+Python 3.12 (dev) Contributions
+===============================
 
-Number of commits with the name "Victor Stinner", per year, from 2010 to
-2022-11-02:
+New Features
+------------
 
-* 2022: 348 (on going)
-* 2021: 260
-* 2020: 524
-* 2019: 467
-* 2018: 306
-* 2017: 420 (migration to Git on GitHub)
-* 2016: 612
-* 2015: 731
-* 2014: 820
-* 2013: 630
-* 2012: 261
-* 2011: 1027 (migration to Mercurial)
-* 2010: 696
+* Build: Add ``COMPILEALL_OPTS`` variable in ``Makefile``
 
-Total: 7 102 commits
+Changes
+-------
+
+* Invalid escape sequence in strings now generates ``SyntaxWarning``,
+  instead of ``DeprecationWarning``
+
+Remove
+------
+
+* ``distutils`` package
+* ``Tools/demo/`` directory
+  (`12 demos <https://twitter.com/VictorStinner/status/1576959791087616000>`__)
+* ``Tools/scripts/`` directory: remove 70 scripts
+* ``ElementTree.Element.copy()`` (pure Python implementation)
+* ``FTP_TLS.ssl_version``
+* ``gzip.GzipFile.filename``
+* ``io.OpenWrapper``, ``_pyio.OpenWrapper``
+* ``locale.format()``
+* ``ssl.RAND_pseudo_bytes()``
+* ``ssl.match_hostname()``
+* ``ssl.wrap_socket()``
+* ``zipimport``: Remove ``find_loader()`` and ``find_module()`` methods
+* Remove the ``keyfile``, ``certfile`` and ``check_hostname`` parameters in
+  modules: ftplib, http.client, imaplib, poplib and smtplib.
+
+C API: New Features
+-------------------
+
+* ``PyFrame_GetVar()``
+* ``PyFrame_GetVarString()``
+
+C API: Deprecate
+----------------
+
+* ``Py_DebugFlag``
+* ``Py_VerboseFlag``
+* ``Py_QuietFlag``
+* ``Py_InteractiveFlag``
+* ``Py_InspectFlag``
+* ``Py_OptimizeFlag``
+* ``Py_NoSiteFlag``
+* ``Py_BytesWarningFlag``
+* ``Py_FrozenFlag``
+* ``Py_IgnoreEnvironmentFlag``
+* ``Py_DontWriteBytecodeFlag``
+* ``Py_NoUserSiteDirectory``
+* ``Py_UnbufferedStdioFlag``
+* ``Py_HashRandomizationFlag``
+* ``Py_IsolatedFlag``
+* ``Py_LegacyWindowsFSEncodingFlag``
+* ``Py_LegacyWindowsStdioFlag``
+* ``Py_FileSystemDefaultEncoding``
+* ``Py_FileSystemDefaultEncodeErrors``
+* ``Py_UTF8Mode``
+
+C API: Remove
+-------------
+
+* ``token.h`` header file
+* ``PyUnicode_InternImmortal()``
+* ``SSTATE_INTERNED_IMMORTAL``
+
+
+Python 3.11 Contributions
+=========================
+
+New features
+------------
+
+* Add ``-P`` command line option, ``PYTHONSAFEPATH`` environment variable and
+  ``sys.flags.safe_path``: don't prepend a potentially unsafe path to
+  ``sys.path``.
+
+Changes
+-------
+
+* On Unix, if the ``sem_clockwait()`` function is available,
+  ``threading.Lock.acquire()`` uses the monotonic clock for the timeout.
+* ``math.nan`` is now always available
+* C11 compiler and C99 ``<math.h>`` are now required to build Python
+
+Remove
+------
+
+* ``binhex`` module
+* ``binascii``: remove ``a2b_hqx()``, ``b2a_hqx()``, ``rlecode_hqx()`` and
+  ``rldecode_hqx()``
+* ``float.__set_format__()``
+* ``"U"`` flag of ``open()``, ``io.open()`` and ``codecs.open()``
+
+Deprecate
+---------
+
+* ``locale.getdefaultlocale()``
+* ``locale.resetlocale()``
+* ``mailcap`` module
+* ``lib2to3`` package
+
+C API: New Features
+-------------------
+
+* ``PyThreadState_EnterTracing()``, ``PyThreadState_LeaveTracing()``
+* ``PyFloat_Pack2()``, ``PyFloat_Pack4()``, ``PyFloat_Pack8()``
+* ``PyFloat_Unpack2()``, ``PyFloat_Unpack4()``, ``PyFloat_Unpack8()``
+* ``PyConfig.safe_path``
+
+C API: Changes
+--------------
+
+* PEP 670: Convert many macros to static inline functions.
+* Py_TYPE() and Py_SIZE() can no longer be used as l-value
+* Move 8 non-limited header files to ``Include/cpython/``
+* Frame API is now directly part of ``<Python.h>``, like ``PyFrame_GetBack()``
+
+C API: Deprecate
+----------------
+
+* ``PySys_AddWarnOption()``
+* ``PySys_AddWarnOptionUnicode()``
+* ``PySys_AddXOption()``
+* ``PySys_HasWarnOptions()``
+* ``PySys_SetArgv()``
+* ``PySys_SetArgvEx()``
+* ``PySys_SetPath()``
+* ``Py_SetPath()``
+* ``Py_SetProgramName()``
+* ``Py_SetPythonHome()``
+* ``Py_SetStandardStreamEncoding()``
+* ``_Py_SetProgramFullPath()``
+
+C API: Limited C API
+--------------------
+
+* The limited C API no longer includes ``<stdlib.h>``, ``<stdio.h>``,
+  ``<errno.h>`` and ``<string.h>``.
+* Remove ``PyWeakref_GET_OBJECT()``
+* Remove ``PyUnicode_CHECK_INTERNED()``
+
+C API: Remove
+-------------
+
+* ``HAVE_PY_SET_53BIT_PRECISION``
+* ``PyHeapType_GET_MEMBERS()``
+* ``Py_ADJUST_ERANGE1()``
+* ``Py_ADJUST_ERANGE2()``
+* ``Py_FORCE_DOUBLE()``
+* ``Py_OVERFLOWED()``
+* ``Py_SET_ERANGE_IF_OVERFLOW()``
+* ``Py_SET_ERRNO_ON_MATH_ERROR()``
+* ``Py_UNICODE_COPY()``
+* ``Py_UNICODE_FILL()``
+* ``eval.h`` header
+* ``pystrhex.h`` header
 
 Python 3.10 Contributions
 =========================
@@ -390,6 +530,28 @@ Other contributions to PEPs
   written by  Ethan Furman.
 * :pep:`471` (os.scandir): I helped Ben Hoyt to implement, test and benchmark
   his PEP 471
+
+Commits
+=======
+
+Number of commits with the name "Victor Stinner", per year, from 2010 to
+2022-11-02:
+
+* 2022: 348 (on going)
+* 2021: 260
+* 2020: 524
+* 2019: 467
+* 2018: 306
+* 2017: 420 (migration to Git on GitHub)
+* 2016: 612
+* 2015: 731
+* 2014: 820
+* 2013: 630
+* 2012: 261
+* 2011: 1027 (migration to Mercurial)
+* 2010: 696
+
+Total: 7 102 commits
 
 Old reports (2015-2017)
 =======================
