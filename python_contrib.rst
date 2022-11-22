@@ -479,7 +479,6 @@ Draft PEPs
 PEP         Python  Status    Title
 ==========  ======  ========  =======================================================================================
 :pep:`674`  3.11    Draft     Disallow using macros as l-value
-:pep:`670`  3.11    Draft     Convert macros to functions in the Python C API
 :pep:`620`  3.10    Draft     Hide implementation details from the C API
 ==========  ======  ========  =======================================================================================
 
@@ -489,6 +488,7 @@ Accepted PEPs
 ==========  ======  ========  =======================================================================================
 PEP         Python  Status    Title
 ==========  ======  ========  =======================================================================================
+:pep:`670`  3.11    Final     Convert macros to functions in the Python C API
 :pep:`587`  3.8     Final     Python Initialization Configuration
 :pep:`564`  3.7     Final     Add new time functions with nanosecond resolution (ex: ``time.time_ns()``)
 :pep:`545`  ---     Final     Python Documentation Translations -- co-written with Juliend Palard and Naoki IANADA
@@ -501,6 +501,8 @@ PEP         Python  Status    Title
 :pep:`445`  3.4     Final     Add new APIs to customize Python memory allocators
 :pep:`418`  3.3     Final     Add monotonic time, performance counter, and process time functions
 ==========  ======  ========  =======================================================================================
+
+Total: 12 accepted PEPs.
 
 Rejected PEPs
 -------------
