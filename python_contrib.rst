@@ -4,46 +4,27 @@
 My contributions to Python
 ++++++++++++++++++++++++++
 
-Reports
-=======
-
-* 2017 Q3:
-  `2017 Q3 (part 1) <https://vstinner.github.io/contrib-cpython-2017q3-part1.html>`_,
-  `2017 Q3 (part 2) <https://vstinner.github.io/contrib-cpython-2017q3-part2.html>`_,
-  `2017 Q3 (part 3) <https://vstinner.github.io/contrib-cpython-2017q3-part3.html>`_
-* 2017 Q2:
-  `2017 Q2 (part 1) <https://vstinner.github.io/contrib-cpython-2017q2-part1.html>`_,
-  `2017 Q2 (part 2) <https://vstinner.github.io/contrib-cpython-2017q2-part2.html>`_,
-  `2017 Q2 (part 3) <https://vstinner.github.io/contrib-cpython-2017q2-part3.html>`_
-* `2017 Q1 <https://vstinner.github.io/contrib-cpython-2017q1.html>`_
-* `2016 Q4 <https://vstinner.github.io/contrib-cpython-2016q4.html>`_
-* `2016 Q3 <https://vstinner.github.io/contrib-cpython-2016q3.html>`_
-* `2016 Q2 <https://vstinner.github.io/contrib-cpython-2016q2.html>`_
-* `2016 Q1 <https://vstinner.github.io/contrib-cpython-2016q1.html>`_
-* `2015 Q4 <https://vstinner.github.io/contrib-cpython-2015q4.html>`_
-* `2015 Q3 <https://vstinner.github.io/contrib-cpython-2015q3.html>`_
-
 Commits
 =======
 
 Number of commits with the name "Victor Stinner", per year, from 2010 to
 2022-11-02:
 
-* 2010: 696
-* 2011: 1027 (migration to Mercurial)
-* 2012: 261
-* 2013: 630
-* 2014: 820
-* 2015: 731
-* 2016: 612
-* 2017: 420 (migration to Git on GitHub)
-* 2018: 306
-* 2019: 467
-* 2020: 524
+* 2022: 348 (on going)
 * 2021: 260
-* 2022: 300
+* 2020: 524
+* 2019: 467
+* 2018: 306
+* 2017: 420 (migration to Git on GitHub)
+* 2016: 612
+* 2015: 731
+* 2014: 820
+* 2013: 630
+* 2012: 261
+* 2011: 1027 (migration to Mercurial)
+* 2010: 696
 
-Total: 7054
+Total: 7 102 commits
 
 Python 3.10 Contributions
 =========================
@@ -410,13 +391,24 @@ Other contributions to PEPs
 * :pep:`471` (os.scandir): I helped Ben Hoyt to implement, test and benchmark
   his PEP 471
 
-April Fool
-==========
+Old reports (2015-2017)
+=======================
 
-* [Python-Dev] The next major Python version will be Python 8
-* https://mail.python.org/pipermail/python-dev/2016-March/143603.html
-* https://hg.python.org/cpython/rev/9aedec2dbc01
-
+* 2017 Q3:
+  `2017 Q3 (part 1) <https://vstinner.github.io/contrib-cpython-2017q3-part1.html>`_,
+  `2017 Q3 (part 2) <https://vstinner.github.io/contrib-cpython-2017q3-part2.html>`_,
+  `2017 Q3 (part 3) <https://vstinner.github.io/contrib-cpython-2017q3-part3.html>`_
+* 2017 Q2:
+  `2017 Q2 (part 1) <https://vstinner.github.io/contrib-cpython-2017q2-part1.html>`_,
+  `2017 Q2 (part 2) <https://vstinner.github.io/contrib-cpython-2017q2-part2.html>`_,
+  `2017 Q2 (part 3) <https://vstinner.github.io/contrib-cpython-2017q2-part3.html>`_
+* `2017 Q1 <https://vstinner.github.io/contrib-cpython-2017q1.html>`_
+* `2016 Q4 <https://vstinner.github.io/contrib-cpython-2016q4.html>`_
+* `2016 Q3 <https://vstinner.github.io/contrib-cpython-2016q3.html>`_
+* `2016 Q2 <https://vstinner.github.io/contrib-cpython-2016q2.html>`_
+* `2016 Q1 <https://vstinner.github.io/contrib-cpython-2016q1.html>`_
+* `2015 Q4 <https://vstinner.github.io/contrib-cpython-2015q4.html>`_
+* `2015 Q3 <https://vstinner.github.io/contrib-cpython-2015q3.html>`_
 
 Old contributions to Python
 ===========================
