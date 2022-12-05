@@ -2,6 +2,18 @@
 FreeBSD
 +++++++
 
+Upgrade
+=======
+
+Upgrade the system::
+
+    sudo pkg upgrade -y
+    sudo freebsd-update fetch
+    PAGER=cat sudo freebsd-update install
+
+``PAGER=cat`` is used to ignore messages about added, removed and overriden
+configuration files.
+
 Minimum packages to develop on FreeBSD
 ======================================
 
@@ -13,15 +25,6 @@ Misc
 ====
 
 * Coredump filename: ``sudo sysctl -w 'kern.corefile =%N.%P.core'``
-
-Upgrade
-=======
-
-Upgrade the system::
-
-    sudo freebsd-update fetch
-    sudo freebsd-update install
-    sudo pkg upgrade -y
 
 Configuration
 =============
