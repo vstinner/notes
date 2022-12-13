@@ -472,16 +472,6 @@ Python Enhancement Proposals (PEP)
 
 Lisf of my PEPs and PEPs I co-wrote.
 
-Draft PEPs
-----------
-
-==========  ======  ========  =======================================================================================
-PEP         Python  Status    Title
-==========  ======  ========  =======================================================================================
-:pep:`674`  3.11    Draft     Disallow using macros as l-value
-:pep:`620`  3.10    Draft     Hide implementation details from the C API
-==========  ======  ========  =======================================================================================
-
 Accepted PEPs
 -------------
 
@@ -511,6 +501,8 @@ Rejected PEPs
 PEP          Python  Status        Title
 ===========  ======  ============  ====================================================================================
 :pep:`8015`  ---     Rejected      Organization of the Python community
+:pep:`674`   3.11    Deferred      Disallow using macros as l-values
+:pep:`620`   3.10    Rejected      Hide implementation details from the C API
 :pep:`608`   3.9     Rejected      Coordinated Python release
 :pep:`606`   3.9     Rejected      Python Compatibility Version
 :pep:`546`   2.7     Rejected      Backport ssl.MemoryBIO and ssl.SSLObject to Python 2.7 -- co-written with Cory Benfield
@@ -522,6 +514,8 @@ PEP          Python  Status        Title
 :pep:`410`   3.3     Rejected      Use decimal.Decimal type for timestamps
 :pep:`400`   3.3     Deferred      Deprecate codecs.StreamReader and codecs.StreamWriter
 ===========  ======  ============  ====================================================================================
+
+Total: 13 rejected, deferred or superseded PEPs.
 
 Other contributions to PEPs
 ---------------------------
