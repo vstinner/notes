@@ -502,7 +502,7 @@ PEP          Python  Status        Title
 ===========  ======  ============  ====================================================================================
 :pep:`8015`  ---     Rejected      Organization of the Python community
 :pep:`674`   3.11    Deferred      Disallow using macros as l-values
-:pep:`620`   3.10    Rejected      Hide implementation details from the C API
+:pep:`620`   3.10    Withdrawn     Hide implementation details from the C API
 :pep:`608`   3.9     Rejected      Coordinated Python release
 :pep:`606`   3.9     Rejected      Python Compatibility Version
 :pep:`546`   2.7     Rejected      Backport ssl.MemoryBIO and ssl.SSLObject to Python 2.7 -- co-written with Cory Benfield
