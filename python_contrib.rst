@@ -600,3 +600,11 @@ Other patches (fixed as well):
 * 2008-07-06: `invalid object destruction in re.finditer() <http://bugs.python.org/issue3299>`_
 * 2007-07-23: `Unable to register or upload project (http error 302: moved) <http://sourceforge.net/tracker/index.php?func=detail&aid=1758778&group_id=66150&atid=513503>`_
 * 2007-07-17: `Problem with socket.gethostbyaddr() and KeyboardInterrupt <http://sourceforge.net/tracker/index.php?func=detail&aid=1755388&group_id=5470&atid=105470>`_
+
+Statistics
+==========
+
+* `CPython Insights: Contributors
+  <https://github.com/python/cpython/graphs/contributors>`_
+* `GitHub High Score (cpython)
+  <https://leereilly.net/github-high-scores/?python/cpython>`_
