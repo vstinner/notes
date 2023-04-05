@@ -129,6 +129,9 @@ LWN articles:
   by Jonathan Corbet (July, 2016)
 * `The failure of pysandbox <https://lwn.net/Articles/574215/>`_
   by Jake Edge (November, 2013)
+* `Fusil: a Python fuzzing library
+  <https://lwn.net/Articles/322826/>`_
+  by Jake Edge (March 2009)
 
 Articles:
 
