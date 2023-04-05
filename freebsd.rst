@@ -8,7 +8,7 @@ Upgrade
 Upgrade the system::
 
     sudo pkg upgrade -y
-    sudo freebsd-update fetch
+    PAGER=cat sudo freebsd-update fetch
     PAGER=cat sudo freebsd-update install
 
 ``PAGER=cat`` is used to ignore messages about added, removed and overriden
@@ -19,6 +19,8 @@ Minimum packages to develop on FreeBSD
 
 Install::
 
+    pkg  # first command proposes to install it
+    pkg install sudo
     sudo pkg install vim-console git
 
 Misc
@@ -68,9 +70,10 @@ Install VM image
 * Uncompress the image: unxz file.qcow2.xz
 * Move the image to /var/lib/libvirt/images/
 * Create a FreeBSD VM using this disk image
+* Add "freebsd" hostname to /etc/hosts
 
-Classic installer
------------------
+Classic installer (old way)
+---------------------------
 
 * Download ftp://ftp.freebsd.org/pub/FreeBSD/releases/amd64/amd64/ISO-IMAGES/11.0/FreeBSD-11.0-RELEASE-amd64-disc1.iso.xz
 * Uncompress: unxz FreeBSD-11.0-RELEASE-amd64-disc1.iso.xz
@@ -113,7 +116,7 @@ Configure as root
 
 * Log as root
 * ``kbdcontrol -l fr.iso``
-* ``pkg install sudo bash tmux vim-console``
+* ``pkg install sudo bash tmux vim``
 * ``visudo``: uncomment ``%whell ALL..`` without password
 * adduser: add user, add it to the wheel group
 * to add wheel group to an user: pw usermod -n vstinner -G wheel

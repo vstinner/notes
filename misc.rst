@@ -789,3 +789,8 @@ Hardware bugs
   OCaml: bug in CPU microcode of Intel Kaby Lake and Skylake.
 * `Machine-check exception (MCE)
   <https://en.wikipedia.org/wiki/Machine-check_exception>`_
+
+Slack
+=====
+
+* https://allthings.how/how-to-turn-off-animated-emojis-and-gifs-in-slack/
