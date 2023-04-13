@@ -18,6 +18,10 @@ URLs:
 * Add ``.patch`` to a pull request to get the change as an unified diff
 * In a message, ``<details> ... </details>`` creates a drop-down
 
+Markdown:
+
+* ``<details>`` can be used for long fold/unfold list, traceback, etc.
+
 Code search
 ===========
 
