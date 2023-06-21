@@ -798,3 +798,38 @@ Slack
 =====
 
 * https://allthings.how/how-to-turn-off-animated-emojis-and-gifs-in-slack/
+
+Programming Principles
+======================
+
+* `Chesterton’s fence
+  <https://en.wikipedia.org/wiki/Wikipedia:Chesterton%27s_fence>`_:
+  "reforms should not be made until the reasoning behind the existing state of
+  affairs is understood".
+
+* `Hyrum's Law
+  <https://www.hyrumslaw.com/>`_:
+  "With a sufficient number of users of an API, it does not matter what you
+  promise in the contract: all observable behaviors of your system will be
+  depended on by somebody".
+
+  * https://xkcd.com/1172/
+
+* `Wirth's law
+  <https://en.wikipedia.org/wiki/Wirth%27s_law>`_:
+  "Software is getting slower more rapidly than hardware is becoming faster".
+
+* `Law of triviality
+  <https://en.wikipedia.org/wiki/Law_of_triviality>`_ aka
+  "Bikeshedding":
+  "People within an organization commonly or typically give disproportionate
+  weight to trivial issues".
+
+* `Heisenbug
+  <https://en.m.wikipedia.org/wiki/Heisenbug>`_:
+  "software bug that seems to disappear or alter its behavior when one attempts
+  to study it".
+
+* `Missing stair
+  <https://en.wikipedia.org/wiki/Missing_stair>`_
+
