@@ -485,4 +485,12 @@ Packages:
 
 Run cmd as an administrator and type::
 
-    choco update all
+    choco upgrade all
+
+Upgrade
+=======
+
+* Run Windows Update
+* Run ``choco upgrade all``
+* Update Git repositories
+* Run Visual Studio Installer
