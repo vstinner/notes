@@ -833,3 +833,10 @@ Programming Principles
 * `Missing stair
   <https://en.wikipedia.org/wiki/Missing_stair>`_
 
+GNOME Settings
+==============
+
+Resize a window with Super key ("Windows") + Right Click and then move the
+mouse::
+
+    gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
