@@ -17,6 +17,20 @@ Conferences 2011-today
    :alt: Pycon US 2014 logo
    :target: https://us.pycon.org/
 
+* July, 2023, EuroPython at Prague (Czech Republic)
+
+  * `Introducing Incompatible Changes in Python
+    <https://ep2023.europython.eu/session/introducing-incompatible-changes-in-python>`_
+  * `Slides (PDF)
+    <https://github.com/vstinner/talks/blob/main/2023-EuroPython/python-incompatible-changes.pdf>`__
+
+* April, 2023, Pycon US at Salt Lake City (Utah, USA)
+
+  * `Introducing incompatible changes in Python
+    <https://us.pycon.org/2023/schedule/presentation/4/>`__
+  * `Video (Youtube)
+    <https://www.youtube.com/watch?v=NaMWU_mJ8Ic>`__
+
 * September, 2022, `Pycon APAC (online) <https://tw.pycon.org/2022/en-us>`__
 
   * keynote: `Python Incompatible Changes
