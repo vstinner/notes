@@ -411,3 +411,12 @@ Thread Local Storage (TLS)
 
   * pthread_getspecific(), pthread_setspecific()
   * pthread_key_create(), pthread_key_delete()
+
+Modern C
+========
+
+* https://fedoraproject.org/wiki/Changes/PortingToModernC
+* https://en.wikipedia.org/wiki/C23_(C_standard_revision)
+* LLVM clang 15 (`release notes
+  <https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html>`_):
+  ``-Wimplicit-function-declaration`` is now treated as error in C99 and later.

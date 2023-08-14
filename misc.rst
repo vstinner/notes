@@ -840,3 +840,10 @@ Resize a window with Super key ("Windows") + Right Click and then move the
 mouse::
 
     gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
+
+fwupdmgr
+========
+
+Update::
+
+    sudo fwupdmgr update
