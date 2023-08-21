@@ -847,3 +847,48 @@ fwupdmgr
 Update::
 
     sudo fwupdmgr update
+
+
+Sanitizer
+=========
+
+Fedora::
+
+    dnf install libasan
+
+Tools:
+
+* ASAN: Address Sanitizer
+* LSAN: Leak Sanitizer (integrated in Address Sanitizer)
+* MSAN: Memory Sanitizer
+* TSAN: Thread Sanitizer
+* UBSAN: Undefined Behavior Sanitizer
+
+Environment variables:
+
+* ``ASAN_OPTIONS`` (ASAN)
+* ``LSAN_OPTIONS`` (LSAN)
+* ``MSAN_OPTIONS`` (MSAN)
+* ``TSAN_OPTIONS`` (TSAN)
+* ``UBSAN_OPTIONS`` (UBSAN)
+
+Documentation:
+
+* LLVM
+
+  * https://clang.llvm.org/docs/AddressSanitizer.html
+  * https://clang.llvm.org/docs/LeakSanitizer.html
+  * https://clang.llvm.org/docs/MemorySanitizer.html
+  * https://clang.llvm.org/docs/ThreadSanitizer.html
+  * https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html
+
+* Google
+
+  * https://github.com/google/sanitizers/wiki/SanitizerCommonFlags
+  * https://github.com/google/sanitizers/wiki/AddressSanitizer
+
+Python configure options:
+
+* ``--with-address-sanitizer`` (ASAN)
+* ``--with-memory-sanitizer`` (MSAN)
+* ``--with-undefined-behavior-sanitizer`` (UBSAN)
