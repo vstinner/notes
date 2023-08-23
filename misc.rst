@@ -892,3 +892,58 @@ Python configure options:
 * ``--with-address-sanitizer`` (ASAN)
 * ``--with-memory-sanitizer`` (MSAN)
 * ``--with-undefined-behavior-sanitizer`` (UBSAN)
+
+podman to create Ubuntu image
+=============================
+
+https://community.endlessos.com/t/running-ubuntu-with-podman/10506
+
+Create Ubuntu 23.04 container::
+
+    podman image pull ubuntu:23.04
+    podman image list --all
+    podman run --name ubuntu-dev --hostname ubuntu-dev --interactive --tty ubuntu:23.04
+
+In the container::
+
+    # create vstinner user
+    useradd -d /home/vstinner -s /bin/bash vstinner
+    mkdir /home/vstinner/
+    chmod -R 700 /home/vstinner
+    chown -R vstinner:users /home/vstinner
+    exit
+
+Start the container::
+
+    podman run --name ubuntu-dev --interactive --tty ubuntu:23.04
+
+user shell::
+
+     podman exec --interactive --tty --user vstinner --workdir /home/vstinner ubuntu-dev /bin/bash
+
+root shell::
+
+    podman exec --interactive --tty ubuntu-dev /bin/bash
+
+Stop container::
+
+    podman stop ubuntu-dev
+
+Remove container::
+
+    podman rm ubuntu-dev
+
+Build Python::
+
+    # root
+    apt update
+    apt install sudo tmux git make gcc -y
+    apt install -y libssl-dev libffi-dev ncurses-dev libbz2-dev libreadline-dev lzma-dev uuid-dev libgdbm-dev
+    apt install clang
+
+    # user
+    cd
+    git clone https://github.com/python/cpython --depth 1
+    cd cpython
+    ./cpython/configure --with-address-sanitizer --without-pymalloc --with-pydebug
+    make -j14
