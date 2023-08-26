@@ -947,3 +947,12 @@ Build Python::
     cd cpython
     ./cpython/configure --with-address-sanitizer --without-pymalloc --with-pydebug
     make -j14
+
+GRUB
+====
+
+* https://fedoraproject.org/wiki/Changes/HiddenGrubMenu
+
+Show GRUB menu at boot (timeout of 5 seconds)::
+
+    sudo grub2-editenv - unset menu_auto_hide
