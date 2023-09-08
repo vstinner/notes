@@ -956,3 +956,22 @@ GRUB
 Show GRUB menu at boot (timeout of 5 seconds)::
 
     sudo grub2-editenv - unset menu_auto_hide
+
+GNOME Emoji
+===========
+
+* Press CTRL+. to open GNOME built-in Emoji Picker. It doesn't work in all
+  apps.
+* Press [Windows] key and type an emoji name to search for emoji characters.
+* Install `Smile <https://smile.mijorus.it/>`_ from Software, it's a Flatpak
+  application.
+* Go to GNOME Parameters > Keyboard > Shortcuts > Customized shortcuts.
+  Add a customized shortcut.
+
+  * Name: Smile
+  * Command: ``flatpak run it.mijorus.smile``
+  * Shortcut: ALT+j
+  * Well, for me "j" remains me "emoJi", but I'm using ALT+e to spawn
+    a new terminal :-)
+
+* See also https://emojipedia.org/
