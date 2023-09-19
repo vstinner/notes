@@ -632,6 +632,13 @@ GCC bug reports:
 Firefox
 =======
 
+* `In Firefox, what are smart keywords and how do I use them? <https://kb.iu.edu/d/arjb>`_
+* URL bar:
+
+  * ``* pulls`` searchs for "pulls" in bookmarks
+  * ``^ pulls`` searchs for "pulls" in history
+  * ``% pulls`` searchs for "pulls" in tabs
+
 ``about:config``:
 
 * image.animation = once (default = "normal")
