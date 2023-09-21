@@ -982,3 +982,10 @@ GNOME Emoji
     a new terminal :-)
 
 * See also https://emojipedia.org/
+
+NAND Game
+=========
+
+Design your logic games to make an ALU and then a whole CPU!
+
+https://nandgame.com/
