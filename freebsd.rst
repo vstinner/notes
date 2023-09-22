@@ -142,3 +142,25 @@ Commands to develop Python on FreeBSD
 Install::
 
     sudo pkg install pkgconf
+
+Use ports
+=========
+
+By default, ports are not installed::
+
+    vstinner@freebsd$ ls /usr/ports
+    ls: /usr/ports: No such file or directory
+
+Install ports::
+
+    sudo git clone https://git.FreeBSD.org/ports.git /usr/ports --depth=1
+
+Misc
+====
+
+Which package provides a file? ::
+
+    vstinner@freebsd$ pkg which /usr/local/bin/git
+    /usr/local/bin/git was installed by package git-2.41.0
+
+FreeBSD source code: https://github.com/freebsd/freebsd-src/
