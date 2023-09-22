@@ -102,6 +102,9 @@ Other people talking about me
 
 LWN articles:
 
+* `Using the limited C API for the Python stdlib?
+  <https://lwn.net/Articles/944764/>`_ by Jake Edge
+  (September, 2023)
 * `CPython, C standards, and IEEE 754
   <https://lwn.net/Articles/886516/>`_ by Jake Edge
   (March, 2022)
