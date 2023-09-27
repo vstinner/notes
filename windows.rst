@@ -215,6 +215,9 @@ Command to get the OVMF image path::
     $ rpm -ql edk2-ovmf | grep secboot
     /usr/share/OVMF/OVMF_CODE.secboot.fd
 
+If the VM only sees 2 CPUs whereas 6 vCPUs are assigned to the VM, change
+the CPU topology in virt-manager.
+
 Links:
 
 * https://getlabsdone.com/how-to-install-windows-11-on-kvm/
