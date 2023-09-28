@@ -497,3 +497,12 @@ Upgrade
 * Run ``choco upgrade all``
 * Update Git repositories
 * Run Visual Studio Installer
+
+MinGW to install gdb
+====================
+
+* `Install MSYS2 <https://www.msys2.org>`_
+* Open MSYS2 terminal
+* Type: ``pacman -S gdb``
+* Add ``C:\MSYS64\usr\bin`` to the PATH
+* Example: ``set PATH=%PATH%;C:\MSYS64\usr\bin``
