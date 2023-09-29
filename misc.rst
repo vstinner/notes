@@ -153,7 +153,13 @@ Operating systems
 ==============  ============== ==============  ============
 macOS           Name           Darwin Version  Release Year
 ==============  ============== ==============  ============
-macOS 10.13     High Sierra    17.x            2017 (June)
+macOS 14        Sonoma         23.x            2023 (Sep)
+macOS 13        Ventura        22.x            2022 (Oct)
+macOS 12        Monterey       21.x            2021 (Oct)
+macOS 11        Big Sur        20.x            2020 (Nov)
+macOS 10.15     Catalina       19.x            2019 (Oct)
+macOS 10.14     Mojave         18.x            2018 (Sep)
+macOS 10.13     High Sierra    17.x            2017 (Jun)
 macOS 10.12     Sierra         16.x            2016
 macOS 10.11     El Capitan     15.x            2015
 macOS 10.10     Yosemite       14.x            2014
