@@ -995,3 +995,37 @@ NAND Game
 Design your logic games to make an ALU and then a whole CPU!
 
 https://nandgame.com/
+
+libvirt, virt-manager
+=====================
+
+BUG: "default" network is not started.
+
+Run::
+
+    sudo virsh net-autostart default
+
+Debug::
+
+    $ sudo virsh
+    virsh # net-start default
+    error: Failed to start network default
+    error: internal error: Child process (VIR_BRIDGE_NAME=virbr0 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper) unexpected exit status 11: Unable to create: /var/lib/libvirt/dnsmasq/virbr0.status
+     errno=13libvirt:  error : cannot create file '/var/lib/libvirt/dnsmasq/virbr0.status': Permission denied
+
+    dnsmasq: lease-init script returned exit code 1
+
+    virsh # exit
+
+    $ sudo -u qemu -s
+    bash-5.2$ VIR_BRIDGE_NAME=virbr0 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper
+    Unable to acquire PID file: /run/leaseshelper.pid
+     errno=13libvirt:  error : Failed to open pid file '/run/leaseshelper.pid': Permission denied
+
+    dnsmasq: lease-init script returned exit code 1
+
+Workaround::
+
+    mv /var/lib/libvirt/dnsmasq/ /var/lib/libvirt/dnsmasq.old
+
+And reboot.
