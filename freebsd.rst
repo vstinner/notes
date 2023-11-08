@@ -8,8 +8,8 @@ Upgrade
 Upgrade the system::
 
     sudo pkg upgrade -y
-    PAGER=cat sudo freebsd-update fetch
-    PAGER=cat sudo freebsd-update install
+    sudo bash -c 'PAGER=cat freebsd-update fetch'
+    sudo bash -c 'PAGER=cat freebsd-update install'
 
 ``PAGER=cat`` is used to ignore messages about added, removed and overriden
 configuration files.
