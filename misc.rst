@@ -1029,3 +1029,36 @@ Workaround::
     mv /var/lib/libvirt/dnsmasq/ /var/lib/libvirt/dnsmasq.old
 
 And reboot.
+
+ReadTheDocs: GitHub integration
+===============================
+
+* Admin: https://readthedocs.org/
+
+  * Log In: [Sign In with GitHub]
+  * Click on a project
+
+* [optional] Connect to GitHub: https://readthedocs.org/accounts/social/connections/
+* Integration: GitHub config
+
+  * Go to `your Settings <https://github.com/settings/profile>`_
+  * Go to Integration: Applications
+  * Go to `Authorized OAuth Apps <https://github.com/settings/applications>`_
+  * Click on ReadTheDocs
+  * Check "Organization access": click on [Grant] if needed
+
+* Integration: ReadTheDocs config
+
+  * Go to a project
+  * Go to [Admin]
+  * Go to [Integrations]
+  * Maybe delete the old integration
+  * Click on [Add integration]
+  * Select [GitHub incoming webhook]
+  * Click on [Add integration]
+
+* Integration docs:
+
+  * 2023-11-14: https://blog.readthedocs.com/security-update-on-incoming-webhooks/
+  * https://docs.readthedocs.io/en/latest/integrations.html
+  * https://docs.readthedocs.io/en/stable/guides/setup/git-repo-automatic.html
