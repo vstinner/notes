@@ -846,6 +846,12 @@ Programming Principles
 * `Missing stair
   <https://en.wikipedia.org/wiki/Missing_stair>`_
 
+* Time management
+
+  * https://en.wikipedia.org/wiki/Student_syndrome
+  * https://en.wikipedia.org/wiki/Hofstadter%27s_law
+  * https://en.wikipedia.org/wiki/Brooks%27s_law
+
 GNOME Settings
 ==============
 
