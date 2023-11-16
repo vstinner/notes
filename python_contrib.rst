@@ -4,8 +4,163 @@
 My contributions to Python
 ++++++++++++++++++++++++++
 
-Python 3.12 (dev) Contributions
-===============================
+Python 3.13 Contributions
+=========================
+
+New Features
+------------
+
+* Add os.process_cpu_count().
+
+Changes
+-------
+
+* doctest.DocTestRunner.run() counts the number of skipped tests.
+* io.IOBase finalizer now logs close() errors.
+* multiprocessing, concurrent.futures and compileall now use
+  os.process_cpu_count().
+
+Deprecate
+---------
+
+* ctypes.SetPointerType()
+* ctypes.ARRAY()
+* getopt is now soft deprecated.
+* optparse is now soft deprecated.
+* wave: getmark(), setmark() and getmarkers() methods.
+
+Remove
+------
+
+* Remove 19 stdlib modules (PEP 594).
+
+  * lib2to3
+  * aifc
+  * audioop
+  * chunk
+  * cgi
+  * cgitb
+  * crypt
+  * imghdr
+  * mailcap
+  * nis
+  * nntplib
+  * ossaudiodev
+  * pipes
+  * sndhdr
+  * spwd
+  * sunau
+  * telnetlib3
+  * uu
+  * xdrlib
+
+* Remove many deprecated functions.
+* Remove locale.resetlocale().
+* Remove logging.warn() and logging.Logger.warn().
+* Remove unsafe cafile, capath and cadefault parameters of
+  urllib.request.urlopen().
+
+Build Changes
+-------------
+
+* Py_TRACE_REFS build becomes ABI compatible with release and debug builds.
+  This build now supports the limited C API.
+* 10 extensions are now build with the limited C API.
+
+New C API Features
+------------------
+
+Add functions:
+
+* PyDict_Contains()
+* PyDict_ContainsString()
+* PyDict_GetItemRef()
+* PyDict_GetItemStringRef()
+* PyDict_Pop()
+* PyDict_PopString()
+* PyImport_AddModuleRef()
+* PyList_Clear()
+* PyList_Extend()
+* PyLong_AsInt()
+* PySys_AuditTuple()
+* PyThreadState_GetUnchecked()
+* PyWeakref_GetRef()
+* Py_IsFinalizing()
+
+Other changes:
+
+* PyTuple_SET_ITEM() and PyList_SET_ITEM() check the index with an assertion.
+
+C API Changes
+-------------
+
+* Python.h no longer includes <ieeefp.h>, <time.h>, <sys/select.h>,
+  <sys/time.h>, and <stddef.h>.
+
+Limited C API Changes
+---------------------
+
+Add functions:
+
+* PyMem_RawMalloc()
+* PyMem_RawCalloc()
+* PyMem_RawRealloc()
+* PyMem_RawFree()
+* PySys_Audit()
+* PySys_AuditTuple()
+
+Other changes:
+
+* Undefine Py_BUILD_CORE, Py_BUILD_CORE_BUILTIN and Py_BUILD_CORE_MODULE
+  macros.
+
+Deprecate C API
+---------------
+
+* Py_UNICODE and PY_UNICODE_TYPE types
+* PySys_ResetWarnOptions()
+* Py_GetExecPrefix()
+* Py_GetPath()
+* Py_GetPrefix()
+* Py_GetProgramFullPath()
+* Py_GetProgramName()
+* Py_GetPythonHome()
+* PyImport_ImportModuleNoBlock()
+* PyWeakref_GetObject()
+* PyWeakref_GET_OBJECT()
+
+Remove C API
+------------
+
+* Remove many private C API: functions starting with ``_Py`` or ``_PY`` prefix.
+* PyCFunction_Call()
+* PyEval_CallFunction()
+* PyEval_CallMethod()
+* PyEval_CallObject()
+* PyEval_CallObjectWithKeywords()
+* PySys_AddWarnOption()
+* PySys_AddWarnOptionUnicode()
+* PySys_AddXOption()
+* PySys_HasWarnOptions()
+* PySys_SetArgv()
+* PySys_SetArgvEx()
+* PySys_SetPath()
+* Py_SetPath()
+* Py_SetProgramName()
+* Py_SetPythonHome()
+* Py_SetStandardStreamEncoding()
+* _Py_SetProgramFullPath()
+* PyEval_InitThreads()
+* PyEval_ThreadsInitialized()
+* PyEval_AcquireLock()
+* PyEval_ReleaseLock()
+* _PyObject_FastCall()
+* Include/cpython/pytime.h header file.
+* _PyInterpreterState_Get()
+
+
+Python 3.12 Contributions
+=========================
 
 New Features
 ------------
