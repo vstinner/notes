@@ -490,6 +490,21 @@ Run cmd as an administrator and type::
 
     choco upgrade all
 
+Always say YES::
+
+    choco feature enable -n allowGlobalConfirmation
+
+
+Add a directory to system PATH
+==============================
+
+Type::
+
+    setx PATH "%PATH%;C:\Something\bin"
+
+The command only affects new shell, not the current shell sadly.
+
+
 Upgrade
 =======
 
