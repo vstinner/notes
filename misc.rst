@@ -1068,3 +1068,40 @@ ReadTheDocs: GitHub integration
   * 2023-11-14: https://blog.readthedocs.com/security-update-on-incoming-webhooks/
   * https://docs.readthedocs.io/en/latest/integrations.html
   * https://docs.readthedocs.io/en/stable/guides/setup/git-repo-automatic.html
+
+PipeWire
+========
+
+Troubleshooting
+---------------
+
+* https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Troubleshooting
+
+PipeWire
+--------
+
+* https://wiki.archlinux.org/title/WirePlumber
+
+PipeWire tools
+--------------
+
+* Helvum: GUI to visualize inputs, outputs and links between them
+* pw-mon: dump events
+* pw-top: "top" like program listing inputs/outputs and their delay in
+  microseconds (us), and quality (quantization, rate in Hz)
+* pw-dump: list config as JSON
+* pw-cli: PipeWire shell
+* ``systemctl --user status pipewire``: status of the service with latest logs
+* ``systemctl --user status wireplumber``
+* ``wpctl status``
+
+Pulse Audio
+-----------
+
+* ``pavucontrol``: GUI to change volume, inputs and outputs
+* ``pactl``
+
+ALSA
+----
+
+* ``aplay``: play sound file
