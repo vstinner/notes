@@ -5,6 +5,9 @@ FreeBSD
 Upgrade
 =======
 
+Check the `latest FreeBSD release <https://www.freebsd.org/>`_ and compare to
+``uname -a``.
+
 Upgrade the system::
 
     sudo pkg upgrade -y

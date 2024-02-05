@@ -345,3 +345,9 @@ Reverse
   gdb doesn't support AVX. Workaround?
 
   * LD_HWCAP_MASK=0?
+
+Debuginfod
+==========
+
+* https://fedoraproject.org/wiki/Debuginfod
+* gdb: ``set debuginfod enabled on``
