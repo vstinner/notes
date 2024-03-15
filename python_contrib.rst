@@ -98,7 +98,7 @@ Add functions:
 
 Add features:
 
-* ``PyUnicode_FromFormat()``: add``%T``, ``%T#``, ``%N`` and ``%N#`` formats
+* ``PyUnicode_FromFormat()``: add ``%T``, ``%T#``, ``%N`` and ``%N#`` formats
 
 Other changes:
 
