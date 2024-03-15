@@ -10,24 +10,24 @@ Python 3.13 Contributions
 New Features
 ------------
 
-* Add os.process_cpu_count().
+* Add ``os.process_cpu_count()``.
 
 Changes
 -------
 
-* doctest.DocTestRunner.run() counts the number of skipped tests.
-* io.IOBase finalizer now logs close() errors.
+* ``doctest.DocTestRunner.run()`` counts the number of skipped tests.
+* ``io.IOBase`` finalizer now logs close() errors.
 * multiprocessing, concurrent.futures and compileall now use
-  os.process_cpu_count().
+  ``os.process_cpu_count()``.
 
 Deprecate
 ---------
 
-* ctypes.SetPointerType()
-* ctypes.ARRAY()
-* getopt is now soft deprecated.
-* optparse is now soft deprecated.
-* wave: getmark(), setmark() and getmarkers() methods.
+* ``ctypes.SetPointerType()``
+* ``ctypes.ARRAY()``
+* ``getopt`` is now soft deprecated.
+* ``optparse`` is now soft deprecated.
+* ``wave``: ``getmark()``, ``setmark()`` and ``getmarkers()`` methods.
 
 Remove
 ------
@@ -72,24 +72,37 @@ New C API Features
 
 Add functions:
 
-* PyDict_Contains()
-* PyDict_ContainsString()
-* PyDict_GetItemRef()
-* PyDict_GetItemStringRef()
-* PyDict_Pop()
-* PyDict_PopString()
-* PyImport_AddModuleRef()
-* PyList_Clear()
-* PyList_Extend()
-* PyLong_AsInt()
-* PySys_AuditTuple()
-* PyThreadState_GetUnchecked()
-* PyWeakref_GetRef()
-* Py_IsFinalizing()
+* ``PyDict_Contains()``
+* ``PyDict_ContainsString()``
+* ``PyDict_GetItemRef()``
+* ``PyDict_GetItemStringRef()``
+* ``PyDict_Pop()``
+* ``PyDict_PopString()``
+* ``PyImport_AddModuleRef()``
+* ``PyList_Clear()``
+* ``PyList_Extend()``
+* ``PyLong_AsInt()``
+* ``PySys_AuditTuple()``
+* ``PyThreadState_GetUnchecked()``
+* ``PyTime_AsSecondsDouble()``
+* ``PyTime_MIN`` and ``PyTime_MAX`` constants
+* ``PyTime_Monotonic()``
+* ``PyTime_PerfCounter()``
+* ``PyTime_Time()``
+* ``PyTime_t`` type
+* ``PyWeakref_GetRef()``
+* ``Py_HashPointer()``
+* ``Py_IsFinalizing()``
+* ``PyType_GetFullyQualifiedName()``
+* ``PyType_GetModuleName()``
+
+Add features:
+
+* ``PyUnicode_FromFormat()``: add``%T``, ``%T#``, ``%N`` and ``%N#`` formats
 
 Other changes:
 
-* PyTuple_SET_ITEM() and PyList_SET_ITEM() check the index with an assertion.
+* ``PyTuple_SET_ITEM()`` and ``PyList_SET_ITEM()`` check the index with an assertion.
 
 C API Changes
 -------------
@@ -102,12 +115,12 @@ Limited C API Changes
 
 Add functions:
 
-* PyMem_RawMalloc()
-* PyMem_RawCalloc()
-* PyMem_RawRealloc()
-* PyMem_RawFree()
-* PySys_Audit()
-* PySys_AuditTuple()
+* ``PyMem_RawMalloc()``
+* ``PyMem_RawCalloc()``
+* ``PyMem_RawRealloc()``
+* ``PyMem_RawFree()``
+* ``PySys_Audit()``
+* ``PySys_AuditTuple()``
 
 Other changes:
 
@@ -117,46 +130,46 @@ Other changes:
 Deprecate C API
 ---------------
 
-* Py_UNICODE and PY_UNICODE_TYPE types
-* PySys_ResetWarnOptions()
-* Py_GetExecPrefix()
-* Py_GetPath()
-* Py_GetPrefix()
-* Py_GetProgramFullPath()
-* Py_GetProgramName()
-* Py_GetPythonHome()
-* PyImport_ImportModuleNoBlock()
-* PyWeakref_GetObject()
-* PyWeakref_GET_OBJECT()
+* ``Py_UNICODE`` and ``PY_UNICODE_TYPE`` types
+* ``PySys_ResetWarnOptions()``
+* ``Py_GetExecPrefix()``
+* ``Py_GetPath()``
+* ``Py_GetPrefix()``
+* ``Py_GetProgramFullPath()``
+* ``Py_GetProgramName()``
+* ``Py_GetPythonHome()``
+* ``PyImport_ImportModuleNoBlock()``
+* ``PyWeakref_GetObject()``
+* ``PyWeakref_GET_OBJECT()``
 
 Remove C API
 ------------
 
 * Remove many private C API: functions starting with ``_Py`` or ``_PY`` prefix.
-* PyCFunction_Call()
-* PyEval_CallFunction()
-* PyEval_CallMethod()
-* PyEval_CallObject()
-* PyEval_CallObjectWithKeywords()
-* PySys_AddWarnOption()
-* PySys_AddWarnOptionUnicode()
-* PySys_AddXOption()
-* PySys_HasWarnOptions()
-* PySys_SetArgv()
-* PySys_SetArgvEx()
-* PySys_SetPath()
-* Py_SetPath()
-* Py_SetProgramName()
-* Py_SetPythonHome()
-* Py_SetStandardStreamEncoding()
-* _Py_SetProgramFullPath()
-* PyEval_InitThreads()
-* PyEval_ThreadsInitialized()
-* PyEval_AcquireLock()
-* PyEval_ReleaseLock()
-* _PyObject_FastCall()
-* Include/cpython/pytime.h header file.
-* _PyInterpreterState_Get()
+* ``PyCFunction_Call()``
+* ``PyEval_CallFunction()``
+* ``PyEval_CallMethod()``
+* ``PyEval_CallObject()``
+* ``PyEval_CallObjectWithKeywords()``
+* ``PySys_AddWarnOption()``
+* ``PySys_AddWarnOptionUnicode()``
+* ``PySys_AddXOption()``
+* ``PySys_HasWarnOptions()``
+* ``PySys_SetArgv()``
+* ``PySys_SetArgvEx()``
+* ``PySys_SetPath()``
+* ``Py_SetPath()``
+* ``Py_SetProgramName()``
+* ``Py_SetPythonHome()``
+* ``Py_SetStandardStreamEncoding()``
+* ``_Py_SetProgramFullPath()``
+* ``PyEval_InitThreads()``
+* ``PyEval_ThreadsInitialized()``
+* ``PyEval_AcquireLock()``
+* ``PyEval_ReleaseLock()``
+* ``_PyObject_FastCall()``
+* ``Include/cpython/pytime.h`` header file.
+* ``_PyInterpreterState_Get()``
 
 
 Python 3.12 Contributions
@@ -633,6 +646,7 @@ Accepted PEPs
 ==========  ======  ========  =======================================================================================
 PEP         Python  Status    Title
 ==========  ======  ========  =======================================================================================
+:pep:`737`  3.13    Final     C API to format a type fully qualified name
 :pep:`670`  3.11    Final     Convert macros to functions in the Python C API
 :pep:`587`  3.8     Final     Python Initialization Configuration
 :pep:`564`  3.7     Final     Add new time functions with nanosecond resolution (ex: ``time.time_ns()``)
@@ -648,6 +662,16 @@ PEP         Python  Status    Title
 ==========  ======  ========  =======================================================================================
 
 Total: 12 accepted PEPs.
+
+Draft PEPs
+----------
+
+===========  ======  =============================================
+PEP          Python  Title
+===========  ======  =============================================
+:pep:`741`   3.13    Python Configuration C API
+:pep:`743`   3.13    Add Py_COMPAT_API_VERSION to the Python C API
+===========  ======  =============================================
 
 Rejected PEPs
 -------------
