@@ -72,7 +72,6 @@ New C API Features
 
 Add functions:
 
-* ``PyDict_Contains()``
 * ``PyDict_ContainsString()``
 * ``PyDict_GetItemRef()``
 * ``PyDict_GetItemStringRef()``
