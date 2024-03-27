@@ -351,6 +351,10 @@ Debuginfod
 
 * https://fedoraproject.org/wiki/Debuginfod
 * gdb: ``set debuginfod enabled on``
+* Fedora:
+
+  * ``export DEBUGINFOD_URLS=https://debuginfod.fedoraproject.org/``
+
 * Ubuntu:
 
   * ``export DEBUGINFOD_URLS="https://debuginfod.ubuntu.com"``
