@@ -112,18 +112,24 @@ Python
 Upgrade
 =======
 
-Upgrade Fedora 29 to Fedora 30 in command line::
+Upgrade Fedora 39 to Fedora 40 in command line::
 
     # sudo dnf upgrade --refresh
     sudo dnf install dnf-plugin-system-upgrade
-    sudo dnf system-upgrade download --refresh --releasever=34 --allowerasing # --skip-broken
+    sudo dnf system-upgrade download --refresh --releasever=40 --allowerasing # --skip-broken
     sudo dnf system-upgrade reboot
     # at first boot on the new Fedora, fix SELinux labels:
     sudo fixfiles -B onboot
     # and reboot
 
+Documentation: https://fedoraproject.org/wiki/DNF_system_upgrade
 
-https://fedoraproject.org/wiki/DNF_system_upgrade
+If the upgrade is interrupted for some reasons, attempt to repair it with::
+
+    sudo dnf remove --duplicates --releasever=38 --allowerasing
+    sudo dnf distrosync --releasever=38 --allowerasing
+    sudo dnf reinstall "kernel*"
+
 
 .. _abrt:
 

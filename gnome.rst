@@ -265,3 +265,11 @@ Commands::
     bla
 
 Fedora: ``dnf install wl-clipboard``.
+
+vim
+===
+
+Put these lines in ``/etc/environment``::
+
+    # Run gvim with Wayland, rather than X11
+    GVIM_ENABLE_WAYLAND=1
