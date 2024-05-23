@@ -171,6 +171,8 @@ macOS 10.5      Leopard        9.x             2006
 macOS 10.4      Tiger          8.x             2004
 ==============  ============== ==============  ============
 
+See also: https://endoflife.date/macos
+
 Use ``sw_vers`` in the command line to get macOS version.
 
 * `Ubuntu releases
@@ -233,6 +235,8 @@ Windows Vista                    6.0  2007-01  2012-04                    2017-0
 Windows XP Professional x64      5.2  2005-04  2009-04                    2014-04
 Windows XP                       5.1  2001-10  2009-04                    2014-04
 ===========================  =======  =======  =========================  ================
+
+See also: https://endoflife.date/windows
 
 .. note::
 
