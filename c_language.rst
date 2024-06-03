@@ -248,9 +248,10 @@ Configure in 32-bit::
 
     ./configure CFLAGS="-m32" LDFLAGS="-m32" && make
 
-For Python, install also libffi, openssl and zlib::
+Building Python requires more dependencies::
 
-    dnf install -y libffi-devel.i686 openssl-devel.i686 zlib-devel.i686
+    dnf install -y bzip2-devel.i686 libffi-devel.i686 libuuid-devel.i686 ncurses-devel.i686 openssl-devel.i686 readline-devel.i686 xz-devel.i686 zlib-ng-compat-devel.i686
+
 
 Compiler and linker options
 ===========================
