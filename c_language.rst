@@ -110,6 +110,17 @@ Magic ``UNION_CAST()`` macro::
       (((union {__typeof__(x) a; destType b;})x).b)
 
 
+stdint.h types
+==============
+
+* <stdint.h>
+* int32_t
+* uint64_t
+* printf/scanf:
+
+  * PRIu64: uint64_t
+  * PRIu64 is a string, ex: ``"llu"``.
+
 C aliasing
 ==========
 
