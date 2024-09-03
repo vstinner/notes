@@ -645,6 +645,7 @@ Accepted PEPs
 ==========  ======  ========  =======================================================================================
 PEP         Python  Status    Title
 ==========  ======  ========  =======================================================================================
+:pep:`741`  3.14    Final     Python Configuration C API
 :pep:`737`  3.13    Final     C API to format a type fully qualified name
 :pep:`670`  3.11    Final     Convert macros to functions in the Python C API
 :pep:`587`  3.8     Final     Python Initialization Configuration
@@ -668,7 +669,6 @@ Draft PEPs
 ===========  ======  =============================================
 PEP          Python  Title
 ===========  ======  =============================================
-:pep:`741`   3.13    Python Configuration C API
 :pep:`743`   3.13    Add Py_COMPAT_API_VERSION to the Python C API
 ===========  ======  =============================================
 
