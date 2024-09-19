@@ -13,7 +13,7 @@ GitHub links
   <https://github.com/search?q=reviewed-by%3Avstinner+-author%3Avstinner+archived%3Afalse+org%3Apython&type=pullrequests>`_
   (excluding my own PRs)
 * `Issues commented
-  <https://github.com/search?q=involves%3Avstinner+archived%3Afalse+org%3Apython&type=issues>`_
+  <https://github.com/search?q=involves%3Avstinner+org%3Apython&type=issues>`_
 
 
 Python 3.13 Contributions
