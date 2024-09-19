@@ -4,6 +4,18 @@
 My contributions to Python
 ++++++++++++++++++++++++++
 
+GitHub links
+============
+
+* `Pull requests that I merged
+  <https://github.com/search?q=is%3Apr+is%3Amerged+author%3Avstinner+archived%3Afalse+org%3Apython&type=pullrequests>`_
+* `Pull requests reviewed
+  <https://github.com/search?q=reviewed-by%3Avstinner+-author%3Avstinner+archived%3Afalse+org%3Apython&type=pullrequests>`_
+  (excluding my own PRs)
+* `Issues commented
+  <https://github.com/search?q=involves%3Avstinner+archived%3Afalse+org%3Apython&type=issues>`_
+
+
 Python 3.13 Contributions
 =========================
 
