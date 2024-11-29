@@ -167,3 +167,10 @@ Which package provides a file? ::
     /usr/local/bin/git was installed by package git-2.41.0
 
 FreeBSD source code: https://github.com/freebsd/freebsd-src/
+
+DHCP error
+==========
+
+* https://forums.freebsd.org/threads/fresh-freebsd-14-1-guest-vm-does-not-receive-any-dhcpoffers.95189/#post-674508
+* https://lists.libvirt.org/archives/list/users@lists.libvirt.org/thread/DJFOKQ7RDPAOFGUJZYY56TJTORHHQKWI/
+* https://www.spinics.net/linux/fedora/libvir/msg249203.html

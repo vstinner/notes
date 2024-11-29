@@ -661,6 +661,9 @@ Firefox
 * ``privacy.webrtc.legacyGlobalIndicator`` to set **false** to hide the "Share
   indicator" (orange microphone/webcam indicator) window during video calls
 
+* Fedora 41, PipeWire and webcams:
+  https://discussion.fedoraproject.org/t/firefox-doesnt-find-virtual-camera-in-fedora-41/135787
+
 
 Enter namespace filesystem of a Flatpak application or container
 ================================================================
