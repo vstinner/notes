@@ -174,3 +174,9 @@ DHCP error
 * https://forums.freebsd.org/threads/fresh-freebsd-14-1-guest-vm-does-not-receive-any-dhcpoffers.95189/#post-674508
 * https://lists.libvirt.org/archives/list/users@lists.libvirt.org/thread/DJFOKQ7RDPAOFGUJZYY56TJTORHHQKWI/
 * https://www.spinics.net/linux/fedora/libvir/msg249203.html
+
+fix_network.sh::
+
+    set -x -e
+    ifconfig vtnet0 -rxcsum -txcsum
+    service dhclient restart vtnet0
