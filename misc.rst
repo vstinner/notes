@@ -1114,3 +1114,10 @@ ALSA
 ----
 
 * ``aplay``: play sound file
+
+Change virutal machine password
+===============================
+
+Command::
+
+    virt-customize --root-password password:NEW_PASSWORD -a image.qcow2
