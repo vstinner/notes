@@ -16,6 +16,96 @@ GitHub links
   <https://github.com/search?q=involves%3Avstinner+org%3Apython&type=issues>`_
 
 
+Python 3.14 Contributions
+=========================
+
+* PEP 741: Python Configuration C API
+
+New Features
+------------
+
+* Add ``os.reload_environ()``.
+
+Changes
+-------
+
+* ``threading.Thread.start()`` now sets the operating system thread name to
+  ``threading.Thread.name``.
+
+Deprecate
+---------
+
+* Soft deprecate ``os.popen()`` and ``os.spawn*()`` functions.
+
+New C API
+---------
+
+51 new functions:
+
+* ``PyBytes_Join()``
+* ``PyConfig_Get()``
+* ``PyConfig_GetInt()``
+* ``PyConfig_Names()``
+* ``PyConfig_Set()``
+* ``PyImport_ImportModuleAttr()``
+* ``PyImport_ImportModuleAttrString()``
+* ``PyInitConfig_AddModule()``
+* ``PyInitConfig_Create()``
+* ``PyInitConfig_Free()``
+* ``PyInitConfig_FreeStrList()``
+* ``PyInitConfig_GetError()``
+* ``PyInitConfig_GetExitCode()``
+* ``PyInitConfig_GetInt()``
+* ``PyInitConfig_GetStr()``
+* ``PyInitConfig_GetStrList()``
+* ``PyInitConfig_HasOption()``
+* ``PyInitConfig_SetInt()``
+* ``PyInitConfig_SetStr()``
+* ``PyInitConfig_SetStrList()``
+* ``PyLongWriter_Create()``
+* ``PyLongWriter_Discard()``
+* ``PyLongWriter_Finish()``
+* ``PyLong_AsInt32()``
+* ``PyLong_AsInt64()``
+* ``PyLong_AsUInt32()``
+* ``PyLong_AsUInt64()``
+* ``PyLong_Export()``
+* ``PyLong_FreeExport()``
+* ``PyLong_FromInt32()``
+* ``PyLong_FromInt64()``
+* ``PyLong_FromUInt32()``
+* ``PyLong_FromUInt64()``
+* ``PyLong_GetNativeLayout()``
+* ``PyType_Freeze()``
+* ``PyUnicodeWriter_Create()``
+* ``PyUnicodeWriter_DecodeUTF8Stateful()``
+* ``PyUnicodeWriter_Discard()``
+* ``PyUnicodeWriter_Finish()``
+* ``PyUnicodeWriter_Format()``
+* ``PyUnicodeWriter_WriteChar()``
+* ``PyUnicodeWriter_WriteRepr()``
+* ``PyUnicodeWriter_WriteStr()``
+* ``PyUnicodeWriter_WriteSubstring()``
+* ``PyUnicodeWriter_WriteUCS4()``
+* ``PyUnicodeWriter_WriteUTF8()``
+* ``PyUnicodeWriter_WriteWideChar()``
+* ``PyUnicode_Equal()``
+* ``Py_InitializeFromInitConfig()``
+* ``Py_fclose()``
+* ``Py_fopen()``
+
+C API Changes
+-------------
+
+* In the limited C API 3.14 and newer, ``Py_TYPE()`` and ``Py_REFCNT()`` are
+  now implemented as an opaque function call to hide implementation details.
+
+Removed C API
+-------------
+
+* ``_Py_InitializeMain()`` function
+
+
 Python 3.13 Contributions
 =========================
 
