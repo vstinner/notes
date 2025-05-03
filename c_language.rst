@@ -259,10 +259,16 @@ Configure in 32-bit::
 
     ./configure CFLAGS="-m32" LDFLAGS="-m32" && make
 
+Build Python in 32-bit mode
+---------------------------
+
 Building Python requires more dependencies::
 
     dnf install -y bzip2-devel.i686 libffi-devel.i686 libuuid-devel.i686 ncurses-devel.i686 openssl-devel.i686 readline-devel.i686 xz-devel.i686 zlib-ng-compat-devel.i686
 
+Fix ``pyconfig.h``::
+
+    sed -i -e 's!#define PY_HAVE_PERF_TRAMPOLINE 1!#undef PY_HAVE_PERF_TRAMPOLINE!g' pyconfig.h
 
 Compiler and linker options
 ===========================
