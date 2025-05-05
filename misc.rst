@@ -961,6 +961,11 @@ Remove container::
 
     podman rm ubuntu-dev
 
+Debian 32-bit::
+
+    podman pull --arch 386 debian
+    podman run --arch=386 --interactive --tty debian
+
 Build Python::
 
     # root
