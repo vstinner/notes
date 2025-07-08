@@ -1126,3 +1126,11 @@ Change virutal machine password
 Command::
 
     virt-customize --root-password password:NEW_PASSWORD -a image.qcow2
+
+EFI boot
+========
+
+Commands:
+
+* ``os-prober``
+* ``efibootmgr``
