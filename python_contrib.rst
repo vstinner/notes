@@ -747,7 +747,8 @@ Accepted PEPs
 ==========  ======  ========  =======================================================================================
 PEP         Python  Status    Title
 ==========  ======  ========  =======================================================================================
-:pep:`757`  3.14    Accepted  C API to import-export Python integers
+:pep:`782`  3.15    Final     Add PyBytesWriter C API
+:pep:`757`  3.14    Final     C API to import-export Python integers
 :pep:`741`  3.14    Final     Python Configuration C API
 :pep:`737`  3.13    Final     C API to format a type fully qualified name
 :pep:`670`  3.11    Final     Convert macros to functions in the Python C API
