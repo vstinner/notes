@@ -42,7 +42,7 @@ Misc
 * Open a file from encoding cp850: ``:e ++enc=cp850 document.txt``
 * Number of lines of a selection:
 
-  * Create a section
+  * Create a selection
   * Press ``g`` and then ``CTRL+g``.
 
 Windows
