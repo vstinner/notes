@@ -16,10 +16,40 @@ GitHub links
   <https://github.com/search?q=involves%3Avstinner+org%3Apython&type=issues>`_
 
 
+Python 3.15 Contributions
+=========================
+
+* PEP 782: Add PyBytesWriter C API
+
+New Features
+------------
+
+* ``os.statx()``
+
+New C API
+---------
+
+* ``PyBytesWriter_Create()``
+* ``PyBytesWriter_Discard()``
+* ``PyBytesWriter_Finish()``
+* ``PyBytesWriter_FinishWithPointer()``
+* ``PyBytesWriter_FinishWithSize()``
+* ``PyBytesWriter_Format()``
+* ``PyBytesWriter_GetData()``
+* ``PyBytesWriter_GetSize()``
+* ``PyBytesWriter_Grow()``
+* ``PyBytesWriter_GrowAndUpdatePointer()``
+* ``PyBytesWriter_Resize()``
+* ``PyBytesWriter_WriteBytes()``
+* ``PyTuple_FromArray()``
+* ``PyUnstable_ThreadState_ResetStackProtection()``
+* ``PyUnstable_ThreadState_SetStackProtection()``
+
 Python 3.14 Contributions
 =========================
 
 * PEP 741: Python Configuration C API
+* PEP 757: C API to import-export Python integers
 
 New Features
 ------------

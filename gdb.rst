@@ -360,3 +360,8 @@ Debuginfod
   * ``export DEBUGINFOD_URLS="https://debuginfod.ubuntu.com"``
   * https://ubuntu.com/server/docs/service-debuginfod
   * Alternative: https://wiki.ubuntu.com/Debug%20Symbol%20Packages
+
+Misc
+====
+
+* ``ptype TYPE``: display a type
