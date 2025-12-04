@@ -795,7 +795,7 @@ PEP         Python  Status    Title
 :pep:`418`  3.3     Final     Add monotonic time, performance counter, and process time functions
 ==========  ======  ========  =======================================================================================
 
-Total: 12 accepted PEPs.
+Total: 16 accepted PEPs.
 
 Draft PEPs
 ----------
@@ -828,7 +828,7 @@ PEP          Python  Status        Title
 :pep:`400`   3.3     Deferred      Deprecate codecs.StreamReader and codecs.StreamWriter
 ===========  ======  ============  ====================================================================================
 
-Total: 13 rejected, deferred or superseded PEPs.
+Total: 14 rejected, deferred or superseded PEPs.
 
 Other contributions to PEPs
 ---------------------------
