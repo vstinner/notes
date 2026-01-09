@@ -33,6 +33,7 @@ Conferences 2011-today
 
   * `Nouveautés Python 3.13
     <https://github.com/vstinner/talks/blob/main/2024-PyconFR/nouveautes_python3.13.pdf>`__
+  * `Video <https://indymotion.fr/w/2sVjq1R5WJu3UrAsyra1QM>`__
 
 * July, 2024, EuroPython at Prague (Czech Republic)
 
