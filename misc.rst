@@ -1134,3 +1134,17 @@ Commands:
 
 * ``os-prober``
 * ``efibootmgr``
+
+OpenIndiana
+===========
+
+* Get OpenIndiana Hipster Minimal Install DVD (64-bit x86)
+* https://www.openindiana.org/downloads/
+* pkg install gnu-make gcc-14 gdb git
+
+Linux keyboard shortcuts
+========================
+
+* CTRL+l: redraw the screen. Useful in gdb when a command
+  messed up the screen.
+* CTRL+u: clear the input. Useful to type again a password.

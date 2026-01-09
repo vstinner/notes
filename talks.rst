@@ -17,6 +17,35 @@ Conferences 2011-today
    :alt: Pycon US 2014 logo
    :target: https://us.pycon.org/
 
+* November, 2025, PyconFR at Lyon (France) in French
+
+  * `Développement de CPython
+    <https://github.com/vstinner/talks/blob/main/2025-PyconFR/workflow.pdf>`__
+  * `Video <https://indymotion.fr/w/9vLQ2rrgLzBrhwwjuFJAZZ>`__
+
+* July, 2025, EuroPython at Prague (Czech Republic)
+
+  * `Python C API
+    <https://github.com/vstinner/talks/blob/main/2025-EuroPython/c-api.pdf>`__
+    during the `C API Summit <https://ep2025.europython.eu/session/c-api-summit>`__
+
+* October 2024, PyconFR at Strasbourg (France)
+
+  * `Nouveautés Python 3.13
+    <https://github.com/vstinner/talks/blob/main/2024-PyconFR/nouveautes_python3.13.pdf>`__
+
+* July, 2024, EuroPython at Prague (Czech Republic)
+
+  * `Python C API
+    <https://github.com/vstinner/talks/blob/main/2024-EuroPython/c-api.pdf>`__
+  * `Video <https://www.youtube.com/watch?v=ZmVEFHAJ1eE>`__
+
+* May 2024, PyconUS at Pittsburgh, Pennsylvania (USA)
+
+  * `Python C API
+    <https://github.com/vstinner/talks/blob/main/2024-PyconUS-LangSummit/c-api.pdf>`__
+    during the Language Summit
+
 * July, 2023, EuroPython at Prague (Czech Republic)
 
   * `Introducing Incompatible Changes in Python
