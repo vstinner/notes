@@ -51,18 +51,6 @@ Upgrade to FreeBSD 12.0-RC2::
    sudo freebsd-update install
 
 
-Repair pkg
-==========
-
-Repair pkg, if needed::
-
-   sudo pkg bootstrap -f
-
-If something goes wrong, reinstall everything installed by pkg::
-
-   sudo pkg-static upgrade -f
-
-
 Install FreeBSD VM
 ==================
 
@@ -74,6 +62,13 @@ Install VM image
 * Move the image to /var/lib/libvirt/images/
 * Create a FreeBSD VM using this disk image
 * Add "freebsd" hostname to /etc/hosts
+* Customize FreeBSD:
+
+  * ``bsdconfig``: Create an user
+  * ``kbdmap``: Change the keyboard layout
+
+* Run ``pkg`` and follow the wizard to install ``pkg``
+* ``pkg install sudo``
 
 Classic installer (old way)
 ---------------------------
@@ -180,3 +175,17 @@ fix_network.sh::
     set -x -e
     ifconfig vtnet0 -rxcsum -txcsum
     service dhclient restart vtnet0
+
+
+Repair pkg
+==========
+
+Repair pkg, if needed::
+
+   sudo pkg bootstrap -f
+
+If something goes wrong, reinstall everything installed by pkg::
+
+   sudo pkg-static upgrade -f
+
+
