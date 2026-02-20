@@ -777,6 +777,7 @@ Accepted PEPs
 ==========  ======  ========  =======================================================================================
 PEP         Python  Status    Title
 ==========  ======  ========  =======================================================================================
+:pep:`814`  3.15    Final     Add frozendict built-in type
 :pep:`782`  3.15    Final     Add PyBytesWriter C API
 :pep:`757`  3.14    Final     C API to import-export Python integers
 :pep:`741`  3.14    Final     Python Configuration C API
@@ -795,16 +796,7 @@ PEP         Python  Status    Title
 :pep:`418`  3.3     Final     Add monotonic time, performance counter, and process time functions
 ==========  ======  ========  =======================================================================================
 
-Total: 16 accepted PEPs.
-
-Draft PEPs
-----------
-
-===========  ======  ==========================================================
-PEP          Python  Title
-===========  ======  ==========================================================
-:pep:`743`   3.14    Add Py_COMPAT_API_VERSION to the Python C API
-===========  ======  ==========================================================
+Total: 17 accepted PEPs.
 
 Rejected PEPs
 -------------
@@ -813,6 +805,7 @@ Rejected PEPs
 PEP          Python  Status        Title
 ===========  ======  ============  ====================================================================================
 :pep:`8015`  ---     Rejected      Organization of the Python community
+:pep:`743`   3.14    Add Py_COMPAT_API_VERSION to the Python C API
 :pep:`756`   3.14    Withdrawn     Add PyUnicode_Export() and PyUnicode_Import() C functions
 :pep:`674`   3.11    Deferred      Disallow using macros as l-values
 :pep:`620`   3.10    Withdrawn     Hide implementation details from the C API
@@ -828,7 +821,7 @@ PEP          Python  Status        Title
 :pep:`400`   3.3     Deferred      Deprecate codecs.StreamReader and codecs.StreamWriter
 ===========  ======  ============  ====================================================================================
 
-Total: 14 rejected, deferred or superseded PEPs.
+Total: 15 rejected, deferred or superseded PEPs.
 
 Other contributions to PEPs
 ---------------------------

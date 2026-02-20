@@ -971,7 +971,7 @@ Build Python::
     # root
     apt update
     apt install sudo tmux git make gcc -y
-    apt install -y libssl-dev libffi-dev ncurses-dev libbz2-dev libreadline-dev lzma-dev uuid-dev libgdbm-dev
+    apt install -y libssl-dev libffi-dev ncurses-dev libbz2-dev libreadline-dev lzma-dev uuid-dev libgdbm-dev libexpat-dev
     apt install clang
 
     # user
