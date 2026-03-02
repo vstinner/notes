@@ -921,8 +921,11 @@ Python configure options:
 * ``--with-memory-sanitizer`` (MSAN)
 * ``--with-undefined-behavior-sanitizer`` (UBSAN)
 
-podman to create Ubuntu image
-=============================
+podman
+======
+
+Ubuntu image
+------------
 
 https://community.endlessos.com/t/running-ubuntu-with-podman/10506
 
@@ -961,6 +964,9 @@ Remove container::
 
     podman rm ubuntu-dev
 
+Debian 32-bit
+-------------
+
 Debian 32-bit::
 
     podman pull --arch 386 debian
@@ -980,6 +986,14 @@ Build Python::
     cd cpython
     ./cpython/configure --with-address-sanitizer --without-pymalloc --with-pydebug
     make -j14
+
+Alpine Linux
+------------
+
+Build Python::
+
+    apk add sudo tmux git make gcc
+    apk add musl-dev openssl-dev libffi-dev ncurses-dev expat-dev
 
 GRUB
 ====
