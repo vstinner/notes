@@ -805,7 +805,7 @@ Rejected PEPs
 PEP          Python  Status        Title
 ===========  ======  ============  ====================================================================================
 :pep:`8015`  ---     Rejected      Organization of the Python community
-:pep:`743`   3.14    Add Py_COMPAT_API_VERSION to the Python C API
+:pep:`743`   3.14    Rejected      Add Py_COMPAT_API_VERSION to the Python C API
 :pep:`756`   3.14    Withdrawn     Add PyUnicode_Export() and PyUnicode_Import() C functions
 :pep:`674`   3.11    Deferred      Disallow using macros as l-values
 :pep:`620`   3.10    Withdrawn     Hide implementation details from the C API
