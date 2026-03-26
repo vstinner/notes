@@ -1156,7 +1156,9 @@ OpenIndiana
 * https://www.openindiana.org/downloads/
 * Press ESC+2 to continue in the text installer. TAB can be used to move to
   the next field.
-* Install Pyhon dependencies: ``pkg install gnu-make gcc-14 gdb git``
+* Install Pyhon dependencies: ``pkg install gnu-make gcc-14 gdb git pkg-config``
+* Configure Python: ``PKG_CONFIG_PATH=/usr/openssl/3/lib/pkgconfig/ ./configure -C LIBFFI_CFLAGS="-I/usr/lib/libffi-3.2.1/include/" --with-openssl=/usr/openssl/3/ --with-pydebug``
+* Install libffi dependencies: ``pkg install autoconf automake libtool``
 
 Linux keyboard shortcuts
 ========================
