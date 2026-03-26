@@ -1134,7 +1134,7 @@ ALSA
 
 * ``aplay``: play sound file
 
-Change virutal machine password
+Change virtual machine password
 ===============================
 
 Command::
@@ -1154,7 +1154,9 @@ OpenIndiana
 
 * Get OpenIndiana Hipster Minimal Install DVD (64-bit x86)
 * https://www.openindiana.org/downloads/
-* pkg install gnu-make gcc-14 gdb git
+* Press ESC+2 to continue in the text installer. TAB can be used to move to
+  the next field.
+* Install Pyhon dependencies: ``pkg install gnu-make gcc-14 gdb git``
 
 Linux keyboard shortcuts
 ========================
