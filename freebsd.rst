@@ -189,3 +189,26 @@ If something goes wrong, reinstall everything installed by pkg::
    sudo pkg-static upgrade -f
 
 
+Resize rootfs
+=============
+
+* On the host (Linux), when the VM is not running, resize the qcow2 file::
+
+    cd /var/lib/libvirt/
+    qemu-img resize freebsd.qcow2 +20G
+
+* Boot the VM as single user.
+* Run ``gpart show`` and identify the main partition and the disk device::
+
+    root@freebsd# gpart show -l
+    =>      34  54592694  ada0  GPT  (26G)
+            34       122     1  bootfs  (61K)
+           156     66584     2  efiboot0  (33M)
+         66740   2097152     3  swapfs  (1.0G)
+       2163892  10485803     4  rootfs  (5.0G)
+      12649695  41943033        - free -  (20G)
+
+* Here, the disk device is "ada0" and the rootfs partition is the partition 4.
+* Resize the partition 4: ``gpart resize -i 4 -s 25G ada0``
+* Resize the filesystem:: ``growfs /``
+* Reboot (I prefer to restart on a fresh filesystem at boot).
