@@ -225,6 +225,13 @@ Platforms #define
 * Windows: ``_WIN32`` or ``_WIN64``
 * macOS: ``#ifdef __APPLE__``
 
+CPU Architecture
+================
+
+* PowerPC 64-bit (ppc64le):
+  ``#if defined(__powerpc64__) || defined(__ppc64__)``.
+  Linux defines the ``__powerpc64__`` macro.
+
 
 Compiler defines
 ================
@@ -246,7 +253,7 @@ https://developers.redhat.com/blog/2018/03/21/compiler-and-linker-flags-gcc/
 Compile in 32-bit mode on Fedora
 ================================
 
-* dnf install glibc-devel.i686
+* dnf install glibc-devel.i686 libatomic.i686
 * gcc -m32
 
 Example::
@@ -258,17 +265,6 @@ Example::
 Configure in 32-bit::
 
     ./configure CFLAGS="-m32" LDFLAGS="-m32" && make
-
-Build Python in 32-bit mode
----------------------------
-
-Building Python requires more dependencies::
-
-    dnf install -y bzip2-devel.i686 libffi-devel.i686 libuuid-devel.i686 ncurses-devel.i686 openssl-devel.i686 readline-devel.i686 xz-devel.i686 zlib-ng-compat-devel.i686
-
-Fix ``pyconfig.h``::
-
-    sed -i -e 's!#define PY_HAVE_PERF_TRAMPOLINE 1!#undef PY_HAVE_PERF_TRAMPOLINE!g' pyconfig.h
 
 Compiler and linker options
 ===========================
@@ -438,3 +434,14 @@ Modern C
 * LLVM clang 15 (`release notes
   <https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html>`_):
   ``-Wimplicit-function-declaration`` is now treated as error in C99 and later.
+
+Architecture
+============
+
+Detect the CPU ISA / architecture:
+
+* ``__i386__``
+* ``__x86_64__``
+* ``__aarch64__``
+* ``__arm__``
+* ``__ARM_NEON``

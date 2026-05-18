@@ -112,14 +112,12 @@ Python
 Upgrade
 =======
 
-Upgrade Fedora 39 to Fedora 40 in command line::
+Upgrade Fedora 43 to Fedora 44 in command line::
 
     # sudo dnf upgrade --refresh
     sudo dnf install dnf-plugin-system-upgrade
-    sudo dnf system-upgrade download --refresh --releasever=40 --allowerasing # --skip-broken
-    sudo dnf system-upgrade reboot
-    # at first boot on the new Fedora, fix SELinux labels:
-    sudo fixfiles -B onboot
+    sudo dnf system-upgrade download --refresh --releasever=44 --allowerasing
+    sudo dnf offline reboot
     # and reboot
 
 Documentation: https://fedoraproject.org/wiki/DNF_system_upgrade

@@ -289,6 +289,9 @@ a core dump on disk with::
     ulimit -c unlimited
     sudo bash -c "echo '%e-%p.core' > /proc/sys/kernel/core_pattern"
 
+See ``/usr/lib/sysctl.d/50-coredump.conf`` for the default ``core_pattern``
+value.
+
 Test::
 
     $ python3
@@ -365,3 +368,5 @@ Misc
 ====
 
 * ``ptype TYPE``: display a type
+* ``set follow-fork-mode child``: follow the child process on fork
+* ``set follow-exec-mode new``

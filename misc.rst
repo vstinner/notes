@@ -984,7 +984,7 @@ Build Python::
     cd
     git clone https://github.com/python/cpython --depth 1
     cd cpython
-    ./cpython/configure --with-address-sanitizer --without-pymalloc --with-pydebug
+    ./configure --cache-file=../configure.cache --with-pydebug
     make -j14
 
 Alpine Linux
@@ -993,12 +993,22 @@ Alpine Linux
 Create Alpine container::
 
     podman pull alpine
-    podman run --interactive --tty alpine
+    podman create --interactive --tty --name=alpine alpine
+
+Run the container::
+
+    podman start alpine
+    podman exec --interactive --tty alpine /bin/sh
+
+Delete the container::
+
+    podman stop alpine
+    podman container ls --all
+    podman rm <container_id>
 
 Build Python::
 
-    apk add sudo tmux git make gcc
-    apk add musl-dev openssl-dev libffi-dev ncurses-dev expat-dev
+    apk add sudo tmux git make gcc musl-dev openssl-dev libffi-dev ncurses-dev expat-dev
 
 GRUB
 ====
@@ -1171,3 +1181,10 @@ Linux keyboard shortcuts
 * CTRL+l: redraw the screen. Useful in gdb when a command
   messed up the screen.
 * CTRL+u: clear the input. Useful to type again a password.
+
+autotools
+=========
+
+* ``AS_``: M4sh
+* ``AX_``: Autoconf Archive
+* ``AC_``: Autoconf
