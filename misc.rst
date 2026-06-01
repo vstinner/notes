@@ -869,6 +869,13 @@ mouse::
 
     gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
 
+Paste copied text using middle mouse click::
+
+    gsettings set org.gnome.desktop.interface gtk-enable-primary-paste true
+
+See: https://www.phoronix.com/news/GNOME-Firefox-MiddleClick-Paste
+
+
 fwupdmgr
 ========
 
