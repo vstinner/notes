@@ -983,7 +983,7 @@ Build Python::
 
     # root
     apt update
-    apt install sudo tmux git make gcc -y
+    apt install sudo tmux git make gcc pkg-config vim -y
     apt install -y libssl-dev libffi-dev ncurses-dev libbz2-dev libreadline-dev lzma-dev uuid-dev libgdbm-dev libexpat-dev
     apt install clang
 
