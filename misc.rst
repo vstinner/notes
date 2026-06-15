@@ -936,11 +936,11 @@ Ubuntu image
 
 https://community.endlessos.com/t/running-ubuntu-with-podman/10506
 
-Create Ubuntu 23.04 container::
+Create Ubuntu 24.04 container::
 
-    podman image pull ubuntu:23.04
+    podman image pull ubuntu:24.04
     podman image list --all
-    podman run --name ubuntu-dev --hostname ubuntu-dev --interactive --tty ubuntu:23.04
+    podman run --name ubuntu-dev --hostname ubuntu-dev --interactive --tty ubuntu:24.04
 
 In the container::
 
