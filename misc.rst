@@ -1007,9 +1007,12 @@ Run the container::
     podman start alpine
     podman exec --interactive --tty alpine /bin/sh
 
+Stop the container::
+
+    podman stop alpine -t1
+
 Delete the container::
 
-    podman stop alpine
     podman container ls --all
     podman rm <container_id>
 
