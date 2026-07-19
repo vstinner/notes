@@ -1018,7 +1018,7 @@ Delete the container::
 
 Build Python::
 
-    apk add sudo tmux git make gcc musl-dev openssl-dev libffi-dev ncurses-dev expat-dev
+    apk add sudo tmux git make gcc musl-dev openssl-dev libffi-dev ncurses-dev expat-dev zlib-dev
 
 GRUB
 ====
