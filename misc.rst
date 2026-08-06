@@ -1177,13 +1177,34 @@ Commands:
 OpenIndiana
 ===========
 
+Create the VM:
+
 * Get OpenIndiana Hipster Minimal Install DVD (64-bit x86)
 * https://www.openindiana.org/downloads/
+* Create a VM in virt-manager: "OpenIndiana Hipster" OS, 6 CPUS, 4 GB RAM,
+  20 GB disk (the installer complains that 20 GB may be too small, ignore the
+  warning)
 * Press ESC+2 to continue in the text installer. TAB can be used to move to
-  the next field.
+  the next field. The text UI is very buggy to me, so I left all fields to
+  default values.
+
+Config OpenIndiana:
+
+* Log as root
+* pkg install sudo
+* visudo # uncomment the NOPASSWD option
+* groupadd vstinner
+* groupadd wheel
+* useradd -g vstinner -G wheel vstinner
+* mkdir /export/home/vstinner
+* chown vstinner:vstinner /export/home/vstinner
+* You can log in as vstinner.
+
+Build Python in OpenIndiana:
+
 * Install Pyhon dependencies: ``pkg install gnu-make gcc-14 gdb git pkg-config``
 * Configure Python: ``PKG_CONFIG_PATH=/usr/openssl/3/lib/pkgconfig/ ./configure -C LIBFFI_CFLAGS="-I/usr/lib/libffi-3.2.1/include/" --with-openssl=/usr/openssl/3/ --with-pydebug``
-* Install libffi dependencies: ``pkg install autoconf automake libtool``
+* Build Python: ``gmake -j8``
 
 Linux keyboard shortcuts
 ========================
@@ -1194,6 +1215,8 @@ Linux keyboard shortcuts
 
 autotools
 =========
+
+Command suffixes:
 
 * ``AS_``: M4sh
 * ``AX_``: Autoconf Archive
