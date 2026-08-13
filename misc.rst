@@ -1019,6 +1019,16 @@ Delete the container::
 Build Python::
 
     apk add sudo tmux git make gcc musl-dev openssl-dev libffi-dev ncurses-dev expat-dev zlib-dev
+    cd
+    git clone https://github.com/python/cpython --depth 1
+    cd cpython
+    ./configure --cache-file=../configure.cache --with-pydebug
+    make -j14
+
+    # Warning:
+    # Platform "x86_64-pc-linux-musl" with compiler "gcc" is not supported by the
+    # CPython core team, see https://peps.python.org/pep-0011/ for more information.
+
 
 GRUB
 ====
