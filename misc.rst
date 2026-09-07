@@ -18,6 +18,12 @@ URLs:
 * Add ``.patch`` to a pull request to get the change as an unified diff
 * In a message, ``<details> ... </details>`` creates a drop-down
 
+GitHub Action images:
+
+* https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2604-Readme.md
+* https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md
+* https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md
+
 Markdown:
 
 * ``<details>`` can be used for long fold/unfold list, traceback, etc.
