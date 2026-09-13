@@ -31,12 +31,75 @@ Misc
 
 * Coredump filename: ``sudo sysctl -w 'kern.corefile =%N.%P.core'``
 
-Configuration
-=============
+Install FreeBSD (VM)
+====================
 
-* Rerun the installer configuration, run:: ``bsdconfig``.
-* Change the keyboard layout: run ``kbdmap``.
+Install VM image
+----------------
 
+* https://www.freebsd.org/where.html : Download amd64/qcow2 virtual machine
+  image.
+* Uncompress the image: unxz file.qcow2.xz
+* Move the image to ``/var/lib/libvirt/images/``.
+* Create a FreeBSD VM using this disk image.
+
+Configure as root
+-----------------
+
+* Log in as root
+* Run the installer configuration, run:: ``bsdconfig``.
+* Change the keyboard layout: ``kbdcontrol -l fr.iso``.
+  It should set ``keymap="fr.kbd"`` in ``/etc/:rc.conf``.
+  See also ``kbdmap`` tool.
+* Enable SSH server:
+
+ * Add ``sshd_enable="YES"`` to ``/etc/rc.conf``
+ * Start the ssh daemon: ``service sshd start``
+
+* Install sudo: ``pkg install sudo``
+* Customize sudo config if needed: ``visudo``
+* ``pkg install sudo bash tmux vim``
+* Add an user:
+
+  * Run ``adduser``.
+  * Add ``vstinner`` user to the ``wheel`` group (for sudo):
+    ``pw usermod -n vstinner -G wheel``
+
+Enlarge FreeBSD qcow2 image
+---------------------------
+
+* Shutdown the VM
+* On the host: ``sudo qemu-img resize /var/lib/libvirt/images/freebsd.qcow2 40G``
+* Boot the VM, in FreeBSD: ``sudo /etc/rc.d/growfs onestart`` (no need to reboot)
+
+Configure as your user
+----------------------
+
+* Log in as the your user.
+* ``chsh -s /usr/local/bin/bash``
+* Log out and log in again to get bash.
+* ``sudo pkg install git``
+
+
+
+Slow SSH connection (10-30 seconds)
+===================================
+
+On a SSH connection, the server does a reserve DNS query (``PTR`` type) on the
+client IP address. If the DNS server doesn't reply, the DNS query fails with a
+timeout after 10-30 seconds.
+
+If you are affected by this issue, disable the reserve DNS query by setting
+``UseDNS no`` in ``/etc/ssh/sshd_config`` and restart the SSH server
+(``service sshd stop`` and ``service sshd start``).
+
+
+Commands to develop Python on FreeBSD
+=====================================
+
+Install tooling and dependencies::
+
+    sudo pkg install git pkgconf
 
 Upgrade to newer FreeBSD
 ========================
@@ -51,27 +114,8 @@ Upgrade to FreeBSD 12.0-RC2::
    sudo freebsd-update install
 
 
-Install FreeBSD VM
-==================
-
-Install VM image
-----------------
-
-* https://www.freebsd.org/where.html : Download amd64/qcow2 virtual machine image,
-* Uncompress the image: unxz file.qcow2.xz
-* Move the image to /var/lib/libvirt/images/
-* Create a FreeBSD VM using this disk image
-* Add "freebsd" hostname to /etc/hosts
-* Customize FreeBSD:
-
-  * ``bsdconfig``: Create an user
-  * ``kbdmap``: Change the keyboard layout
-
-* Run ``pkg`` and follow the wizard to install ``pkg``
-* ``pkg install sudo``
-
-Classic installer (old way)
----------------------------
+Install FreeBSD with the installer
+==================================
 
 * Download ftp://ftp.freebsd.org/pub/FreeBSD/releases/amd64/amd64/ISO-IMAGES/11.0/FreeBSD-11.0-RELEASE-amd64-disc1.iso.xz
 * Uncompress: unxz FreeBSD-11.0-RELEASE-amd64-disc1.iso.xz
@@ -101,45 +145,6 @@ Classic installer (old way)
   * Add a new user: username vstinner
   * Exit: Manual config? No
   * Reboot
-
-Enlarge qcow2 image
--------------------
-
-* Shutdown the VM
-* On the host: sudo qemu-img resize /var/lib/libvirt/images/freebsd.qcow2 40G
-* Boot the VM, in FreeBSD: sudo /etc/rc.d/growfs onestart
-
-Configure as root
------------------
-
-* Log as root
-* ``kbdcontrol -l fr.iso``
-* ``pkg install sudo bash tmux vim``
-* ``visudo``: uncomment ``%whell ALL..`` without password
-* adduser: add user, add it to the wheel group
-* to add wheel group to an user: pw usermod -n vstinner -G wheel
-* Enable the SSH server:
-
- * Add sshd_enable="YES" to /etc/rc.conf
- * service sshd start
- * https://www.freebsd.org/doc/handbook/openssh.html
-
-* Log out
-
-Configure as your user
-----------------------
-
-* Log in as the your user
-* chsh -s /usr/local/bin/bash
-* Log out and log in again to get bash
-* ``sudo pkg install git``
-
-Commands to develop Python on FreeBSD
-=====================================
-
-Install::
-
-    sudo pkg install pkgconf
 
 Use ports
 =========

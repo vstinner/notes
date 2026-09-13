@@ -106,11 +106,9 @@ files will be owned by the user ``haypo:haypo``::
 Visual Studio
 =============
 
-Flavors:
+Visual Studio Community (free) is enough to build Python.
 
-* Express
-* Professional: enough to build Python
-* Ultimate
+Select "Desktop Development with C++".
 
 Versions:
 
@@ -166,8 +164,6 @@ Create a Windows VM on Linux to develop (VS)
 
 Get Windows install ISO:
 
-* `Developer: Get a Windows 11 development environment
-  <https://developer.microsoft.com/windows/downloads/virtual-machines/>`_
 * `Get Windows 11 <https://www.microsoft.com/software-download/windows11>`_:
   see below to get an ISO.
 
@@ -176,7 +172,16 @@ Get a Windows Product key:
 * MSDN: https://my.visualstudio.com/productkeys
 * Get a "Windows 11 Professional N" key
 
-Create a VM from the ISO with a disk of 70 GB.
+Create a VM from the ISO with a disk of 60 GB.
+
+Configure Windows:
+
+* Disable User Account Control (UAC)
+* In Settings, search for "Optional features", install "OpenSSH Client"
+  and "OpenSSH Server".
+* Go to the Windows Start menu, search for Services. In Services, search for
+  the OpenSSH SSH Server. Right click, set "Starting type" to Automatic.
+  Click: OK to close the popup. Right click again: Start.
 
 Compared to Windows 10 and older, Windows 11 requires two things: a TPM device
 and SecureBoot. The `Qemu Q35 machine type
@@ -521,3 +526,15 @@ MinGW to install gdb
 * Type: ``pacman -S gdb``
 * Add ``C:\MSYS64\usr\bin`` to the PATH
 * Example: ``set PATH=%PATH%;C:\MSYS64\usr\bin``
+
+Build Python on Windows
+=======================
+
+To build Python in debug mode, clone the cpython repository, go to the cpython
+directory and run::
+
+    PCbuild\build.bat -d -e -p x64
+
+* ``-d`` enables the debug mode
+* ``-e`` downloads external dependencies
+* ``-p x64`` builds Python in 64-bit mode

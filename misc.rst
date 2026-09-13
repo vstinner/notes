@@ -990,7 +990,7 @@ Build Python::
     # root
     apt update
     apt install sudo tmux git make gcc pkg-config vim -y
-    apt install -y libssl-dev libffi-dev ncurses-dev libbz2-dev libreadline-dev lzma-dev uuid-dev libgdbm-dev libexpat-dev
+    apt install -y libssl-dev libffi-dev ncurses-dev libbz2-dev libreadline-dev lzma-dev uuid-dev libgdbm-dev libexpat-dev zlib1g-dev
     apt install clang
 
     # user
@@ -1237,3 +1237,38 @@ Command suffixes:
 * ``AS_``: M4sh
 * ``AX_``: Autoconf Archive
 * ``AC_``: Autoconf
+
+virt-manager and QEMU
+=====================
+
+Disable Copy-on-Write on a QCOW2 file or a directory (for btrfs)::
+
+    chattr +C file_or_directory
+
+On a file, it only works if it's empty! Disable CoW on the existing file
+``win.qcow2``:
+
+    FILE=win.qcow2
+    lsattr $FILE  # check that the attribute is missing
+    TMP=$FILE.tmp
+    touch $TMP  # create an empty file
+    chattr +C $TMP
+    dd if=$FILE of=$TMP bs=1M status=progress
+    rm $FILE
+    mv $TMP $FILE
+
+Check file or directory attributes::
+
+    lsattr -d file_or_directory
+
+Linux nftables
+==============
+
+List ruleset::
+
+    sudo nft list ruleset
+
+See also firewalld::
+
+    systemctl status firewalld
+    ls /etc/firewalld/
