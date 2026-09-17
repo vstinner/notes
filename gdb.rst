@@ -204,8 +204,9 @@ Gdb
 * Enter TUI/exit TUI: CTRL+x a
 * https://sourceware.org/gdb/onlinedocs/gdb/TUI-Keys.html
 * CTRL+x o: change active window
-* Display full print value: ``set print elements 1024``
-  (or ``set print elements 0`` if you are brave)
+* If a string is truncated, increase the print limit:
+  ``set print elements 1024``
+  (or ``set print elements 0`` if you are brave, to disable the limit)
 * Print variable type: ``whatis variable``
 * Dump the structure of a variable: ``ptype variable``
 * LD_LIBRARY_PATH: ``gdb -iex "set env LD_LIBRARY_PATH=$PWD" --args ./python Lib/test/gdb_sample.py``
