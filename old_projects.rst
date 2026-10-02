@@ -110,7 +110,7 @@ Python projects
 Other projects
 ==============
 
-* `Trollius <https://github.com/vstinner/trollius/>`_:  portage of the Tulip
+* `Trollius <https://github.com/jamadden/trollius>`_:  portage of the Tulip
   project (asyncio module, PEP 3156) on Python 2, asynchronous input/output
   library.
 * `Warmux <http://fr.wikipedia.org/wiki/Warmux>`_, previously known as "Wormux":
@@ -133,7 +133,8 @@ Old removed projects
   tool allowing to run one or more programs with a shifted clock
   compared to system clock. project written at INL for the french CNES
   (National Centre for Space Studies)
-* HaypoCALC: A formal calculator in text terminal. Existing functions : ln,lg,
+* `HaypoCALC <https://savannah.nongnu.org/projects/hcalc/>`_:
+  A formal calculator in text terminal. Existing functions : ln,lg,
   basen, gcd, lcm, ncr, npr, factor(int), cos,sin,tan, acos,asin,atan,
   derive,taylor, ... Work on Linux and Windows, programmed in C++.
 * happyboom: Prototype of a library to write a turn-based game, it is mostly a
