@@ -129,7 +129,8 @@ Old removed projects
 * astoptimizer: experimental optimizer for Python code working on the Abstract
   Syntax Tree (AST, high-level representration). It does as much work as
   possible at compile time.
-* macfly: tool allowing to run one or more programs with a shifted clock
+* `macfly <https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/haypo/macfly&visit_type=git>`__:
+  tool allowing to run one or more programs with a shifted clock
   compared to system clock. project written at INL for the french CNES
   (National Centre for Space Studies)
 * HaypoCALC: A formal calculator in text terminal. Existing functions : ln,lg,

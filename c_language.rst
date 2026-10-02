@@ -225,12 +225,13 @@ Platforms #define
 * Windows: ``_WIN32`` or ``_WIN64``
 * macOS: ``#ifdef __APPLE__``
 
-CPU Architecture
-================
+CPU Architecture #define
+========================
 
 * PowerPC 64-bit (ppc64le):
   ``#if defined(__powerpc64__) || defined(__ppc64__)``.
   Linux defines the ``__powerpc64__`` macro.
+* s390x: ``#ifdef __s390x__``
 
 
 Compiler defines
