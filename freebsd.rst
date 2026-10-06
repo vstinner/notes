@@ -99,7 +99,11 @@ Commands to develop Python on FreeBSD
 
 Install tooling and dependencies::
 
-    sudo pkg install git pkgconf
+    sudo pkg install git pkgconf gmake
+
+Install debug symbols of libc::
+
+    sudo pkg install FreeBSD-clibs-dbg
 
 Upgrade to newer FreeBSD
 ========================
@@ -217,3 +221,9 @@ Resize rootfs
 * Resize the partition 4: ``gpart resize -i 4 -s 25G ada0``
 * Resize the filesystem:: ``growfs /``
 * Reboot (I prefer to restart on a fresh filesystem at boot).
+
+pkg commands
+============
+
+* List all installed packages: ``pkg info`` or ``pkg info -a``
+* List files installed by a package: ``pkg info -l PACKAGE``
