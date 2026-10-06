@@ -1238,6 +1238,10 @@ Command suffixes:
 * ``AX_``: Autoconf Archive
 * ``AC_``: Autoconf
 
+Commands:
+
+* ``AC_RUN_IFELSE()``: compile, link and run program. Check if the program exit code is zero.
+
 virt-manager and QEMU
 =====================
 

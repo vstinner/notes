@@ -245,6 +245,15 @@ Compiler defines
   ``#if defined(_MSC_VER) && _MSC_VER >= 1800``
 
 
+Other C macros
+==============
+
+* ``__STRICT_ANSI__``: build in C strict ANSI mode
+* ``__FILE__``: Filename of the current C file
+* ``__LINE__``: Current line number
+* ``__func__``: Name of the current function
+
+
 GCC flags
 =========
 
