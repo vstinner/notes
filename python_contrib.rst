@@ -16,6 +16,67 @@ GitHub links
   <https://github.com/search?q=involves%3Avstinner+org%3Apython&type=issues>`_
 
 
+Python 3.16 Contributions
+=========================
+
+C API Changes
+-------------
+
+Add functions to the limited C API:
+
+* ``Py_HashBuffer()``
+* ``Py_SETREF()``
+* ``Py_XSETREF()``
+
+Deprecate functions:
+
+* ``PyInitConfig_GetExitCode()``
+* ``PyStatus.exitcode``
+* ``PyStatus_Exit()``
+* ``PyStatus_IsExit()``
+
+Soft deprecate functions:
+
+* ``PyUnicode_New()``
+* ``PyUnicode_CopyCharacters()``
+* ``PyUnicode_Fill()``
+* ``PyUnicode_Resize()``
+* ``PyUnicode_WRITE()``
+* ``PyUnicode_WriteChar()``
+
+Remove 25 variables and functions:
+
+* ``PyEval_InitThreads()``
+* ``PySys_SetArgv()``
+* ``PySys_SetArgvEx()``
+* ``Py_BytesWarningFlag``
+* ``Py_DebugFlag``
+* ``Py_DontWriteBytecodeFlag``
+* ``Py_FileSystemDefaultEncodeErrors``
+* ``Py_FileSystemDefaultEncoding``
+* ``Py_FrozenFlag``
+* ``Py_HashRandomizationFlag``
+* ``Py_IgnoreEnvironmentFlag``
+* ``Py_InspectFlag``
+* ``Py_InteractiveFlag``
+* ``Py_IsolatedFlag``
+* ``Py_LegacyWindowsFSEncodingFlag``
+* ``Py_LegacyWindowsStdioFlag``
+* ``Py_NoSiteFlag``
+* ``Py_NoUserSiteDirectory``
+* ``Py_OptimizeFlag``
+* ``Py_QuietFlag``
+* ``Py_SetProgramName()``
+* ``Py_SetPythonHome()``
+* ``Py_UTF8Mode``
+* ``Py_UnbufferedStdioFlag``
+* ``Py_VerboseFlag``
+
+Misc changes:
+
+* `PyModule_GetFilename()`` is no longer deprecated
+
+
 Python 3.15 Contributions
 =========================
 
