@@ -22,20 +22,20 @@ Python 3.16 Contributions
 C API Changes
 -------------
 
-Add functions to the limited C API:
+Add 3 functions to the limited C API:
 
 * ``Py_HashBuffer()``
 * ``Py_SETREF()``
 * ``Py_XSETREF()``
 
-Deprecate functions:
+Deprecate 4 functions and structure members:
 
 * ``PyInitConfig_GetExitCode()``
 * ``PyStatus.exitcode``
 * ``PyStatus_Exit()``
 * ``PyStatus_IsExit()``
 
-Soft deprecate functions:
+Soft 6 deprecate functions:
 
 * ``PyUnicode_New()``
 * ``PyUnicode_CopyCharacters()``
@@ -94,7 +94,7 @@ New Features
 C API Changes
 -------------
 
-23 new functions:
+Add 23 functions:
 
 * ``PyAnyDict_Check()``
 * ``PyAnyDict_CheckExact()``
@@ -124,12 +124,16 @@ Add a function to the limited C API:
 
 * ``PyObject_CallFinalizerFromDealloc()``
 
-Deprecated APIs:
+Deprecate 3 functions:
 
-* ``PyBytes_FromStringAndSize(NULL, len)`` and ``_PyBytes_Resize()`` are soft
-  deprecated
-* ``_PyObject_CallMethodId()``, ``_PyObject_GetAttrId()``,
-  ``_PyUnicode_FromId()``: removed in Python 3.20
+* ``_PyObject_CallMethodId()``
+* ``_PyObject_GetAttrId()``
+* ``_PyUnicode_FromId()``
+
+Soft deprecated 2 functions:
+
+* ``PyBytes_FromStringAndSize(NULL, len)``
+* ``_PyBytes_Resize()``
 
 Misc:
 
