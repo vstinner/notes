@@ -20,15 +20,25 @@ Python 3.15 Contributions
 =========================
 
 * PEP 782: Add PyBytesWriter C API
+* PEP 814: Add frozendict built-in type
 
 New Features
 ------------
 
-* ``os.statx()``
+* ``frozendict`` (PEP 814 co-authored with Donghee Na)
+* ``os.statx()`` (co-authored by Jeffrey Bosboom)
+* ``array``, ``ctypes`` and ``memoryview`` support ``Zf`` and ``Zf`` formats
+  used by numpy
 
-New C API
----------
+C API Changes
+-------------
 
+23 new functions:
+
+* ``PyAnyDict_Check()``
+* ``PyAnyDict_CheckExact()``
+* ``PyArg_ParseArray()``
+* ``PyArg_ParseArrayAndKeywords()``
 * ``PyBytesWriter_Create()``
 * ``PyBytesWriter_Discard()``
 * ``PyBytesWriter_Finish()``
@@ -41,9 +51,29 @@ New C API
 * ``PyBytesWriter_GrowAndUpdatePointer()``
 * ``PyBytesWriter_Resize()``
 * ``PyBytesWriter_WriteBytes()``
+* ``PyFrozenDict_Check()``
+* ``PyFrozenDict_CheckExact()``
+* ``PyFrozenDict_New()``
+* ``PyObject_Dump()``
 * ``PyTuple_FromArray()``
 * ``PyUnstable_ThreadState_ResetStackProtection()``
 * ``PyUnstable_ThreadState_SetStackProtection()``
+
+Add a function to the limited C API:
+
+* ``PyObject_CallFinalizerFromDealloc()``
+
+Deprecated APIs:
+
+* ``PyBytes_FromStringAndSize(NULL, len)`` and ``_PyBytes_Resize()`` are soft
+  deprecated
+* ``_PyObject_CallMethodId()``, ``_PyObject_GetAttrId()``,
+  ``_PyUnicode_FromId()``: removed in Python 3.20
+
+Misc:
+
+* Add again ``_Py_InitializeMain()``, removed in Python 3.14
+
 
 Python 3.14 Contributions
 =========================

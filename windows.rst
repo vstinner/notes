@@ -110,6 +110,9 @@ Visual Studio Community (free) is enough to build Python.
 
 Select "Desktop Development with C++".
 
+To build to ARM64, open Visual Studio Installer an select the Individual component:
+"MSVC Build Tools for ARM64/ARM64EC (Latest)".
+
 Versions:
 
 =============  ======  ========
