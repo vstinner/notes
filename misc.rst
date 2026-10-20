@@ -11,6 +11,7 @@ GitHub
 ======
 
 * https://github.com/pulls/review-requested
+* My public SSH keys: https://github.com/vstinner.keys
 
 URLs:
 
