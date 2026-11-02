@@ -371,3 +371,4 @@ Misc
 * ``ptype TYPE``: display a type
 * ``set follow-fork-mode child``: follow the child process on fork
 * ``set follow-exec-mode new``
+* ``help set disable-randomization``
