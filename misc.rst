@@ -21,9 +21,13 @@ URLs:
 
 GitHub Action images:
 
-* https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2604-Readme.md
-* https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md
-* https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md
+* Ubuntu:
+
+  * https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2604-Readme.md
+  * https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md
+  * https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md
+
+* macOS: https://github.com/actions/runner-images/blob/main/images/macos/xcode-27-arm64-Readme.md
 
 Markdown:
 
